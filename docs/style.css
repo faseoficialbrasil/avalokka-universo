@@ -9,7 +9,13 @@
 /* Corpo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
+  background:linear-gradient(135deg, 
+  #E40303 0%, 
+  #FF8C00 20%, 
+  #FFED00 40%, 
+  #008026 60%, 
+  #004DFF 80%, 
+  #750787 100%);
   color: #002b45; /* azul petróleo */
   line-height: 1.6;
   padding: 20px;
