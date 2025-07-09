@@ -1,3 +1,4 @@
+
 /* Reset básico */
 * {
   margin: 0;
@@ -5,126 +6,81 @@
   box-sizing: border-box;
 }
 
-/* Fonte base e cores estratégicas */
+/* Corpo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f7fa;
-  color: #002b45; /* Azul petróleo */
+  color: #002b45; /* azul petróleo */
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Cabeçalho */
-header {
-  text-align: center;
+/* Banner principal */
+.secao-banner {
   background-color: #002b45;
-  color: #ffffff;
-  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   margin-bottom: 30px;
 }
 
-header h1 {
+.secao-banner h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-header h2 {
-  font-size: 1.2rem;
-  color: #e28f12;
+.secao-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 
-.autor {
-  font-size: 0.9rem;
-  margin-top: 10px;
-  color: #ccc;
-}
-
-.capa {
-  margin-top: 20px;
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-
-/* Navegação */
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 8px;
-}
-
-nav a:hover {
-  color: #e28f12;
-}
-
-/* Sumário e conteúdo */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h2 {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  color: #002b45;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #e28f12;
-  padding-bottom: 5px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-ul li a {
-  color: #0055aa;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-ul li a:hover {
-  color: #e28f12;
-}
-
-ul li a:visited {
-  color: #444444;
-}
-
-/* Botão de download */
-.botao-download {
-  display: inline-block;
+/* Botão */
+.botao {
   background-color: #e28f12;
   color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 12px 28px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 20px;
+  font-size: 1.1rem;
   transition: background-color 0.3s;
+  display: inline-block;
 }
 
-.botao-download:hover {
+.botao:hover {
   background-color: #cc7700;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.conteudo h2 {
+  color: #002b45;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+[09/07, 17:34] Chat GPT: border-bottom: 3px solid #e28f12;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+.conteudo p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   margin-top: 50px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #666;
 }
+
+
