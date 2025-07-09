@@ -68,7 +68,8 @@ body {
 }
 
 .conteudo h2 {
-[09/07, 17:48] Chat GPT: color: #002b45;
+[09/07, 17:48] Chat GPT: color: #fff;
+text-shadow: 0 0 5px rgba(0,0,0,0.5);
   margin-bottom: 12px;
   font-size: 1.8rem;
   border-bottom: 3px solid #e28f12;
