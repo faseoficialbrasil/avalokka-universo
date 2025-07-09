@@ -82,9 +82,15 @@ body {
 }
 
 /* Rodapé */
+
+
 footer {
   text-align: center;
   margin-top: 50px;
   font-size: 0.9rem;
-  color: #666;
+  color: #eee; /* cinza bem claro */
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.3); /* fundo preto translúcido */
+  padding: 10px 0;
+  border-radius: 6px;
 }
