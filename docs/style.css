@@ -9,13 +9,13 @@
 /* Corpo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background:linear-gradient(135deg, 
-  #E40303 0%, 
-  #FF8C00 20%, 
-  #FFED00 40%, 
-  #008026 60%, 
-  #004DFF 80%, 
-  #750787 100%);
+  background: linear-gradient(135deg, 
+    #E40303 0%, 
+    #FF8C00 20%, 
+    #FFED00 40%, 
+    #008026 60%, 
+    #004DFF 80%, 
+    #750787 100%);
   color: #002b45; /* azul petróleo */
   line-height: 1.6;
   padding: 20px;
@@ -23,7 +23,7 @@ body {
 
 /* Banner principal */
 .secao-banner {
-  background-color: #002b45;
+  background-color: #002b45cc; /* azul petróleo com transparência */
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -68,10 +68,10 @@ body {
 }
 
 .conteudo h2 {
-  color: #002b45;
+[09/07, 17:48] Chat GPT: color: #002b45;
   margin-bottom: 12px;
   font-size: 1.8rem;
-[09/07, 17:34] Chat GPT: border-bottom: 3px solid #e28f12;
+  border-bottom: 3px solid #e28f12;
   padding-bottom: 6px;
   margin-top: 40px;
 }
@@ -88,5 +88,3 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
-
-
