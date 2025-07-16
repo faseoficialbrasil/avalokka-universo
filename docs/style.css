@@ -1,102 +1,107 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=EB+Garamond&family=Cormorant+Garamond&family=Spectral+SC&display=swap');
-
-/* Reset básico */
-* {
+/* Estilo geral */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo da página */
-body {
-  font-family: 'EB Garamond', serif;
-  background-image: url('imagens/fundo-folha-antiga.jpg');
+  font-family: 'Georgia', serif;
+  background-color: #1e1a16;
+  color: #f5f5f5;
+  background-image: url('imagens/couro-envelhecido.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  color: #3b2f1d; /* tom sépia para combinar com o papel */
-  line-height: 1.6;
-  padding: 20px;
+  background-attachment: fixed;
 }
 
-/* Banner principal */
-.secao-banner {
-  background-color: #002b45cc;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  margin-bottom: 30px;
-}
-
-.secao-banner h1 {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.secao-banner p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  font-style: italic;
-}
-
-/* Botão */
-.botao {
-  font-family: 'Spectral SC', serif;
-  background-color: #e28f12;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background-color 0.3s;
-  display: inline-block;
-}
-
-.botao:hover {
-  background-color: #cc7700;
-}
-
-/* Conteúdo principal */
-.conteudo {
+/* Conteúdo central */
+main.conteudo {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 40px 20px;
+  background-color: rgba(30, 25, 20, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.conteudo h2 {
-  font-family: 'Cinzel Decorative', serif;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  margin-bottom: 12px;
-  font-size: 1.8rem;
-  border-bottom: 3px solid #e28f12;
-  padding-bottom: 6px;
-  margin-top: 40px;
-}
-
-.conteudo p {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.1rem;
+/* Títulos */
+h1, h2 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Rodapé */
-footer {
-  font-family: 'Cormorant Garamond', serif;
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* Parágrafos */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Blocos de livros */
+.livro {
+  background-image: url('imagens/fundo.avalokka.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  border: 1px solid #8b6f4e;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
   text-align: center;
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #eee;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  background: rgba(0,0,0,0.3);
-  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Botões */
+.botao {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #f5f5f5;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.botao:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Áudio controles */
+.audio-controles {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.audio-controles button {
+  background-color: #3e2f23;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.audio-controles button:hover {
+  background-color: #5a4433;
+}
+
+/* Bloco de citações */
+blockquote {
+  background-color: rgba(60, 45, 30, 0.6);
+  padding: 15px 20px;
+  border-left: 4px solid #8b6f4e;
+  margin: 20px 0;
+  font-style: italic;
   border-radius: 6px;
 }
