@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Capítulo I — O Sussurro Iniciado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    let trilha;
+    function iniciarAudio() {
+      trilha = document.getElementById("audio-capitulo");
+      trilha.play();
+    }
+    function pararAudio() {
+      trilha = document.getElementById("audio-capitulo");
+      trilha.pause();
+      trilha.currentTime = 0;
+    }
+  </script>
+</head>
+<body>
+  <main class="conteudo">
+    <h1>🕯️ Capítulo I — O Sussurro Iniciado</h1>
+    <p><em>“O início não é um som, é uma ausência que chama.”</em></p>
+
+    <div class="audio-controles">
+      <button onclick="iniciarAudio()">🔊 Iniciar trilha</button>
+      <button onclick="pararAudio()">🔇 Parar trilha</button>
+      <audio id="audio-capitulo" src="../audios/cap01-leitura.mp3" loop></audio>
+    </div>
+
+    <section>
+      <h2>🌌 Travessia</h2>
+      <p>
+        O véu da meia-noite não se abre com luz, mas com escuta.  
+        Há um sussurro que não vem de fora — ele nasce no espaço entre pensamentos.  
+        Quem ouve, desperta. Quem desperta, atravessa.
+      </p>
+      <p>
+        Neste primeiro véu, Avalokka se revela como um convite.  
+        Não há pressa. Não há mapa. Há apenas o chamado.
+      </p>
+      <p>
+        Caminhe com silêncio. Ele conhece o caminho.
+      </p>
+    </section>
+
+    <p style="margin-top:40px; text-align:center;">
+      <a href="../indice.html" class="botao">⬅️ Retornar ao índice</a>
+    </p>
+  </main>
+</body>
+      </html>
