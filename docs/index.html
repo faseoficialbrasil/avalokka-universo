@@ -3,9 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Mundo de Avalokka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    let trilha;
+
+    function iniciarTrilha() {
+      trilha = document.getElementById("audio-trilha");
+      trilha.play();
+    }
+
+    function pararTrilha() {
+      trilha = document.getElementById("audio-trilha");
+      trilha.pause();
+      trilha.currentTime = 0;
+    }
+  </script>
 </head>
 <body>
-  <h1>🌌 Bem-vindo ao Mundo de Avalokka</h1>
-  <p>Este é o portal espiritual, poético e criativo que une véus, trilhas sonoras e ferramentas sobrenaturais.</p>
+  <main class="texto-padrao">
+    <h1>🌌 Bem-vindo ao Mundo de Avalokka</h1>
+    <p><em>“O som é o véu que respira. A travessia começa quando você escuta.”</em></p>
+
+    <section style="margin: 30px 0;">
+      <button onclick="iniciarTrilha()">🔊 Iniciar trilha</button>
+      <button onclick="pararTrilha()">🔇 Parar trilha</button>
+      <audio id="audio-trilha" src="audios/trilha-principal.mp3" loop></audio>
+    </section>
+
+    <section>
+      <ul>
+        <li><a href="indice.html">📖 Os 16 Véus</a></li>
+        <li><a href="trilhas.html">🎼 Trilhas Sonoras</a></li>
+        <li><a href="ferramentas.html">🛠️ Ferramentas</a></li>
+        <li><a href="ghostcreator.html">👻 Ghost Creator</a></li>
+      </ul>
+    </section>
+
+    <footer style="margin-top: 40px;">
+      <p>&copy; 2025 Marcelo Honorio da Silva — Avalokka</p>
+    </footer>
+  </main>
 </body>
 </html>
