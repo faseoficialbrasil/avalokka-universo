@@ -1,3 +1,5 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=EB+Garamond&family=Cormorant+Garamond&family=Spectral+SC&display=swap');
 
 /* Reset básico */
 * {
@@ -8,7 +10,7 @@
 
 /* Corpo da página */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'EB Garamond', serif;
   background: linear-gradient(135deg, 
     #E40303 0%, 
     #FF8C00 20%, 
@@ -33,18 +35,22 @@ body {
 }
 
 .secao-banner h1 {
+  font-family: 'Cinzel Decorative', serif;
   font-size: 2.5rem;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .secao-banner p {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   margin-bottom: 25px;
+  font-style: italic;
 }
 
 /* Botão */
 .botao {
+  font-family: 'Spectral SC', serif;
   background-color: #e28f12;
   color: white;
   padding: 12px 28px;
@@ -68,8 +74,9 @@ body {
 }
 
 .conteudo h2 {
-[09/07, 17:48] Chat GPT: color: #fff;
-text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-family: 'Cinzel Decorative', serif;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
   margin-bottom: 12px;
   font-size: 1.8rem;
   border-bottom: 3px solid #e28f12;
@@ -78,14 +85,14 @@ text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .conteudo p {
+  font-family: 'EB Garamond', serif;
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
 
 /* Rodapé */
-
-
 footer {
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
   margin-top: 50px;
   font-size: 0.9rem;
