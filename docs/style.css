@@ -11,21 +11,19 @@
 /* Corpo da página */
 body {
   font-family: 'EB Garamond', serif;
-  background: linear-gradient(135deg, 
-    #E40303 0%, 
-    #FF8C00 20%, 
-    #FFED00 40%, 
-    #008026 60%, 
-    #004DFF 80%, 
-    #750787 100%);
-  color: #002b45; /* azul petróleo */
+  background-image: url('imagens/fundo-folha-antiga.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #3b2f1d; /* tom sépia para combinar com o papel */
   line-height: 1.6;
   padding: 20px;
 }
 
 /* Banner principal */
 .secao-banner {
-  background-color: #002b45cc; /* azul petróleo com transparência */
+  background-color: #002b45cc;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -96,9 +94,9 @@ footer {
   text-align: center;
   margin-top: 50px;
   font-size: 0.9rem;
-  color: #eee; /* cinza bem claro */
+  color: #eee;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  background: rgba(0,0,0,0.3); /* fundo preto translúcido */
+  background: rgba(0,0,0,0.3);
   padding: 10px 0;
   border-radius: 6px;
 }
