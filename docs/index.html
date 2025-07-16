@@ -2,41 +2,32 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Avalokka — A Travessia</title>
+  <title>Bíblia de Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('imagens/capa-avalokka.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .portal-botao {
-      background-color: rgba(0, 0, 0, 0.7);
-      color: gold;
-      border: 2px solid gold;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      font-family: 'Georgia', serif;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .portal-botao:hover {
-      background-color: gold;
-      color: black;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="indice.html" class="portal-botao">🕯️ Abrir o Portal</a>
+  <main class="conteudo">
+    <h1>📚 Bíblia de Avalokka</h1>
+    <p><em>“Não é um livro. É um conjunto de véus. Cada um revela uma face do invisível.”</em></p>
+
+    <section>
+      <h2>📖 Avalokka — A Travessia</h2>
+      <p>O livro que escuta o silêncio e revela o invisível.</p>
+      <a href="livros/avalokka/indice.html" class="botao">🕯️ Abrir o Véu</a>
+    </section>
+
+    <section>
+      <h2>📜 O Livro dos Brethren</h2>
+      <p>Fragmentos, nomes e ecos que vieram antes do tempo.</p>
+      <a href="livros/brethren/livro.html" class="botao">🔮 Acessar os Fragmentos</a>
+    </section>
+
+    <!-- Futuro -->
+    <section>
+      <h2>📘 [Próximo Livro]</h2>
+      <p>Em gestação...</p>
+    </section>
+  </main>
 </body>
 </html>
