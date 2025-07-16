@@ -8,34 +8,43 @@
     body {
       margin: 0;
       padding: 0;
+      background-color: #000;
       background-image: url('imagens/capa-avalokka.jpg');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       font-family: 'Georgia', serif;
       color: #f5f5f5;
-      text-align: center;
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
-    .botao {
-      background-color: rgba(0, 0, 0, 0.6);
-      border: 2px solid #f5f5f5;
-      padding: 12px 24px;
+
+    .portal {
+      text-align: center;
+    }
+
+    .portal a {
+      display: inline-block;
+      padding: 16px 32px;
       font-size: 1.2em;
       color: #f5f5f5;
       text-decoration: none;
+      border: 2px solid #f5f5f5;
       border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
       transition: background-color 0.3s;
     }
-    .botao:hover {
+
+    .portal a:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
-  <h1 style="margin-bottom: 40px;">📖 Bíblia de Avalokka</h1>
-  <a href="index.html" class="botao">Abrir o Véu</a>
+  <div class="portal">
+    <a href="index.html">Abrir o Portal</a>
+  </div>
 </body>
 </html>
