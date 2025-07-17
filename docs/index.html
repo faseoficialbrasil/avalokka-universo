@@ -2,43 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Livro de Avalokka</title>
+  <title>Universo de Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lista dos capítulos sagrados do livro de Avalokka. Cada capítulo é um portal para narrativas ritualísticas e cânticos sagrados.">
+  <meta name="description" content="Entrada cerimonial para o universo de Avalokka.">
   <link rel="stylesheet" href="style.css">
-  <script>
-    let trilha;
-    function iniciarAudio() {
-      trilha = document.getElementById("audio-abertura");
-      trilha.play();
-    }
-    function pararAudio() {
-      trilha = document.getElementById("audio-abertura");
-      trilha.pause();
-      trilha.currentTime = 0;
-    }
-  </script>
 </head>
 
-<body class="capitulo">
-  <main class="conteudo">
-    <h1>Livro de Avalokka</h1>
+<body>
+  <h1>✨ Bem-vindo ao Universo de Avalokka</h1>
+  <p>O véu se abre. Escolha seu caminho ritualístico.</p>
 
-    <div class="audio-controles">
-      <button onclick="iniciarAudio()" aria-label="Iniciar trilha sonora de abertura">🔊 Iniciar trilha</button>
-      <button onclick="pararAudio()" aria-label="Parar trilha sonora de abertura">🔇 Parar trilha</button>
-      <audio id="audio-abertura" src="audios/vozdoportal.mp3" loop></audio>
+  <div class="elementos">
+    <div class="elemento">
+      <a href="portal.html">🕯️ Entrar no Portal Ritualístico</a>
+      <p>Explore os livros, criaturas e personagens invocados.</p>
     </div>
 
-    <div class="lista-livros">
-      <a href="livros/avalokka/capitulos/capitulo01.html">📖 Capítulo I — O Sussurro Iniciado</a>
-      <a href="livros/avalokka/capitulos/capitulo02.html">📖 Capítulo II — Portais que Respiram</a>
-      <a href="livros/avalokka/capitulos/capitulo03.html">📖 Capítulo III — A Marcha dos Brethren</a>
+    <div class="elemento">
+      <a href="criaturas.html">🔮 Criador de Criaturas</a>
+      <p>Ferramenta para invocar entidades secundárias.</p>
     </div>
 
-    <p style="margin-top:40px; text-align:center;">
-      <a href="inicio.html" class="botao">⬅️ FECHAR O LIVRO </a>
-    </p>
-  </main>
+    <div class="elemento">
+      <a href="personagens.html">📜 Personagens Invocados</a>
+      <p>Registro das criaturas que habitam o universo.</p>
+    </div>
+  </div>
 </body>
 </html>
