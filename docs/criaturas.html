@@ -2,158 +2,40 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Invocador de Criaturas de Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ferramenta ritualística para invocar criaturas secundárias do universo de Avalokka.">
+  <title>Criaturas — Avalokka</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #0a0a0a;
-      color: #f0f0f0;
-      font-family: 'Georgia', serif;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    form {
-      max-width: 500px;
-      margin: 0 auto;
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    select, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      background-color: #2a2a2a;
-      color: #f0f0f0;
-      border: none;
-      border-radius: 6px;
-    }
-
-    button {
-      margin-top: 20px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    #resultado {
-      max-width: 600px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #121212;
-      border-left: 4px solid #444;
-      border-radius: 8px;
-    }
-
-    .acoes {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .acoes a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <h1>🔮 Invocador de Criaturas de Avalokka</h1>
 
-  <form id="criatura-form">
-    <label>Personalidade:</label>
-    <select name="personalidade">
-      <option value="Silencioso">Silencioso</option>
-      <option value="Ardente">Ardente</option>
-      <option value="Visionário">Visionário</option>
-    </select>
+  <header>
+    <h1>Criaturas de Avalokka</h1>
+    <p>Seres que não se curvam à forma. Que respiram entre mundos. Que não pertencem ao tempo.</p>
+  </header>
 
-    <label>Elemento:</label>
-    <select name="elemento">
-      <option value="Fogo">Fogo</option>
-      <option value="Sombra">Sombra</option>
-      <option value="Tempo">Tempo</option>
-      <option value="Vento">Vento</option>
-    </select>
+  <main>
+    <section class="creature-section">
+      <h2>Entidade Liminal — Enaileal</h2>
+      <div class="enaileal-block">
+        <img src="imagens/enaileal.webp" alt="Enaileal — Guardião das Passagens" class="enaileal-icon">
+        <p><strong>Enaileal</strong> não é criatura, nem homem, nem sombra. É um limiar. Carne e mineral entrelaçados. Sua respiração molda os portais vivos. Sua presença é sentida por todas as formas que ousam atravessar.</p>
+      </div>
 
-    <label>Forma:</label>
-    <select name="forma">
-      <option value="Humanoide">Humanoide</option>
-      <option value="Etéreo">Etéreo</option>
-      <option value="Múltiplo">Múltiplo</option>
-    </select>
+      <h2>Outras Criaturas</h2>
+      <ul>
+        <li><strong>Oxides</strong> — sem forma fixa, são vento, suspiro e adubo do mundo.</li>
+        <li><strong>Tharomites</strong> — titãs fossilizados, cujos ossos moldam desertos.</li>
+        <li><strong>Sonhadores Extintos</strong> — habitantes de cidades sem portas, que escolheram não mais sonhar.</li>
+      </ul>
 
-    <label>Função:</label>
-    <select name="funcao">
-      <option value="Guardião">Guardião</option>
-      <option value="Mensageiro">Mensageiro</option>
-      <option value="Fragmento">Fragmento</option>
-    </select>
+      <p>Essas criaturas não são inimigas. Nem aliadas. São reflexos. São partes do véu que respira.</p>
+    </section>
+  </main>
 
-    <button type="submit">✨ Invocar Criatura</button>
-  </form>
+  <footer>
+    <p>&copy; 2025 Avalokka. Que as formas continuem a se dissolver.</p>
+  </footer>
 
-  <div id="resultado"></div>
-
-  <div class="acoes">
-    <button onclick="copiarFicha()">📋 Copiar ficha</button><br><br>
-    <a href="personagens.html">📜 Ver personagens invocados</a>
-  </div>
-
-  <script>
-    const nomes = ["Vuramesh", "Oxariel", "Nengtharion", "Zarveth", "Lumareth", "Kandoril", "Erethion", "Nyxar"];
-    const descricoes = {
-      Guardião: "protege os véus entre mundos e vigia os cânticos esquecidos.",
-      Mensageiro: "traz palavras ancestrais aos que ousam escutar.",
-      Fragmento: "é parte de um todo perdido, ecoando memórias de eras quebradas."
-    };
-
-    let fichaTexto = "";
-
-    document.getElementById("criatura-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const form = e.target;
-      const personalidade = form.personalidade.value;
-      const elemento = form.elemento.value;
-      const forma = form.forma.value;
-      const funcao = form.funcao.value;
-
-      const nome = nomes[Math.floor(Math.random() * nomes.length)];
-      const descricao = descricoes[funcao];
-
-      fichaTexto = `🕯️ ${nome} da ${elemento} ${personalidade}\nForma: ${forma}\nFunção: ${funcao}\n${nome} ${descricao}`;
-
-      const resultado = `
-        <h2>🕯️ ${nome} da ${elemento} ${personalidade}</h2>
-        <p><strong>Forma:</strong> ${forma}</p>
-        <p><strong>Função:</strong> ${funcao}</p>
-        <p><em>${nome} ${descricao}</em></p>
-      `;
-
-      document.getElementById("resultado").innerHTML = resultado;
-    });
-
-    function copiarFicha() {
-      navigator.clipboard.writeText(fichaTexto).then(() => {
-        alert("Ficha copiada para a área de transferência!");
-      });
-    }
-  </script>
 </body>
 </html>
