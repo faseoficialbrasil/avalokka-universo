@@ -9,6 +9,19 @@
 </head>
 
 <body>
+  <!-- Trilha sonora cerimonial -->
+  <audio id="audioCerimonial" autoplay loop>
+    <source src="audios/pulsodosveus.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Controle de som -->
+  <div class="controle-audio">
+    <button onclick="document.getElementById('audioCerimonial').muted = !document.getElementById('audioCerimonial').muted">
+      🔊 Alternar Som
+    </button>
+  </div>
+
   <h1>✨ Bem-vindo ao Universo de Avalokka</h1>
   <p>O véu se abre. Escolha seu caminho ritualístico.</p>
 
