@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Camada de névoa cerimonial */
+/* Camada de névoa cerimonial com animação */
 body::before {
   content: "";
   position: fixed;
@@ -28,6 +28,7 @@ body::before {
   opacity: 0.2;
   pointer-events: none;
   z-index: 0;
+  animation: flutuarNevoa 12s ease-in-out infinite;
 }
 
 /* Título */
@@ -151,4 +152,20 @@ p {
 
 .controle-audio button:hover {
   background-color: #333;
+}
+
+/* Animação da névoa cerimonial */
+@keyframes flutuarNevoa {
+  0% {
+    background-position: center;
+    opacity: 0.2;
+  }
+  50% {
+    background-position: center 10px;
+    opacity: 0.25;
+  }
+  100% {
+    background-position: center;
+    opacity: 0.2;
+  }
   }
