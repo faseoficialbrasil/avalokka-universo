@@ -1,27 +1,31 @@
-/* Estilo geral */
+/* Fundo geral para todas as páginas */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif;
-  background-color: #1e1a16;
-  color: #f5f5f5;
-}
-
-/* Fundo ritualístico para página de livros */
-body.livros {
-  background-image: url('imagens/fundo-avalokka.jpg');
+  background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #f5f5f5;
 }
 
-/* Conteúdo central */
+/* Fundo exclusivo para a capa */
+body.capa {
+  background-image: url('imagens/capa-avalokka.jpg');
+}
+
+/* Bloco de conteúdo com véu transparente e fundo ritualístico */
 main.conteudo {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 40px 20px;
-  background-color: rgba(30, 25, 20, 0.6);
+  background-image: url('imagens/fundo-avalokka.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(30, 25, 20, 0.6); /* véu transparente */
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
