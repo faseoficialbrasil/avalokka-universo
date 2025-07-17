@@ -34,15 +34,21 @@ p {
 
 /* Bloco de cada elemento */
 .elemento {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-left: 4px solid #444;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.1);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-color: #121212;
+  padding: 24px;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.08);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s forwards;
+  backdrop-filter: blur(2px);
+}
+
+.elemento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(255, 215, 0, 0.2);
 }
 
 .elemento:nth-child(1) { animation-delay: 0.2s; }
