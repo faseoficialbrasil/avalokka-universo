@@ -126,4 +126,29 @@ p {
   opacity: 1;
   transform: scale(1.1);
   box-shadow: 0 0 14px rgba(255, 215, 0, 0.6);
+}
+
+/* Controle de áudio cerimonial */
+.controle-audio {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.controle-audio button {
+  background-color: #1a1a1a;
+  color: #ffd700;
+  border: 1px solid #444;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.controle-audio button:hover {
+  background-color: #333;
   }
