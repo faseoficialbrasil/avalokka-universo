@@ -105,3 +105,11 @@ blockquote {
   font-style: italic;
   border-radius: 6px;
 }
+body.capitulo {
+  background-image: url('../../../imagens/fundo-folha-antiga.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1e1a16;
+  color: #f5f5f5;
+}
