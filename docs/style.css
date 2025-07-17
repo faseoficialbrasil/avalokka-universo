@@ -6,6 +6,7 @@ body {
   padding: 40px 20px;
   text-align: center;
   background-image: radial-gradient(circle at top center, #1a1a1a 0%, #0a0a0a 100%);
+  overflow-x: hidden;
 }
 
 /* Título */
@@ -38,11 +39,21 @@ p {
   border-left: 4px solid #444;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
 }
 
-.elemento:hover {
-  transform: scale(1.02);
+.elemento:nth-child(1) { animation-delay: 0.2s; }
+.elemento:nth-child(2) { animation-delay: 0.4s; }
+.elemento:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Links dos elementos */
@@ -79,9 +90,24 @@ p {
   height: 48px;
   opacity: 0.85;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .fechar-portal img:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* Véu cerimonial */
+#veu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 999;
 }
