@@ -86,28 +86,17 @@ p {
 }
 
 .fechar-portal img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   opacity: 0.85;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .fechar-portal img:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-
-/* Véu cerimonial */
-#veu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1s ease;
-  z-index: 999;
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.6);
 }
