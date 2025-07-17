@@ -35,22 +35,5 @@
       <img src="imagens/fechar-portal.png" alt="Chave de Avalokka" title="Chave de Avalokka — Fechar o portal">
     </a>
   </div>
-
-  <!-- Véu cerimonial -->
-  <div id="veu"></div>
-
-  <!-- Script para ativar o véu -->
-  <script>
-    const chave = document.querySelector('.fechar-portal a');
-    const veu = document.getElementById('veu');
-
-    chave.addEventListener('click', function(e) {
-      e.preventDefault();
-      veu.style.opacity = '1';
-      setTimeout(() => {
-        window.location.href = chave.getAttribute('href');
-      }, 1000);
-    });
-  </script>
 </body>
 </html>
