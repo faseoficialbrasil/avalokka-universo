@@ -5,7 +5,7 @@
   <title>Invocador de Criaturas de Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ferramenta ritualística para invocar criaturas secundárias do universo de Avalokka.">
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-color: #0a0a0a;
@@ -58,6 +58,17 @@
       border-left: 4px solid #444;
       border-radius: 8px;
     }
+
+    .acoes {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .acoes a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -99,6 +110,11 @@
 
   <div id="resultado"></div>
 
+  <div class="acoes">
+    <button onclick="copiarFicha()">📋 Copiar ficha</button><br><br>
+    <a href="personagens.html">📜 Ver personagens invocados</a>
+  </div>
+
   <script>
     const nomes = ["Vuramesh", "Oxariel", "Nengtharion", "Zarveth", "Lumareth", "Kandoril", "Erethion", "Nyxar"];
     const descricoes = {
@@ -106,6 +122,8 @@
       Mensageiro: "traz palavras ancestrais aos que ousam escutar.",
       Fragmento: "é parte de um todo perdido, ecoando memórias de eras quebradas."
     };
+
+    let fichaTexto = "";
 
     document.getElementById("criatura-form").addEventListener("submit", function(e) {
       e.preventDefault();
@@ -119,6 +137,8 @@
       const nome = nomes[Math.floor(Math.random() * nomes.length)];
       const descricao = descricoes[funcao];
 
+      fichaTexto = `🕯️ ${nome} da ${elemento} ${personalidade}\nForma: ${forma}\nFunção: ${funcao}\n${nome} ${descricao}`;
+
       const resultado = `
         <h2>🕯️ ${nome} da ${elemento} ${personalidade}</h2>
         <p><strong>Forma:</strong> ${forma}</p>
@@ -128,6 +148,12 @@
 
       document.getElementById("resultado").innerHTML = resultado;
     });
+
+    function copiarFicha() {
+      navigator.clipboard.writeText(fichaTexto).then(() => {
+        alert("Ficha copiada para a área de transferência!");
+      });
+    }
   </script>
 </body>
-                      </html>
+</html>
