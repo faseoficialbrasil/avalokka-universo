@@ -3,63 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Cerimonial</title>
+  <title>Avalokka — Entrada Cerimonial</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById('menuNavegacao');
-    menu.classList.toggle('show');
-  }
-  </script>
-<header class="topo-site">
-  <div class="logo">
-    <a href="index.html">
-      <img src="imagens/logo-avalokka.png" alt="Logo Avalokka">
-    </a>
-  </div>
-  <nav class="menu-navegacao">
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="avalokka.html">Livro</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="ajuda.html">Ajuda</a></li>
-    </ul>
-  </nav>
-</header>
-  <header>
-    <h1>📚 Biblioteca Cerimonial</h1>
-    <p>Explore os livros sagrados do universo Avalokka</p>
+<body id="topo">
+
+  <!-- Cabeçalho cerimonial -->
+  <header class="topo-site">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
+    <nav class="menu-navegacao" id="menuNavegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="avalokka.html">Livro</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="biblioteca">
-      <h2>Livros Disponíveis</h2>
-      <div class="livros-grid">
+  <!-- Trilha sonora cerimonial -->
+  <audio autoplay loop>
+    <source src="audio/vozdoportal.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
 
-        <!-- Livro Avalokka -->
-        <a href="avalokka.html" class="livro-capa">
-          <img src="imagens/capa-couro.jpg" alt="Capa do Livro Avalokka">
-          <h3>Avalokka</h3>
-        </a>
+  <!-- Capa cerimonial -->
+  <section class="capa-couro">
+    <h1>Avalokka</h1>
+    <p>Um chamado entre mundos. Um livro que respira.</p>
+    <a href="avalokka.html" class="button-ritual">Entrar no Livro</a>
+  </section>
 
-        <!-- Futuro livro -->
-        <!--
-        <a href="nome-do-livro.html" class="livro-capa">
-          <img src="imagens/capa-outro.jpg" alt="Capa do Livro X">
-          <h3>Título do Livro</h3>
-        </a>
-        -->
-
-      </div>
-    </section>
-  </main>
-
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Avalokka. Biblioteca Cerimonial não comercial.</p>
+    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
   </footer>
+
+  <!-- Script do menu sandwich -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuNavegacao');
+      menu.classList.toggle('show');
+    }
+  </script>
 
 </body>
 </html>
