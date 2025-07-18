@@ -1,4 +1,10 @@
-/* Fonte cerimonial */
+/* === Reset e Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Cinzel, serif;
   background-image: 
@@ -8,10 +14,12 @@ body {
   background-attachment: fixed, fixed;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
-  color: #2c1e1e;
-  margin: 0;
-  padding: 0;
+  color: #fdf6e3;
+  line-height: 1.6;
+  padding-bottom: 2rem;
 }
+
+/* === Cabeçalho === */
 .topo-site {
   display: flex;
   justify-content: space-between;
@@ -35,6 +43,7 @@ body {
 
 .menu-navegacao {
   display: flex;
+  transition: all 0.3s ease;
 }
 
 .menu-navegacao ul {
@@ -48,7 +57,6 @@ body {
 .menu-navegacao a {
   color: #fdf6e3;
   text-decoration: none;
-  font-family: Cinzel, serif;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
@@ -57,7 +65,7 @@ body {
   color: #ffd700;
 }
 
-/* Responsivo */
+/* === Responsivo === */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -81,37 +89,79 @@ body {
   .menu-navegacao.show {
     display: block;
   }
+}
 
-/* Cabeçalho */
-header {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3rem 2rem;
+/* === Capa do Livro === */
+.capa-livro {
   text-align: center;
-  color: #fdf6e3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid #4b2e2e;
+  margin: 2rem 0;
 }
 
-/* Títulos */
-h1, h2 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.capa-livro img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* === Sumário Interativo === */
+.sumario {
+  background-color: rgba(44, 30, 30, 0.6);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
+}
+
+.sumario h2 {
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
+.sumario ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sumario li {
+  margin: 0.5rem 0;
+}
+
+.sumario a {
   color: #fdf6e3;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* Seções */
-main {
+.sumario a:hover {
+  color: #ffe4c4;
+}
+
+/* === Conteúdo do Livro === */
+.conteudo-livro {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
 }
 
+.conteudo-livro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-livro p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* === Seções Cerimoniais === */
 section {
   background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
   background-size: cover;
@@ -121,23 +171,19 @@ section {
   border-radius: 8px;
   margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
-  color: #fdf6e3;
 }
 
-/* Blocos de índice */
+/* === Blocos Especiais === */
 .index-block {
   background-color: rgba(44, 30, 30, 0.6);
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  color: #fdf6e3;
 }
 
 .index-block h2 {
   margin-top: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: 1.2rem;
   border-bottom: 1px solid #fdf6e3;
   padding-bottom: 0.5rem;
@@ -161,18 +207,28 @@ section {
   color: #ffe4c4;
 }
 
-/* Links */
-a {
-  color: #fdf6e3;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.enaileal-block {
+  background-color: rgba(44, 30, 30, 0.75);
+  border-left: 4px solid #fdf6e3;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-style: italic;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-a:hover {
-  color: #ffe4c4;
+.imagem-elieleal {
+  text-align: center;
+  margin: 2rem 0;
 }
 
-/* Botões cerimoniais */
+.imagem-elieleal img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* === Botões Cerimoniais === */
 .button-ritual {
   display: inline-block;
   margin-top: 1rem;
@@ -190,81 +246,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Bloco Enaileal */
-.enaileal-block {
-  background-color: rgba(44, 30, 30, 0.75);
-  border-left: 4px solid #fdf6e3;
-  padding: 1rem;
-  margin: 2rem 0;
-  font-style: italic;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-  color: #fdf6e3;
-}
-
-/* Imagem de Elieleal */
-.imagem-elieleal {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.imagem-elieleal img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  font-size: 0.9rem;
-  border-top: 2px solid #6b3e3e;
-}
-
-/* Capa de couro */
-.capa-couro {
-  background-image: url('imagens/capa-couro.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fdf6e3;
-  text-align: center;
-  padding-top: 20vh;
-  height: 100vh;
-  font-family: Cinzel, serif;
-}
-
-.capa-couro h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.capa-couro p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-
-.capa-couro .button-ritual {
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.capa-couro .button-ritual:hover {
-  background-color: #6b3e3e;
-  transform: scale(1.05);
-}
-
-/* Controles de áudio */
+/* === Controles de Áudio === */
 .audio-controles {
   margin: 2rem 0;
   text-align: center;
@@ -280,10 +262,19 @@ footer {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-family: Cinzel, serif;
 }
 
 .audio-controles button:hover {
   background-color: #6b3e3e;
   transform: scale(1.05);
 }
+
+/* === Rodapé === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4b2e2e;
+  color: #fdf6e3;
+  font-size: 0.9rem;
+  border-top: 2px solid #6b3e3e;
+  }
