@@ -1,45 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Portal — Avalokka</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-</head>
-<body>
+/* Fonte cerimonial */
+body {
+  font-family: 'Cinzel', serif;
+  background-image: url('fundo-folha-antiga.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2c1e1e;
+  margin: 0;
+  padding: 0;
+}
 
-  <header>
-    <h1>Portal de Avalokka</h1>
-    <p>Entre véus, ecos e cânticos, o portal respira.</p>
-  </header>
+/* Cabeçalho */
+header {
+  background-image: url('fundo-avalokka.jpg');
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  color: #fdf6e3;
+}
 
-  <main>
-    <section class="chapter-section">
-      <p>Este é o ponto de entrada.<br>
-      O lugar onde o silêncio se curva e o primeiro passo é dado.<br>
-      Avalokka não é um mundo — é um chamado.</p>
+/* Seções */
+main {
+  padding: 2rem;
+}
 
-      <p>Escolha sua travessia:</p>
-      <ul>
-        <li><a href="capitulo01.html">Capítulo 1 — O Sussurro Iniciado</a></li>
-        <li><a href="capitulo02.html">Capítulo 2 — Portais que Respiram</a></li>
-        <li><a href="capitulo03.html">Capítulo 3 — A Marcha dos Brethren</a></li>
-        <li><a href="canticos.html">Cânticos Cerimoniais</a></li>
-        <li><a href="portais.html">Portais Vivos</a></li>
-        <li><a href="personagens.html">Personagens</a></li>
-        <li><a href="criaturas.html">Criaturas</a></li>
-        <li><a href="nucleos.html">Núcleos Narrativos</a></li>
-        <li><a href="ecos.html">Ecos e Visões</a></li>
-        <li><a href="veusianos.html">Veusianos</a></li>
-      </ul>
+section {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
 
-      <a href="index.html" class="button-ritual">Retornar à Capa</a>
-    </section>
-  </main>
+/* Botões cerimoniais */
+.button-ritual {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4b2e2e;
+  color: #fdf6e3;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
-  <footer>
-    <p>&copy; 2025 Avalokka. Que o portal continue a respirar.</p>
-  </footer>
+.button-ritual:hover {
+  background-color: #6b3e3e;
+}
 
-</body>
-</html>
+/* Bloco Enaileal */
+.enaileal-block {
+  background-color: #eae3d2;
+  border-left: 4px solid #4b2e2e;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4b2e2e;
+  color: #fdf6e3;
+}
