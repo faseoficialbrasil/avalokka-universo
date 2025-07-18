@@ -2,44 +2,53 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Universo de Avalokka</title>
+  <title>Avalokka — Bíblia Cerimonial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entrada cerimonial para o universo de Avalokka.">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <script>
+    let trilha;
+    function iniciarAudio() {
+      trilha = document.getElementById("audio-index");
+      trilha.play();
+    }
+    function pararAudio() {
+      trilha = document.getElementById("audio-index");
+      trilha.pause();
+      trilha.currentTime = 0;
+    }
+  </script>
 </head>
-
 <body>
-  <!-- Trilha sonora cerimonial -->
-  <audio id="audioCerimonial" autoplay loop>
-    <source src="audios/pulsodosveus.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
 
-  <!-- Controle de som -->
-  <div class="controle-audio">
-    <button onclick="document.getElementById('audioCerimonial').muted = !document.getElementById('audioCerimonial').muted">
-      🔊 Alternar Som
-    </button>
-  </div>
+  <header>
+    <h1>🕯️ Avalokka — Bíblia Cerimonial</h1>
+    <p>Bem-vindo à travessia. Que os véus se abram.</p>
+  </header>
 
-  <h1>✨ Bem-vindo ao Universo de Avalokka</h1>
-  <p>O véu se abre. Escolha seu caminho ritualístico.</p>
+  <main>
+    <section class="audio-controles">
+      <button onclick="iniciarAudio()">🔊 Iniciar trilha</button>
+      <button onclick="pararAudio()">🔇 Parar trilha</button>
+      <audio id="audio-index" src="audios/index-trilha.mp3" loop></audio>
+    </section>
 
-  <div class="elementos">
-    <div class="elemento">
-      <a href="portal.html">🕯️ Entrar no Portal Ritualístico</a>
-      <p>Explore os livros, criaturas e personagens invocados.</p>
-    </div>
+    <section class="index-block">
+      <h2>🌌 Portal de Avalokka</h2>
+      <p>Entre no coração da narrativa cerimonial.</p>
+      <a href="portal.html" class="button-ritual">Entrar no Portal</a>
+    </section>
 
-    <div class="elemento">
-      <a href="criaturas.html">🔮 Criador de Criaturas</a>
-      <p>Ferramenta para invocar entidades secundárias.</p>
-    </div>
+    <section class="index-block">
+      <h2>📜 Índice Geral</h2>
+      <p>Explore todas as travessias disponíveis.</p>
+      <a href="indice.html" class="button-ritual">Ver o Índice</a>
+    </section>
+  </main>
 
-    <div class="elemento">
-      <a href="personagens.html">📜 Personagens Invocados</a>
-      <p>Registro das criaturas que habitam o universo.</p>
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Avalokka. Que os véus continuem a respirar.</p>
+  </footer>
+
 </body>
 </html>
