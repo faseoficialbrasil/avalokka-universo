@@ -3,14 +3,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
-  background-color: #2e1f1a; /* Marrom escuro ritualístico */
-  color: #f5f0e6; /* Tom pergaminho */
+  background-image: url('imagens/fundo-folha-antiga.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #2e1f1a;
   line-height: 1.6;
 }
 
 /* Cabeçalhos */
 header {
-  background-color: #3a2922;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-align: center;
   border-bottom: 2px solid #7a5c4b;
@@ -31,52 +34,42 @@ main {
   padding: 30px;
 }
 
+/* Blocos cerimoniais */
 .chapter-section,
 .character-section,
 .creature-section,
 .chronicle-section,
 .nucleus-section,
-chant-section,
-portal-list-section,
-echo-section,
-veusian-section {
+.chant-section,
+.portal-list-section,
+.echo-section,
+.veusian-section {
+  background-image: url('imagens/fundo-avalokka.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(122, 92, 75, 0.5);
   margin-bottom: 40px;
 }
 
 /* Bloco cerimonial de Enaileal */
 .enaileal-block {
-  display: flex;
-  align-items: center;
-  background-color: #3a2922;
-  border: 1px solid #7a5c4b;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-
-.enaileal-icon {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px #7a5c4b;
-}
-
-/* Enaileal fixo no topo */
-.enaileal-fixed {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 120px;
-  opacity: 0.9;
-  z-index: 1000;
-  border-radius: 6px;
-  box-shadow: 0 0 12px #7a5c4b;
+  background-image: url('imagens/fundo-avalokka.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #7a5c4b;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 0 15px rgba(122, 92, 75, 0.6);
 }
 
 /* Rodapé */
 footer {
-  background-color: #3a2922;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 15px;
   border-top: 2px solid #7a5c4b;
@@ -90,10 +83,44 @@ ul {
 }
 
 blockquote {
-  background-color: #4a332b;
+  background-color: rgba(255, 255, 255, 0.7);
   border-left: 4px solid #7a5c4b;
   padding: 10px 20px;
   margin: 20px 0;
   font-style: italic;
-  color: #e9e3d6;
+  color: #3a2922;
+}
+
+/* Links decorados */
+a {
+  color: #5a2d1d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a65c3a;
+  text-decoration: underline;
+}
+
+/* Botões cerimoniais */
+.button-ritual {
+  display: inline-block;
+  background-color: #7a5c4b;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px 10px 0 0;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(122, 92, 75, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.button-ritual:hover {
+  background-color: #a65c3a;
   }
