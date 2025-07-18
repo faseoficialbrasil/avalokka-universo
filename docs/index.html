@@ -2,52 +2,57 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Avalokka — Bíblia Cerimonial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Cerimonial</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-  <script>
-    let trilha;
-    function iniciarAudio() {
-      trilha = document.getElementById("audio-index");
-      trilha.play();
-    }
-    function pararAudio() {
-      trilha = document.getElementById("audio-index");
-      trilha.pause();
-      trilha.currentTime = 0;
-    }
-  </script>
 </head>
 <body>
-
+<header class="topo-site">
+  <div class="logo">
+    <a href="index.html">
+      <img src="imagens/logo-avalokka.png" alt="Logo Avalokka">
+    </a>
+  </div>
+  <nav class="menu-navegacao">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="avalokka.html">Livro</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+  </nav>
+</header>
   <header>
-    <h1>🕯️ Avalokka — Bíblia Cerimonial</h1>
-    <p>Bem-vindo à travessia. Que os véus se abram.</p>
+    <h1>📚 Biblioteca Cerimonial</h1>
+    <p>Explore os livros sagrados do universo Avalokka</p>
   </header>
 
   <main>
-    <section class="audio-controles">
-      <button onclick="iniciarAudio()">🔊 Iniciar trilha</button>
-      <button onclick="pararAudio()">🔇 Parar trilha</button>
-      <audio id="audio-index" src="audios/vozdoportal.mp3" loop></audio>
-    </section>
+    <section class="biblioteca">
+      <h2>Livros Disponíveis</h2>
+      <div class="livros-grid">
 
-    <section class="index-block">
-      <h2>🌌 Portal de Avalokka</h2>
-      <p>Entre no coração da narrativa cerimonial.</p>
-      <a href="portal.html" class="button-ritual">Entrar no Portal</a>
-    </section>
+        <!-- Livro Avalokka -->
+        <a href="avalokka.html" class="livro-capa">
+          <img src="imagens/capa-couro.jpg" alt="Capa do Livro Avalokka">
+          <h3>Avalokka</h3>
+        </a>
 
-    <section class="index-block">
-      <h2>📜 Índice Geral</h2>
-      <p>Explore todas as travessias disponíveis.</p>
-      <a href="indice.html" class="button-ritual">Ver o Índice</a>
+        <!-- Futuro livro -->
+        <!--
+        <a href="nome-do-livro.html" class="livro-capa">
+          <img src="imagens/capa-outro.jpg" alt="Capa do Livro X">
+          <h3>Título do Livro</h3>
+        </a>
+        -->
+
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Avalokka. Que os véus continuem a respirar.</p>
+    <p>&copy; 2025 Avalokka. Biblioteca Cerimonial não comercial.</p>
   </footer>
 
 </body>
