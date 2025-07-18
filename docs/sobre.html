@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre — Avalokka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <!-- Cabeçalho cerimonial -->
+  <header class="topo-site">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
+    <nav class="menu-navegacao" id="menuNavegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="avalokka.html">Livro</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo cerimonial -->
+  <main class="conteudo-livro">
+
+    <section>
+      <h2>O que é Avalokka?</h2>
+      <p>Avalokka é mais do que um livro. É um chamado. Um espaço onde o simbólico respira, onde o silêncio fala, e onde o leitor é convidado a caminhar com os pés da lembrança.</p>
+      <p>Este projeto nasceu da necessidade de criar um espaço ritualístico de leitura — onde cada palavra é um véu, cada capítulo uma travessia.</p>
+    </section>
+
+    <section>
+      <h2>Sobre o Autor</h2>
+      <p><strong>Marcelo Honorio da Silva</strong> é o criador de Avalokka. Escritor, pesquisador e artesão de mundos simbólicos, Marcelo constrói narrativas que não apenas contam histórias, mas abrem portais.</p>
+      <p>Seu trabalho é guiado pela escuta profunda, pela memória ancestral e pela busca do que ainda não foi dito.</p>
+    </section>
+
+    <section>
+      <h2>Propósito Cerimonial</h2>
+      <p>Avalokka existe para despertar. Não para ensinar, mas para lembrar. Não para explicar, mas para abrir. Cada leitor é um viajante, e cada página é um espelho.</p>
+      <p>Este livro não oferece respostas — ele oferece caminhos.</p>
+    </section>
+
+    <section class="enaileal-block">
+      <h2>Manifesto</h2>
+      <p>[Insira aqui seu texto cerimonial, poético ou filosófico que represente a essência do projeto]</p>
+    </section>
+
+    <div class="audio-controles">
+      <a href="avalokka.html" class="button-ritual">Entrar no Livro</a>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
+  </footer>
+
+  <!-- Script do menu sandwich -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuNavegacao');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
