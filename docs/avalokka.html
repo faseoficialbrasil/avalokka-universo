@@ -6,16 +6,16 @@
   <title>Avalokka — Livro Cerimonial</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="topo">
 
   <!-- Cabeçalho cerimonial -->
   <header class="topo-site">
     <div class="logo">
       <a href="index.html">
-        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka">
+        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
       </a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
     <nav class="menu-navegacao" id="menuNavegacao">
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -29,11 +29,11 @@
 
   <!-- Capa do livro -->
   <section class="capa-livro">
-    <img src="imagens/capa-couro.jpg" alt="Capa do Livro Avalokka">
+    <img src="imagens/capa-couro.jpg" alt="Capa do Livro Avalokka" role="img">
   </section>
 
   <!-- Sumário interativo -->
-  <nav class="sumario">
+  <section class="sumario" aria-label="Sumário do livro">
     <h2>Sumário Cerimonial</h2>
     <ul>
       <li><a href="#prefacio">Prefácio</a></li>
@@ -42,8 +42,9 @@
       <li><a href="#capitulo3">Capítulo 3 — [Título]</a></li>
       <!-- Adicione mais capítulos conforme necessário -->
       <li><a href="#epilogo">Epílogo</a></li>
+      <li><a href="#ficha">Ficha Catalográfica</a></li>
     </ul>
-  </nav>
+  </section>
 
   <!-- Conteúdo do livro -->
   <main class="conteudo-livro">
@@ -51,21 +52,25 @@
     <section id="prefacio">
       <h2>Prefácio</h2>
       <p>[Texto do prefácio aqui]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
     <section id="capitulo1">
       <h2>Capítulo 1 — [Título]</h2>
       <p>[Conteúdo do capítulo 1]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
     <section id="capitulo2">
       <h2>Capítulo 2 — [Título]</h2>
       <p>[Conteúdo do capítulo 2]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
     <section id="capitulo3">
       <h2>Capítulo 3 — [Título]</h2>
       <p>[Conteúdo do capítulo 3]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
     <!-- Continue com os demais capítulos -->
@@ -73,11 +78,13 @@
     <section id="epilogo">
       <h2>Epílogo</h2>
       <p>[Texto do epílogo aqui]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
     <section id="ficha">
       <h2>Ficha Catalográfica</h2>
       <p>[Informações técnicas e editoriais do livro]</p>
+      <p><a href="#topo">↑ Voltar ao topo</a></p>
     </section>
 
   </main>
