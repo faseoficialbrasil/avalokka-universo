@@ -1,114 +1,101 @@
-/* Fonte cerimonial */
+Cópia de segurança do style.css do site avalokka
+
+/* Estilo geral */
 body {
-  font-family: 'Cinzel', serif;
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #2c1e1e;
-  margin: 0;
-  padding: 0;
-}
-
-/* Cabeçalho */
-header {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3rem 2rem;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: 'Georgia', serif;
+  padding: 40px 20px;
   text-align: center;
-  color: #fdf6e3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid #4b2e2e;
+  background-image: radial-gradient(circle at top center, #1a1a1a 0%, #0a0a0a 100%);
+  overflow-x: hidden;
 }
 
-/* Títulos */
-h1, h2 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+/* Título */
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #ffd700;
 }
 
-h2 {
-  color: #fdf6e3;
-}
-
-/* Seções */
-main {
-  padding: 2rem;
-}
-
-section {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
-  color: #fdf6e3;
-}
-
-/* Listas cerimoniais */
-ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* Links */
-a {
-  color: #fdf6e3;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #ffe4c4;
-}
-
-/* Botões cerimoniais */
-.button-ritual {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button-ritual:hover {
-  background-color: #6b3e3e;
-  transform: scale(1.05);
-}
-
-/* Bloco Enaileal */
-.enaileal-block {
-  background-color: rgba(234, 227, 210, 0.9);
-  border-left: 4px solid #4b2e2e;
-  padding: 1rem;
-  margin: 2rem 0;
+/* Subtítulo */
+p {
   font-style: italic;
-  box-shadow: inset 0 0 10px rgba(75, 46, 46, 0.1);
-  color: #2c1e1e;
+  margin-bottom: 40px;
+  color: #ccc;
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  font-size: 0.9rem;
-  border-top: 2px solid #6b3e3e;
+/* Container dos elementos */
+.elementos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Bloco de cada elemento */
+.elemento {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-left: 4px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.elemento:nth-child(1) { animation-delay: 0.2s; }
+.elemento:nth-child(2) { animation-delay: 0.4s; }
+.elemento:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links dos elementos */
+.elemento a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.elemento a:hover {
+  text-decoration: underline;
+}
+
+/* Descrição dos elementos */
+.elemento p {
+  font-style: normal;
+  color: #aaa;
+  font-size: 15px;
+}
+
+/* Chave de Avalokka */
+.fechar-portal {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+
+.fechar-portal img {
+  width: 48px;
+  height: 48px;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.fechar-portal img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
