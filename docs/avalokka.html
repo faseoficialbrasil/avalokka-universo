@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalokka — Livro Cerimonial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho cerimonial -->
+  <header class="topo-site">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka">
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="menu-navegacao" id="menuNavegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="avalokka.html">Livro</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Capa do livro -->
+  <section class="capa-livro">
+    <img src="imagens/capa-couro.jpg" alt="Capa do Livro Avalokka">
+  </section>
+
+  <!-- Sumário interativo -->
+  <nav class="sumario">
+    <h2>Sumário Cerimonial</h2>
+    <ul>
+      <li><a href="#prefacio">Prefácio</a></li>
+      <li><a href="#capitulo1">Capítulo 1 — [Título]</a></li>
+      <li><a href="#capitulo2">Capítulo 2 — [Título]</a></li>
+      <li><a href="#capitulo3">Capítulo 3 — [Título]</a></li>
+      <!-- Adicione mais capítulos conforme necessário -->
+      <li><a href="#epilogo">Epílogo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo do livro -->
+  <main class="conteudo-livro">
+
+    <section id="prefacio">
+      <h2>Prefácio</h2>
+      <p>[Texto do prefácio aqui]</p>
+    </section>
+
+    <section id="capitulo1">
+      <h2>Capítulo 1 — [Título]</h2>
+      <p>[Conteúdo do capítulo 1]</p>
+    </section>
+
+    <section id="capitulo2">
+      <h2>Capítulo 2 — [Título]</h2>
+      <p>[Conteúdo do capítulo 2]</p>
+    </section>
+
+    <section id="capitulo3">
+      <h2>Capítulo 3 — [Título]</h2>
+      <p>[Conteúdo do capítulo 3]</p>
+    </section>
+
+    <!-- Continue com os demais capítulos -->
+
+    <section id="epilogo">
+      <h2>Epílogo</h2>
+      <p>[Texto do epílogo aqui]</p>
+    </section>
+
+    <section id="ficha">
+      <h2>Ficha Catalográfica</h2>
+      <p>[Informações técnicas e editoriais do livro]</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
+  </footer>
+
+  <!-- Script do menu sandwich -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuNavegacao');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
