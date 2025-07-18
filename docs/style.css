@@ -1,11 +1,13 @@
 /* Fonte cerimonial */
 body {
-  font-family: 'Cinzel', serif;
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-family: Cinzel, serif;
+  background-image: 
+    url(imagens/textura-nevoa.jpg),
+    url(imagens/fundo-folha-antiga.jpg);
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
   color: #2c1e1e;
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg);
+  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +44,7 @@ main {
 }
 
 section {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg);
+  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,15 +94,14 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Bloco Enaileal */
 .enaileal-block {
-  background-color: rgba(234, 227, 210, 0.9);
-  border-left: 4px solid #4b2e2e;
+  background-color: rgba(44, 30, 30, 0.75); /* fundo escuro ritual com transparência */
+  border-left: 4px solid #fdf6e3;           /* borda clara para contraste */
   padding: 1rem;
   margin: 2rem 0;
   font-style: italic;
-  box-shadow: inset 0 0 10px rgba(75, 46, 46, 0.1);
-  color: #2c1e1e;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* sombra interna mais visível */
+  color: #fdf6e3; /* texto claro */
 }
 
 /* Rodapé */
