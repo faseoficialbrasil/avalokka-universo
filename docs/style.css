@@ -1,280 +1,123 @@
-/* === Reset e Base === */
-* {
+/* Tipografia ritualística */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf6;
+  color: #2e2e2e;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Cinzel, serif;
-  background-image: 
-    url(imagens/textura-nevoa.jpg),
-    url(imagens/fundo-folha-antiga.jpg);
-  background-size: cover, cover;
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  color: #fdf6e3;
   line-height: 1.6;
-  padding-bottom: 2rem;
 }
 
-/* === Cabeçalho === */
+/* Cabeçalho */
 .topo-site {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #444;
-  position: relative;
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
 }
 
 .menu-toggle {
-  font-size: 2rem;
-  color: #fdf6e3;
+  font-size: 1.5em;
   cursor: pointer;
   display: none;
 }
 
-.menu-navegacao {
-  display: flex;
-  transition: all 0.3s ease;
-}
-
 .menu-navegacao ul {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 1em;
 }
 
 .menu-navegacao a {
-  color: #fdf6e3;
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .menu-navegacao a:hover {
-  color: #ffd700;
+  text-decoration: underline;
 }
 
-/* === Responsivo === */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu-navegacao {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #1a1a1a;
-    width: 100%;
-    padding: 1rem 2rem;
-  }
-
-  .menu-navegacao ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .menu-navegacao.show {
-    display: block;
-  }
-}
-
-/* === Capa do Livro === */
-.capa-livro {
+/* Capa cerimonial */
+.capa-couro, .capa-livro {
   text-align: center;
-  margin: 2rem 0;
-}
-
-.capa-livro img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-}
-
-/* === Sumário Interativo === */
-.sumario {
-  background-color: rgba(44, 30, 30, 0.6);
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
-}
-
-.sumario h2 {
-  text-align: center;
-  color: #ffd700;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.sumario ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sumario li {
-  margin: 0.5rem 0;
-}
-
-.sumario a {
-  color: #fdf6e3;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.sumario a:hover {
-  color: #ffe4c4;
-}
-
-/* === Conteúdo do Livro === */
-.conteudo-livro {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.conteudo-livro h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #ffd700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.conteudo-livro p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-/* === Seções Cerimoniais === */
-section {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
+  padding: 4em 2em;
+  background-image: url('imagens/capa-couro.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
+  color: #fff;
 }
 
-/* === Blocos Especiais === */
-.index-block {
-  background-color: rgba(44, 30, 30, 0.6);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.capa-couro h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
-.index-block h2 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #fdf6e3;
-  padding-bottom: 0.5rem;
-}
-
-.index-block ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-.index-block li {
-  margin-bottom: 0.5rem;
-}
-
-.index-block a {
-  color: #fdf6e3;
-  text-decoration: none;
-}
-
-.index-block a:hover {
-  color: #ffe4c4;
-}
-
-.enaileal-block {
-  background-color: rgba(44, 30, 30, 0.75);
-  border-left: 4px solid #fdf6e3;
-  padding: 1rem;
-  margin: 2rem 0;
-  font-style: italic;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.imagem-elieleal {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.imagem-elieleal img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-}
-
-/* === Botões Cerimoniais === */
 .button-ritual {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  text-decoration: none;
+  background-color: #6b4c3b;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
   border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .button-ritual:hover {
-  background-color: #6b3e3e;
-  transform: scale(1.05);
+  background-color: #8a5c44;
 }
 
-/* === Controles de Áudio === */
-.audio-controles {
-  margin: 2rem 0;
-  text-align: center;
+/* Conteúdo principal */
+main.conteudo-livro {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
 }
 
-.audio-controles button {
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin: 0 0.5rem;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+section {
+  margin-bottom: 3em;
 }
 
-.audio-controles button:hover {
-  background-color: #6b3e3e;
-  transform: scale(1.05);
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #3e2f2f;
 }
 
-/* === Rodapé === */
+p {
+  font-size: 1.1em;
+}
+
+/* Rodapé */
 footer {
+  background-color: #1a1a1a;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  font-size: 0.9rem;
-  border-top: 2px solid #6b3e3e;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-navegacao ul {
+    flex-direction: column;
+    display: none;
   }
+
+  .menu-navegacao.show ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
