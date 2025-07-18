@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuda — Avalokka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <!-- Cabeçalho cerimonial -->
+  <header class="topo-site">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
+    <nav class="menu-navegacao" id="menuNavegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="avalokka.html">Livro</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo cerimonial -->
+  <main class="conteudo-livro">
+
+    <section>
+      <h2>Como navegar</h2>
+      <p>O livro Avalokka está estruturado em uma única página, com sumário interativo. Clique nos capítulos para ir diretamente ao véu desejado. Ao final de cada seção, há um link para retornar ao topo.</p>
+    </section>
+
+    <section>
+      <h2>Como ler</h2>
+      <p>Este não é um livro comum. Recomendamos que você leia em silêncio, com atenção plena, permitindo que cada palavra reverbere. Não há pressa. Cada capítulo é um espaço de escuta.</p>
+    </section>
+
+    <section>
+      <h2>Recursos cerimoniais</h2>
+      <p>Você pode acompanhar trilhas sonoras, glossários simbólicos e reflexões paralelas que serão disponibilizadas em breve.</p>
+      <p>Para dúvidas ou sugestões, envie uma mensagem pela <a href="contato.html">página de contato</a>.</p>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
+  </footer>
+
+  <!-- Script do menu sandwich -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuNavegacao');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
