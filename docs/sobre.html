@@ -1,83 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre — Avalokka</title>
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body id="topo">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avalokka — Sobre</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
 
-  <!-- Cabeçalho cerimonial -->
-  <header class="topo-site">
-    <div class="logo">
-      <a href="index.html">
-        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
-      </a>
+  <meta name="description" content="Sobre o templo Avalokka — sua origem editorial, inspirações poéticas e propósito contemplativo em campo digital." />
+  <meta name="author" content="Marcelo — Artesão Editorial" />
+  <meta name="language" content="pt-BR, en" />
+  <meta name="theme-color" content="#0c0c0c" />
+</head>
+<body>
+
+  <header>
+    <div class="idioma">
+      <a href="sobre-en.html" class="button-ritual">English</a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
-    <nav class="menu-navegacao" id="menuNavegacao">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="avalokka.html">Livro</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="ajuda.html">Ajuda</a></li>
-      </ul>
+    <img src="imagens/logo-avalokka-retina.png" alt="Selo Avalokka" />
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="avalokka.html">Essência</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="rituais.html">Rituais</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+      <a href="ajuda.html">Ajuda</a>
     </nav>
   </header>
 
-  <!-- Trilha sonora cerimonial -->
-  <audio autoplay loop>
-    <source src="audio/vozdoportal.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
+  <main>
+    <h1>🪶 Sobre Avalokka</h1>
+    <p>Avalokka é um espaço digital contemplativo criado por meio de pensamento lento, código poético e silêncio simbólico. Foi concebido não para explicar, mas para respirar. Cada página, cada imagem, cada palavra — um gesto em cerimônia.</p>
 
-  <!-- Conteúdo cerimonial -->
-  <main class="conteudo-livro">
+    <h2>🔍 Origem</h2>
+    <p>Iniciado por Marcelo, editor e artesão contemplativo, Avalokka surgiu do desejo de unir design minimalista, expressão editorial e simbolismo ritualístico. É um projeto independente, não comercial, e atemporal.</p>
 
-    <section>
-      <h2>O que é Avalokka?</h2>
-      <p>Avalokka é mais do que um livro. É um chamado. Um espaço onde o simbólico respira, onde o silêncio fala, e onde o leitor é convidado a caminhar com os pés da lembrança.</p>
-      <p>Este projeto nasceu da necessidade de criar um espaço ritualístico de leitura — onde cada palavra é um véu, cada capítulo uma travessia.</p>
-    </section>
+    <h2>🎴 Inspiração</h2>
+    <ul>
+      <li>Filosofia silenciosa e linguagem não verbal</li>
+      <li>Livros, selos e tradições que honram a lentidão</li>
+      <li>Experimentação editorial onde design torna-se significado</li>
+    </ul>
 
-    <section>
-      <h2>Sobre o Autor</h2>
-      <p><strong>Marcelo Honorio da Silva</strong> é o criador de Avalokka. Escritor, pesquisador e artesão de mundos simbólicos, Marcelo constrói narrativas que não apenas contam histórias, mas abrem portais.</p>
-      <p>Seu trabalho é guiado pela escuta profunda, pela memória ancestral e pela busca do que ainda não foi dito.</p>
-    </section>
-
-    <section>
-      <h2>Propósito Cerimonial</h2>
-      <p>Avalokka existe para despertar. Não para ensinar, mas para lembrar. Não para explicar, mas para abrir. Cada leitor é um viajante, e cada página é um espelho.</p>
-      <p>Este livro não oferece respostas — ele oferece caminhos.</p>
-    </section>
-
-    <section class="enaileal-block">
-      <h2>Manifesto</h2>
-      <p>[Insira aqui seu texto cerimonial, poético ou filosófico que represente a essência do projeto]</p>
-    </section>
-
-    <div class="audio-controles">
-      <a href="avalokka.html" class="button-ritual">Entrar no Livro</a>
-    </div>
-
+    <h2>🧭 Propósito</h2>
+    <p>Oferecer ao visitante uma pausa do ruído. Invocar o eco. Acolher um santuário onde palavras são ofertadas, não impostas.</p>
   </main>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
+    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
+    <p>Este templo não tem paredes. Apenas sopro. E sopro é suficiente.</p>
   </footer>
-
-  <!-- Script do menu sandwich -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menuNavegacao');
-      menu.classList.toggle('show');
-    }
-  </script>
 
 </body>
 </html>
