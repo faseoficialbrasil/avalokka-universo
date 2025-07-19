@@ -1,0 +1,16 @@
+{
+  "name": "Avalokka",
+  "short_name": "Avalokka",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#003366",
+  "description": "Travessia digital simbólica e ritualística.",
+  "icons": [
+    {
+      "src": "imagens/logo-avalokka-retina.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
