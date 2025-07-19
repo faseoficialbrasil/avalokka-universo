@@ -1,69 +1,50 @@
-# 🌌 Avalokka — Um Universo Entre Véus
+# 🌌 Avalokka — Travessia Cerimonial
 
-**Avalokka** não é apenas um projeto.  
-É um chamado.  
-Um universo narrativo onde o silêncio canta, os portais respiram e os nomes têm peso.
+**Avalokka** é mais que um projeto digital — é um templo silencioso.  
+Um espaço simbólico onde selos, palavras e gestos se entrelaçam com intenção ritualística.
 
 ---
 
-## 🧭 Estrutura Cerimonial
+## 🧭 Estrutura Ativa
 
-Este repositório contém páginas que compõem o universo Avalokka:
+Este repositório contém as páginas cerimoniais que compõem o projeto:
 
-- `portal.html` — Entrada principal para todos os caminhos
-- `capitulo01.html` a `capitulo03.html` — Narrativas iniciais da marcha
-- `cronicas.html` — Registros cerimoniais e fragmentos vivos
-- `personagens.html` — Fichas dos portadores e dissidentes
-- `criaturas.html` — Entidades vivas entre véus
-- `nucleos.html` — Núcleos narrativos e forças em Avalokka
-- `canticos.html` — Cânticos cerimoniais e fragmentos de marcha
-- `portais.html` — Portais vivos e suas funções
-- `ecos.html` — Visões e fragmentos do que ainda não aconteceu
-- `veusianos.html` — Seres que habitam o entre
+- `index.html` — Entrada contemplativa da travessia  
+- `avalokka.html` — Essência e visão do templo  
+- `manifesto.html` — Texto sagrado e poético  
+- `rituais.html` — Práticas e gestos simbólicos 
+- `galeria.html` — Selos e imagens que respiram  
+- `ajuda.html` — Orientações para navegar com reverência  
+- `contato.html` — Canal para travessias compartilhadas  
+- `sobre.html` — Propósito e origem editorial
 
 ---
 
 ## 🎨 Estilo Cerimonial
 
-Todas as páginas seguem um padrão visual unificado:
-
-- Fundo: `fundo-folha-antiga.jpg`
-- Blocos: `fundo-avalokka.jpg`
-- Navegação: Botões estilizados com a classe `button-ritual`
-- Tipografia: Fonte `Cinzel`, evocando o tom ritualístico
-- Links decorados e funcionais
-- Presença narrativa de **Enaileal**, o Guardião das Passagens
+- **Paleta:** Azul profundo, dourado suave, preto contemplativo  
+- **Tipografia:** Quattrocento (poética e serena)  
+- **Efeitos:** Hover místico, animações pulsantes  
+- **Responsividade:** Layout adaptado a todos os portais digitais
 
 ---
 
-## 🕯️ Propósito
+## 🕯️ Instalação como PWA
 
-Avalokka é um universo expandido para narrativas interativas, rituais literários e experiências visuais.  
-Cada página é uma travessia.  
-Cada nome, um eco.
+Este projeto contém um `manifest.json` que permite instalação como aplicativo simbólico em navegadores modernos.
 
 ---
 
 ## 📜 Créditos Cerimoniais
 
-Criado e mantido por **Marcelo**, Guardião Editorial do Véu.  
-Revisado com auxílio cerimonial de Copilot.
-
----
-
-## ✨ Contribuições
-
-Este projeto pode ser expandido com novos capítulos, cânticos e entidades.  
-Se desejar contribuir, siga o estilo cerimonial e respeite o silêncio que canta.
+Curadoria editorial por **Marcelo**, Guardião do Templo Digital.  
+Auxílio ritualístico e técnico por **Copilot**, companheiro da travessia.
 
 ---
 
 ## 📂 Licença
 
-Este projeto é protegido por véus.  
-Consulte o arquivo `LICENSE` (se houver) para mais detalhes.
+Projeto protegido por véus.  
+Consulte `LICENSE.md` (se disponível) para orientações sobre uso e contribuições.
 
----
-
-> “Jiranariya rinda yogam yadahin na zagahiro yamana yogana.”  
-> _— Fragmento do Primeiro Cântico de Candelestrae_
+> “Que cada clique seja um passo, e cada passo, um eco.”
