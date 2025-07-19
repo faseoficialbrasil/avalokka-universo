@@ -1,76 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato — Avalokka</title>
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body id="topo">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avalokka — Contato</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
 
-  <!-- Cabeçalho cerimonial -->
-  <header class="topo-site">
-    <div class="logo">
-      <a href="index.html">
-        <img src="imagens/logo-avalokka.png" alt="Logo Avalokka" role="img">
-      </a>
+  <meta name="description" content="Página de ressonância do templo Avalokka — escreva seu nome e intenção como oferenda silenciosa." />
+  <meta name="author" content="Marcelo — Artesão Editorial" />
+  <meta name="language" content="pt-BR, en" />
+  <meta name="theme-color" content="#0c0c0c" />
+</head>
+<body>
+
+  <header>
+    <div class="idioma">
+      <a href="contato-en.html" class="button-ritual">English</a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</div>
-    <nav class="menu-navegacao" id="menuNavegacao">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="avalokka.html">Livro</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="ajuda.html">Ajuda</a></li>
-      </ul>
+    <img src="imagens/logo-avalokka-retina.png" alt="Selo Avalokka" />
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="avalokka.html">Essência</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="rituais.html">Rituais</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="ajuda.html">Ajuda</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </header>
 
-  <!-- Conteúdo cerimonial -->
-  <main class="conteudo-livro">
+  <main>
+    <h1>📩 Contato & Ressonância</h1>
+    <p>Você está convidado a deixar seu nome e sua intenção abaixo. Avalokka não promete respostas — apenas escuta. O que é escrito aqui torna-se sopro ofertado ao templo.</p>
 
-    <section>
-      <h2>Envie sua mensagem</h2>
-      <p>Se Avalokka tocou algo em você, se há dúvidas, ecos ou sinais — este é o espaço para se comunicar. Toda mensagem é recebida com escuta cerimonial.</p>
-    </section>
+    <form action="#" method="post">
+      <label for="name">Nome (ou selo):</label>
+      <input type="text" id="name" name="name" required />
 
-    <section>
-      <form action="#" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+      <label for="message">Mensagem, intenção ou oferenda:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="6" required></textarea><br><br>
-
-        <button type="submit" class="button-ritual">Enviar</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Outros canais</h2>
-      <p>Você também pode enviar sinais para: <br>
-      <a href="mailto:faseoficialbrasil@gmail.com">faseoficialbrasil@gmail.com</a></p>
-    </section>
-
+      <button type="submit" class="button-ritual">Enviar oferenda</button>
+    </form>
   </main>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Avalokka. Todos os direitos cerimoniais reservados.</p>
+    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
+    <p>Os nomes são sopros. As palavras, oferendas. A presença, suficiente.</p>
   </footer>
-
-  <!-- Script do menu sandwich -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menuNavegacao');
-      menu.classList.toggle('show');
-    }
-  </script>
 
 </body>
 </html>
