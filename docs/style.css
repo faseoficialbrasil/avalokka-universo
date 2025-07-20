@@ -131,6 +131,59 @@ nav.menu-cerimonial a:hover {
   box-shadow: 0 0 8px rgba(50, 40, 20, 0.2);
 }
 
+/* 🗺️ Mapa Visual */
+.mapa-visual {
+  text-align: center;
+  margin: 4em auto;
+  max-width: 800px;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.mapa-visual h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.mapa-visual p {
+  font-style: italic;
+  margin-bottom: 2em;
+  color: #666;
+}
+
+.selo-pagina {
+  margin: 2em 0;
+}
+
+.selo-pagina a {
+  text-decoration: none;
+  color: #222;
+  display: inline-block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.selo-pagina img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  background-color: #f1f0ee;
+}
+
+.selo-pagina a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 18px rgba(50, 40, 20, 0.3);
+}
+
+.selo-pagina span {
+  display: block;
+  margin-top: 0.6em;
+  font-size: 1em;
+  color: #444;
+}
+
 /* 📘 Rodapé */
 footer {
   margin-top: 4em;
