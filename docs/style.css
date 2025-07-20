@@ -1,0 +1,82 @@
+/* 🌌 Paleta Cerimonial */
+body {
+  background-color: #0e1117; /* Azul profundo */
+  color: #f4ecd8; /* Dourado suave */
+  font-family: 'Quattrocento', serif;
+  line-height: 1.6;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* 🌀 Modo Penumbra */
+body.dark-mode {
+  background-color: #0b0c10;
+  color: #d8cfb0;
+}
+
+/* 🜁 Links e Selos */
+a, .selo-pagina a {
+  color: #f4ecd8;
+  text-decoration: none;
+  transition: color 0.4s ease, box-shadow 0.4s ease;
+}
+a:hover, .selo-pagina a:hover {
+  color: #e6d3a2;
+  box-shadow: 0 0 12px rgba(240, 230, 190, 0.3);
+}
+
+/* ✨ Títulos */
+h1, h2, h3 {
+  color: #e6d3a2;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* 🔮 Selos Visuais */
+.selo-pagina {
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+}
+.selo-pagina img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.6s ease;
+}
+.selo-pagina img:hover {
+  filter: brightness(1.15) drop-shadow(0 0 8px rgba(230, 210, 170, 0.4));
+  transform: scale(1.06);
+}
+
+/* 🎴 Botões Cerimoniais */
+.button-ritual {
+  background-color: transparent;
+  border: 1px solid #e6d3a2;
+  color: #e6d3a2;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  animation: pulsar 3s infinite;
+}
+@keyframes pulsar {
+  0% { box-shadow: 0 0 0 rgba(240,230,190,0); }
+  50% { box-shadow: 0 0 8px rgba(240,230,190,0.3); }
+  100% { box-shadow: 0 0 0 rgba(240,230,190,0); }
+}
+
+/* 🪶 Separadores */
+.divisor-ritual {
+  border: none;
+  height: 1px;
+  background: rgba(240,230,190,0.3);
+  margin: 3em auto;
+  max-width: 600px;
+}
+
+/* 📜 Cantico Poético */
+.cantico {
+  text-align: center;
+  font-style: italic;
+  margin: 2em auto;
+  color: #e6d3a2;
+  font-size: 1.1em;
+}
