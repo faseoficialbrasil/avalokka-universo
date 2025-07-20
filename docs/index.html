@@ -42,21 +42,21 @@
     </section>
 
     <section class="audio-templo">
-  <h3>🎧 Voz do Portal</h3>
+      <h3>🎧 Voz do Portal</h3>
 
-  <button 
-    id="toggleAudio" 
-    class="button-ritual" 
-    aria-controls="vozDoPortal" 
-    aria-label="Ativar ou silenciar a voz do portal">
-    🔊 Acender o Som
-  </button>
+      <button 
+        id="toggleAudio" 
+        class="button-ritual" 
+        aria-controls="vozDoPortal" 
+        aria-label="Ativar ou silenciar a voz do portal">
+        🔊 Acender o Som
+      </button>
 
-  <audio id="vozDoPortal" loop preload="auto">
-    <source src="audio/vozdoportal.mp3" type="audio/mp3" />
-    Seu navegador não suporta reprodução de áudio.
-  </audio>
-</section>
+      <audio id="vozDoPortal" loop preload="auto">
+        <source src="audio/vozdoportal.mp3" type="audio/mp3" />
+        Seu navegador não suporta reprodução de áudio.
+      </audio>
+    </section>
 
     <hr class="divisor-ritual" />
 
@@ -107,21 +107,23 @@
   </footer>
 
   <script>
-    const audio = document.getElementById('vozDoPortal');
-    const toggleBtn = document.getElementById('toggleAudio');
-    let playing = false;
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('vozDoPortal');
+      const toggleBtn = document.getElementById('toggleAudio');
+      let playing = false;
 
-    toggleBtn.addEventListener('click', () => {
-      if (!playing) {
-        audio.play();
-        toggleBtn.textContent = 'Silenciar o Som';
-        playing = true;
-      } else {
-        audio.pause();
-        audio.currentTime = 0;
-        toggleBtn.textContent = 'Acender o Som';
-        playing = false;
-      }
+      toggleBtn.addEventListener('click', () => {
+        if (!playing) {
+          audio.play();
+          toggleBtn.textContent = '🔇 Silenciar o Som';
+          playing = true;
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+          toggleBtn.textContent = '🔊 Acender o Som';
+          playing = false;
+        }
+      });
     });
 
     function toggleModo() {
@@ -130,4 +132,4 @@
   </script>
 
 </body>
-</html>
+      </html>
