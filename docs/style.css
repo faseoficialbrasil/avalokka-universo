@@ -1,4 +1,4 @@
-/* 🌌 Corpo e estrutura básica */
+/* 🜃 Corpo base */
 body {
   background-color: #f7f5f2;
   color: #111;
@@ -7,13 +7,12 @@ body {
   padding: 0;
 }
 
-/* 🌒 Modo noturno cerimonial */
+/* 🌒 Modo Noturno */
 body.dark-mode {
   background-color: #0c0c0c;
   color: #f5f5f5;
 }
 
-/* 🌒 Navegação e botões no modo escuro */
 body.dark-mode nav a,
 body.dark-mode .button-ritual {
   color: #f5f5f5;
@@ -27,18 +26,23 @@ body.dark-mode .button-ritual:hover {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-/* 🌒 Rodapé em modo escuro */
 body.dark-mode footer {
   color: #ccc;
 }
 
-/* 🌒 Selos em modo escuro */
 body.dark-mode .selo:hover {
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
 }
 
-/* 🜃 Navegação e botões padrão */
+body.dark-mode .cantico {
+  color: #ddd;
+}
+body.dark-mode .cantico .origem {
+  color: #aaa;
+}
+
+/* 🔹 Navegação */
 nav a,
 .button-ritual {
   text-decoration: none;
@@ -49,7 +53,6 @@ nav a,
   transition: all 0.4s ease;
 }
 
-/* 🪶 Hover cerimonial */
 nav a:hover,
 .button-ritual:hover {
   background-color: #eae6dd;
@@ -57,7 +60,7 @@ nav a:hover,
   color: #000;
 }
 
-/* ✨ Botão para ativar modo escuro */
+/* 🎛️ Botão modo escuro */
 .toggle-mode {
   cursor: pointer;
   border: none;
@@ -68,12 +71,11 @@ nav a:hover,
   color: #555;
   transition: color 0.4s ease;
 }
-
 .toggle-mode:hover {
   color: #000;
 }
 
-/* 🔮 Imagens rituais */
+/* 🖼️ Imagens */
 img {
   max-width: 100%;
   height: auto;
@@ -81,43 +83,23 @@ img {
   margin: 0 auto;
 }
 
-/* 🌀 Galeria de selos */
-.selos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-.selo {
+/* 🎴 Frase rotativa */
+.frase-rotativa {
+  font-style: italic;
+  margin-top: 1em;
+  color: #666;
   text-align: center;
-  transition: transform 0.5s ease, opacity 0.4s ease;
 }
 
-.selo:hover {
-  transform: scale(1.05);
-  opacity: 0.95;
-  box-shadow: 0 0 18px rgba(30, 30, 30, 0.15);
+/* 📜 Selo final */
+.selo-final {
+  text-align: center;
+  font-style: italic;
+  margin-top: 3em;
+  color: #777;
 }
 
-/* ✉️ Formulário de contato */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin-top: 2em;
-}
-
-input,
-textarea {
-  font-family: 'Georgia', serif;
-  padding: 0.6em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* 🕯️ Rodapé */
+/* 📘 Rodapé */
 footer {
   margin-top: 4em;
   text-align: center;
@@ -126,18 +108,73 @@ footer {
   font-size: 0.95em;
 }
 
-/* 🎴 Frase cerimonial rotativa */
-.frase-rotativa {
-  font-style: italic;
-  margin-top: 1em;
-  color: #666;
+/* 📖 Estilo para livro.html */
+.sinopse {
+  margin: 3em auto;
+  max-width: 700px;
   text-align: center;
+  font-style: italic;
+  line-height: 1.6;
+  color: #444;
 }
 
-/* 🜃 Selo final editorial */
-.selo-final {
-  text-align: center;
+.sinopse h2 {
+  font-style: normal;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.sinopse .autor {
+  margin-top: 2em;
+  font-style: normal;
+  font-weight: bold;
+  color: #666;
+}
+
+.capitulo {
+  margin: 4em auto;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.capitulo h2 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+/* 🎵 Cântico ritualístico */
+.cantico {
+  font-family: 'Georgia', serif;
   font-style: italic;
-  margin-top: 3em;
-  color: #777;
+  color: #444;
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+  line-height: 1.6;
+  padding: 0 1em;
+}
+
+.cantico h3 {
+  font-style: normal;
+  font-weight: normal;
+  color: #111;
+  margin-bottom: 1em;
+}
+
+.cantico p {
+  margin: 0.8em 0;
+}
+
+.cantico em {
+  display: block;
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.cantico .origem {
+  display: block;
+  font-size: 0.85em;
+  margin-top: 0.5em;
+  color: #888;
 }
