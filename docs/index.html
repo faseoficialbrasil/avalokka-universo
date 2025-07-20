@@ -106,30 +106,31 @@
     <p>📘 Avalokka é travessia. Que este templo te escute também.</p>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const audio = document.getElementById('vozDoPortal');
-      const toggleBtn = document.getElementById('toggleAudio');
-      let playing = false;
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('vozDoPortal');
+    const toggleBtn = document.getElementById('toggleAudio');
+    let playing = false;
 
-      toggleBtn.addEventListener('click', () => {
-        if (!playing) {
-          audio.play();
+    toggleBtn.addEventListener('click', () => {
+      // Garante que o áudio pode ser iniciado
+      if (!playing) {
+        audio.play().then(() => {
           toggleBtn.textContent = '🔇 Silenciar o Som';
           playing = true;
-        } else {
-          audio.pause();
-          audio.currentTime = 0;
-          toggleBtn.textContent = '🔊 Acender o Som';
-          playing = false;
-        }
-      });
+        }).catch(err => {
+          console.error('Erro ao tentar reproduzir:', err);
+          alert('O navegador bloqueou o som. Tente interagir com a página antes.');
+        });
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        toggleBtn.textContent = '🔊 Acender o Som';
+        playing = false;
+      }
     });
-
-    function toggleModo() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
+  });
+</script>
 
 </body>
       </html>
