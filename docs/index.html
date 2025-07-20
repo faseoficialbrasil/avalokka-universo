@@ -42,13 +42,21 @@
     </section>
 
     <section class="audio-templo">
-      <h3>🎧 Voz do Portal</h3>
-      <button id="toggleAudio" class="button-ritual">Acender o Som</button>
-      <audio id="vozDoPortal" loop>
-        <source src="audio/vozdoportal.mp3" type="audio/mp3">
-        Seu navegador não suporta áudio.
-      </audio>
-    </section>
+  <h3>🎧 Voz do Portal</h3>
+
+  <button 
+    id="toggleAudio" 
+    class="button-ritual" 
+    aria-controls="vozDoPortal" 
+    aria-label="Ativar ou silenciar a voz do portal">
+    🔊 Acender o Som
+  </button>
+
+  <audio id="vozDoPortal" loop preload="auto">
+    <source src="audio/vozdoportal.mp3" type="audio/mp3" />
+    Seu navegador não suporta reprodução de áudio.
+  </audio>
+</section>
 
     <hr class="divisor-ritual" />
 
