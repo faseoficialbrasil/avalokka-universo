@@ -15,7 +15,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/fundo-avalokka.jpg);
+  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url(imagens/detalhe-topo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
