@@ -18,6 +18,9 @@
     <div class="idioma">
       <a href="index-en.html" class="button-ritual">English</a>
     </div>
+    <button class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">
+      Ler na penumbra
+    </button>
     <img src="imagens/logo-avalokka-retina.png" alt="Selo Avalokka" />
     <nav>
       <a href="avalokka.html">Essência</a>
@@ -33,12 +36,33 @@
   <main>
     <h1>🜃 Templo Digital Avalokka</h1>
     <p>Este espaço não é uma página, é um campo. Cada selo, uma respiração. Cada gesto, uma oferenda. Avalokka pulsa em silêncio, em código simbólico e presença editorial.</p>
+    <p class="frase-rotativa" id="fraseRotativa"></p>
   </main>
 
   <footer>
     <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
     <p>Respire. Caminhe sem destino. Que seu silêncio revele o templo.</p>
   </footer>
+
+  <script>
+    const frases = [
+      "Que seu silêncio revele o templo.",
+      "Cada selo carrega uma travessia.",
+      "Palavras ofertadas, não impostas.",
+      "Respire como quem entra.",
+      "O templo ouve o que não é dito.",
+      "Sopro é presença.",
+      "Os ecos não pedem pressa.",
+      "Quem lê, lê com o corpo.",
+      "Frases são selos."
+    ];
+
+    const fraseEscolhida = frases[Math.floor(Math.random() * frases.length)];
+    const alvo = document.getElementById("fraseRotativa");
+    if (alvo) {
+      alvo.textContent = fraseEscolhida;
+    }
+  </script>
 
 </body>
 </html>
