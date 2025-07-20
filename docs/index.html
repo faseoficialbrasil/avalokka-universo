@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avalokka — Templo Editorial</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-  
 </head>
 <body>
 
   <header>
     <nav class="menu-cerimonial">
+<a href="avalokka.html">Livro</a>
       <a href="index.html">Templo</a>
-      <a href="livro.html">Livro</a>
       <a href="manifesto.html">Manifesto</a>
       <a href="galeria.html">Selos</a>
       <a href="rituais.html">Rituais</a>
-      <a href="contato.html">Travessia</a>
+      <a href="contato.html">Contato</a>
+<a href="ajuda.html">Ajuda</a>
+<a href="sobre.html">Sobre</a>
     </nav>
     <button class="toggle-mode" onclick="toggleModo()">🌒 Modo Penumbra</button>
   </header>
@@ -44,21 +44,21 @@
     </section>
 
     <section class="audio-templo">
-      <h3>🎧 Voz do Portal</h3>
+  <h3>🎧 Voz do Portal</h3>
 
-      <button 
-        id="toggleAudio" 
-        class="button-ritual" 
-        aria-controls="vozDoPortal" 
-        aria-label="Ativar ou silenciar a voz do portal">
-        🔊 Acender o Som
-      </button>
+  <button 
+    id="toggleAudio" 
+    class="button-ritual" 
+    aria-controls="vozDoPortal" 
+    aria-label="Ativar ou silenciar a voz do portal">
+    🔊 Acender o Som
+  </button>
 
-      <audio id="vozDoPortal" loop preload="auto">
-        <source src="audios/vozdoportal.mp3" type="audio/mp3" />
-        Seu navegador não suporta reprodução de áudio.
-      </audio>
-    </section>
+  <audio id="vozDoPortal" loop preload="auto">
+    <source src="audio/vozdoportal.mp3" type="audio/mp3" />
+    Seu navegador não suporta reprodução de áudio.
+  </audio>
+</section>
 
     <hr class="divisor-ritual" />
 
@@ -108,31 +108,28 @@
     <p>📘 Avalokka é travessia. Que este templo te escute também.</p>
   </footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
+  <script>
     const audio = document.getElementById('vozDoPortal');
     const toggleBtn = document.getElementById('toggleAudio');
     let playing = false;
 
     toggleBtn.addEventListener('click', () => {
-      // Garante que o áudio pode ser iniciado
       if (!playing) {
-        audio.play().then(() => {
-          toggleBtn.textContent = '🔇 Silenciar o Som';
-          playing = true;
-        }).catch(err => {
-          console.error('Erro ao tentar reproduzir:', err);
-          alert('O navegador bloqueou o som. Tente interagir com a página antes.');
-        });
+        audio.play();
+        toggleBtn.textContent = 'Silenciar o Som';
+        playing = true;
       } else {
         audio.pause();
         audio.currentTime = 0;
-        toggleBtn.textContent = '🔊 Acender o Som';
+        toggleBtn.textContent = 'Acender o Som';
         playing = false;
       }
     });
-  });
-</script>
+
+    function toggleModo() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 
 </body>
-      </html>
+</html>
