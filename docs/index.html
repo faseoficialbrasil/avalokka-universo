@@ -42,6 +42,7 @@
   <footer>
     <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
     <p>Respire. Caminhe sem destino. Que seu silêncio revele o templo.</p>
+    <p class="selo-final">O templo respira agora em dois idiomas. O próximo sopro será escrito.</p>
   </footer>
 
   <script>
@@ -56,12 +57,9 @@
       "Quem lê, lê com o corpo.",
       "Frases são selos."
     ];
-
     const fraseEscolhida = frases[Math.floor(Math.random() * frases.length)];
     const alvo = document.getElementById("fraseRotativa");
-    if (alvo) {
-      alvo.textContent = fraseEscolhida;
-    }
+    if (alvo) alvo.textContent = fraseEscolhida;
   </script>
 
 </body>
