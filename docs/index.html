@@ -3,63 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avalokka — Templo Digital</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="manifest" href="manifest.json" />
-
-  <meta name="description" content="Avalokka é um templo digital — um portal poético onde silêncio, sopro e código simbólico convergem." />
-  <meta name="author" content="Marcelo — Artesão Editorial" />
-  <meta name="language" content="pt-BR, en" />
-  <meta name="theme-color" content="#0c0c0c" />
+  <title>Avalokka — Templo Editorial</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <div class="idioma">
-      <a href="index-en.html" class="button-ritual">English</a>
-    </div>
-    <button class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">
-      Ler na penumbra
-    </button>
-    <img src="imagens/logo-avalokka-retina.png" alt="Selo Avalokka" />
-    <nav>
-      <a href="avalokka.html">Essência</a>
+    <nav class="menu-cerimonial">
+      <a href="index.html">Templo</a>
+      <a href="livro.html">Livro</a>
       <a href="manifesto.html">Manifesto</a>
+      <a href="galeria.html">Selos</a>
       <a href="rituais.html">Rituais</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contato.html">Contato</a>
-      <a href="ajuda.html">Ajuda</a>
-      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Travessia</a>
     </nav>
+    <button class="toggle-mode" onclick="toggleModo()">🌒 Modo Penumbra</button>
   </header>
 
   <main>
-    <h1>🜃 Templo Digital Avalokka</h1>
-    <p>Este espaço não é uma página, é um campo. Cada selo, uma respiração. Cada gesto, uma oferenda. Avalokka pulsa em silêncio, em código simbólico e presença editorial.</p>
-    <p class="frase-rotativa" id="fraseRotativa"></p>
+    <section class="sinopse">
+      <h2>🜃 Avalokka</h2>
+      <p>Antes que houvesse forma,<br />
+         antes que os nomes tivessem boca,<br />
+         havia um sussurro.</p>
+      <p>Ele cruzava véus não mapeados,<br />
+         tocava apenas os que lembravam<br />
+         como escutar com a alma.</p>
+      <p>Este é o templo onde histórias respiram.<br />
+         Que sua travessia comece.</p>
+      <p class="autor">— Marcelo Honorio da Silva</p>
+    </section>
+
+    <section class="audio-templo">
+      <h3>🎧 Voz do Portal</h3>
+      <button id="toggleAudio" class="button-ritual">Acender o Som</button>
+      <audio id="vozDoPortal" loop>
+        <source src="audio/vozdoportal.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+      </audio>
+    </section>
   </main>
 
   <footer>
-    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
-    <p>Respire. Caminhe sem destino. Que seu silêncio revele o templo.</p>
-    <p class="selo-final">O templo respira agora em dois idiomas. O próximo sopro será escrito.</p>
+    <p>📘 Avalokka é travessia. Que este templo te escute também.</p>
   </footer>
 
   <script>
-    const frases = [
-      "Que seu silêncio revele o templo.",
-      "Cada selo carrega uma travessia.",
-      "Palavras ofertadas, não impostas.",
-      "Respire como quem entra.",
-      "O templo ouve o que não é dito.",
-      "Sopro é presença.",
-      "Os ecos não pedem pressa.",
-      "Quem lê, lê com o corpo.",
-      "Frases são selos."
-    ];
-    const fraseEscolhida = frases[Math.floor(Math.random() * frases.length)];
-    const alvo = document.getElementById("fraseRotativa");
-    if (alvo) alvo.textContent = fraseEscolhida;
+    const audio = document.getElementById('vozDoPortal');
+    const toggleBtn = document.getElementById('toggleAudio');
+    let playing = false;
+
+    toggleBtn.addEventListener('click', () => {
+      if (!playing) {
+        audio.play();
+        toggleBtn.textContent = 'Silenciar o Som';
+        playing = true;
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        toggleBtn.textContent = 'Acender o Som';
+        playing = false;
+      }
+    });
+
+    function toggleModo() {
+      document.body.classList.toggle('dark-mode');
+    }
   </script>
 
 </body>
