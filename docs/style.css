@@ -1,4 +1,55 @@
-/* 🌌 Corpo e estrutura básica */
+/* 🌒 Ativação do modo escuro */
+body.dark-mode {
+  background-color: #0c0c0c;
+  color: #f5f5f5;
+}
+
+/* 🌒 Navegação e botões no modo escuro */
+body.dark-mode nav a,
+body.dark-mode .button-ritual {
+  color: #f5f5f5;
+  border-color: #555;
+  background-color: transparent;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode .button-ritual:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* 🌒 Rodapé no modo escuro */
+body.dark-mode footer {
+  color: #ccc;
+}
+
+/* 🌒 Selo final e hover em modo escuro */
+body.dark-mode .selo-final {
+  color: #aaa;
+}
+
+body.dark-mode .selo:hover {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+/* ✨ Botão ritual para ativar modo escuro */
+.toggle-mode {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Georgia', serif;
+  font-size: 0.9em;
+  padding: 0.4em 0.6em;
+  color: #555;
+  transition: color 0.4s ease;
+}
+
+.toggle-mode:hover {
+  color: #000;
+}
+
+/* 🌌 Estrutura base e galeria continuam */
 body {
   background-color: #f7f5f2;
   color: #111;
@@ -7,7 +58,6 @@ body {
   padding: 0;
 }
 
-/* 🜃 Navegação e botões */
 nav a,
 .button-ritual {
   text-decoration: none;
@@ -18,7 +68,6 @@ nav a,
   transition: all 0.4s ease;
 }
 
-/* 🪶 Hover cerimonial em botões */
 nav a:hover,
 .button-ritual:hover {
   background-color: #eae6dd;
@@ -26,7 +75,21 @@ nav a:hover,
   color: #000;
 }
 
-/* 🌌 Selos na galeria */
+footer {
+  margin-top: 4em;
+  text-align: center;
+  padding: 1em;
+  color: #555;
+  font-size: 0.95em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .selos {
   display: flex;
   flex-wrap: wrap;
@@ -40,31 +103,12 @@ nav a:hover,
   transition: transform 0.5s ease, opacity 0.4s ease;
 }
 
-/* 🌀 Hover cerimonial nos selos */
 .selo:hover {
   transform: scale(1.05);
   opacity: 0.95;
   box-shadow: 0 0 18px rgba(30, 30, 30, 0.15);
 }
 
-/* 🕯️ Rodapé */
-footer {
-  margin-top: 4em;
-  text-align: center;
-  padding: 1em;
-  color: #555;
-  font-size: 0.95em;
-}
-
-/* 🔮 Imagens rituais */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* 🧭 Layout do formulário (contato.html) */
 form {
   display: flex;
   flex-direction: column;
@@ -80,7 +124,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* ✨ Selo final opcional */
 .selo-final {
   text-align: center;
   font-style: italic;
