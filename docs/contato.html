@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avalokka — Contatos</title>
+  <title>Avalokka — Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
-
-  <meta name="description" content="Página de ressonância do templo Avalokka — escreva seu nome e intenção como oferenda silenciosa." />
-  <meta name="author" content="Marcelo — Artesão Editorial" />
-  <meta name="language" content="pt-BR, en" />
+  <meta name="description" content="Envie sua mensagem ritualística ao templo editorial Avalokka." />
   <meta name="theme-color" content="#0c0c0c" />
-
 </head>
-<body>
 
-    <!-- Cabeçalho cerimonial -->
+<body class="fundo-folha-antiga">
   <header>
+    <img src="imagens/selo-transcendencia.png" alt="Selo Avalokka" width="80" height="80" />
     <nav class="menu-cerimonial">
-      <a href="index-en.html">Versão Inglesa</a>
       <a href="index.html">Templo</a>
-<a href="livro.html">Livro</a>
-<a href="avalokka.html">Avalokka</a>
+      <a href="avalokka.html">Avalokka</a>
       <a href="manifesto.html">Manifesto</a>
-      <a href="galeria.html">Selos</a>
+      <a href="livro.html">Livro</a>
+      <a href="selos.html">Selos</a>
+      <a href="galeria.html">Galeria</a>
       <a href="rituais.html">Rituais</a>
-      <a href="contato.html">Contato</a>
-<a href="ajuda.html">Ajuda</a>
-<a href="sobre.html">Sobre</a>
+      <a href="contato.html" class="ativo">Contato</a>
+      <a href="ajuda.html">Ajuda</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
-    <button class="toggle-mode" onclick="toggleModo()">🌒 Modo Penumbra</button>
   </header>
-  <main>
-    <h1>📩 Contato & Ressonância</h1>
-    <p>Você está convidado a deixar seu nome e sua intenção abaixo. Avalokka não promete respostas — apenas escuta. O que é escrito aqui torna-se sopro ofertado ao templo.</p>
 
-    <form action="#" method="post">
-      <label for="name">Nome (ou selo):</label>
-      <input type="text" id="name" name="name" required />
+  <main class="bloco-cerimonial">
+    <h1>📬 Envie sua Mensagem ao Templo</h1>
+    <p>Se alguma palavra acendeu em você,  
+    se algum selo tocou sua memória,  
+    envie um gesto, um sopro ou um sinal ao guardião do Avalokka.</p>
 
-      <label for="message">Mensagem, intenção ou oferenda:</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+    <form action="https://formspree.io/f/seu-endpoint-aqui" method="POST" class="formulario-ritual">
+      <div class="bloco-campo">
+        <label for="nome">🖋️ Nome Ritualístico</label><br>
+        <input type="text" id="nome" name="nome" required />
+      </div>
 
-      <button type="submit" class="button-ritual">Enviar oferenda</button>
+      <div class="bloco-campo">
+        <label for="email">📧 E-mail Contemplativo</label><br>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="bloco-campo">
+        <label for="mensagem">📜 Mensagem Cerimonial</label><br>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+      </div>
+
+      <button type="submit">💠 Enviar Sopro</button>
     </form>
   </main>
 
   <footer>
-    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" />
-    <p>Os nomes são sopros. As palavras, oferendas. A presença, suficiente.</p>
+    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" width="40" height="40" />
+    <p>© Avalokka — Contato Cerimonial</p>
   </footer>
-
 </body>
 </html>
