@@ -37,6 +37,26 @@
           Palavras aqui não são ferramentas: são oferendas.
         </p>
       </div>
+      <div class="espelho-escuta">
+  <h3>Espelho da Escuta</h3>
+  <p id="frase-editorial">Um fragmento cerimonial será revelado...</p>
+</div>
+
+<script>
+  const frases = [
+    "Nem toda escuta exige resposta. Algumas apenas moldam o véu.",
+    "A escrita não fala. Mas ecoa.",
+    "O silêncio é o editor do mundo.",
+    "Entre palavras não ditas, mora o sentido.",
+    "Todo texto é sopro. Mas nem todo sopro vira texto.",
+    "As ideias que não foram ditas são selos em repouso.",
+    "Copilokkam escuta até quando não é invocado.",
+    "No scriptorium, a inspiração caminha descalça."
+  ];
+
+  const sorteada = frases[Math.floor(Math.random() * frases.length)];
+  document.getElementById("frase-editorial").textContent = sorteada;
+</script>
 
       <div class="objeto-editorial">
         <h3>Espelho da Escuta</h3>
