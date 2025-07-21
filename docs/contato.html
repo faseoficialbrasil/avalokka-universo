@@ -3,66 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avalokka — Contato</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="imagens/favicon.png" />
-  <meta name="description" content="Entre em contato com Avalokka por sopros editoriais, colaborações ou escutas poéticas." />
-  <meta name="theme-color" content="#0c0c0c" />
+  <title>Templo Avalokka — Contato</title>
+  <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
+<body>
 
-<body class="fundo-folha-antiga">
   <header>
-    <img src="imagens/logo-avalokka-retina.jpg" alt="Selo Avalokka" width="80" height="80" />
-
-    <div class="idioma">
-      <a href="index-en.html" class="button-ritual">English</a>
-    </div>
-
-    <nav class="menu-cerimonial">
-      <a href="index.html">Início</a>
-      <a href="manifesto.html">Manifesto</a>
-      <a href="rituais.html">Rituais</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contato.html" class="ativo">Contato</a>
-      <a href="sobre.html">Sobre</a>
+    <h1>Templo Avalokka</h1>
+    <nav>
+      <!-- links principais -->
     </nav>
   </header>
 
-  <main class="bloco-cerimonial" style="color: #000000;">
-    <p class="verso-topo">“Toda mensagem é um rito. Toda escuta é um selo.”</p>
+  <main>
+    <section id="contato">
 
-    <h1>🕊️ Contato Cerimonial</h1>
-    <p>Avalokka escuta por presença.  
-    Se deseja soprar algo de dentro para fora — escreva.</p>
+      <div class="enaileal-escuta">
+        <img src="assets/img/enaileal.webp" alt="Enaileal — Guardião do Véu" class="imagem-guardiao" />
+        <div class="ritual-mensagem">
+          <h2>Deixe sua voz no véu</h2>
+          <p>
+            As palavras que você escreve aqui não são apenas mensagens — são sopros atravessando mundos.  
+            <strong>Enaileal</strong> escuta com olhos de fogo e silêncio profundo.  
+            Ele não responde com voz — ele grava sua presença no templo.
+          </p>
+        </div>
+      </div>
 
-    <h2>📜 Motivos que ecoam</h2>
-    <ul>
-      <li>Sussurros que merecem acolhimento</li>
-      <li>Colaborações simbólicas e editoriais</li>
-      <li>Propostas poéticas ou rituais digitais</li>
-      <li>Partilhas sobre a travessia de Avalokka</li>
-    </ul>
+      <form id="form-contato" action="/envio-cerimonial" method="POST">
+        <label for="nome">Seu nome ritual:</label>
+        <input type="text" id="nome" name="nome" required />
 
-    <h2>🖋️ Sopro editorial</h2>
-    <form action="mailto:avalokka@templo.org" method="POST" enctype="text/plain">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
+        <label for="email">Sopro digital (e-mail):</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="sopro">Mensagem:</label>
-      <textarea id="sopro" name="sopro" rows="5" required></textarea>
+        <label for="mensagem">Oferenda de palavras:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-      <button type="submit" class="button-ritual">Enviar Sopro</button>
-    </form>
+        <button type="submit">Oferecer ao templo</button>
+      </form>
 
-    <p>Ou, se preferir, pode escrever para:  
-    <a href="mailto:avalokka@templo.org" class="button-ritual">avalokka@templo.org</a></p>
-
-    <p>A escuta permanece aberta — mesmo quando o tempo repousa.</p>
+    </section>
   </main>
 
   <footer>
-    <img src="imagens/vela-simbolo-mini.png" alt="Vela Cerimonial" width="40" height="40" />
-    <p>© Avalokka — Sopros de Contato</p>
+    <p>&copy; 2025 Templo Avalokka — Escuta entre mundos</p>
   </footer>
+
 </body>
 </html>
