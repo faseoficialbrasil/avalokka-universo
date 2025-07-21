@@ -7,11 +7,25 @@ body {
   padding: 0;
 }
 
+/* 🍂 Fundo com folhas secas */
 .fundo-folha-antiga {
-  background-image: url('imagens/fundo-transicao.jpg'); /* ✅ formato .jpg */
+  background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+/* 📜 Bloco editorial com textura */
+.bloco-cerimonial {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  background-image: url('imagens/fundo-bloco.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
 /* Cabeçalho e navegação */
@@ -43,23 +57,13 @@ header {
   color: #0c0c0c;
 }
 
-/* Bloco cerimonial */
-.bloco-cerimonial {
-  max-width: 700px;
-  margin: auto;
-  padding: 2em;
-  background-color: rgba(255,255,255,0.85);
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-}
-
 /* Títulos */
 h1, h2 {
   color: #3c3c3c;
   margin-bottom: 0.4em;
 }
 
-/* Figuras e galeria */
+/* Galeria */
 .galeria-imagens, .galeria-selos {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +141,7 @@ button[type="submit"] {
   font-size: 1.05em;
 }
 
-/* Imagem interativa na capa */
+/* Imagem interativa */
 a img:hover {
   opacity: 0.95;
   transform: scale(1.01);
