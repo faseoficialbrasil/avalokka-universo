@@ -1,21 +1,21 @@
-/* 🔸 Fonte geral */
+/* 🔸 Fonte principal e fundo ritualístico */
 body {
   font-family: 'Quattrocento', serif;
   margin: 0;
   padding: 0;
-  background-color: #f2ebd5;
   background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #f2ebd5;
   color: #222222;
 }
 
-/* 🔸 Bloco cerimonial principal */
+/* 🔸 Bloco cerimonial com contraste de fonte */
 .bloco-cerimonial {
   padding: 2em;
   max-width: 720px;
   margin: auto;
-  background-image: url('imagens/fundo-bloco.jpeg');
+  background-image: url('imagens/fundo-avalokka.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
