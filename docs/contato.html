@@ -12,7 +12,7 @@
 
 <body class="fundo-folha-antiga">
   <header>
-    <img src="imagens/logo-avalokka-retina.png" alt="Selo Avalokka" width="80" height="80" />
+    <img src="imagens/logo-avalokka-retina.jpg" alt="Selo Avalokka" width="80" height="80" />
 
     <div class="idioma">
       <a href="index-en.html" class="button-ritual">English</a>
@@ -29,6 +29,8 @@
   </header>
 
   <main class="bloco-cerimonial" style="color: #000000;">
+    <p class="verso-topo">“Toda mensagem é um rito. Toda escuta é um selo.”</p>
+
     <h1>🕊️ Contato Cerimonial</h1>
     <p>Avalokka escuta por presença.  
     Se deseja soprar algo de dentro para fora — escreva.</p>
@@ -41,12 +43,21 @@
       <li>Partilhas sobre a travessia de Avalokka</li>
     </ul>
 
-    <h2>✉️ Endereço Cerimonial</h2>
-    <p>Você pode enviar seus sopros para:  
+    <h2>🖋️ Sopro editorial</h2>
+    <form action="mailto:avalokka@templo.org" method="POST" enctype="text/plain">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="sopro">Mensagem:</label>
+      <textarea id="sopro" name="sopro" rows="5" required></textarea>
+
+      <button type="submit" class="button-ritual">Enviar Sopro</button>
+    </form>
+
+    <p>Ou, se preferir, pode escrever para:  
     <a href="mailto:avalokka@templo.org" class="button-ritual">avalokka@templo.org</a></p>
 
-    <p>Também estamos atentos ao canal silencioso — aquele que não tem palavras, apenas presença.  
-    Quando quiser, Avalokka estará aqui.</p>
+    <p>A escuta permanece aberta — mesmo quando o tempo repousa.</p>
   </main>
 
   <footer>
