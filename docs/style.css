@@ -147,3 +147,18 @@ a img:hover {
   transform: scale(1.01);
   transition: all 0.3s ease;
 }
+.button-ritual {
+  background-color: #222;
+  color: #e8e3da;
+  padding: 6px 12px;
+  font-family: 'Quattrocento', serif;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid #888;
+  transition: background-color 0.3s ease;
+}
+
+.button-ritual:hover {
+  background-color: #444;
+    }
