@@ -1,102 +1,139 @@
-/* 🔸 Fonte principal e fundo ritualístico */
+/* Fonte e base */
 body {
   font-family: 'Quattrocento', serif;
+  background-color: #fef9f4;
+  color: #0c0c0c;
   margin: 0;
   padding: 0;
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #f2ebd5;
-  color: #222222;
 }
 
-/* 🔸 Bloco cerimonial com contraste de fonte */
-.bloco-cerimonial {
-  padding: 2em;
-  max-width: 720px;
-  margin: auto;
-  background-image: url('imagens/fundo-avalokka.jpg');
+.fundo-folha-antiga {
+  background-image: url('imagens/fundo-transicao.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  color: #222222; /* Preto editorial suave para fundo claro */
-  text-shadow: none;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-/* 🔸 Cabeçalho */
+/* Cabeçalho e navegação */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 2em;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  padding: 1em;
+  background-color: rgba(12,12,12,0.85);
+  color: #fff;
+  text-align: center;
 }
 
-/* 🔸 Menu cerimonial */
+.menu-cerimonial {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
 .menu-cerimonial a {
-  margin: 0 0.5em;
   text-decoration: none;
-  color: #ffffff;
+  color: #d4af37;
   font-weight: bold;
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
 }
 
 .menu-cerimonial a.ativo {
-  text-decoration: underline;
+  background-color: #d4af37;
+  color: #0c0c0c;
 }
 
-/* 🔸 Botões */
-button {
-  background-color: #3c2f1c;
-  color: #fff;
-  border: none;
-  padding: 0.7em 1.2em;
-  font-size: 1em;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1em;
+/* Bloco cerimonial */
+.bloco-cerimonial {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-button:hover {
-  background-color: #5c4428;
+/* Títulos */
+h1, h2 {
+  color: #3c3c3c;
+  margin-bottom: 0.4em;
 }
 
-/* 🔸 Rodapé */
-footer {
-  text-align: center;
-  padding: 1em;
-  font-size: 0.9em;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #eee;
+/* Figuras e galeria */
+.galeria-imagens, .galeria-selos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
   margin-top: 2em;
 }
 
-/* 🔸 Imagens com borda cerimonial */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+figure {
+  text-align: center;
+  max-width: 320px;
 }
 
-/* 🔸 Responsividade para dispositivos móveis */
-@media screen and (max-width: 768px) {
-  .bloco-cerimonial {
-    padding: 1em;
-  }
+figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #555;
+}
 
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(12,12,12,0.85);
+  color: #fff;
+  margin-top: 4em;
+}
 
-  .menu-cerimonial {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1em;
-  }
+/* Formulário cerimonial */
+.formulario-ritual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 500px;
+  margin: 2em auto;
+}
 
-  button {
-    width: 100%;
-  }
+.bloco-campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  color: #d4af37;
+}
+
+input, textarea {
+  font-family: 'Quattrocento', serif;
+  padding: 0.7em;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #f8f8f2;
+  color: #222;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  align-self: center;
+  padding: 0.8em 1.5em;
+  background-color: #d4af37;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.05em;
+}
+
+/* Imagem interativa na capa */
+a img:hover {
+  opacity: 0.95;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
 }
