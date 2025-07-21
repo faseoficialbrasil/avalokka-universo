@@ -1,164 +1,337 @@
-/* Fonte e base */
+Novo style.css 
+/* 🌑 Base do templo */
 body {
-  font-family: 'Quattrocento', serif;
-  background-color: #fef9f4;
-  color: #0c0c0c;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  line-height: 1.6;
 }
 
-/* 🍂 Fundo com folhas secas */
-.fundo-folha-antiga {
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-/* 📜 Bloco editorial com textura */
-.bloco-cerimonial {
-  max-width: 700px;
-  margin: auto;
-  padding: 2em;
-  background-image: url('imagens/fundo-bloco.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-}
-
-/* Cabeçalho e navegação */
-header {
-  padding: 1em;
-  background-color: rgba(12,12,12,0.85);
-  color: #fff;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #a5ffe1;
   text-align: center;
 }
 
-.menu-cerimonial {
-  margin-top: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
+section {
+  padding: 4rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
-.menu-cerimonial a {
+.quadro-cerimonial {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 🎧 Trilhas sonoras */
+audio {
+  display: block;
+  margin: 1rem auto 2rem auto;
+  width: 100%;
+  max-width: 600px;
+}
+/* 🌕 Saudação cerimonial */
+.saudacao-templo {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin-bottom: 2rem;
+  border-left: 4px solid #a5ffe1;
+  padding-left: 1rem;
+}
+
+/* 🌕 Mapa cerimonial */
+.mapa-templo ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.mapa-templo li {
+  background-color: #1a1a1a;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #ddb3ff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(221, 179, 255, 0.2);
+}
+
+.mapa-templo a {
+  color: #ddb3ff;
   text-decoration: none;
-  color: #d4af37;
   font-weight: bold;
-  padding: 0.4em 0.6em;
-  border-radius: 4px;
 }
 
-.menu-cerimonial a.ativo {
-  background-color: #d4af37;
-  color: #0c0c0c;
-}
-
-/* Títulos */
-h1, h2 {
-  color: #3c3c3c;
-  margin-bottom: 0.4em;
-}
-
-/* Galeria */
-.galeria-imagens, .galeria-selos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-figure {
-  text-align: center;
-  max-width: 320px;
-}
-
-figcaption {
-  margin-top: 0.5em;
+/* 📖 Livro Cerimonial */
+.introducao-livro {
   font-style: italic;
-  font-size: 0.95em;
-  color: #555;
+  font-size: 1.1rem;
+  color: #a5ffe1;
+  margin-bottom: 2rem;
+  border-left: 4px solid #a5ffe1;
+  padding-left: 1rem;
 }
 
-/* Rodapé */
-footer {
+.capitulo {
+  margin-bottom: 3rem;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #ddb3ff;
+  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
+  border-radius: 8px;
+}
+
+.capitulo h3 {
+  color: #ddb3ff;
+  margin-bottom: 0.5rem;
+}
+
+.capitulo blockquote {
+  font-style: italic;
+  color: #ffd6a5;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ffd6a5;
+  padding-left: 1rem;
+}
+
+.selo-final {
   text-align: center;
-  padding: 1em;
-  background-color: rgba(12,12,12,0.85);
-  color: #fff;
-  margin-top: 4em;
-}
-
-footer img {
-  margin-bottom: 0.5em;
-  width: 40px;
-  height: 40px;
-}
-
-/* Formulário cerimonial */
-.formulario-ritual {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  max-width: 500px;
-  margin: 2em auto;
-}
-
-.bloco-campo {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 0.4em;
-  color: #d4af37;
-}
-
-input, textarea {
-  font-family: 'Quattrocento', serif;
-  padding: 0.7em;
-  border: 1px solid #444;
-  border-radius: 4px;
-  background-color: #f8f8f2;
-  color: #222;
-  font-size: 1em;
-}
-
-button[type="submit"] {
-  align-self: center;
-  padding: 0.8em 1.5em;
-  background-color: #d4af37;
-  color: #0c0c0c;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1.05em;
-}
-
-/* Imagem interativa */
-a img:hover {
-  opacity: 0.95;
-  transform: scale(1.01);
-  transition: all 0.3s ease;
-}
-.button-ritual {
-  background-color: #222;
-  color: #e8e3da;
-  padding: 6px 12px;
-  font-family: 'Quattrocento', serif;
   font-size: 0.9rem;
-  border-radius: 4px;
-  text-decoration: none;
-  border: 1px solid #888;
-  transition: background-color 0.3s ease;
+  color: #888;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+/* 🔮 Círculo dos Ritos */
+.ritual-item {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #ffd6a5;
+  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
-.button-ritual:hover {
-  background-color: #444;
-    }
+.ritual-item h3 {
+  color: #ffd6a5;
+  margin-bottom: 0.5rem;
+}
+
+.ritual-item p {
+  font-size: 1.05rem;
+  color: #eaeaea;
+}
+
+/* 📜 Scriptorium Invisível */
+.espelho-escuta {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #a5ffe1;
+  box-shadow: 0 0 10px rgba(165, 255, 225, 0.2);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.espelho-escuta h3 {
+  color: #a5ffe1;
+  margin-bottom: 0.5rem;
+}
+
+#frase-editorial {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #eaeaea;
+}
+
+.arquivo-ritual {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #ddb3ff;
+  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
+  border-radius: 8px;
+}
+
+.arquivo-ritual h3 {
+  color: #ddb3ff;
+  margin-bottom: 0.5rem;
+}
+
+.arquivo-ritual p {
+  font-size: 1.05rem;
+  color: #eaeaea;
+}
+/* 🕊️ Mensagem editorial */
+.mensagem-editorial {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #a5ffe1;
+  margin-bottom: 2rem;
+  border-left: 4px solid #a5ffe1;
+  padding-left: 1rem;
+}
+
+/* 🕊️ Formulário cerimonial */
+.formulario-templo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-templo label {
+  color: #eaeaea;
+  font-weight: bold;
+}
+
+.formulario-templo input,
+.formulario-templo textarea {
+  background-color: #121212;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formulario-templo button {
+  background-color: #a5ffe1;
+  color: #121212;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(165, 255, 225, 0.3);
+}
+
+/* 🖼️ Galeria dos Selos */
+.galeria-selos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.galeria-selos figure {
+  max-width: 250px;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border: 2px solid #ddb3ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
+}
+
+.galeria-selos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.galeria-selos figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #eaeaea;
+}
+/* 📢 Manifesto Cerimonial */
+.manifesto-texto {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #eaeaea;
+  padding-left: 1rem;
+  border-left: 4px solid #ffd6a5;
+  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
+  border-radius: 6px;
+}
+
+/* 🛡️ Selos e Símbolos */
+.selos-fundadores {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.selo {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #ddb3ff;
+  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
+  border-radius: 8px;
+}
+
+.selo h3 {
+  color: #ddb3ff;
+  margin-bottom: 0.5rem;
+}
+
+.selo p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+/* 🛕 Imagem simbólica */
+.imagem-templo {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.imagem-templo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+/* 🛕 Origem do templo */
+.origem-templo {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #eaeaea;
+  padding-left: 1rem;
+  border-left: 4px solid #a5ffe1;
+  box-shadow: 0 0 10px rgba(165, 255, 225, 0.2);
+  border-radius: 6px;
+}
+
+/* 🧭 Frase orientadora */
+.frase-ajuda {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ffd6a5;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ffd6a5;
+  padding-left: 1rem;
+}
+
+/* 🧭 Glossário cerimonial */
+.glossario-templo {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-left: 4px solid #ffd6a5;
+  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
+  border-radius: 8px;
+}
+
+.glossario-templo h3 {
+  color: #ffd6a5;
+  margin-bottom: 1rem;
+}
+
+.glossario-templo ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.glossario-templo li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #eaeaea;
+}
