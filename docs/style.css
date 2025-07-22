@@ -1,380 +1,67 @@
-Novo style.css 
-/* 🌑 Base do templo */
+/* Fundo geral do templo Avalokka */
 body {
+  background-image: url('imagens/imagem11.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Georgia', serif;
+  color: #333;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  color: #eaeaea;
-  line-height: 1.6;
+  padding: 0;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #a5ffe1;
+/* Cabeçalho */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   text-align: center;
+  padding: 2rem;
 }
 
+header img {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+/* Seções */
 section {
-  padding: 4rem 2rem;
-  border-bottom: 1px solid #222;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 2rem;
+  border-radius: 8px;
 }
 
-.quadro-cerimonial {
-  max-width: 900px;
-  margin: 0 auto;
+/* Blocos editoriais com fundo cerimonial */
+section#blocos-editoriais {
+  background-image: url('imagens/imagem9.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
-/* 🎧 Trilhas sonoras */
+/* Áudios */
 audio {
   display: block;
-  margin: 1rem auto 2rem auto;
+  margin-bottom: 1.5rem;
   width: 100%;
-  max-width: 600px;
-}
-/* 🌕 Saudação cerimonial */
-.saudacao-templo {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #eaeaea;
-  margin-bottom: 2rem;
-  border-left: 4px solid #a5ffe1;
-  padding-left: 1rem;
 }
 
-/* 🌕 Mapa cerimonial */
-.mapa-templo ul {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.mapa-templo li {
-  background-color: #1a1a1a;
-  padding: 0.8rem 1.2rem;
-  border: 2px solid #ddb3ff;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(221, 179, 255, 0.2);
-}
-
-.mapa-templo a {
-  color: #ddb3ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* 📖 Livro Cerimonial */
-.introducao-livro {
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #a5ffe1;
-  margin-bottom: 2rem;
-  border-left: 4px solid #a5ffe1;
-  padding-left: 1rem;
-}
-
-.capitulo {
-  margin-bottom: 3rem;
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #ddb3ff;
-  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
-  border-radius: 8px;
-}
-
-.capitulo h3 {
-  color: #ddb3ff;
-  margin-bottom: 0.5rem;
-}
-
-.capitulo blockquote {
-  font-style: italic;
-  color: #ffd6a5;
-  margin-bottom: 1rem;
-  border-left: 4px solid #ffd6a5;
-  padding-left: 1rem;
-}
-
-.selo-final {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 2rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
-}
-/* 🔮 Círculo dos Ritos */
-.ritual-item {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #ffd6a5;
-  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.ritual-item h3 {
-  color: #ffd6a5;
-  margin-bottom: 0.5rem;
-}
-
-.ritual-item p {
-  font-size: 1.05rem;
-  color: #eaeaea;
-}
-
-/* 📜 Scriptorium Invisível */
-.espelho-escuta {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #a5ffe1;
-  box-shadow: 0 0 10px rgba(165, 255, 225, 0.2);
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.espelho-escuta h3 {
-  color: #a5ffe1;
-  margin-bottom: 0.5rem;
-}
-
-#frase-editorial {
-  font-style: italic;
-  font-size: 1.05rem;
-  color: #eaeaea;
-}
-
-.arquivo-ritual {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #ddb3ff;
-  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
-  border-radius: 8px;
-}
-
-.arquivo-ritual h3 {
-  color: #ddb3ff;
-  margin-bottom: 0.5rem;
-}
-
-.arquivo-ritual p {
-  font-size: 1.05rem;
-  color: #eaeaea;
-}
-/* 🕊️ Mensagem editorial */
-.mensagem-editorial {
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #a5ffe1;
-  margin-bottom: 2rem;
-  border-left: 4px solid #a5ffe1;
-  padding-left: 1rem;
-}
-
-/* 🕊️ Formulário cerimonial */
-.formulario-templo {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.formulario-templo label {
-  color: #eaeaea;
-  font-weight: bold;
-}
-
-.formulario-templo input,
-.formulario-templo textarea {
-  background-color: #121212;
-  border: 1px solid #444;
-  color: #fff;
-  padding: 0.8rem;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.formulario-templo button {
-  background-color: #a5ffe1;
-  color: #121212;
-  border: none;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 6px rgba(165, 255, 225, 0.3);
-}
-
-/* 🖼️ Galeria dos Selos */
-.galeria-selos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.galeria-selos figure {
-  max-width: 250px;
-  text-align: center;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border: 2px solid #ddb3ff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
-}
-
-.galeria-selos img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.galeria-selos figcaption {
-  margin-top: 0.5rem;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #eaeaea;
-}
-/* 📢 Manifesto Cerimonial */
-.manifesto-texto {
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #eaeaea;
-  padding-left: 1rem;
-  border-left: 4px solid #ffd6a5;
-  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
-  border-radius: 6px;
-}
-
-/* 🛡️ Selos e Símbolos */
-.selos-fundadores {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.selo {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #ddb3ff;
-  box-shadow: 0 0 10px rgba(221, 179, 255, 0.2);
-  border-radius: 8px;
-}
-
-.selo h3 {
-  color: #ddb3ff;
-  margin-bottom: 0.5rem;
-}
-
-.selo p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #eaeaea;
-}
-/* 🛕 Imagem simbólica */
-.imagem-templo {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.imagem-templo img {
+/* Imagens */
+img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-}
-
-/* 🛕 Origem do templo */
-.origem-templo {
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #eaeaea;
-  padding-left: 1rem;
-  border-left: 4px solid #a5ffe1;
-  box-shadow: 0 0 10px rgba(165, 255, 225, 0.2);
-  border-radius: 6px;
-}
-
-/* 🧭 Frase orientadora */
-.frase-ajuda {
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #ffd6a5;
-  margin-bottom: 2rem;
-  border-left: 4px solid #ffd6a5;
-  padding-left: 1rem;
-}
-
-/* 🧭 Glossário cerimonial */
-.glossario-templo {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-left: 4px solid #ffd6a5;
-  box-shadow: 0 0 10px rgba(255, 214, 165, 0.2);
-  border-radius: 8px;
-}
-
-.glossario-templo h3 {
-  color: #ffd6a5;
   margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.glossario-templo ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.glossario-templo li {
-  margin-bottom: 0.8rem;
-  font-size: 1.05rem;
-  color: #eaeaea;
-}
-/* 🌟 Estilo para os versos do hino */
-.letra-hino {
-  font-size: 1.1rem;
-  font-style: italic;
-  line-height: 1.8;
-  color: #ffd6a5;
-  border-left: 4px solid #ffd6a5;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-  white-space: pre-line;
-}
-
-/* 🎧 Estilo para os botões <summary> das vozes */
-details summary {
-  font-weight: bold;
-  background-color: #2e1f3f;
-  color: #ffd6a5;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  margin-top: 1rem;
-  transition: all 0.3s ease;
-}
-
-details summary:hover {
-  background-color: #3a284f;
-  cursor: pointer;
-  }
-.versao {
+/* Rodapé */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   text-align: center;
-  font-size: 0.9rem;
-  color: #ffd6a5;
-  margin-top: 3rem;
-  opacity: 0.6;
-  font-style: italic;
-}
-.versao {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #ffd6a5;
-  margin-top: 3rem;
-  opacity: 0.6;
-  font-style: italic;
+  padding: 1rem;
 }
