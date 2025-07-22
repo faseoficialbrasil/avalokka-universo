@@ -203,11 +203,14 @@ footer {
 
 .titulo-topo h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
 }
 
 .titulo-topo p {
-  margin: 0.3rem 0 0;
-  font-size: 1rem;
+  margin: 0.4rem 0 0;
+  font-size: 1.05rem;
   font-style: italic;
+  line-height: 1.3;
 }
