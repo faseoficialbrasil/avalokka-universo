@@ -1,8 +1,7 @@
-/* 🌌 Base do templo */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-image: url('imagens/imagem10.jpg'); /* Fundo cerimonial */
+  background-image: url('imagens/imagem11.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -10,7 +9,6 @@ body {
   line-height: 1.6;
 }
 
-/* 🏛️ Topo do templo */
 #topo-templo {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -50,15 +48,19 @@ body {
   background-color: #bfa133;
 }
 
-/* 📜 Seções narrativas */
 section {
-  background-color: rgba(0, 0, 0, 0.75); /* Piso editorial */
+  background-image: url('imagens/imagem9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
   border-left: 4px solid #d4af37;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  color: #f5f5dc;
 }
 
 section h2 {
@@ -71,7 +73,6 @@ section p {
   font-size: 1.1rem;
 }
 
-/* 🕯️ Cânticos */
 blockquote.cantico {
   font-style: italic;
   color: #d4af37;
@@ -80,14 +81,12 @@ blockquote.cantico {
   border-left: 2px solid #d4af37;
 }
 
-/* 🎼 Áudios */
 audio {
   display: block;
   margin: 1rem 0 2rem 0;
   width: 100%;
 }
 
-/* 🖼️ Imagens */
 img {
   max-width: 100%;
   height: auto;
@@ -100,24 +99,4 @@ img {
 #selos-visuais img {
   max-width: 600px;
   display: block;
-  margin: 1rem auto;
-}
-
-/* 🧿 Manifesto */
-#manifesto {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid #d4af37;
-  padding: 2rem;
-  margin-top: 3rem;
-  border-radius: 8px;
-}
-
-/* 🔗 Rodapé */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #1a1a1a;
-  color: #ccc;
-  font-size: 0.9rem;
-  border-top: 2px solid #d4af37;
-}
+  margin: [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/ricardo-cas/pandas/tree/eefd8f3ed9250c15e029b7ae59a24ef9f7ffc4ab/GUIA_MARKDOWN.MD?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
