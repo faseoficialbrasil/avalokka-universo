@@ -164,56 +164,7 @@ footer {
   }
 
 /* 🟤 Cabeçalho cerimonial com cobertura total */
-.cabecalho-cerimonial {
-  position: relative;
-  width: 100vw;
-  height: 120px; /* ou ajuste fino: 100px, 150px etc. */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
-.cabecalho-cerimonial img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.titulo-topo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  color: #f5f5dc;
-  font-family: 'Georgia', serif;
-  text-shadow: 1px 1px 4px #000;
-}
-
-.titulo-topo h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  line-height: 1.1;
-  letter-spacing: 1px;
-}
-
-.titulo-topo p {
-  margin: 0.4rem 0 0;
-  font-size: 1.05rem;
-  font-style: italic;
-  line-height: 1.3;
-}
   .cabecalho-cerimonial {
   position: relative;
   width: 100vw;
@@ -257,4 +208,4 @@ footer {
   margin: 0.3rem 0 0;
   font-size: 1rem;
   font-style: italic;
-  }
+}
