@@ -2,12 +2,13 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-image: url('imagens/imagem11.jpg'); /* Fundo do templo */
+  background-image: url('imagens/imagem11.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: #111; /* Texto padrão escuro */
+  color: #111;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 /* 🏛️ Topo do templo */
@@ -50,15 +51,15 @@ body {
   background-color: #bfa133;
 }
 
-/* 🧱 Piso editorial dos blocos */
+/* 🧱 Blocos narrativos */
 section {
-  background-image: url('imagens/imagem9.jpg'); /* Piso cerimonial */
+  background-image: url('imagens/imagem9.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-color: rgba(245, 245, 220, 0.85); /* Bloco claro tipo pergaminho */
-  color: #111; /* Letras pretas */
+  background-color: rgba(245, 245, 220, 0.85);
+  color: #111;
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
@@ -96,7 +97,7 @@ audio {
 
 /* 🖼️ Imagens */
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 1rem 0;
   border-radius: 6px;
@@ -128,4 +129,37 @@ footer {
   color: #ccc;
   font-size: 0.9rem;
   border-top: 2px solid #d4af37;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  #topo-templo h1 {
+    font-size: 2.2rem;
+  }
+
+  #abrir-portal {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #topo-templo .logo {
+    max-width: 80px;
+  }
+
+  #selos-visuais img {
+    max-width: 100%;
+  }
 }
