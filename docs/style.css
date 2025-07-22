@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: #f5f5dc;
+  color: #111; /* Texto padrão escuro */
   line-height: 1.6;
 }
 
@@ -57,19 +57,20 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-color: rgba(245, 245, 220, 0.85); /* Bloco claro tipo pergaminho */
+  color: #111; /* Letras pretas */
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
   border-left: 4px solid #d4af37;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-  color: #f5f5dc;
 }
 
 /* 📜 Títulos e textos */
 section h2 {
   font-size: 2rem;
-  color: #d4af37;
+  color: #bfa133;
   margin-bottom: 1rem;
 }
 
@@ -80,10 +81,10 @@ section p {
 /* 🕯️ Cânticos */
 blockquote.cantico {
   font-style: italic;
-  color: #d4af37;
+  color: #bfa133;
   margin: 1.5rem 0;
   padding-left: 1rem;
-  border-left: 2px solid #d4af37;
+  border-left: 2px solid #bfa133;
 }
 
 /* 🎼 Áudios */
@@ -111,11 +112,12 @@ img {
 
 /* 📜 Manifesto */
 #manifesto {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   border-left: 4px solid #d4af37;
   padding: 2rem;
   margin-top: 3rem;
   border-radius: 8px;
+  color: #111;
 }
 
 /* 🔗 Rodapé */
