@@ -52,11 +52,11 @@ body {
 
 /* 🧱 Piso editorial dos blocos */
 section {
-  background-color: rgba(0, 0, 0, 0.75); /* Camada escura sobre véu */
   background-image: url('imagens/imagem9.jpg'); /* Piso cerimonial */
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-attachment: scroll;
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
