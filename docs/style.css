@@ -1,67 +1,110 @@
-/* Fundo geral do templo Avalokka */
+/* 🌌 Base do templo */
 body {
-  background-image: url('imagens/imagem11.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Georgia', serif;
-  color: #333;
   margin: 0;
-  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #0d0d0d;
+  color: #f5f5dc;
+  line-height: 1.6;
 }
 
-/* Cabeçalho */
-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+/* 🏛️ Topo do templo */
+#topo-templo {
+  background-image: url('imagens/imagem10.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  color: #f5f5dc;
+  border-bottom: 2px solid #d4af37;
 }
 
-header img {
+#topo-templo .logo {
   max-width: 120px;
   margin-bottom: 1rem;
 }
 
-/* Seções */
+#topo-templo h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+#topo-templo .chamada {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+#abrir-portal {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#abrir-portal:hover {
+  background-color: #bfa133;
+}
+
+/* 📜 Seções narrativas */
 section {
-  padding: 2rem;
-  border-bottom: 1px solid #ccc;
-  background-color: rgba(255, 255, 255, 0.85);
-  margin: 2rem;
-  border-radius: 8px;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Blocos editoriais com fundo cerimonial */
-section#blocos-editoriais {
-  background-image: url('imagens/imagem9.jpg');
-  background-size: contain;
-  background-repeat: repeat;
-  padding: 2rem;
-  border-radius: 8px;
+section h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
 }
 
-/* Áudios */
+section p {
+  font-size: 1.1rem;
+}
+
+/* 🕯️ Cânticos */
+blockquote.cantico {
+  font-style: italic;
+  color: #d4af37;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid #d4af37;
+}
+
+/* 🎼 Áudios */
 audio {
   display: block;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 2rem 0;
   width: 100%;
 }
 
-/* Imagens */
+/* 🖼️ Imagens */
 img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  border-radius: 6px;
+  border: 2px solid #d4af37;
 }
 
-/* Rodapé */
+/* 🧿 Manifesto */
+#manifesto {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #d4af37;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+/* 🔗 Rodapé */
 footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #ccc;
+  font-size: 0.9rem;
+  border-top: 2px solid #d4af37;
 }
