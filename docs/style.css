@@ -370,3 +370,11 @@ details summary:hover {
   opacity: 0.6;
   font-style: italic;
 }
+.versao {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffd6a5;
+  margin-top: 3rem;
+  opacity: 0.6;
+  font-style: italic;
+}
