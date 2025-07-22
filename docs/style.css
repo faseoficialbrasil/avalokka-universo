@@ -335,3 +335,30 @@ audio {
   font-size: 1.05rem;
   color: #eaeaea;
 }
+/* 🌟 Estilo para os versos do hino */
+.letra-hino {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: #ffd6a5;
+  border-left: 4px solid #ffd6a5;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}
+
+/* 🎧 Estilo para os botões <summary> das vozes */
+details summary {
+  font-weight: bold;
+  background-color: #2e1f3f;
+  color: #ffd6a5;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+details summary:hover {
+  background-color: #3a284f;
+  cursor: pointer;
+  }
