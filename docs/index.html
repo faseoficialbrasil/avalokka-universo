@@ -159,6 +159,19 @@
     <p>Você atravessou o véu. O templo respira com você.</p>
   </section>
 
-  <!-- 🔗 Rodapé -->
+<!-- 🔗 Rodapé -->
   <footer>
-    <p>© Templo Avalokka — Todos os selos são protegidos por vé
+    <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
+  </footer>
+
+  <!-- 🔮 Script ritual para abrir o portal -->
+  <script>
+    document.getElementById('abrir-portal').addEventListener('click', function() {
+      const portal = document.getElementById('portal');
+      portal.style.display = 'block';
+      portal.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
