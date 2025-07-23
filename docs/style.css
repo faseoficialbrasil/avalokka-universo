@@ -1,230 +1,154 @@
-/* 🌌 Véu cerimonial do templo */
+/* 🌌 Estrutura geral */
 body {
-  margin: 0;
   font-family: 'Georgia', serif;
-  background-image: url('imagens/imagem11.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: #111;
-  line-height: 1.6;
-  font-size: 16px;
+  background-color: #fffdf8;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-/* 🏛️ Topo do templo */
-#topo-templo {
-  background-color: rgba(0, 0, 0, 0.7);
+header {
+  background-color: #f4f1e9;
+  padding: 2rem;
   text-align: center;
-  padding: 4rem 2rem;
-  color: #f5f5dc;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid #b8860b;
 }
 
-#topo-templo .logo {
-  max-width: 120px;
-  margin-bottom: 1rem;
+header h1 {
+  font-size: 2.5rem;
+  color: #6b4f1d;
+  margin-bottom: 0.5rem;
 }
 
-#topo-templo h1 {
-  font-size: 3rem;
-  margin: 0.5rem 0;
-}
-
-#topo-templo .chamada {
+header p {
   font-size: 1.2rem;
-  font-style: italic;
+  color: #444;
+}
+
+/* 🟤 Cabeçalho cerimonial */
+#cabecalho-cerimonial {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-#abrir-portal {
-  background-color: #d4af37;
-  color: #000;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.faixa-cerimonial {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-bottom: 4px solid #b8860b;
 }
 
-#abrir-portal:hover {
-  background-color: #bfa133;
-}
-
-/* 🧱 Blocos narrativos */
-section {
-  background-image: url('imagens/imagem9.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-color: rgba(245, 245, 220, 0.85);
-  color: #111;
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: 3rem auto;
-  border-left: 4px solid #d4af37;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
-
-/* 📜 Títulos e textos */
-section h2 {
+.titulo-topo h2 {
   font-size: 2rem;
-  color: #2c3e50; /* Azul transcendente */
+  margin-top: 1rem;
+  color: #6b4f1d;
+}
+
+.titulo-topo p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* 📜 Seções editoriais */
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+section h3 {
+  font-size: 1.6rem;
+  color: #6b4f1d;
   margin-bottom: 1rem;
 }
 
 section p {
   font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
 }
 
-/* 🕯️ Cânticos */
-blockquote.cantico {
-  font-style: italic;
-  color: #6b2e2e;
-  margin: 1.5rem 0;
-  padding-left: 1rem;
-  border-left: 2px solid #bfa133;
-}
-
-/* 🎼 Áudios */
+/* 🎼 Selos sonoros */
 audio {
   display: block;
-  margin: 1rem 0 2rem 0;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
-/* 🖼️ Imagens */
-img {
-  width: 100%;
-  height: auto;
+/* 🖋️ Cânticos */
+blockquote.cantico {
+  font-style: italic;
+  background-color: #f9f6f0;
+  padding: 1rem;
+  border-left: 4px solid #b8860b;
   margin: 1rem 0;
-  border-radius: 6px;
-  border: 2px solid #d4af37;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  color: #555;
+}
+
+/* 🖼️ Selos visuais */
+#selos-visuais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
 }
 
 #selos-visuais img {
-  max-width: 600px;
-  display: block;
-  margin: 1rem auto;
+  width: 100%;
+  border: 2px solid #e0d7b7;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-/* 📜 Manifesto */
+#selos-visuais img:hover {
+  transform: scale(1.03);
+}
+
+/* 📜 Manifesto editorial */
 #manifesto {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-left: 4px solid #d4af37;
+  background-color: #f9f6f0;
   padding: 2rem;
-  margin-top: 3rem;
-  border-radius: 8px;
-  color: #111;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-left: 4px solid #b8860b;
+}
+
+#manifesto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* 🌌 Portal oculto */
+#portal {
+  background-color: #eae6dc;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-left: 4px solid #6b4f1d;
+  font-style: italic;
+  color: #444;
 }
 
 /* 🔗 Rodapé */
 footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #1a1a1a;
-  color: #ccc;
-  font-size: 0.9rem;
-  border-top: 2px solid #d4af37;
-}
-
-/* 📱 Responsividade */
-@media (max-width: 600px) {
-  body {
-    font-size: 15px;
-  }
-
-  section {
-    padding: 2rem 1rem;
-    margin: 2rem auto;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  #topo-templo h1 {
-    font-size: 2.2rem;
-  }
-
-  #abrir-portal {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-
-  #topo-templo .logo {
-    max-width: 80px;
-  }
-
-  #selos-visuais img {
-    max-width: 100%;
-  }
-
-/* 🟤 Cabeçalho cerimonial com cobertura total */
-
-  .cabecalho-cerimonial {
-  position: relative;
-  width: 100vw;
-  height: 120px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.cabecalho-cerimonial img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.titulo-topo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  color: #f5f5dc;
-  font-family: 'Georgia', serif;
-  text-shadow: 1px 1px 4px #000;
-}
-
-.titulo-topo h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  line-height: 1.1;
-  letter-spacing: 1px;
-}
-
-.titulo-topo p {
-  margin: 0.4rem 0 0;
-  font-size: 1.05rem;
-  font-style: italic;
-  line-height: 1.3;
-}
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
   background-color: #f4f1e9;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
   color: #555;
+  border-top: 2px solid #b8860b;
 }
 
 footer a {
   color: #6b4f1d;
   text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-  color: #b8860b;
-  }
+  text-decoration: underline;
+}
