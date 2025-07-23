@@ -1,6 +1,4 @@
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -11,12 +9,14 @@
 <body>
   <!-- 🟤 Cabeçalho Cerimonial com imagem4.jpg -->
   <header class="cabecalho-cerimonial">
-    <img src="imagens/imagem4.jpg" alt="Faixa Cerimonial do Templo Avalokka">
+    <img src="../imagens/imagem4.jpg" alt="Faixa Cerimonial do Templo Avalokka">
     <div class="titulo-topo">
       <h1>Templo Avalokka</h1>
       <p>Onde os véus se abrem pela escuta profunda.</p>
     </div>
-  </header>📜 Descrição editorial -->
+  </header>
+
+  <!-- 📜 Descrição editorial -->
   <section id="descricao">
     <h2>Descrição</h2>
     <p>
@@ -127,15 +127,15 @@
   <!-- 🖼️ Selos Visuais -->
   <section id="selos-visuais">
     <h2>🖼️ Selos Visuais do Templo Avalokka</h2>
-    <img src="imagens/imagem10.jpg" alt="Fundo da Sala de Ritos">
-    <img src="imagens/imagem4.jpg" alt="Topo Cerimonial">
-    <img src="imagens/imagem16.jpg" alt="Marca d’água Avalokka">
-    <img src="imagens/imagem5.webp" alt="Guardiã Enaileal">
-    <img src="imagens/imagem20.jpg" alt="Selo da Transcendência">
-    <img src="imagens/imagem19.jpg" alt="Portal Azul com Símbolos">
-    <img src="imagens/imagem18.jpg" alt="Pergaminho com Chama">
-    <img src="imagens/imagem12.jpg" alt="Livro Branco ao Vento">
-    <img src="imagens/imagem13.jpg" alt="Livro Escuro ao Vento">
+    <img src="../imagens/imagem10.jpg" alt="Fundo da Sala de Ritos">
+    <img src="../imagens/imagem4.jpg" alt="Topo Cerimonial">
+    <img src="../imagens/imagem16.jpg" alt="Marca d’água Avalokka">
+    <img src="../imagens/imagem5.webp" alt="Guardiã Enaileal">
+    <img src="../imagens/imagem20.jpg" alt="Selo da Transcendência">
+    <img src="../imagens/imagem19.jpg" alt="Portal Azul com Símbolos">
+    <img src="../imagens/imagem18.jpg" alt="Pergaminho com Chama">
+    <img src="../imagens/imagem12.jpg" alt="Livro Branco ao Vento">
+    <img src="../imagens/imagem13.jpg" alt="Livro Escuro ao Vento">
   </section>
 
   <!-- 📜 Manifesto Editorial -->
@@ -156,23 +156,21 @@
     <h2>🌌 Portal Aberto</h2>
     <p>Você atravessou o véu. O templo respira com você.</p>
   </section>
-</section>
 
   <!-- 🔗 Rodapé -->
   <footer>
     <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
+    <p>🌿 <a href="index.html">Entrar no Novo Templo em construção de Avalokka</a> — uma tapeçaria de escuta e silêncio.</p>
   </footer>
-
   <!-- 🔮 Script ritual para abrir o portal -->
   <script>
-    document.getElementById('abrir-portal').addEventListener('click', function() {
+    document.getElementById('abrir-portal')?.addEventListener('click', function() {
       const portal = document.getElementById('portal');
       portal.style.display = 'block';
       portal.scrollIntoView({ behavior: 'smooth' });
     });
   </script>
-<footer>
-  <p>🌿 <a href="avalokka/index.html">Entrar no Novo Templo em construção de Avalokka</a> — uma tapeçaria de escuta e silêncio.</p>
-</footer>
 </body>
 </html>
+
+   
