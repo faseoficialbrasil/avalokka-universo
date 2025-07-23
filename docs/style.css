@@ -155,26 +155,30 @@ footer a:hover {
 .cabecalho-cerimonial {
   position: relative;
   width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-}
-
-.cabecalho-cerimonial img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+  height: 400px;
+  background-image: url("imagens/detalhe-topo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titulo-sobreposto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 2rem;
   border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.titulo-sobreposto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo-sobreposto p {
+  font-size: 1.2rem;
+  margin: 0;
 }
