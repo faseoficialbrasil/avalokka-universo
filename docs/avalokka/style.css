@@ -1,4 +1,4 @@
-/* 🌿 Base editorial */
+ /* 🌿 Base editorial */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
@@ -255,3 +255,25 @@ a:hover {
   margin-top: 8px;
   color: #4f4638;
     }
+.portal-iniciados {
+  background-color: #f5f3f0;
+  padding: 40px;
+  text-align: center;
+}
+
+.portal-iniciados figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.portal-iniciados img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.portal-iniciados figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #5a4a3a;
+}
