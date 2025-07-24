@@ -396,3 +396,21 @@ a:hover {
   text-align: center;
   font-style: italic;
 }
+.rodape-templo {
+  background-color: #fdfaf5;
+  padding: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #3e362c;
+  border-top: 2px solid #d8d2c8;
+}
+
+.rodape-templo a {
+  color: #6b4f1d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape-templo a:hover {
+  color: #b8860b;
+}
