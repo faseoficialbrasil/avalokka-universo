@@ -343,3 +343,12 @@ a:hover {
   margin-top: 8px;
   color: #4b4237;
 }
+.selo-final {
+  background-color: #fdfaf5;
+  padding: 60px;
+  text-align: center;
+  font-family: serif;
+  font-size: 1.1em;
+  color: #3e362c;
+  border-top: 2px solid #d8d2c8;
+ }
