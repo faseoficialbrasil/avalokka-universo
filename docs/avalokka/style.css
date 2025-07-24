@@ -145,3 +145,25 @@ a:hover {
   margin-top: 8px;
   color: #5a4e3c;
 }
+.galeria-guardioes {
+  background-color: #f8f6f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.galeria-guardioes figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.galeria-guardioes img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.galeria-guardioes figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #4e4433;
+  }
