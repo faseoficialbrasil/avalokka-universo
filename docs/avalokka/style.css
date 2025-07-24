@@ -189,3 +189,25 @@ a:hover {
   margin-top: 8px;
   color: #5c5344;
     }
+.biblioteca-ascendente {
+  background-color: #f4f2ef;
+  padding: 40px;
+  text-align: center;
+}
+
+.biblioteca-ascendente figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.biblioteca-ascendente img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.biblioteca-ascendente figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #5a5144;
+}
