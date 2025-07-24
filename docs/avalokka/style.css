@@ -299,6 +299,7 @@ a:hover {
   margin-top: 8px;
   color: #4c4336;
  }
+
 .altar-escuta {
   background-color: #f6f5f2;
   padding: 40px;
@@ -320,7 +321,8 @@ a:hover {
   font-style: italic;
   margin-top: 8px;
   color: #4a4033;
- }
+}
+
 .cripta-veus {
   background-color: #f3f2ef;
   padding: 40px;
@@ -343,6 +345,7 @@ a:hover {
   margin-top: 8px;
   color: #4b4237;
 }
+
 .selo-final {
   background-color: #fdfaf5;
   padding: 60px;
@@ -351,7 +354,9 @@ a:hover {
   font-size: 1.1em;
   color: #3e362c;
   border-top: 2px solid #d8d2c8;
- }
+}
+
+
 .cabecalho-indice {
   background-color: #fdfaf5;
   padding: 40px;
@@ -390,4 +395,4 @@ a:hover {
   margin-top: 40px;
   text-align: center;
   font-style: italic;
- }
+}
