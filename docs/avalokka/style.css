@@ -299,3 +299,25 @@ a:hover {
   margin-top: 8px;
   color: #4c4336;
  }
+.altar-escuta {
+  background-color: #f6f5f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.altar-escuta figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.altar-escuta img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.altar-escuta figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #4a4033;
+ }
