@@ -277,3 +277,25 @@ a:hover {
   margin-top: 8px;
   color: #5a4a3a;
 }
+.circulo-silenciosos {
+  background-color: #f4f3f0;
+  padding: 40px;
+  text-align: center;
+}
+
+.circulo-silenciosos figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.circulo-silenciosos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.circulo-silenciosos figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #4c4336;
+ }
