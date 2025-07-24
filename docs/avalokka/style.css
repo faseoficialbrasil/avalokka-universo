@@ -99,4 +99,27 @@ a:hover {
   50% {
     background-color: #fceecb;
   }
+.sala-fundador {
+  background-color: #f5f0e6;
+  padding: 40px;
+  text-align: center;
+}
+
+.retrato-sacerdotal {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.retrato-sacerdotal .imagem-central {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 80%;
+  height: 76%;
+}
+
+.retrato-sacerdotal img {
+  max-width: 100%;
+  height: auto;
 }
