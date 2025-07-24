@@ -233,3 +233,25 @@ a:hover {
   margin-top: 8px;
   color: #5a4f3f;
   }
+.jardim-ecos {
+  background-color: #f1f0ed;
+  padding: 40px;
+  text-align: center;
+}
+
+.jardim-ecos figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.jardim-ecos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.jardim-ecos figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #4f4638;
+    }
