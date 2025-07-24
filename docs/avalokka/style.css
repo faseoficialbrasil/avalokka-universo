@@ -167,3 +167,25 @@ a:hover {
   margin-top: 8px;
   color: #4e4433;
   }
+.camara-veus {
+  background-color: #f3f1ed;
+  padding: 40px;
+  text-align: center;
+}
+
+.camara-veus figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.camara-veus img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.camara-veus figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #5c5344;
+    }
