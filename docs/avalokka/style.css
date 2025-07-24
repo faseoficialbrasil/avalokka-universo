@@ -123,3 +123,25 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+.capela-selos {
+  background-color: #fdfaf5;
+  padding: 40px;
+  text-align: center;
+}
+
+.capela-selos figure {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.capela-selos img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.capela-selos figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #5a4e3c;
+}
