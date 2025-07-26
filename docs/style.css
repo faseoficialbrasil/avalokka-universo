@@ -210,3 +210,20 @@ footer a:hover {
   background-size: contain;
   margin-top: 10px;
                               }
+/* 🌙 Cabeçalho no modo templo-noturno */
+body.templo-noturno .cabecalho {
+  background-color: #1c1b1a;
+}
+
+body.templo-noturno .titulo {
+  color: #00f6ff;
+  text-shadow: 0 0 8px #00f6ff, 0 0 16px #00f6ff;
+}
+
+body.templo-noturno .menu-sanduiche span {
+  background-color: #eae6dc;
+}
+
+body.templo-noturno .separador-barroco {
+  filter: brightness(0.8);
+}
