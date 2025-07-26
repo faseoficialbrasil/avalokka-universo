@@ -24,16 +24,11 @@ body {
 
 /* === Imagens === */
 img {
+  width: auto;
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-figure img {
-  width: 100%;
-  max-width: 800px;
   margin: 0 auto;
-  display: block;
 }
 
 /* === Cabeçalho com imagem de fundo === */
