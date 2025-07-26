@@ -7,6 +7,70 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<!-- 🏛️ Cabeçalho cerimonial começa aqui -->
+<header class="cabecalho-avalokka">
+  <div class="imagem-topo">
+    <img src="../imagens/detalhe-topo.jpg" alt="Detalhe cerimonial do topo">
+  </div>
+
+  <div class="titulo-menu">
+    <h1 class="titulo-site">Avalokka</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav id="menu-links" class="menu-links">
+    <ul>
+      <li><a href="#bloco1">Abertura</a></li>
+      <li><a href="#bloco2">Purificação</a></li>
+      <li><a href="#bloco3">Meditação</a></li>
+      <li><a href="#bloco4">Encerramento</a></li>
+      <li><a href="#livro">Livro Cerimonial</a></li>
+      <li><a href="#biblioteca">Biblioteca Avalokka</a></li>
+      <li><a href="#rodape-cerimonial">Saudações Finais</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- 🏛️ Cabeçalho cerimonial termina aqui -->
+
+<!-- 🔧 Script do menu -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu-links');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+  
+  <!-- 🌿 Introdução cerimonial começa aqui -->
+<section id="introducao" class="introducao-avalokka">
+  <div class="imagem-intro">
+    <img src="../imagens/mandala-entrada.jpg" alt="Mandala cerimonial de entrada">
+  </div>
+  <div class="texto-intro">
+    <h2>Bem-vindo ao Universo de Avalokka</h2>
+    <p>
+      Este espaço cerimonial foi criado para oferecer uma jornada espiritual e contemplativa através dos rituais de Avalokka.
+      Cada bloco representa uma etapa do caminho interior — desde a Abertura até o Encerramento, passando por momentos de Purificação e Meditação.
+    </p>
+  </div>
+  <div class="imagem-intro">
+    <img src="../imagens/vela-ritual.jpg" alt="Vela cerimonial acesa">
+  </div>
+  <div class="texto-intro">
+    <p>
+      O Livro Cerimonial reúne ensinamentos e reflexões sagradas, enquanto a Biblioteca Avalokka oferece acesso a conteúdos complementares.
+      Ao final, as Saudações Finais encerram o ciclo com gratidão e reverência.
+    </p>
+  </div>
+  <div class="imagem-intro">
+    <img src="../imagens/pergaminho-cerimonial.jpg" alt="Pergaminho cerimonial">
+  </div>
+  <div class="texto-intro">
+    <p>
+      Navegue com calma, respire fundo, e permita-se mergulhar na tapeçaria espiritual que te espera.
+    </p>
+  </div>
+</section>
+<!-- 🌿 Introdução cerimonial termina aqui -->
 
   <!-- 🌫️ Bloco dos Véus -->
   <section id="bloco-dos-veus">
