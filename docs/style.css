@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+section.decorado img,
+article.decorado img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 /* === Corpo da página === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
