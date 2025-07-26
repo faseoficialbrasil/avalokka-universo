@@ -1,245 +1,142 @@
-/* 🌿 Fundo geral do templo */
-body {
+/* 🌿 Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: 'Cinzel', serif;
-  scroll-behavior: smooth;
-  color: #3e3e3e;
+  box-sizing: border-box;
 }
 
-/* 🧵 Blocos cerimoniais */
-section.cerimonial {
-  position: relative;
-  margin: 4rem auto;
-  padding: 2rem;
-  max-width: 960px;
+/* 🌌 Corpo geral */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f6f2;
+  color: #4a3f35;
+  line-height: 1.6;
+}
+
+/* 🏛️ Cabeçalho e rodapé com imagem de fundo */
+.cabecalho-avalokka,
+#rodape-cerimonial {
+  background-image: url('../imagens/detalhe-topo.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-  background-color: rgba(255, 250, 244, 0.95);
-}
-
-/* 📸 Imagem com moldura */
-.imagem-com-moldura {
-  position: relative;
-  margin-bottom: 2rem;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.imagem-com-moldura img {
+/* 🖋️ Título e menu */
+.titulo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titulo-site {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.menu-links {
+  display: none;
+  margin-top: 20px;
+}
+
+.menu-links ul {
+  list-style: none;
+}
+
+.menu-links li {
+  margin: 10px 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 📱 Responsividade do menu */
+@media (min-width: 768px) {
+  .menu-links {
+    display: block !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .menu-links li {
+    margin: 0;
+  }
+}
+
+/* 🌿 Blocos cerimoniais */
+section.cerimonial,
+section.introducao-avalokka {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* 🖼️ Imagens internas */
+.imagem-intro img,
+.imagem-topo img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
+  margin: 20px auto;
   display: block;
-  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.imagem-com-moldura .moldura {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 2;
+/* 📚 Texto introdutório */
+.texto-intro {
+  margin-bottom: 30px;
+  font-size: 1.1em;
 }
 
-/* 🌸 Separador barroco */
-.separador-barroco {
-  width: 100%;
-  height: 60px;
-  background-image: url('imagens/separador-barroco.png');
-  background-repeat: repeat-x;
-  background-position: center;
-  opacity: 0.4;
-  margin: 2rem 0;
-}
-
-/* 🧭 Navegação ritual */
-.navegacao-ritual ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.navegacao-ritual li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.navegacao-ritual a {
-  text-decoration: none;
-  color: #5a3e2b;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navegacao-ritual a:hover {
-  color: #a67c52;
-}
-
-/* 🔚 Rodapé cerimonial */
+/* 🧘 Rodapé */
 #rodape-cerimonial {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #f0f0f0;
+  padding: 60px 20px;
+  font-size: 1em;
 }
 
-.imagem-rodape img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-}
+/* 📱 Responsividade geral */
+@media (max-width: 767px) {
+  .titulo-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.texto-rodape {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-shadow: 0 0 10px #000;
-  font-size: 0.9rem;
-}
+  .titulo-site {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
 
-/* 🧘 Espaço entre blocos */
-section.cerimonial + .separador-barroco + section.cerimonial {
-  margin-top: 6rem;
-}
-
-/* 🪷 Encerramento */
-.encerramento .mantra-final {
-  font-style: italic;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #d4c2a8;
-}
-
-/* 📖 Livro Cerimonial */
-section.livro-cerimonial {
-  margin: 4rem auto;
-  padding: 2rem;
-  max-width: 800px;
-  background-color: #fff5e6;
-  border-left: 6px solid #d4bfa3;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.03);
-}
-
-/* 📚 Biblioteca com Livro de Avalokka */
-section.biblioteca-avalokka {
-  margin: 4rem auto;
-  padding: 2rem;
-  max-width: 800px;
-  background-color: #f7f1e8;
-  border-top: 6px solid #d4bfa3;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.03);
-  text-align: center;
-}
-
-section.biblioteca-avalokka h2 {
-  font-size: 1.8rem;
-  color: #7a4e2d;
-  margin-bottom: 1rem;
-}
-
-section.biblioteca-avalokka p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #5c3d2e;
-  margin-bottom: 2rem;
-}
-
-.livro-clicavel {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.livro-clicavel img {
-  width: 80%;
-  max-width: 400px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.livro-clicavel img:hover {
-  transform: scale(1.02);
-}
-
-.indicacao-leitura {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(255, 248, 230, 0.9);
-  color: #7a4e2d;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* 🔒 Versão reservada */
-.livro-clicavel.reservado {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-/* 📱 Responsividade para todos dispositivos */
-@media (max-width: 1024px) {
   section.cerimonial,
-  section.livro-cerimonial,
-  section.biblioteca-avalokka {
-    margin: 2rem 1rem;
-    padding: 1.5rem;
+  section.introducao-avalokka {
+    margin: 20px 10px;
+    padding: 15px;
   }
 
-  .imagem-com-moldura img,
-  .livro-clicavel img {
-    width: 100%;
-    height: auto;
-  }
-
-  .imagem-com-moldura .moldura {
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-
-  .navegacao-ritual ul {
-    display: block;
-    padding: 0;
-  }
-
-  .navegacao-ritual li {
-    display: block;
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-
-  .texto-rodape {
-    font-size: 0.8rem;
-    bottom: 10px;
-  }
-
-  .mantra-final {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .indicacao-leitura {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
+  .menu-links ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
