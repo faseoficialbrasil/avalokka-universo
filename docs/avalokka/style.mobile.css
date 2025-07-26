@@ -1,0 +1,61 @@
+/* 📱 Estilo cerimonial para telas pequenas */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f6f2;
+  }
+
+  .cabecalho-avalokka,
+  #rodape-cerimonial {
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  .titulo-site {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .menu-links ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .menu-links li {
+    margin: 5px 0;
+  }
+
+  section.cerimonial,
+  section.introducao-avalokka {
+    margin: 15px 10px;
+    padding: 15px;
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .imagem-intro img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .texto-intro {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  #rodape-cerimonial {
+    font-size: 0.9em;
+  }
+}
