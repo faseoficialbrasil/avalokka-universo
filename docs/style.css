@@ -1,205 +1,137 @@
-/* 🌌 Estrutura geral */
+/* 🌸 Estilo base para o Templo Avalokka */
+
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fffdf8;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
+  color: #3e3e3e;
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
-header {
-  background-color: #f4f1e9;
+section.cerimonial {
+  margin: 4rem auto;
   padding: 2rem;
-  text-align: center;
-  border-bottom: 2px solid #b8860b;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #6b4f1d;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #444;
-}
-
-/* 🟤 Cabeçalho cerimonial */
-#cabecalho-cerimonial {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.faixa-cerimonial {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-bottom: 4px solid #b8860b;
-}
-
-.titulo-topo h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  color: #6b4f1d;
-}
-
-.titulo-topo p {
-  font-size: 1.2rem;
-  color: #444;
-}
-
-/* 📜 Seções editoriais */
-section {
-  margin: 2rem auto;
   max-width: 800px;
-  padding: 0 1rem;
-}
-
-section h3 {
-  font-size: 1.6rem;
-  color: #6b4f1d;
-  margin-bottom: 1rem;
-}
-
-section p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* 🎼 Selos sonoros */
-audio {
-  display: block;
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-
-/* 🖋️ Cânticos */
-blockquote.cantico {
-  font-style: italic;
-  background-color: #f9f6f0;
-  padding: 1rem;
-  border-left: 4px solid #b8860b;
-  margin: 1rem 0;
-  color: #555;
-}
-
-/* 🖼️ Selos visuais */
-#selos-visuais {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  padding: 0 1rem;
-}
-
-#selos-visuais img {
-  width: 100%;
-  border: 2px solid #e0d7b7;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-#selos-visuais img:hover {
-  transform: scale(1.03);
-}
-
-/* 📜 Manifesto editorial */
-#manifesto {
-  background-color: #f9f6f0;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  border-left: 4px solid #b8860b;
-}
-
-#manifesto p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* 🌌 Portal oculto */
-#portal {
-  background-color: #eae6dc;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  border-left: 4px solid #6b4f1d;
-  font-style: italic;
-  color: #444;
-}
-
-/* 🔗 Rodapé */
-footer {
-  background-color: #f4f1e9;
-  padding: 2rem;
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  border-top: 2px solid #b8860b;
-}
-
-footer a {
-  color: #6b4f1d;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-.cabecalho-cerimonial {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-image: url("imagens/detalhe-topo.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo-sobreposto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  padding: 2rem 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fffaf4;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  max-width: 90%;
-}
-
-.titulo-sobreposto h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.titulo-sobreposto p {
-  font-size: 1.4rem;
-  margin: 0;
-  line-height: 1.5;
-}
-.portal-avalokka {
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../imagens/detalhe-topo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
+  z-index: 1;
+}
+
+h1, h2, h3 {
+  color: #7a4e2d;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.imagem-com-moldura {
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.imagem-com-moldura img {
+  width: 80%;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+
+.imagem-com-moldura .moldura {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 80%;
+  height: 100%;
+  border: 4px solid #d4bfa3;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.navegacao-ritual {
+  list-style: none;
   padding: 0;
+  margin: 2rem 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.navegacao-ritual li {
+  background-color: #e8d9c4;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navegacao-ritual li:hover {
+  background-color: #d4bfa3;
+}
+
+.texto-rodape {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8a6e4f;
+  margin-top: 3rem;
+  position: relative;
+  bottom: 0;
+}
+
+.mantra-final {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  color: #5c3d2e;
+}
+
+/* 📱 Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  section.cerimonial {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .imagem-com-moldura img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-com-moldura .moldura {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .navegacao-ritual {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacao-ritual li {
+    display: block;
+    margin: 0.5rem 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .texto-rodape {
+    font-size: 0.8rem;
+    bottom: 10px;
+  }
+
+  .mantra-final {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
