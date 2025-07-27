@@ -1,40 +1,95 @@
-/* 🎯 Estilos Mobile-first */
+/* Fonte cerimonial e fundo ritualístico */
 body {
+  font-family: 'Marcellus', serif;
+  background-image: url('imagens/fundo_folha.jpg'); /* imagem de folha antiga */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #2c1e0f;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 1rem;
+  padding: 0;
 }
 
-header {
+/* Container de áudio */
+.audio-container {
   text-align: center;
-  padding: 1rem 0;
+  margin: 1.5rem 0;
 }
 
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+#audioToggle {
+  background-color: #5a4a3a;
+  color: #f5f5f5;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-p {
+#audioToggle:hover {
+  background-color: #7a6652;
+}
+
+/* Blocos cerimoniais */
+.bloco-capitulo {
+  border: 2px solid rgba(44, 30, 15, 0.3);
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(44, 30, 15, 0.2);
+  animation: surgir 1.5s ease-in-out;
+}
+
+/* Conteúdo interno */
+.conteudo h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #3b2a1a;
+  text-align: center;
 }
 
-.audio-player {
-  width: 100%;
-  margin: 1rem 0;
+.conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+/* Rodapé cerimonial */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #5a4a3a;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(44, 30, 15, 0.3);
 }
 
+/* Animação de entrada */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  .conteudo h1 {
+    font-size: 1.6rem;
+  }
+
+  .conteudo p {
+    font-size: 1rem;
+  }
+
+  #audioToggle {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
 /* 📱 Tablet vertical (≥600px) */
 @media (min-width: 600px) {
   body {
@@ -101,87 +156,4 @@ body {
   line-height: 1.6;
   padding: 1rem;
 }
-
-header {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-.audio-player {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-}
-
-/* 📱 Tablet vertical (≥600px) */
-@media (min-width: 600px) {
-  body {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-/* 📱 Tablet horizontal (≥768px) */
-@media (min-width: 768px) {
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-}
-
-/* 🖥️ Desktop médio (≥1024px) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 18px;
-    padding: 2rem;
-  }
-
-  .container {
-    max-width: 900px;
-  }
-
-  h1 {
-    font-size: 2.6rem;
-  }
-}
-
-/* 🖥️ Desktop largo (≥1440px) */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1100px;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
 }
