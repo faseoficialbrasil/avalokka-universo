@@ -8,14 +8,7 @@
 </head>
 <body>
 
-  <!-- 🔊 Controle de áudio ambiente -->
-  <div class="audio-container">
-    <button id="audioToggle">🔈 Ligar Som</button>
-    <audio id="audioAmbient" loop>
-      <source src="audios/pulso_veus.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudio HTML5.
-    </audio>
-  </div>
+  
 
   <!-- 🎛️ Script para controle do áudio ambiente -->
   <script>
@@ -35,16 +28,26 @@
     });
   </script>
 
-  <!-- 🟤 Topo cerimonial imponente -->
-  <section id="topo-cerimonial" class="topo-cerimonial">
-    <div class="conteudo-topo">
-      <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" class="cerimonial-img">
-      <h1>Avalokka</h1>
-      <h2>🕯️ Templo de Avalokka</h2>
-      <p>Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
+<!-- 🟤 Topo cerimonial imponente -->
+<section id="topo-cerimonial" class="topo-cerimonial">
+  <div class="conteudo-topo">
+    <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" class="cerimonial-img">
+    <h1>Avalokka</h1>
+    <h2>🕯️ Templo de Avalokka</h2>
+    <p>Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
+
+    <!-- 🔊 Botão único de controle de áudio -->
+    <div class="botao-audio-container">
+      <button class="botao-audio" onclick="tocarAudio()">🎧 Escutar</button>
     </div>
-    <button class="botao-audio" onclick="tocarAudio()">🎧 Escutar</button>
-  </section>
+  </div>
+
+  <!-- 🎶 Áudio ambiente oculto -->
+  <audio id="audioAmbient" loop>
+    <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+</section>
 
   <!-- 🔉 Áudio cerimonial -->
   <audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
@@ -311,5 +314,22 @@
     <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
   </div>
 </section>
+         <script>
+  const audio = document.getElementById('audioAmbient');
+  const botao = document.querySelector('.botao-audio');
+  let tocando = false;
+
+  function tocarAudio() {
+    if (!tocando) {
+      audio.play();
+      botao.textContent = '🔇 Mudo';
+      tocando = true;
+    } else {
+      audio.pause();
+      botao.textContent = '🎧 Escutar';
+      tocando = false;
+    }
+  }
+</script>
 </body>
 </html>
