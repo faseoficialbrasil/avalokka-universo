@@ -2,11 +2,34 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Livro</title>
+  <title>Livro Avalokka</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Controle de áudio -->
+<div class="audio-container">
+  <button id="audioToggle">🔈 Ligar Som</button>
+  <audio id="audioAmbient" loop>
+    <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+</div>
+<script>
+  const audio = document.getElementById('audioAmbient');
+  const toggleBtn = document.getElementById('audioToggle');
+  let isPlaying = false;
 
+  toggleBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      toggleBtn.textContent = '🔈 Ligar Som';
+    } else {
+      audio.play();
+      toggleBtn.textContent = '🔇 Desligar Som';
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
   <div class="bloco-capitulo">
     <div class="conteudo">
       <h1>Título do Capítulo</h1>
