@@ -1,7 +1,7 @@
 /* Fonte cerimonial e fundo ritualístico */
 body {
   font-family: 'Marcellus', serif;
-  background-image: url('imagens/fundo_folha-antigajpg'); /* imagem de folha antiga */
+  background-image: url('imagens/fundo-folha-antigajpg'); /* imagem de folha antiga */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
