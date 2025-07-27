@@ -1,4 +1,4 @@
-/* Fonte e fundo geral */
+/* Fundo geral da página */
 body {
   margin: 0;
   padding: 0;
@@ -10,36 +10,11 @@ body {
   color: #3e2f1c;
 }
 
-/* Bloco de Introdução */
-.bloco-introducao {
-  width: 90%;
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: rgba(255, 248, 225, 0.92); /* leve transparência */
-  border-left: 8px solid #c2a76d;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Bloco Simples */
-.bloco-simples {
-  width: 90%;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: rgba(252, 247, 239, 0.92); /* leve transparência */
-  border: 2px dashed #c2a76d;
-  border-radius: 6px;
-  text-align: center;
-}
-
-/* Bloco com Moldura para Capítulo */
+/* Bloco com moldura decorativa */
 .bloco-capitulo {
   width: 90%;
   max-width: 800px;
-  margin: 60px auto;
+  margin: 80px auto;
   padding: 60px 40px;
   background-image: url('moldura-retangular-capitulo.jpg');
   background-size: contain;
@@ -50,14 +25,14 @@ body {
   border-radius: 12px;
 }
 
-/* Conteúdo interno dos blocos */
+/* Conteúdo dentro do bloco */
 .conteudo {
   text-align: center;
 }
 
-h1, h2 {
+h1 {
+  font-size: 2em;
   margin-bottom: 20px;
-  font-weight: normal;
 }
 
 p {
