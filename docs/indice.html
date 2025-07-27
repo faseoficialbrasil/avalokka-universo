@@ -2,40 +2,86 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Livro Avalokka</title>
+  <title> Avalokka </title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<!-- Controle de áudio -->
-<div class="audio-container">
-  <button id="audioToggle">🔈 Ligar Som</button>
-  <audio id="audioAmbient" loop>
-    <source src="audios/pulso_veus.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio HTML5.
-  </audio>
-</div>
-<script>
-  const audio = document.getElementById('audioAmbient');
-  const toggleBtn = document.getElementById('audioToggle');
-  let isPlaying = false;
 
-  toggleBtn.addEventListener('click', () => {
-    if (isPlaying) {
-      audio.pause();
-      toggleBtn.textContent = '🔈 Ligar Som';
-    } else {
-      audio.play();
-      toggleBtn.textContent = '🔇 Desligar Som';
-    }
-    isPlaying = !isPlaying;
-  });
-</script>
+  <!-- Controle de áudio logo no início -->
+  <div class="audio-container">
+    <button id="audioToggle">🔈 Ligar Som</button>
+    <audio id="audioAmbient" loop>
+      <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+  </div>
+<!-- Script para controle do áudio -->
+  <script>
+    const audio = document.getElementById('audioAmbient');
+    const toggleBtn = document.getElementById('audioToggle');
+    let isPlaying = false;
+
+    toggleBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        audio.pause();
+        toggleBtn.textContent = '🔈 Ligar Som';
+      } else {
+        audio.play();
+        toggleBtn.textContent = '🔇 Desligar Som';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+  <!-- Bloco: Introdução -->
   <div class="bloco-capitulo">
     <div class="conteudo">
-      <h1>Título do Capítulo</h1>
-      <p>Cole aqui o texto do seu capítulo, introdução ou qualquer conteúdo que desejar...</p>
+      <h1>Introdução</h1>
+      <p>
+        Avalokka, escrito por Marcelo Honorio da Silva, é uma jornada mística, filosófica e simbólica rumo à descoberta do Eu Autêntico. A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior. É uma narrativa que convida o leitor a mergulhar no invisível, escutar as vozes interiores e confrontar as máscaras do mundo moderno em busca da verdadeira
+      </p>
     </div>
   </div>
+
+  <!-- Bloco: Sinopse -->
+  <div class="bloco-capitulo">
+    <div class="conteudo">
+      <h1>Sinopse</h1>
+      <p>
+        Antes que houvesse forma,
+antes que os nomes tivessem boca,
+havia um sussurro.
+
+Ele cruzava os véus do visível,
+rasgava o tempo em silêncio,
+e tocava apenas aqueles que ainda sabiam escutar
+com a alma.
+
+Avalokka não é um lugar.
+É um chamado.
+Um fio dourado que dança entre mundos -
+onde símbolos respiram,
+e o Eu se despe de suas peles.
+
+Neste livro, você não encontrará respostas.
+Mas encontrará portas.
+Algumas abrirão para dentro.
+Outras... jamais se fecharão.
+
+Siga a luz vertical.
+Caminhe com os pés da lembrança.
+E se perder for necessário -
+é porque algo antigo em você deseja ser encontrado.
+
+Marcelo Honorio da Silva
+
+
+      </p>
+    </div>
+  </div>
+
+  
 
 </body>
 </html>
