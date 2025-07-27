@@ -7,7 +7,26 @@
   <title>Templo de Avalokka</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<section id="topo-cerimonial" class="topo-cerimonial" style="background-image: url('imagens/detalhe-topo.jpg'); background-size: cover; background-position: center; padding: 40px; color: #fff; text-align: center;">
+<section id="topo-cerimonial" class="topo-cerimonial" style="
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+">
+  <div class="conteudo-topo">
+    <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">🕯️ Templo de Avalokka</h1>
+    <p style="font-family: 'Georgia', serif; font-size: 1.2em;">Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
+    
+<section id="topo-cerimonial" class="topo-cerimonial" style="
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+">
   <div class="conteudo-topo">
     <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">🕯️ Templo de Avalokka</h1>
     <p style="font-family: 'Georgia', serif; font-size: 1.2em;">Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
@@ -53,59 +72,9 @@
 
 <!-- Script externo -->
 <script src="script.js"></script>
-<body>
-  <!-- 🟤 Topo cerimonial com fundo -->
-  <section id="topo-cerimonial" class="topo-cerimonial" style="background-image: url('imagens/detalhe-topo.jpg'); background-size: cover; background-position: center;">
-    <div class="conteudo-topo">
-      <h1>🕯️ Templo de Avalokka</h1>
-      <p>Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
 
-      <!-- 🔊 Botão único de controle de som -->
-<div class="botao-audio-container">
-  <button id="audioToggle" class="botao-audio">🔈 Ligar Som</button>
-</div>
 
-    <!-- 🎶 Áudios -->
-    <audio id="audioAmbient" loop>
-      <source src="audios/pulso_veus.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudio HTML5.
-    </audio>
-
-    <audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
-  </section>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const audioAmbient = document.getElementById('audioAmbient');
-      const audioCerimonial = document.getElementById('audioCerimonial');
-      const toggleAmbientBtn = document.getElementById('audioToggle');
-      const tocarCerimonialBtn = document.getElementById('tocarCerimonial');
-
-      let isAmbientPlaying = false;
-
-      // Controle do som ambiente
-      if (audioAmbient && toggleAmbientBtn) {
-        toggleAmbientBtn.addEventListener('click', () => {
-          if (isAmbientPlaying) {
-            audioAmbient.pause();
-            toggleAmbientBtn.textContent = '🔈 Ligar Som Ambiente';
-          } else {
-            audioAmbient.play();
-            toggleAmbientBtn.textContent = '🔇 Desligar Som Ambiente';
-          }
-          isAmbientPlaying = !isAmbientPlaying;
-        });
-      }
-
-      // Controle do som cerimonial
-      if (audioCerimonial && tocarCerimonialBtn) {
-        tocarCerimonialBtn.addEventListener('click', () => {
-          audioCerimonial.play();
-        });
-      }
-    });
-  </script>
-
+    
 <!-- 🕯️ Mensagem de boas-vindas -->
 <section id="boas-vindas">
   <h1>🕯️ Templo de Avalokka</h1>
