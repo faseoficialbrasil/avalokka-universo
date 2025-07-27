@@ -15,11 +15,16 @@ article.decorado img {
 }
 /* === Corpo da página === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #fdfaf6, #f7f2e8);
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+}
+
+section.decorado {
+  background-color: #fffaf3;
+  border: 2px solid #e0d4c0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
 /* === Imagens === */
@@ -35,13 +40,16 @@ img {
 .topo {
   position: relative;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
 .imagem-topo {
-  width: 100%;
-  height: auto;
+  width: 100%;         /* ocupa toda a largura disponível */
+  height: auto;        /* mantém proporção original */
   display: block;
+  object-fit: cover;   /* cobre o espaço sem distorcer */
+  margin: 0 auto;
 }
 
 .sobre-imagem {
@@ -107,7 +115,57 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #a06c48;
+  transform: scale(1.05);
+  }
 
 button:hover {
   background-color: #a06c48;
 }
+hr.decorativo {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #e0d4c0, #8b5e3c, #e0d4c0);
+  margin: 40px auto;
+  width: 60%;
+  }
+@media (max-width: 600px) {
+  .titulo-site {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+  .selo {
+    width: 100px;
+  }
+    .selo {
+  width: 150px; /* ajuste conforme necessário */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  }
+
+  .menu-sanduiche {
+    font-size: 1.5rem;
+  }
+
+  section, article {
+    padding: 1em;
+  }
+
+  .sobre-imagem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  figure img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  }
+  
