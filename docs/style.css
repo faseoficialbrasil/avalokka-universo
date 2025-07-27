@@ -78,6 +78,14 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Responsividade preservada */
+@media (max-width: 768px) {
+  .bloco-capitulo {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
   .conteudo h1 {
     font-size: 1.6rem;
   }
@@ -90,70 +98,4 @@ footer {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
   }
-/* 📱 Tablet vertical (≥600px) */
-@media (min-width: 600px) {
-  body {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-/* 📱 Tablet horizontal (≥768px) */
-@media (min-width: 768px) {
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-}
-
-/* 🖥️ Desktop médio (≥1024px) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 18px;
-    padding: 2rem;
-  }
-
-  .container {
-    max-width: 900px;
-  }
-
-  h1 {
-    font-size: 2.6rem;
-  }
-}
-
-/* 🖥️ Desktop largo (≥1440px) */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1100px;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-}/* 🎯 Estilos Mobile-first */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 1rem;
-}
 }
