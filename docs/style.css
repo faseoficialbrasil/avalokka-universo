@@ -227,4 +227,13 @@ footer {
   #rodape-cerimonial {
     font-size: 0.9em;
   }
+/* 📱 Tamanho de fonte responsivo */
+body {
+  font-size: 16px; /* padrão para dispositivos móveis */
 }
+
+@media (min-width: 769px) {
+  body {
+    font-size: 18px; /* ajuste para telas maiores */
+  }
+
