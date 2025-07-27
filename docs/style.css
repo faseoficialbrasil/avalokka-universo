@@ -20,24 +20,31 @@ body {
   margin: 1.5rem 0;
 }
 
-#audioToggle {
-  background-color: #5a4a3a;
-  color: #f5f5f5;
-  border: none;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 8px;
+.botao-audio {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 1em;
+  padding: 12px 18px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#audioToggle:hover {
-  background-color: #7a6652;
+.botao-audio:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-#audioToggle:focus {
+.botao-audio:focus {
   outline: 2px solid #ffd700;
   outline-offset: 2px;
+}
+
+.botao-audio-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* === BLOCOS CERIMONIAIS === */
