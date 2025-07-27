@@ -1,82 +1,187 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avalokka - Universo Cerimonial</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* 🎯 Estilos Mobile-first */
+/* 🎯 Estilos Mobile-first */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 16px;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      padding: 1rem;
-    }
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
 
-    header {
-      text-align: center;
-      padding: 1rem 0;
-    }
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
 
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
+p {
+  margin-bottom: 1rem;
+}
 
-    p {
-      margin-bottom: 1rem;
-    }
+.audio-player {
+  width: 100%;
+  margin: 1rem 0;
+}
 
-    .audio-player {
-      width: 100%;
-      margin: 1rem 0;
-    }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-    }
+/* 📱 Tablet vertical (≥600px) */
+@media (min-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
 
-    /* 🖥️ Estilos para telas maiores */
-    @media (min-width: 769px) {
-      body {
-        font-size: 18px;
-        padding: 2rem;
-      }
+  h1 {
+    font-size: 2rem;
+  }
+}
 
-      h1 {
-        font-size: 2.4rem;
-      }
+/* 📱 Tablet horizontal (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Avalokka</h1>
-      <p>Um universo cerimonial em som e imagem</p>
-    </header>
+  h1 {
+    font-size: 2.2rem;
+  }
 
-    <section>
-      <p>Explore a jornada sonora e visual de Avalokka, onde cada elemento é parte de um ritual.</p>
-      <audio class="audio-player" controls>
-        <source src="avalokka.mp3" type="audio/mpeg">
-        Seu navegador não suporta áudio.
-      </audio>
-      <img src="avalokka-ritual.jpg" alt="Imagem cerimonial de Avalokka">
-    </section>
-  </div>
-</body>
-</html>
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🖥️ Desktop médio (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+/* 🖥️ Desktop largo (≥1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}/* 🎯 Estilos Mobile-first */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.audio-player {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* 📱 Tablet vertical (≥600px) */
+@media (min-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* 📱 Tablet horizontal (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🖥️ Desktop médio (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+/* 🖥️ Desktop largo (≥1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
