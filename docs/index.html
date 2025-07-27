@@ -7,7 +7,52 @@
   <title>Templo de Avalokka</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<section id="topo-cerimonial" class="topo-cerimonial" style="background-image: url('imagens/detalhe-topo.jpg'); background-size: cover; background-position: center; padding: 40px; color: #fff; text-align: center;">
+  <div class="conteudo-topo">
+    <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">🕯️ Templo de Avalokka</h1>
+    <p style="font-family: 'Georgia', serif; font-size: 1.2em;">Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
 
+    <!-- 🔊 Botões de controle -->
+    <div class="botao-audio-container" style="margin-top: 20px;">
+      <button id="audioToggle" class="botao-audio" style="
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #ccc;
+        color: #fff;
+        font-family: 'Georgia', serif;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      ">🔈 Ligar Som Ambiente</button>
+    </div>
+
+    <div class="botao-cerimonial-container" style="margin-top: 10px;">
+      <button id="tocarCerimonial" class="botao-cerimonial" style="
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #ccc;
+        color: #fff;
+        font-family: 'Georgia', serif;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      ">🎵 Tocar Cerimonial</button>
+    </div>
+
+    <!-- 🎶 Áudios -->
+    <audio id="audioAmbient" loop>
+      <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
+  </div>
+</section>
+
+<!-- Script externo -->
+<script src="script.js"></script>
 <body>
   <!-- 🟤 Topo cerimonial com fundo -->
   <section id="topo-cerimonial" class="topo-cerimonial" style="background-image: url('imagens/detalhe-topo.jpg'); background-size: cover; background-position: center;">
