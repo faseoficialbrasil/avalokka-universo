@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro Cerimonial de Avalokka</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 🔊 Controle de áudio -->
+
+  <!-- 🔊 Controle de áudio ambiente -->
   <div class="audio-container">
     <button id="audioToggle">🔈 Ligar Som</button>
     <audio id="audioAmbient" loop>
@@ -16,8 +16,8 @@
       Seu navegador não suporta áudio HTML5.
     </audio>
   </div>
-  
-    <!-- 🎛️ Script para controle do áudio -->
+
+  <!-- 🎛️ Script para controle do áudio ambiente -->
   <script>
     const audio = document.getElementById('audioAmbient');
     const toggleBtn = document.getElementById('audioToggle');
@@ -33,7 +33,27 @@
       }
       isPlaying = !isPlaying;
     });
-          </script>
+  </script>
+
+  <!-- 🟤 Topo cerimonial imponente -->
+  <section id="topo-cerimonial" class="topo-cerimonial">
+    <div class="conteudo-topo">
+      <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" class="cerimonial-img">
+      <h1>Avalokka</h1>
+      <h2>🕯️ Livro Cerimonial</h2>
+      <p>Bem-vindo ao livro cerimonial de Avalokka.</p>
+    </div>
+    <button class="botao-audio" onclick="tocarAudio()">🎧 Escutar</button>
+  </section>
+
+  <!-- 🔉 Áudio cerimonial -->
+  <audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
+  <script>
+    function tocarAudio() {
+      const audio = document.getElementById('audioCerimonial');
+      audio.play();
+    }
+  </script>
 
 
 
