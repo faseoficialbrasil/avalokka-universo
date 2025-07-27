@@ -1,416 +1,64 @@
-/* 🌿 Base editorial */
-body {
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+  background-image: url('fundo-folha-antiga.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Georgia', serif;
-  background-color: #fdf6e3;
-  color: #333;
+  color: #2e1f0f;
   line-height: 1.6;
-  animation: respirar 12s ease-in-out infinite;
 }
 
-header {
-  background-color: #e0d7b7;
-  padding: 2rem;
-  text-align: center;
-  border-bottom: 2px solid #c2b280;
+/* Container central */
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 240, 0.9); /* tom envelhecido */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Títulos */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5c3b1e;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-  color: #6b4f1d;
-}
-
-p {
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-section {
-  padding: 2rem;
-}
-
-/* 🖼️ Tapeçaria cerimonial */
-figure {
-  margin: 2rem auto;
-  max-width: 600px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: surgir 1s ease-out forwards;
-  animation-delay: calc(var(--i) * 0.2s);
-}
-
-img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-figcaption {
-  margin-top: 0.5rem;
-  font-style: italic;
-  color: #555;
-}
-
-/* ✨ Brilho cerimonial */
-figure:hover img {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-}
-
-/* 🔮 Índice editorial */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 0.5rem 0;
-}
-
-a {
-  text-decoration: none;
-  color: #6b4f1d;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #b8860b;
-}
-
-/* 🔮 Animações */
-@keyframes surgir {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes respirar {
-  0%, 100% {
-    background-color: #fdf6e3;
-  }
-  50% {
-    background-color: #fceecb;
-  }
-.sala-fundador {
-  background-color: #f5f0e6;
-  padding: 40px;
-  text-align: center;
-}
-
-.retrato-sacerdotal {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.retrato-sacerdotal .imagem-central {
-  position: absolute;
-  top: 12%;
-  left: 10%;
-  width: 80%;
-  height: 76%;
-}
-
-.retrato-sacerdotal img {
-  max-width: 100%;
-  height: auto;
-}
-.capela-selos {
-  background-color: #fdfaf5;
-  padding: 40px;
-  text-align: center;
-}
-
-.capela-selos figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.capela-selos img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.capela-selos figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #5a4e3c;
-}
-.galeria-guardioes {
-  background-color: #f8f6f2;
-  padding: 40px;
-  text-align: center;
-}
-
-.galeria-guardioes figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.galeria-guardioes img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.galeria-guardioes figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #4e4433;
-  }
-.camara-veus {
-  background-color: #f3f1ed;
-  padding: 40px;
-  text-align: center;
-}
-
-.camara-veus figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.camara-veus img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.camara-veus figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #5c5344;
-    }
-.biblioteca-ascendente {
-  background-color: #f4f2ef;
-  padding: 40px;
-  text-align: center;
-}
-
-.biblioteca-ascendente figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.biblioteca-ascendente img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.biblioteca-ascendente figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #5a5144;
-}
-.camara-manuscritos {
-  background-color: #f2f0ec;
-  padding: 40px;
-  text-align: center;
-}
-
-.camara-manuscritos figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.camara-manuscritos img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.camara-manuscritos figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #5a4f3f;
-  }
-.jardim-ecos {
-  background-color: #f1f0ed;
-  padding: 40px;
-  text-align: center;
-}
-
-.jardim-ecos figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.jardim-ecos img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.jardim-ecos figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #4f4638;
-    }
-.portal-iniciados {
-  background-color: #f5f3f0;
-  padding: 40px;
-  text-align: center;
-}
-
-.portal-iniciados figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.portal-iniciados img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.portal-iniciados figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #5a4a3a;
-}
-.circulo-silenciosos {
-  background-color: #f4f3f0;
-  padding: 40px;
-  text-align: center;
-}
-
-.circulo-silenciosos figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.circulo-silenciosos img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.circulo-silenciosos figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #4c4336;
- }
-
-.altar-escuta {
-  background-color: #f6f5f2;
-  padding: 40px;
-  text-align: center;
-}
-
-.altar-escuta figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.altar-escuta img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.altar-escuta figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #4a4033;
-}
-
-.cripta-veus {
-  background-color: #f3f2ef;
-  padding: 40px;
-  text-align: center;
-}
-
-.cripta-veus figure {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.cripta-veus img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.cripta-veus figcaption {
-  font-style: italic;
-  margin-top: 8px;
-  color: #4b4237;
-}
-
-.selo-final {
-  background-color: #fdfaf5;
-  padding: 60px;
-  text-align: center;
-  font-family: serif;
-  font-size: 1.1em;
-  color: #3e362c;
-  border-top: 2px solid #d8d2c8;
-}
-
-
-.cabecalho-indice {
-  background-color: #fdfaf5;
-  padding: 40px;
-  text-align: center;
-  color: #3e362c;
-}
-
-.indice {
-  background-color: #f8f6f2;
-  padding: 40px;
-  text-align: center;
-}
-
-.indice h2 {
-  font-size: 1.5em;
-  margin-top: 30px;
-  color: #4e4433;
-}
-
-.indice ul {
-  list-style: none;
-  padding: 0;
-}
-
-.indice li {
-  margin: 8px 0;
-}
-
-.indice a {
-  text-decoration: none;
-  color: #5a4a3a;
-  font-weight: bold;
-}
-
-.rodape-indice {
+  font-size: 1.8em;
   margin-top: 40px;
-  text-align: center;
-  font-style: italic;
-}
-.rodape-templo {
-  background-color: #fdfaf5;
-  padding: 40px;
-  text-align: center;
-  font-style: italic;
-  color: #3e362c;
-  border-top: 2px solid #d8d2c8;
+  margin-bottom: 15px;
+  color: #6e4a2e;
 }
 
-.rodape-templo a {
-  color: #6b4f1d;
+/* Parágrafos */
+p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Links e botões */
+a.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #7a4b2a;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.rodape-templo a:hover {
-  color: #b8860b;
+a.botao:hover {
+  background-color: #9b5f3a;
 }
