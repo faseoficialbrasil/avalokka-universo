@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title> Avalokka </title>
-  <link rel="stylesheet" href="style.css">
+  <title>Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Controle de áudio logo no início -->
+  <!-- 🔊 Controle de áudio -->
   <div class="audio-container">
     <button id="audioToggle">🔈 Ligar Som</button>
     <audio id="audioAmbient" loop>
@@ -16,7 +17,69 @@
       Seu navegador não suporta áudio HTML5.
     </audio>
   </div>
-<!-- Script para controle do áudio -->
+
+  <!-- 🖼️ Cabeça do livro -->
+  <div class="bloco-capitulo">
+    <div class="conteudo">
+      <h1>Revelação do Fundador</h1>
+      <img src="imagens/revelacao-Fundador.jpg" alt="Imagem do Fundador" class="imagem-fundador">
+      <p>
+        A imagem cerimonial do fundador marca o início da travessia. É o selo que abre o véu entre mundos, revelando a presença que guia Avalokka. Aqui, o leitor é convidado a silenciar, observar e escutar com os olhos da alma.
+      </p>
+    </div>
+  </div>
+
+  <!-- 📖 Bloco: Introdução -->
+  <div class="bloco-capitulo">
+    <div class="conteudo">
+      <h1>Introdução</h1>
+      <p>
+        Avalokka, escrito por Marcelo Honorio da Silva, é uma jornada mística, filosófica e simbólica rumo à descoberta do Eu Autêntico. A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior. É uma narrativa que convida o leitor a mergulhar no invisível, escutar as vozes interiores e confrontar as máscaras do mundo moderno em busca da verdadeira essência.
+      </p>
+    </div>
+  </div>
+
+  <!-- 📖 Bloco: Sinopse -->
+  <div class="bloco-capitulo">
+    <div class="conteudo">
+      <h1>Sinopse</h1>
+      <p>
+        Antes que houvesse forma,<br>
+        antes que os nomes tivessem boca,<br>
+        havia um sussurro.<br><br>
+
+        Ele cruzava os véus do visível,<br>
+        rasgava o tempo em silêncio,<br>
+        e tocava apenas aqueles que ainda sabiam escutar<br>
+        com a alma.<br><br>
+
+        Avalokka não é um lugar.<br>
+        É um chamado.<br>
+        Um fio dourado que dança entre mundos –<br>
+        onde símbolos respiram,<br>
+        e o Eu se despe de suas peles.<br><br>
+
+        Neste livro, você não encontrará respostas.<br>
+        Mas encontrará portas.<br>
+        Algumas abrirão para dentro.<br>
+        Outras... jamais se fecharão.<br><br>
+
+        Siga a luz vertical.<br>
+        Caminhe com os pés da lembrança.<br>
+        E se perder for necessário –<br>
+        é porque algo antigo em você deseja ser encontrado.<br><br>
+
+        <strong>Marcelo Honorio da Silva</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- 🔗 Rodapé cerimonial -->
+  <footer>
+    <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
+  </footer>
+
+  <!-- 🎛️ Script para controle do áudio -->
   <script>
     const audio = document.getElementById('audioAmbient');
     const toggleBtn = document.getElementById('audioToggle');
@@ -34,57 +97,5 @@
     });
   </script>
 
-  <!-- Bloco: Introdução -->
-  <div class="bloco-capitulo">
-    <div class="conteudo">
-      <h1>Introdução</h1>
-      <p>
-        Avalokka, escrito por Marcelo Honorio da Silva, é uma jornada mística, filosófica e simbólica rumo à descoberta do Eu Autêntico. A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior. É uma narrativa que convida o leitor a mergulhar no invisível, escutar as vozes interiores e confrontar as máscaras do mundo moderno em busca da verdadeira
-      </p>
-    </div>
-  </div>
-
-  <!-- Bloco: Sinopse -->
-  <div class="bloco-capitulo">
-    <div class="conteudo">
-      <h1>Sinopse</h1>
-      <p>
-        Antes que houvesse forma,
-antes que os nomes tivessem boca,
-havia um sussurro.
-
-Ele cruzava os véus do visível,
-rasgava o tempo em silêncio,
-e tocava apenas aqueles que ainda sabiam escutar
-com a alma.
-
-Avalokka não é um lugar.
-É um chamado.
-Um fio dourado que dança entre mundos -
-onde símbolos respiram,
-e o Eu se despe de suas peles.
-
-Neste livro, você não encontrará respostas.
-Mas encontrará portas.
-Algumas abrirão para dentro.
-Outras... jamais se fecharão.
-
-Siga a luz vertical.
-Caminhe com os pés da lembrança.
-E se perder for necessário -
-é porque algo antigo em você deseja ser encontrado.
-
-Marcelo Honorio da Silva
-
-
-      </p>
-    </div>
-  </div>
-
-  
-
-  <!-- 🔗 Rodapé cerimonial -->
-  <footer>
-    <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
 </body>
 </html>
