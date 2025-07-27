@@ -9,7 +9,25 @@ body {
   background-position: center;
   color: #3e2f1c;
 }
+.audio-container {
+  text-align: center;
+  margin-top: 20px;
+}
 
+#audioToggle {
+  background-color: #6b4f3b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#audioToggle:hover {
+  background-color: #8a6a50;
+}
 /* Bloco com moldura decorativa */
 .bloco-capitulo {
   width: 90%;
