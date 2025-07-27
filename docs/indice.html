@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- 🔊 Áudio ambiente -->
+<div class="audio-container">
+  <button id="audioToggle">🔈 Ligar Som</button>
+  <audio id="audioAmbient" loop>
+    <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+</div>
+
 <!-- 🎛️ Script para controle do áudio ambiente -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +37,7 @@
   });
 </script>
 
-<!-- 🟤 Topo cerimonial imponente com imagem e botão sobrepostos -->
+<!-- 🟤 Topo cerimonial imponente com imagem e conteúdo sobreposto -->
 <section id="topo-cerimonial" class="topo-cerimonial">
   <div class="imagem-fundo">
     <img src="imagens/detalhe-topo.jpg" alt="Imagem cerimonial">
@@ -35,11 +45,8 @@
 
   <div class="conteudo-topo">
     <h1>Avalokka</h1>
-    <h2>🕯️ Livro Cerimonial de Avalokka</h2>
-    <p>Bem-vindo ao Livro Cerimonial de Avalokka.</p>
-  </div>
-
-  <div class="botao-audio-container">
+    <h2>📜 Livro Cerimonial de Avalokka</h2>
+    <p>Bem-vindo ao Livro Cerimonial de Avalokka, onde cada véu revela um fragmento da escuta infinita.</p>
     <button class="botao-audio" onclick="tocarAudio()">🎧 Escutar</button>
   </div>
 </section>
@@ -53,30 +60,11 @@
   }
 </script>
 
-<!-- 🟤 Topo cerimonial imponente com imagem e botão sobrepostos -->
-<section id="topo-cerimonial" class="topo-cerimonial">
-  <div class="imagem-fundo">
-    <img src="imagens/detalhe-topo.jpg" alt="Imagem cerimonial">
-  </div>
 
-  <div class="conteudo-topo">
-    <h1>Avalokka</h1>
-    <h2>📜 Livro Cerimonial  de Avalokka</h2>
-    <p>Bem-vindo ao Livro cerimonial de Avalokka.</p>
-  </div>
 
-  <div class="botao-audio-container">
-    <button class="botao-audio" onclick="tocarAudio()">🎧 Escutar</button>
-  </div>
-</section>
 
-<!-- 🔉 Áudio cerimonial -->
-<audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
-<script>
-  function tocarAudio() {
-    const audio = document.getElementById('audioCerimonial');
-    audio.play();
-  }
+
+  
 </script>
   <!-- 🖼️ Cabeça do livro -->
   <div class="bloco-capitulo">
