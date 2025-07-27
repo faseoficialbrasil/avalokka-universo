@@ -1,19 +1,107 @@
-/* Fonte cerimonial */
+/* 🌌 Paleta Cerimonial */
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Cinzel', serif;
   background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  color: #2c1e1e;
-  margin: 0;
-  padding: 0;
+  background-color: #0e1117;
+  color: #f4ecd8;
+  line-height: 1.6;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* 🌀 Modo Penumbra */
+body.dark-mode {
+  background-color: #0b0c10;
+  color: #d8cfb0;
+}
+
+/* ✨ Títulos */
+h1, h2, h3 {
+  color: #e6d3a2;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 🜁 Links e Selos */
+a, .selo-pagina a {
+  color: #f4ecd8;
+  text-decoration: none;
+  transition: color 0.4s ease, box-shadow 0.4s ease;
+}
+a:hover, .selo-pagina a:hover {
+  color: #e6d3a2;
+  box-shadow: 0 0 12px rgba(240, 230, 190, 0.3);
+}
+
+/* 🔮 Selos Visuais */
+.selo-pagina {
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+}
+.selo-pagina img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.6s ease;
+}
+.selo-pagina img:hover {
+  filter: brightness(1.15) drop-shadow(0 0 8px rgba(230, 210, 170, 0.4));
+  transform: scale(1.06);
+}
+
+/* 🎴 Botões Cerimoniais */
+.button-ritual {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #e6d3a2;
+  color: #e6d3a2;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  animation: pulsar 3s infinite;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button-ritual:hover {
+  background-color: #6b3e3e;
+  transform: scale(1.05);
+}
+@keyframes pulsar {
+  0% { box-shadow: 0 0 0 rgba(240,230,190,0); }
+  50% { box-shadow: 0 0 8px rgba(240,230,190,0.3); }
+  100% { box-shadow: 0 0 0 rgba(240,230,190,0); }
+}
+
+/* 🪶 Separadores */
+.divisor-ritual {
+  border: none;
+  height: 1px;
+  background: rgba(240,230,190,0.3);
+  margin: 3em auto;
+  max-width: 600px;
+}
+
+/* 📜 Cantico Poético */
+.cantico {
+  text-align: center;
+  font-style: italic;
+  margin: 2em auto;
+  color: #e6d3a2;
+  font-size: 1.1em;
 }
 
 /* Cabeçalho */
 header {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg);
+  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,25 +112,13 @@ header {
   border-bottom: 2px solid #4b2e2e;
 }
 
-/* Títulos */
-h1, h2 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-  color: #fdf6e3;
-}
-
 /* Seções */
 main {
   padding: 2rem;
 }
 
 section {
-  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg);
+  background-image: linear-gradient(rgba(44, 30, 30, 0.6), rgba(44, 30, 30, 0.6)), url('imagens/fundo-avalokka.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,35 +137,6 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
-}
-
-/* Links */
-a {
-  color: #fdf6e3;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #ffe4c4;
-}
-
-/* Botões cerimoniais */
-.button-ritual {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #4b2e2e;
-  color: #fdf6e3;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button-ritual:hover {
-  background-color: #6b3e3e;
-  transform: scale(1.05);
 }
 
 /* Bloco Enaileal */
@@ -111,4 +158,64 @@ footer {
   color: #fdf6e3;
   font-size: 0.9rem;
   border-top: 2px solid #6b3e3e;
+}
+
+/* 📱 Estilo cerimonial para telas pequenas */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 1em;
+    background-color: #f9f6f2;
   }
+
+  .cabecalho-avalokka,
+  #rodape-cerimonial {
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  .titulo-site {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .menu-links ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .menu-links li {
+    margin: 5px 0;
+  }
+
+  section.cerimonial,
+  section.introducao-avalokka {
+    margin: 15px 10px;
+    padding: 15px;
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .imagem-intro img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .texto-intro {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  #rodape-cerimonial {
+    font-size: 0.9em;
+  }
+}
