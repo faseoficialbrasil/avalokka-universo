@@ -753,5 +753,20 @@ nav {
   font-family: 'Georgia', serif;
   text-align: center;
 }
+/* 📜 Estilo cerimonial para o bloco de apresentação */
+.bloco-cerimonial {
+  background-image: url('imagens/fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #3b2f1c;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
 }
 
