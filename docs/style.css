@@ -768,5 +768,76 @@ nav {
   font-family: 'Georgia', serif;
   text-align: center;
 }
+/* Fonte recomendada: Google Fonts - 'Cormorant Garamond' para texto, 'Cinzel Decorative' para títulos */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+.ceremonial-block {
+  background-color: #0e0e0e;
+  color: #e0d8c3;
+  padding: 3rem;
+  border-left: 6px solid #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #bfa76f;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+blockquote.chant {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #f0e6d2;
+  border-left: 3px solid #bfa76f;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  animation: chantGlow 3s ease-in-out infinite alternate;
+}
+
+blockquote.chant.repeat {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+blockquote.chant cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #a89c84;
+}
+
+@keyframes chantGlow {
+  from {
+    text-shadow: 0 0 5px #d4af37;
+  }
+  to {
+    text-shadow: 0 0 15px #ffd700;
+  }
+}
+
+p em {
+  color: #c0b283;
+  font-style: italic;
+}
+
+p strong {
+  color: #ffd700;
+  font-weight: bold;
+  }
 }
 
