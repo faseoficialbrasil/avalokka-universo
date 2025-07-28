@@ -263,6 +263,8 @@ button:hover,
 /* === TOPO CERIMONIAL === */
 .topo-cerimonial {
   color: #000;
+  color: #000 !important;
+}
   width: 100%;
   min-height: 520px; /* altura mínima para evitar corte */
   display: flex;
