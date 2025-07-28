@@ -992,6 +992,21 @@ ul.visoes {
   color: #6e5a99;
   margin-bottom: 0.5rem;
 }
+.bloco-cerimonial {
+  background-image: url('fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #3a2f2b;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 2rem auto;
+  }
 
 .subtitulo {
   font-size: 1rem;
