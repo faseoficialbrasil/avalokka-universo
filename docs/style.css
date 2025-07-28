@@ -922,5 +922,18 @@ em {
 strong {
   color: #d1c4ff;
 }
+header.principal {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0;
+  border: none;
+}
+
+header.principal h1 {
+  font-size: 2.5rem;
+  color: #dcd6ff;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  }
 }
 
