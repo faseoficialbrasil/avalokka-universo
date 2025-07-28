@@ -262,7 +262,7 @@ button:hover,
 
 /* === TOPO CERIMONIAL === */
 .topo-cerimonial {
-  color: #222; /* texto escuro */
+  color: #000; /* texto escuro */
   position: relative;
   width: 100%;
   height: 480px;
@@ -280,6 +280,61 @@ button:hover,
   z-index: 1;
   filter: brightness(60%);
 }
+  /* Seção principal com imagem de fundo */
+.topo-cerimonial {
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Camada de conteúdo sobre a imagem */
+.conteudo-topo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem para dar contraste */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+.conteudo-topo h1 {
+  font-size: 3.5em;
+  color: #FFD700; /* dourado */
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Subtítulo */
+.conteudo-topo h2 {
+  font-size: 2em;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+/* Texto complementar */
+.conteudo-topo p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-style: italic;
+  color: #ddd;
+  max-width: 800px;
+  margin-bottom: 20px;
+                     }
 
 .conteudo-topo {
   position: absolute;
@@ -294,7 +349,7 @@ button:hover,
   align-items: center;
   text-align: center;
   color: #f5f5f5;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -464,10 +519,14 @@ footer a:hover {
   }
 }
 .topo-cerimonial {
-  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('imagens/detalhe-topo.jpg');
+  background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
   background-position: center;
-  }
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
   .conteudo h1 {
     font-size: 1.6rem;
   }
