@@ -1,7 +1,81 @@
-/* === 🌿 DNA CERIMONIAL DE AVALOKKA === */
 
+/* === 🌿 DNA CERIMONIAL DE AVALOKKA === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.card {
+  background-color: #fff;
+  padding: var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+  margin-bottom: var(--espacamento-grande);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+}
+section {
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--cor-destaque);
+}
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--cor-destaque);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #555;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
 /* === BASE === */
 body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Marcellus', serif;
   background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
@@ -13,6 +87,90 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+:root {
+  /* 🎨 Cores */
+  --cor-destaque: #6b4f2c;         /* Mantida */
+  --cor-fundo-claro: #fdf8f3;      /* Mantida */
+  --cor-texto: #333;               /* Mantida */
+  --cor-primaria: #a67c52;         /* Complementar ao destaque */
+  --cor-secundaria: #d9c2a3;       /* Tons suaves para botões ou detalhes */
+  --cor-fundo-escuro: #2c1e13;     /* Para rodapé ou modo escuro */
+
+  /* 🖋️ Tipografia */
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-titulo: 'Playfair Display', serif;
+  --tamanho-base: 16px;
+
+  /* 📏 Espaçamento */
+  --espacamento-pequeno: 0.5rem;
+  --espacamento-medio: 1rem;
+  --espacamento-grande: 2rem;
+
+  /* 🧭 Bordas e sombras */
+  --borda-radius: 8px;
+  --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* === VARIÁVEIS DE COR === */
+:root {
+  --cor-destaque: #6b4f2c;
+  --cor-fundo-claro: #fdf8f3;
+  --cor-texto: #333;
+}
+
+/* === TRANSIÇÕES SUAVES === */
+button,
+a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+button,
+.btn {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  padding: var(--espacamento-medio) var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--sombra-suave);
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--cor-destaque);
+}
+
+
+/* === MODO ESCURO AUTOMÁTICO === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+  }
+
+  header h1 {
+    color: #f0f0f0;
+  }
+
+  header button {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .rodape-cerimonial {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
 
 /* === ÁUDIO === */
 .audio-container {
@@ -171,11 +329,24 @@ body {
 /* === RODAPÉ CERIMONIAL === */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: var(--espacamento-grande);
   background-color: rgba(255, 255, 255, 0.6);
-  color: #5a4a3a;
+  color: var(--cor-destaque);
   font-size: 0.9rem;
   border-top: 1px solid rgba(44, 30, 15, 0.3);
+  font-family: var(--fonte-principal);
+  box-shadow: var(--sombra-suave);
+}
+
+footer a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--cor-primaria);
+  text-decoration: underline;
 }
 
 .rodape-cerimonial {
@@ -268,4 +439,71 @@ footer {
   .conteudo-topo p {
     font-size: 1em;
   }
+  header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Espaço entre os elementos */
+  padding: 0.5rem 1rem;
+  height: 80px; /* Altura reduzida */
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  }
+  header h1 {
+  font-size: 1.5rem;
+  margin: 0;
 }
+
+header button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+    }
+.icone-cerimonial {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bloco-capitulo h2 {
+    font-size: 1.3rem;
+  }
+
+  .bloco-capitulo p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .botao-acao {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .audio-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  .conteudo-rodape p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .conteudo-rodape h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  } /*
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--cor-fundo-claro);
+  padding: var(--espacamento-medio);
+  box-shadow: var(--sombra-suave);
+  z-index: 1000;
+    }
+  
