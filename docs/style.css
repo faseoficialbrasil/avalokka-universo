@@ -262,8 +262,13 @@ button:hover,
 
 /* === TOPO CERIMONIAL === */
 .topo-cerimonial {
-  color: #000;
-  color: #000 !important;
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #000; /* ← cor da fonte ajustada para preto */
+  text-align: center;
+  position: relative;
 }
   width: 100%;
   min-height: 520px; /* altura mínima para evitar corte */
