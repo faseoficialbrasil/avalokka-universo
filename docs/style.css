@@ -1073,4 +1073,35 @@ ul {
   margin-left: 1.5rem;
   color: #3a2f2b;
 }
+/* Estilo dos títulos */
+.bloco-cerimonial h1,
+.bloco-cerimonial h2,
+.bloco-cerimonial h3,
+.bloco-apresentacao h1,
+.bloco-apresentacao h2,
+.bloco-apresentacao h3,
+.bloco-sinopse h1,
+.bloco-sinopse h2,
+.bloco-sinopse h3 {
+  font-family: 'Cinzel', serif;
+  color: #6e5a99;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo do bloco cerimonial */
+.bloco-cerimonial {
+  background-image: url('fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #3a2f2b;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 2rem auto;
+}
 }
