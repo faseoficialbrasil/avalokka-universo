@@ -852,76 +852,18 @@ p em {
 }
 /* Estilo Cerimonial para o Evangelho de Avalokka */
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
+
 body {
   background-color: #0e0e10;
-  color: #e0e0e5;
-  font-family: 'Cinzel', serif;
-  line-height: 1.6;
+  color: #7a68a2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
   padding: 2rem;
 }
 
-section.capitulo {
-  border-left: 4px solid #7a4dff;
-  padding-left: 1.5rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(to right, #1a1a1d, #2e2e31);
-  box-shadow: 0 0 20px rgba(122, 77, 255, 0.3);
-  border-radius: 8px;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #c9b3ff;
-  margin-bottom: 0.5rem;
-}
-
-h2 .subtitulo {
-  font-size: 1.2rem;
-  color: #a88aff;
-  display: block;
-  margin-top: 0.2rem;
-}
-
-blockquote.evangelho {
-  font-style: italic;
-  background-color: rgba(122, 77, 255, 0.1);
-  border-left: 3px solid #a88aff;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  color: #dcd6ff;
-}
-
-blockquote.evangelho .traducao {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #bfb8ff;
-}
-
-ul.visoes {
-  list-style-type: "✦ ";
-  margin-left: 1.5rem;
-  color: #eae6ff;
-}
-
-blockquote.voz {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  color: #ffddcc;
-  background-color: rgba(255, 221, 204, 0.05);
-  border-left: 3px solid #ffbb99;
-  padding: 1rem;
-  margin: 2rem 0;
-  text-align: center;
-}
-
-em {
-  color: #bfaaff;
-}
-
-strong {
-  color: #d1c4ff;
-}
+/* Cabeçalho principal */
 header.principal {
   text-align: center;
   margin-bottom: 2rem;
@@ -931,9 +873,88 @@ header.principal {
 
 header.principal h1 {
   font-size: 2.5rem;
-  color: #dcd6ff;
+  color: #6e5a99;
   font-family: 'Cinzel', serif;
   margin: 0;
-  }
 }
 
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  color: #6e5a99;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #5c4a80;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+/* Parágrafos */
+p {
+  color: #7a68a2;
+  text-align: justify;
+}
+
+/* Ênfase e destaque */
+em {
+  color: #6e5a99;
+  font-style: italic;
+}
+
+strong {
+  color: #8a76b9;
+  font-weight: bold;
+}
+
+/* Bloco de citação geral */
+blockquote {
+  font-style: italic;
+  color: #6e5a99;
+  border-left: 3px solid #5c4a80;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Citação do Evangelho */
+blockquote.evangelho {
+  background-color: rgba(122, 77, 255, 0.1);
+  border-left: 3px solid #a88aff;
+  padding: 1rem;
+  color: #6e5a99;
+}
+
+blockquote.evangelho .traducao {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #5c4a80;
+}
+
+/* Citação da voz interior */
+blockquote.voz {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #8a76b9;
+  background-color: rgba(122, 77, 255, 0.05);
+  border-left: 3px solid #5c4a80;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Listas cerimoniais */
+ul {
+  list-style-type: "✦ ";
+  margin-left: 1.5rem;
+  color: #7a68a2;
+}
+
+ul.visoes {
+  list-style-type: "✦ ";
+  margin-left: 1.5rem;
+  color: #7a68a2;
+}
+}
