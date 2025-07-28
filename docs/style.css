@@ -839,5 +839,16 @@ p strong {
   color: #ffd700;
   font-weight: bold;
   }
+.chant-translation {
+  font-size: 1rem;
+  color: #c0b283;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+p em {
+  color: #bfa76f;
+  font-style: italic;
+}
 }
 
