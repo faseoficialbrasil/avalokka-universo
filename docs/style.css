@@ -850,5 +850,20 @@ p em {
   color: #bfa76f;
   font-style: italic;
 }
+.ceremonial-block {
+  background-color: #f9f5ec; /* tom pergaminho */
+  background-image: url('fundo-bloco.jpg'); /* imagem está na mesma pasta que index.html e style.css */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #3b2f2f; /* marrom escuro para contraste */
+  padding: 3rem;
+  border-left: 6px solid #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
 }
 
