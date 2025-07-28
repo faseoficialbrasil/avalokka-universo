@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Áudio Cerimonial</title>
+</head>
+<body style="text-align: center; padding: 50px; background-color: #111; color: #fff; font-family: Georgia, serif;">
+
+  <h1>🔈 Teste de Som Cerimonial</h1>
+
+  <!-- ✅ Áudio com controles visíveis -->
+  <audio id="audioAmbient" src="media/ceremonial.mp3" loop controls></audio>
+
+  <!-- ✅ Botão de ativação -->
+  <div style="margin-top: 20px;">
+    <button id="audioToggle" style="
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #888;
+      border-radius: 6px;
+      cursor: pointer;
+    ">🔈 Ligar Som</button>
+  </div>
+
+  <script>
+    const audioToggle = document.getElementById('audioToggle');
+    const audioAmbient = document.getElementById('audioAmbient');
+
+    let isPlaying = false;
+
+    audioToggle.addEventListener('click', () => {
+      audioAmbient.muted = false; // desbloqueia som em navegadores restritivos
+      if (!isPlaying) {
+        audioAmbient.play().then(() => {
+          audioToggle.textContent = '🔈 Som Ligado';
+          isPlaying = true;
+        }).catch(error => {
+          console.error('Erro ao tocar áudio:', error);
+          alert('Este navegador pode não suportar reprodução de áudio via botão.');
+        });
+      } else {
+        audioAmbient.pause();
+        audioToggle.textContent = '🔈 Ligar Som';
+        isPlaying = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
