@@ -14,63 +14,45 @@
   padding: 40px;
   color: #fff;
   text-align: center;
+  position: relative;
 ">
-  <div class="conteudo-topo">
-    <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">🕯️ Templo de Avalokka</h1>
-    <p style="font-family: 'Georgia', serif; font-size: 1.2em;">Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
-    
-<section id="topo-cerimonial" class="topo-cerimonial" style="
-  background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-  color: #fff;
-  text-align: center;
-">
-  <div class="conteudo-topo">
-    <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">🕯️ Templo de Avalokka</h1>
-    <p style="font-family: 'Georgia', serif; font-size: 1.2em;">Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
-
-    <!-- 🔊 Botões de controle -->
-    <div class="botao-audio-container" style="margin-top: 20px;">
-      <button id="audioToggle" class="botao-audio" style="
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid #ccc;
-        color: #fff;
-        font-family: 'Georgia', serif;
-        font-size: 16px;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-      ">🔈 Ligar Som Ambiente</button>
-    </div>
-
-    <div class="botao-cerimonial-container" style="margin-top: 10px;">
-      <button id="tocarCerimonial" class="botao-cerimonial" style="
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid #ccc;
-        color: #fff;
-        font-family: 'Georgia', serif;
-        font-size: 16px;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-      ">🎵 Tocar Cerimonial</button>
-    </div>
-
-    <!-- 🎶 Áudios -->
-    <audio id="audioAmbient" loop>
-      <source src="audios/pulso_veus.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudio HTML5.
-    </audio>
-
-    <audio id="audioCerimonial" src="audios/cerimonial.mp3"></audio>
+  <!-- 🔈 Botão de som no canto superior -->
+  <div style="position: absolute; top: 20px; right: 20px;">
+    <button id="audioToggle" class="botao-audio" style="
+      background-color: rgba(255,255,255,0.1);
+      border: 1px solid #ccc;
+      color: #fff;
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    ">🔈 Ligar Som</button>
   </div>
+
+  <div class="conteudo-topo">
+    <!-- 🖼️ Imagem cerimonial -->
+    <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" style="max-width: 120px; margin-bottom: 20px;">
+
+    <!-- 🕯️ Título principal -->
+    <h1 style="font-family: 'Georgia', serif; font-size: 2.5em;">Avalokka</h1>
+
+    <!-- 📜 Subtítulo -->
+    <h2 style="font-family: 'Georgia', serif; font-size: 1.5em; font-weight: normal;">📜 Livro Cerimonial de Avalokka</h2>
+
+    <!-- ✨ Texto introdutório -->
+    <p style="font-family: 'Georgia', serif; font-size: 1.2em; max-width: 600px; margin: 0 auto;">
+      Bem-vindo ao Livro Cerimonial de Avalokka, onde cada véu revela um fragmento da escuta infinita.
+    </p>
+  </div>
+
+  <!-- 🎶 Áudio ambiente -->
+  <audio id="audioAmbient" loop>
+    <source src="audios/pulso_veus.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
 </section>
 
-<!-- Script externo -->
 <script src="script.js"></script>
 
 
