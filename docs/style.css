@@ -699,3 +699,43 @@ nav {
   z-index: 1000;
     }
   
+/* 🔷 Estilo específico para o cabeçalho cerimonial */
+.cabecalho-cerimonial {
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px; /* ajuste conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 0 !important; /* evita faixa branca */
+  padding: 0 !important;
+  border: none;
+}
+
+/* 🔷 Título sobreposto */
+.titulo-sobreposto {
+  background-color: rgba(0, 0, 0, 0.4); /* contraste leve */
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.titulo-sobreposto h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.titulo-sobreposto h2 {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+.titulo-sobreposto p {
+  font-size: 1em;
+  margin: 5px 0 0;
+  }
+}
