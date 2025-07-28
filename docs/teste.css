@@ -2,13 +2,13 @@
 
 #mensagem-teste {
   font-size: 1.2em;
-  max-width: 500px;       /* Reduzido para conter o texto */
-  width: 70%;             /* Menor porcentagem para garantir margem lateral */
+  max-width: 450px;
+  width: 60%;
   margin: 0 auto;
-  padding: 30px;          /* Mais espaçamento interno */
-  text-align: center;     /* Centraliza o texto */
+  padding: 35px;
+  text-align: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   word-wrap: break-word;
   line-height: 1.5;
