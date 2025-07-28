@@ -957,4 +957,95 @@ ul.visoes {
   margin-left: 1.5rem;
   color: #7a68a2;
 }
+/* Fonte recomendada */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
+
+/* Bloco Cerimonial Padrão */
+.bloco-cerimonial {
+  background-color: #0e0e10;
+  color: #7a68a2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding: 2rem;
+  border-left: 3px solid #5c4a80;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(92, 74, 128, 0.2);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Títulos dentro do bloco */
+.bloco-cerimonial h1,
+.bloco-cerimonial h2,
+.bloco-cerimonial h3 {
+  font-family: 'Cinzel', serif;
+  color: #6e5a99;
+  margin-bottom: 0.5rem;
+}
+
+.bloco-cerimonial .subtitulo {
+  font-size: 1rem;
+  color: #5c4a80;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+/* Parágrafos */
+.bloco-cerimonial p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* Ênfase e destaque */
+.bloco-cerimonial em {
+  color: #6e5a99;
+  font-style: italic;
+}
+
+.bloco-cerimonial strong {
+  color: #8a76b9;
+  font-weight: bold;
+}
+
+/* Citações */
+.bloco-cerimonial blockquote {
+  font-style: italic;
+  color: #6e5a99;
+  border-left: 3px solid #5c4a80;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.bloco-cerimonial blockquote.evangelho {
+  background-color: rgba(122, 77, 255, 0.1);
+  border-left: 3px solid #a88aff;
+  padding: 1rem;
+  color: #6e5a99;
+}
+
+.bloco-cerimonial blockquote.evangelho .traducao {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #5c4a80;
+}
+
+.bloco-cerimonial blockquote.voz {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #8a76b9;
+  background-color: rgba(122, 77, 255, 0.05);
+  border-left: 3px solid #5c4a80;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Listas */
+.bloco-cerimonial ul {
+  list-style-type: "✦ ";
+  margin-left: 1.5rem;
+  color: #7a68a2;
+  }
 }
