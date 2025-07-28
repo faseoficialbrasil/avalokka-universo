@@ -960,12 +960,14 @@ ul.visoes {
 /* Fonte recomendada */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
 
-.bloco-cerimonial {
+.bloco-cerimonial,
+.bloco-apresentacao,
+.bloco-sinopse {
   background-image: url('fundo-bloco.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #3a2f2b; /* tom escuro para contraste */
+  color: #3a2f2b;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -975,74 +977,83 @@ ul.visoes {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: 2rem auto;
-  background-attachment: scroll; /* ou fixed, se quiser efeito parallax */
 }
 
 .bloco-cerimonial h1,
 .bloco-cerimonial h2,
-.bloco-cerimonial h3 {
+.bloco-cerimonial h3,
+.bloco-apresentacao h1,
+.bloco-apresentacao h2,
+.bloco-apresentacao h3,
+.bloco-sinopse h1,
+.bloco-sinopse h2,
+.bloco-sinopse h3 {
   font-family: 'Cinzel', serif;
   color: #6e5a99;
   margin-bottom: 0.5rem;
 }
 
-.bloco-cerimonial .subtitulo {
+.subtitulo {
   font-size: 1rem;
   color: #bfa76f;
   display: block;
   margin-top: 0.2rem;
 }
 
-.bloco-cerimonial p {
+.bloco-cerimonial p,
+.bloco-apresentacao p,
+.bloco-sinopse p {
   text-align: justify;
   margin-bottom: 1rem;
 }
 
-.bloco-cerimonial em {
+em {
   color: #6e5a99;
   font-style: italic;
 }
 
-.bloco-cerimonial strong {
+strong {
   color: #bfa76f;
   font-weight: bold;
 }
 
-.bloco-cerimonial blockquote {
+blockquote {
   font-style: italic;
   color: #3a2f2b;
   border-left: 3px solid #bfa76f;
   padding-left: 1rem;
   margin: 1.5rem 0;
-  background-color: rgba(255, 255, 255, 0.6); /* leve fundo para legibilidade */
+  background-color: rgba(255, 255, 255, 0.7); /* fundo semi-opaco para legibilidade */
+  border-radius: 6px;
 }
 
-.bloco-cerimonial blockquote.evangelho {
-  background-color: rgba(255, 255, 255, 0.6);
+blockquote.evangelho {
+  background-color: rgba(255, 255, 255, 0.7);
   border-left: 3px solid #bfa76f;
   padding: 1rem;
   color: #3a2f2b;
 }
 
-.bloco-cerimonial blockquote.evangelho .traducao {
+blockquote.evangelho .traducao {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.95rem;
   color: #6e5a99;
 }
 
-.bloco-cerimonial blockquote.voz {
+blockquote.voz {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   color: #bfa76f;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   border-left: 3px solid #6e5a99;
   padding: 1rem;
   margin: 2rem 0;
   text-align: center;
+  border-radius: 6px;
 }
 
-.bloco-cerimonial ul {
+ul {
   list-style-type: "✦ ";
   margin-left: 1.5rem;
   color: #3a2f2b;
