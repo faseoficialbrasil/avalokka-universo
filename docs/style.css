@@ -87,13 +87,11 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-.cabecalho {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-  box-sizing: border-box;
+.cabecalho-img {
+  height: 100px;           /* Ajuste conforme a altura ideal do cabeçalho */
+  margin-right: 20px;      /* Espaço entre a imagem e o título */
+  border-radius: 8px;      /* Opcional: bordas arredondadas */
+  object-fit: contain;     /* Garante que a imagem não distorça */
 }
 
 .cabecalho h1,
