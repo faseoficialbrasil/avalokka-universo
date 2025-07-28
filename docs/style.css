@@ -850,20 +850,77 @@ p em {
   color: #bfa76f;
   font-style: italic;
 }
-.ceremonial-block {
-  background-color: #f9f5ec; /* tom pergaminho */
-  background-image: url('fundo-bloco.jpg'); /* imagem está na mesma pasta que index.html e style.css */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #3b2f2f; /* marrom escuro para contraste */
-  padding: 3rem;
-  border-left: 6px solid #d4af37;
+/* Estilo Cerimonial para o Evangelho de Avalokka */
+
+body {
+  background-color: #0e0e10;
+  color: #e0e0e5;
+  font-family: 'Cinzel', serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+section.capitulo {
+  border-left: 4px solid #7a4dff;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #1a1a1d, #2e2e31);
+  box-shadow: 0 0 20px rgba(122, 77, 255, 0.3);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #c9b3ff;
+  margin-bottom: 0.5rem;
+}
+
+h2 .subtitulo {
+  font-size: 1.2rem;
+  color: #a88aff;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+blockquote.evangelho {
+  font-style: italic;
+  background-color: rgba(122, 77, 255, 0.1);
+  border-left: 3px solid #a88aff;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: #dcd6ff;
+}
+
+blockquote.evangelho .traducao {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #bfb8ff;
+}
+
+ul.visoes {
+  list-style-type: "✦ ";
+  margin-left: 1.5rem;
+  color: #eae6ff;
+}
+
+blockquote.voz {
   font-family: 'Cormorant Garamond', serif;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-  }
+  font-size: 1.1rem;
+  color: #ffddcc;
+  background-color: rgba(255, 221, 204, 0.05);
+  border-left: 3px solid #ffbb99;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+em {
+  color: #bfaaff;
+}
+
+strong {
+  color: #d1c4ff;
+}
 }
 
