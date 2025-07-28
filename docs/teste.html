@@ -29,19 +29,30 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 40px;
+      padding: 20px;
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 12px;
       z-index: 1;
       width: 80%;
+      max-width: 600px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       opacity: 0;
       animation: fadeIn 1.5s ease forwards;
+      font-size: 1.2em;
+      line-height: 1.5;
+      word-wrap: break-word;
     }
 
     @keyframes fadeIn {
       to { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .conteudo-textual {
+        font-size: 1em;
+        padding: 15px;
+      }
     }
   </style>
 </head>
@@ -54,7 +65,7 @@
     </div>
     <div class="conteudo-textual">
       <h2>Introdução</h2>
-      <p>Este cerimonial marca o início de uma jornada ancestral, onde cada gesto carrega o peso do tempo e a promessa do renascimento.</p>
+      <p>Este cerimonial marca o início de uma jornada ancestral. Cada gesto carrega o peso do tempo e a promessa do renascimento.</p>
     </div>
   </section>
 
@@ -65,7 +76,7 @@
     </div>
     <div class="conteudo-textual">
       <h2>Sinopse</h2>
-      <p>Em meio ao silêncio dos ciclos, uma presença desperta. A narrativa percorre os ritos, os símbolos e os ecos de um mundo que pulsa sob véus ocultos.</p>
+      <p>Em meio ao silêncio dos ciclos, uma presença desperta. A narrativa percorre ritos, símbolos e ecos de um mundo que pulsa sob véus ocultos.</p>
     </div>
   </section>
 
