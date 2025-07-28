@@ -2,77 +2,83 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Teste Topo Cerimonial</title>
+  <title>Teste Cerimonial</title>
   <style>
-    /* === TOPO CERIMONIAL === */
-    .topo-cerimonial {
-      color: #000 !important;
-      width: 100%;
-      min-height: 520px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #f5f5f5;
-      position: relative;
-      text-align: center;
-    }
-
-    .conteudo-topo {
-      max-width: 800px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .conteudo-topo .selo {
-      max-width: 120px;
-      margin-bottom: 20px;
-    }
-
-    .conteudo-topo h1 {
-      font-size: 2.5em;
+    body {
+      background-color: #111;
       margin: 0;
-      color: #000 !important;
+      font-family: 'Georgia', serif;
     }
 
-    .conteudo-topo h2 {
-      font-size: 1.5em;
-      margin-top: 10px;
-      font-weight: normal;
-      color: #000 !important;
+    .bloco-primordia {
+      position: relative;
+      max-width: 800px;
+      margin: 60px auto;
+      text-align: center;
     }
 
-    .botao-audio-flutuante {
+    .moldura-fundo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .conteudo-textual {
       position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #fff;
-      border: 2px solid #ccc;
-      border-radius: 50%;
-      padding: 10px;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 40px;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      z-index: 1;
+      width: 80%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
     }
 
-    .botao-audio-flutuante:hover {
-      background-color: #e0e0e0;
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
 
-  <header class="topo-cerimonial">
-    <div class="conteudo-topo">
-      <img src="https://via.placeholder.com/120" alt="Selo" class="selo">
-      <h1>Bem-vindo ao Cerimonial</h1>
-      <h2>Subtítulo elegante e informativo</h2>
+  <!-- Introdução -->
+  <section class="bloco-primordia">
+    <div class="moldura-fundo">
+      <img src="imagens/moldura-primordia.jpg" alt="Moldura Primórdia">
     </div>
+    <div class="conteudo-textual">
+      <h2>Introdução</h2>
+      <p>Este cerimonial marca o início de uma jornada ancestral, onde cada gesto carrega o peso do tempo e a promessa do renascimento.</p>
+    </div>
+  </section>
 
-    <div class="botao-audio-flutuante">🔊</div>
-  </header>
+  <!-- Sinopse -->
+  <section class="bloco-primordia">
+    <div class="moldura-fundo">
+      <img src="imagens/moldura-primordia.jpg" alt="Moldura Primórdia">
+    </div>
+    <div class="conteudo-textual">
+      <h2>Sinopse</h2>
+      <p>Em meio ao silêncio dos ciclos, uma presença desperta. A narrativa percorre os ritos, os símbolos e os ecos de um mundo que pulsa sob véus ocultos.</p>
+    </div>
+  </section>
+
+  <!-- Capítulo 1 -->
+  <section class="bloco-primordia">
+    <div class="moldura-fundo">
+      <img src="imagens/moldura-primordia.jpg" alt="Moldura Primórdia">
+    </div>
+    <div class="conteudo-textual">
+      <h2>Capítulo 1: O Despertar</h2>
+      <p>Nas primeiras horas do ciclo, a luz rompeu o véu do silêncio. Cada passo era um chamado, cada sombra, uma lembrança esquecida.</p>
+    </div>
+  </section>
 
 </body>
 </html>
