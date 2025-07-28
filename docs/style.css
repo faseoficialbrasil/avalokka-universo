@@ -87,6 +87,20 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+.cabecalho {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cabecalho h1,
+.cabecalho p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 :root {
   /* 🎨 Cores */
   --cor-destaque: #6b4f2c;         /* Mantida */
@@ -248,6 +262,7 @@ button:hover,
 
 /* === TOPO CERIMONIAL === */
 .topo-cerimonial {
+  color: #222; /* texto escuro */
   position: relative;
   width: 100%;
   height: 480px;
@@ -389,23 +404,70 @@ footer a:hover {
 
 /* === ANIMAÇÕES === */
 @keyframes surgir {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+/* Exemplo de uso */
+.surgir {
+  animation: surgir 0.8s ease-out forwards;
+}
+
 /* === RESPONSIVIDADE === */
-@media screen and (max-width: 768px) {
-  .bloco-capitulo {
-    margin: 1rem;
-    padding: 1.5rem;
+@media (max-width: 768px) {
+  .topo-cerimonial {
+    height: auto;
+    padding: 20px;
   }
 
+  .cabecalho h1 {
+    font-size: 1.8rem;
+  }
+
+  .cabecalho p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+/* === MODO ESCURO AUTOMÁTICO === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .cabecalho,
+  .topo-cerimonial {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+  }
+
+  button {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+
+  a {
+    color: #90caf9;
+  }
+}
+.topo-cerimonial {
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  }
   .conteudo h1 {
     font-size: 1.6rem;
   }
