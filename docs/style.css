@@ -1104,4 +1104,11 @@ ul {
   max-width: 800px;
   margin: 2rem auto;
 }
+.texto-bloco {
+  color: #3a2f2b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.3px;
+  }
 }
