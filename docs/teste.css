@@ -2,10 +2,11 @@
 
 #mensagem-teste {
   font-size: 1.2em;
-  max-width: 90%;
+  max-width: 500px;       /* Reduzido para conter o texto */
+  width: 70%;             /* Menor porcentagem para garantir margem lateral */
   margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+  padding: 30px;          /* Mais espaçamento interno */
+  text-align: center;     /* Centraliza o texto */
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
   border-radius: 10px;
@@ -17,6 +18,8 @@
 @media (max-width: 600px) {
   #mensagem-teste {
     font-size: 1em;
-    padding: 15px;
+    padding: 20px;
+    max-width: 90%;
+    width: 90%;
   }
 }
