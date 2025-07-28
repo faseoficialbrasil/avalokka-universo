@@ -1,0 +1,22 @@
+/* Estilo exclusivo para a página teste.html */
+
+#mensagem-teste {
+  font-size: 1.2em;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
+  border-radius: 10px;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  #mensagem-teste {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
