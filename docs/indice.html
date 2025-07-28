@@ -1,90 +1,42 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livro Cerimonial de Avalokka</title>
+  <title>Templo de Avalokka</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<section class="topo-cerimonial">
-<section class="topo-cerimonial">
+<section id="topo-cerimonial" class="topo-cerimonial" style="
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+">
   <!-- 🔈 Botão de som no canto superior -->
-  <div class="botao-audio-flutuante">
-    <button id="audioToggle" aria-label="Ativar ou desativar som cerimonial">
-      🔈 Ligar Som
-    </button>
+  <div style="position: absolute; top: 20px; right: 20px;">
+    <button id="audioToggle" class="botao-audio" style="
+      background-color: rgba(255,255,255,0.1);
+      border: 1px solid #ccc;
+      color: #fff;
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    ">🔈 Ligar Som</button>
   </div>
 
-  <div class="conteudo-topo">
-    <img src="imagens/selo-transcendencia.jpg" alt="Selo Transcendência" class="selo">
-    <h1>Livro Cerimonial de Avalokka</h1>
-    <h2>Um guia de rituais e tradições</h2>
-  </div>
-</section>
 
-  
 
-  <!-- 🎶 Áudio com <source> para compatibilidade máxima -->
+  <!-- 🎶 Áudio ambiente -->
   <audio id="audioAmbient" loop>
     <source src="audios/pulso_veus.mp3" type="audio/mpeg">
     Seu navegador não suporta áudio HTML5.
   </audio>
-
-  <!-- 🔄 Fallback para navegadores sem JS -->
-  <noscript>
-    <p style="color: #ccc; font-family: Georgia, serif; margin-top: 20px;">
-      Este navegador não suporta som cerimonial automático. Ative manualmente se possível.
-    </p>
-  </noscript>
-
-  <!-- ✅ Script embutido com proteção contra cliques rápidos -->
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const audioToggle = document.getElementById('audioToggle');
-      const audioAmbient = document.getElementById('audioAmbient');
-
-      let isPlaying = false;
-
-      audioToggle.addEventListener('click', () => {
-        audioToggle.disabled = true; // evita cliques múltiplos
-
-        if (!isPlaying) {
-          audioAmbient.play().then(() => {
-            audioToggle.textContent = '🔈 Som Ligado';
-            isPlaying = true;
-            audioToggle.disabled = false;
-          }).catch(error => {
-            console.error('Erro ao tocar áudio:', error);
-            alert('O navegador pode estar bloqueando a reprodução. Tente ativar manualmente ou verificar permissões.');
-            audioToggle.disabled = false;
-          });
-        } else {
-          audioAmbient.pause();
-          audioToggle.textContent = '🔈 Ligar Som';
-          isPlaying = false;
-          audioToggle.disabled = false;
-        }
-      });
-    });
-  </script>
 </section>
 
-
-
-
-  
-</script>
-  <!-- 🖼️ Cabeça do livro -->
-  <div class="bloco-capitulo">
-    <div class="conteudo">
-      <h1>Revelação do Fundador</h1>
-<img src="imagens/revelacao-Fundador.jpg" alt="Vela Cerimonial" class="cerimonial-img">
-       <p>
-        A imagem cerimonial do fundador marca o início da travessia. É o selo que abre o véu entre mundos, revelando a presença que guia Avalokka. Aqui, o leitor é convidado a silenciar, observar e escutar com os olhos da alma.
-      </p>
-    </div>
-  </div>
 
 
 <!-- 🪶 Capa cerimonial de couro -->
