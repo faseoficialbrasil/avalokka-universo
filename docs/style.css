@@ -107,51 +107,9 @@ body {
 }
 
 
-.bloco-cerimonial,
-.ceremonial-block {
-  background-color: transparent; /* ou simplesmente remova */
-  color: #c2b8a3; /* substituído: bege claro → tom mais escuro */
-  border-left: 6px solid var(--cor-dourado);
-  box-shadow: 0 0 20px rgba(139, 111, 61, 0.2); /* sombra dourada escura */
-}
-.bloco-flexivel {
-  max-width: clamp(600px, 80vw, 1400px);
-  padding: 3rem 5vw;
-  margin: 0 auto;
-  background-color: transparent; /* ou simplesmente remova */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
 
-.bloco-cerimonial {
-  width: 100vw; /* ocupa toda a largura da tela */
-  padding: 3rem 10vw; /* espaçamento lateral proporcional */
-  box-sizing: border-box;
-  background-color: transparent; /* ou simplesmente remova */
-  background-image: url('imagens/fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  color: var(--cor-texto);
-  font-size: 1.2rem;
-  line-height: 1.8;
-  font-family: 'Georgia', serif;
-}
 
-.ceremonial-block {
-  background-color: transparent; /* ou simplesmente remova */
-  ;
-  color: var(--cor-texto-cerimonial-escuro);
-  border-left: 6px solid var(--cor-dourado);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
-
-.bloco-cerimonial h2,
-.ceremonial-block h2 {
-  color: var(--cor-titulo-cerimonial);
-  font-family: var(--fonte-titulo);
-}
 
 .decorativo {
   font-family: 'Cinzel Decorative', serif;
@@ -172,23 +130,7 @@ body {
   --z-index-central: 900;
 }
 
-/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
-.bloco-cerimonial h1,
-.bloco-cerimonial h2,
-.bloco-cerimonial h3,
-.bloco-apresentacao h1,
-.bloco-apresentacao h2,
-.bloco-apresentacao h3,
-.bloco-sinopse h1,
-.bloco-sinopse h2,
-.bloco-sinopse h3,
-.ceremonial-block h1,
-.ceremonial-block h2,
-.ceremonial-block h3 {
-  font-family: 'Cinzel', serif;
-  color: var(--cor-titulo-cerimonial);
-  margin-bottom: 0.5rem;
-}
+
 
 /* === CITAÇÕES PADRÃO === */
 blockquote {
@@ -231,6 +173,85 @@ blockquote.voz {
   text-align: center;
   border-radius: 6px;
 }
+
+/* === BLOCO CERIMONIAL UNIFICADO === */
+.bloco-cerimonial-unificado {
+  width: 100vw;
+  max-width: clamp(600px, 80vw, 1400px);
+  margin: 2.5rem auto;
+  padding: 3rem 5vw;
+  box-sizing: border-box;
+
+  background-image: url('imagens/fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  color: var(--cor-texto-cerimonial-escuro);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === BLOCO CERIMONIAL ALTERNATIVO === */
+.bloco-cerimonial-escuro {
+  width: 100vw;
+  max-width: clamp(600px, 80vw, 1400px);
+  margin: 2.5rem auto;
+  padding: 3rem 5vw;
+  box-sizing: border-box;
+
+  background-color: #0e0e0e;
+  color: #c2b8a3;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  border-left: 6px solid var(--cor-dourado);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(139, 111, 61, 0.2);
+}
+
+/* === BLOCO DE CAPÍTULO === */
+.bloco-capitulo {
+  width: 100vw;
+  max-width: clamp(600px, 80vw, 1400px);
+  margin: 2rem auto;
+  padding: 2rem 5vw;
+  box-sizing: border-box;
+
+  background-color: rgba(30, 30, 30, 0.8);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  animation: surgir 1.5s ease-in-out;
+  color: #d9c2a3;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
+.bloco-cerimonial-unificado h1,
+.bloco-cerimonial-unificado h2,
+.bloco-cerimonial-unificado h3,
+.bloco-cerimonial-escuro h1,
+.bloco-cerimonial-escuro h2,
+.bloco-cerimonial-escuro h3,
+.bloco-capitulo h2,
+header.principal h1,
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--cor-titulo-cerimonial);
+  margin-bottom: 0.5rem;
+}
+
+
+
 
 /* === BOTÃO DE ÁUDIO FLUTUANTE === */
 .botao-audio-flutuante {
@@ -598,16 +619,7 @@ img {
   transform: translateX(-50%);
 }
 
-/* === BLOCOS CERIMONIAIS === */
-.bloco-capitulo {
-  border: 2px solid rgba(44, 30, 15, 0.3);
-  margin: 2rem;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(44, 30, 15, 0.2);
-  animation: surgir 1.5s ease-in-out;
-}
+
 
 /* === RESPONSIVIDADE PARA BOTÃO FLUTUANTE === */
 @media (max-width: 600px) {
@@ -1184,24 +1196,7 @@ p strong {
 
 
 
-  
-/* === BLOCO CERIMONIAL UNIFICADO === */
-.bloco-cerimonial {
-  background-image: url('imagens/fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2.5rem;
-  margin: 2.5rem auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  color: #3a2f2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  text-align: center;
-}
+
 
 /* === BLOCO CERIMONIAL ALTERNATIVO === */
 .ceremonial-block {
@@ -1216,22 +1211,6 @@ p strong {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
-/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
-.bloco-cerimonial h1,
-.bloco-cerimonial h2,
-.bloco-cerimonial h3,
-.bloco-apresentacao h1,
-.bloco-apresentacao h2,
-.bloco-apresentacao h3,
-.bloco-sinopse h1,
-.bloco-sinopse h2,
-.bloco-sinopse h3,
-header.principal h1,
-h1, h2, h3 {
-  font-family: 'Cinzel', serif;
-  color: #6e5a99;
-  margin-bottom: 0.5rem;
-}
 
 /* === SUBTÍTULO === */
 .subtitulo {
