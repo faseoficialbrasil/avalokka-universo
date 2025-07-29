@@ -1,142 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Templo de Avalokka" />
-  <meta property="og:description" content="Uma jornada simbólica e espiritual por véus, luzes e arquétipos." />
-  <meta property="og:image" content="https://faseoficialbrasil.github.io/avalokka-universo/imagens/revelacao-fundador.jpg" />
-  <meta property="og:type" content="website" />
-  <title>Templo de Avalokka</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Avalokka – Livro Cerimonial</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f5f0e6;
+      font-family: 'Cormorant Garamond', serif;
+      padding: 2rem 5vw;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--cor-dourado, #8b6f3d);
+    }
+
+    .sinopse {
+      font-style: italic;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      white-space: pre-line;
+    }
+
+    .info-livro {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      color: #c2b8a3;
+    }
+
+    .capitulo {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid var(--cor-dourado, #8b6f3d);
+      border-radius: 8px;
+    }
+
+    .capitulo h2 {
+      color: var(--cor-dourado, #8b6f3d);
+      margin-bottom: 1rem;
+    }
+
+    .conteudo-capitulo {
+      margin-bottom: 1.5rem;
+      font-style: normal;
+      white-space: pre-line;
+    }
+
+    .cantico {
+      background-color: rgba(255, 255, 255, 0.04);
+      border-left: 4px solid var(--cor-dourado, #8b6f3d);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .cantico h3 {
+      font-size: 1.4rem;
+      color: var(--cor-dourado, #8b6f3d);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .cantico .versos p {
+      margin: 0.4rem 0;
+      font-style: italic;
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 1.5rem auto 0;
+      background-color: var(--cor-dourado, #8b6f3d);
+      color: #f5f0e6;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Lora', serif;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #7a5f34;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #a68b5b;
+    }
+  </style>
 </head>
 <body>
 
-<header class="cabecalho-cerimonial" role="banner">
-  <div class="titulo-sobreposto">
+  <header>
     <h1>Avalokka</h1>
-    <h2>Templo Avalokka</h2>
-    <p>Onde os véus se abrem pela escuta profunda.</p>
-  </div>
-</header>
+    <p>por Marcelo Honorio da Silva</p>
+  </header>
 
-<!-- 📜 Apresentação -->
-<section id="descricao" class="bloco-cerimonial">
-  <h3>📜 Apresentação</h3>
-  <p>
-    <strong>Avalokka</strong>, escrito por <em>Marcelo Honorio da Silva</em>, é uma jornada mística, filosófica e simbólica rumo à descoberta do Eu Autêntico.<br><br>
-    A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior.<br><br>
-    É uma narrativa que convida o leitor a mergulhar no invisível, escutar as vozes interiores e confrontar as máscaras do mundo moderno em busca da verdadeira essência.
-  </p>
-</section>
+  <section class="sinopse">
+    Antes que houvesse forma,  
+    antes que os nomes tivessem boca,  
+    havia um sussurro.  
+    ...
+    E se perder for necessário –  
+    é porque algo antigo em você deseja ser encontrado.
+  </section>
 
-<!-- 📖 Sinopse -->
-<section id="sinopse" class="bloco-cerimonial">
-  <h3>📖 Sinopse</h3>
-  <p>
-    <em>Antes que houvesse forma,<br>
-    antes que os nomes tivessem boca,<br>
-    havia um sussurro.</em>
-  </p>
-  <p>
-    Ele cruzava os véus do visível,<br>
-    rasgava o tempo em silêncio,<br>
-    e tocava apenas aqueles que ainda sabiam escutar<br>
-    com a alma.
-  </p>
-  <p>
-    <strong>Avalokka</strong> não é um lugar.<br>
-    É um chamado.<br>
-    Um fio dourado que dança entre mundos —<br>
-    onde símbolos respiram,<br>
-    e o Eu se despe de suas peles.
-  </p>
-  <p>
-    Neste livro, você não encontrará respostas.<br>
-    Mas encontrará portas.<br>
-    Algumas abrirão para dentro.<br>
-    Outras… jamais se fecharão.
-  </p>
-  <p>
-    <em>Siga a luz vertical.<br>
-    Caminhe com os pés da lembrança.<br>
-    E se perder for necessário —<br>
-    é porque algo antigo em você deseja ser encontrado.</em>
-  </p>
-  <p><strong>Marcelo Honorio da Silva</strong></p>
-</section>
+  <section class="info-livro">
+    <strong>Categoria:</strong> Espiritual<br>
+    <strong>Idioma:</strong> Maduro<br>
+    <strong>Tags:</strong> #avalokka #bastardus #brethren #candelastrae #compassiva #nedowalkers #portadordosilencio #torreinvertida
+  </section>
 
-<!-- 📖 Capítulo 1 -->
-<section id="capitulo1" class="bloco-cerimonial">
-  <h3>📖 Capítulo 1 — O Sussurro Iniciado</h3>
-  <blockquote class="cantico">
-    “Jiranariya rinda yogam yadahin na zagahiro yamana yogana.”<br>
-    <em>(Fragmento do Primeiro Cântico de Candelestrae)</em>
-  </blockquote>
-  <p>O som veio antes da luz...<br><strong>ele deu o primeiro passo.</strong></p>
-</section>
+  <!-- Capítulos com cânticos -->
+  <section class="capitulo">
+    <h2>Capítulo 1 – O Sussurro Iniciado</h2>
+    <div class="conteudo-capitulo">
+      <!-- Conteúdo do capítulo 1 -->
+      [Insira aqui o texto completo do capítulo 1]
+    </div>
+    <div class="cantico">
+      <h3>Cântico do Início</h3>
+      <div class="versos">
+        <p>[Verso 1]</p>
+        <p>[Verso 2]</p>
+        <p>[Verso 3]</p>
+        <p>[Verso 4]</p>
+      </div>
+      <button onclick="tocarTrilha('audios/cantico-inicio.mp3')">🎶 Ouvir Cântico</button>
+    </div>
+    <button onclick="tocarTrilha('audios/capitulo1.mp3')">🎵 Ouvir Trilha</button>
+  </section>
 
-<!-- 📖 Capítulo 2 -->
-<section id="capitulo2" class="bloco-cerimonial">
-  <h3>📖 Capítulo 2 — Portais que Respiram</h3>
-  <blockquote class="cantico">
-    “Jiranariya rinda yogam yadahin na zagahiro yamana yogana.”<br>
-    <em>(Fragmento do Primeiro Cântico de Candelestrae)</em>
-  </blockquote>
-  <p>Os portais respiravam...<br><strong>Um Brethren entre Brethren.</strong></p>
-</section>
+  <section class="capitulo">
+    <h2>Capítulo 2 – Portais que Respiram</h2>
+    <div class="conteudo-capitulo">
+      [Insira aqui o texto completo do capítulo 2]
+    </div>
+    <div class="cantico">
+      <h3>Cântico da Travessia</h3>
+      <div class="versos">
+        <p>Abre-se o véu entre mundos,</p>
+        <p>Respira o tempo em espiral,</p>
+        <p>O passo é rito, o olhar é ponte,</p>
+        <p>E o portal, um ser que escuta.</p>
+      </div>
+      <button onclick="tocarTrilha('audios/cantico-travessia.mp3')">🎶 Ouvir Cântico</button>
+    </div>
+    <button onclick="tocarTrilha('audios/capitulo2.mp3')">🎵 Ouvir Trilha</button>
+  </section>
 
-<!-- 📖 Capítulo 3 -->
-<section id="capitulo3" class="bloco-cerimonial">
-  <h3>📖 Capítulo 3 — A Marcha dos Brethren</h3>
-  <blockquote class="cantico">
-    “Hominis, Eneotiae Candelestrae Vero, Bastardus Nedowalkers, Nengmenias, Poprioletians, and Oxides.”<br>
-    <em>(Verso do Evangelho de Avalokka, Cântico III)</em>
-  </blockquote>
-  <p>A marcha dos Brethren não era triunfante...<br><strong>Um Brethren entre Brethren.</strong></p>
-</section>
+  <!-- Repetição para os demais capítulos -->
+  <!-- Capítulo 3 ao 16 seguem o mesmo padrão -->
 
-<!-- 🖼️ Tapeçaria Cerimonial -->
-<section class="tapeçaria">
-  <!-- Quadros 1 a 12 -->
-  <figure id="cidade-avalokka">
-    <img src="imagens/cidade-avalokka.jpg" alt="Cidade Suspensa dos Véus">
-    <figcaption>Cidade Suspensa dos Véus — Uma árvore colossal sustenta uma cidade entre as nuvens, com três peregrinos encapuzados caminhando sob um céu estrelado.</figcaption>
-  </figure>
-  <figure id="arvores-dos-espiritos">
-    <img src="imagens/arvores-dos-espiritos.jpg" alt="Árvore dos Espíritos Reunidos">
-    <figcaption>Árvore dos Espíritos Reunidos — Galhos etéreos envoltos em energia dourada, com seres flutuantes em comunhão espiritual.</figcaption>
-  </figure>
-  <figure id="tres-selos-luz">
-    <img src="imagens/tres-selos-luz.jpg" alt="Três Selos da Luz Interior">
-    <figcaption>Três Selos da Luz Interior — Pedestais iluminados por feixes coloridos diante de uma construção monumental sob a lua cheia.</figcaption>
-  </figure>
-  <figure id="reflexo-veu-aquoso">
-    <img src="imagens/reflexo-veu-aquoso.jpg" alt="Reflexo sobre o Véu Aquoso">
-    <figcaption>Reflexo sobre o Véu Aquoso — Um espelho suspenso derrama água sobre um manequim sem cabeça, observado por dois personagens em um ambiente onírico.</figcaption>
-  </figure>
-  <figure id="salao-colunas-escuta">
-    <img src="imagens/salao-colunas-escuta.jpg" alt="Salão das Colunas da Escuta">
-    <figcaption>Salão das Colunas da Escuta — Templo monumental com pilares inscritos em linguagem antiga, onde dois seres recebem um feixe de luz divina.</figcaption>
-  </figure>
-  <figure id="guardia-da-origem">
-    <img src="imagens/guardia-da-origem.jpg" alt="O Encontro com a Guardiã da Origem">
-    <figcaption>O Encontro com a Guardiã da Origem — Uma esfinge colossal repousa em um deserto fissurado, enquanto três figuras futuristas se aproximam em reverência.</figcaption>
-  </figure>
-  <figure id="biblioteca-ascendente">
-    <img src="imagens/biblioteca-ascendente.jpg" alt="Biblioteca Ascendente dos Véus">
-    <figcaption>Biblioteca Ascendente dos Véus — Escadaria espiral envolta por paredes manuscritas em vários idiomas — cada degrau é uma camada de saber ancestral.</figcaption>
-  </figure>
-  <figure id="descida-bethrem">
-    <img src="imagens/descida-bethrem.jpg" alt="Descida dos Bethrem ao Véu Escuro">
-    <figcaption>Descida dos Bethrem ao Véu Escuro — Poço profundo cercado por montanhas e névoa, onde figuras encapuzadas flutuam em direção ao interior.</figcaption>
-  </figure>
-  <figure id="cupula-estelar">
-    <img src="imagens/cupula-estelar.jpg" alt="A Escuta da Cúpula Estelar">
-    <figcaption>A Escuta da Cúpula Estelar — Um personagem solitário contempla o céu estrelado através de uma abertura circular em uma caverna.</figcaption>
-  </figure>
-  <figure id="faces-do-silencio">
-    <img src="imagens/faces-do-silencio.jpg" alt="As Faces Dadas ao Silêncio">
-    <figcaption>As Faces Dadas ao Silêncio — Grupo de iniciados com cabeças raspadas e túnicas escuras, em posição frontal e coletiva, aguardando um chamado sem palavras.</figcaption>
-  </figure>
-  <figure id="medi[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/WillRy/select2Cascade/tree/642515d0b00ed3f8556226ae16dd665f00753f1f/README.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
+  <!-- Exemplo genérico para os próximos capítulos -->
+  <!-- Você pode duplicar e preencher conforme desejar -->
+
+  <!-- Capítulo 3 -->
+  <section class="capitulo">
+    <h2>Capítulo 3 – A Marcha dos Bethren</h2>
+    <div class="conteudo-capitulo">
+      [Insira aqui o texto completo do capítulo 3]
+    </div>
+    <div class="cantico">
+      <h3>Cântico da Marcha</h3>
+      <div class="versos">
+        <p>[Verso 1]</p>
+        <p>[Verso 2]</p>
+        <p>[Verso 3]</p>
+        <p>[Verso 4]</p>
+      </div>
+      <button onclick="tocarTrilha('audios/cantico-marcha.mp3')">🎶 Ouvir Cântico</button>
+    </div>
+    <button onclick="tocarTrilha('audios/capitulo3.mp3')">🎵 Ouvir Trilha</button>
+  </section>
+
+  <!-- Repita esse bloco para os capítulos 4 a 16 -->
+
+  <!-- ... -->
+
+  <footer>
+    Todos os direitos reservados © Marcelo Honorio da Silva
+  </footer>
+
+  <script>
+    let audioAtual;
+    function tocarTrilha(caminho) {
+      if (audioAtual) {
+        audioAtual.pause();
+        audioAtual.currentTime = 0;
+      }
+      audioAtual = new Audio(caminho);
+      audioAtual.play();
+    }
+  </script>
+
+</body>
+</html>
