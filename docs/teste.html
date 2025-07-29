@@ -1,55 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Botões Cerimoniais</title>
-  <link rel="stylesheet" href="estilos.css"> <!-- Seu CSS vai aqui -->
+  <title>Avalokka – Livro Cerimonial</title>
+  <link rel="stylesheet" href="estilos.css">
   <style>
     body {
-      background-color: #1a1613;
-      font-family: var(--fonte-principal, 'Georgia', serif);
+      background-color: #1e1e1e;
       color: #f5f0e6;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      position: relative;
+      font-family: 'Cormorant Garamond', serif;
+      padding: 2rem 5vw;
     }
 
     header {
-      padding: 1rem;
       text-align: center;
-      background-color: #2c1e0f;
+      margin-bottom: 3rem;
     }
 
-    main {
-      padding: 2rem;
-      text-align: center;
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--cor-dourado, #8b6f3d);
     }
 
-    .botao-acao {
-      margin-top: 2rem;
+    .sinopse {
+      font-style: italic;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      white-space: pre-line;
+    }
+
+    .info-livro {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      color: #c2b8a3;
+    }
+
+    .capitulo {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid var(--cor-dourado, #8b6f3d);
+      border-radius: 8px;
+    }
+
+    .capitulo h2 {
+      color: var(--cor-dourado, #8b6f3d);
+      margin-bottom: 0.5rem;
+    }
+
+    .capitulo button {
+      background-color: var(--cor-dourado, #8b6f3d);
+      color: #f5f0e6;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Lora', serif;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .capitulo button:hover {
+      background-color: #7a5f34;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #a68b5b;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🎩 Interface Cerimonial</h1>
-    <button class="btn">Botão Padrão</button>
+    <h1>Avalokka</h1>
+    <p>por Marcelo Honorio da Silva</p>
   </header>
 
-  <main>
-    <p>Este é um exemplo de botões com estilo cerimonial e animações suaves.</p>
-    <button class="botao-acao">🔷 Botão de Ação</button>
-  </main>
+  <section class="sinopse">
+    Antes que houvesse forma,  
+    antes que os nomes tivessem boca,  
+    havia um sussurro.  
 
-  <!-- Botão flutuante no topo direito -->
-  <button class="botao-audio-flutuante">🔊 Áudio Flutuante</button>
+    Ele cruzava os véus do visível,  
+    rasgava o tempo em silêncio,  
+    e tocava apenas aqueles que ainda sabiam escutar  
+    com a alma.  
 
-  <!-- Botão central no rodapé -->
-  <div class="botao-audio-container">
-    <button class="botao-audio">🎧 Áudio Central</button>
-  </div>
+    Avalokka não é um lugar.  
+    É um chamado.  
+    Um fio dourado que dança entre mundos –  
+    onde símbolos respiram,  
+    e o Eu se despe de suas peles.  
+
+    Neste livro, você não encontrará respostas.  
+    Mas encontrará portas.  
+    Algumas abrirão para dentro.  
+    Outras... jamais se fecharão.  
+
+    Siga a luz vertical.  
+    Caminhe com os pés da lembrança.  
+    E se perder for necessário –  
+    é porque algo antigo em você deseja ser encontrado.
+  </section>
+
+  <section class="info-livro">
+    <strong>Categoria:</strong> Espiritual<br>
+    <strong>Idioma:</strong> Maduro<br>
+    <strong>Tags:</strong> #avalokka #bastardus #brethren #candelastrae #compassiva #nedowalkers #portadordosilencio #torreinvertida
+  </section>
+
+  <!-- Capítulos -->
+  <section class="capitulo">
+    <h2>Capítulo 1 – O Despertar</h2>
+    <button onclick="tocarTrilha('audios/capitulo1.mp3')">🎵 Ouvir Trilha</button>
+  </section>
+
+  <section class="capitulo">
+    <h2>Capítulo 2 – A Travessia</h2>
+    <button onclick="tocarTrilha('audios/capitulo2.mp3')">🎵 Ouvir Trilha</button>
+  </section>
+
+  <!-- ... Repita até o Capítulo 17 -->
+  <!-- Você pode gerar os 17 automaticamente se quiser -->
+
+  <footer>
+    Todos os direitos reservados © Marcelo Honorio da Silva
+  </footer>
+
+  <script>
+    let audioAtual;
+
+    function tocarTrilha(caminho) {
+      if (audioAtual) {
+        audioAtual.pause();
+        audioAtual.currentTime = 0;
+      }
+      audioAtual = new Audio(caminho);
+      audioAtual.play();
+    }
+  </script>
 
 </body>
 </html>
