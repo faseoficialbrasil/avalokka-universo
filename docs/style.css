@@ -114,6 +114,14 @@ body {
   border-left: 6px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(139, 111, 61, 0.2); /* sombra dourada escura */
 }
+.bloco-flexivel {
+  max-width: clamp(600px, 80vw, 1400px);
+  padding: 3rem 5vw;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
 
 .bloco-cerimonial {
   background-image: url('imagens/fundo-bloco.jpg');
