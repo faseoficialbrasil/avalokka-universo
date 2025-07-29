@@ -1,60 +1,8 @@
-
 /* === 🌿 DNA CERIMONIAL DE AVALOKKA === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.card {
-  background-color: #fff;
-  padding: var(--espacamento-grande);
-  border-radius: var(--borda-radius);
-  box-shadow: var(--sombra-suave);
-  margin-bottom: var(--espacamento-grande);
-}
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--borda-radius);
-  box-shadow: var(--sombra-suave);
-}
-section {
-  margin-bottom: 3rem;
-}
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  color: var(--cor-destaque);
-}
-blockquote {
-  font-style: italic;
-  border-left: 4px solid var(--cor-destaque);
-  padding-left: 1rem;
-  margin: 1.5rem 0;
-  color: #555;
-}
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 a {
   color: var(--cor-destaque);
@@ -71,42 +19,368 @@ a:hover {
   color: var(--cor-primaria);
   text-decoration: underline;
 }
-/* === BASE === */
+header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+  }
+
+  header h1 {
+    color: #f0f0f0;
+  }
+
+  header button {
+    background-color: #333;
+    color: #fff;
+  }
 body {
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: 'Marcellus', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c1e0f;
+  background-color: #0e0e10;
   background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  color: #2c1e0f;
-  margin: 0;
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  padding: 2rem;
 }
-.cabecalho-img {
-  height: 100px;           /* Ajuste conforme a altura ideal do cabeçalho */
-  margin-right: 20px;      /* Espaço entre a imagem e o título */
-  border-radius: 8px;      /* Opcional: bordas arredondadas */
-  object-fit: contain;     /* Garante que a imagem não distorça */
+/* === BASE === */
+:root {
+  --z-index-flutuante: 10;
+  --z-index-central: 9;
+  --cor-primaria: #6b4f2c;
+  --cor-destaque: #a67c52;
+  --z-index-flutuante: 10;
+  --z-index-central: 9;
+  --espacamento-medio: 10px;
+  --espacamento-grande: 20px;
+  --borda-radius: 8px;
+  --fonte-principal: 'Cormorant Garamond', serif;
+  --sombra-suave: 0 2px 6px rgba(44, 30, 15, 0.3);
+}
+/* === IMPORTAÇÃO DE FONTES RECOMENDADAS === */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* === BLOCO CERIMONIAL UNIFICADO === */
+.bloco-cerimonial {
+  background-image: url('imagens/fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  margin: 2.5rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #3a2f2b;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
 }
 
+/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
+.bloco-cerimonial h1,
+.bloco-cerimonial h2,
+.bloco-cerimonial h3,
+.bloco-apresentacao h1,
+.bloco-apresentacao h2,
+.bloco-apresentacao h3,
+.bloco-sinopse h1,
+.bloco-sinopse h2,
+.bloco-sinopse h3 {
+  font-family: 'Cinzel', serif;
+  color: #6e5a99;
+  margin-bottom: 0.5rem;
+}
+
+/* === BLOCO CERIMONIAL ALTERNATIVO === */
+.ceremonial-block {
+  background-color: #0e0e0e;
+  color: #e0d8c3;
+  padding: 3rem;
+  border-left: 6px solid #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* === CITAÇÕES PADRÃO === */
+blockquote {
+  font-style: italic;
+  color: #3a2f2b;
+  border-left: 3px solid #bfa76f;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+/* === CITAÇÃO DO EVANGELHO === */
+blockquote.evangelho {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-left: 3px solid #bfa76f;
+  padding: 1rem;
+  color: #3a2f2b;
+}
+
+/* Tradução dentro do evangelho */
+blockquote.evangelho .traducao {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #6e5a99;
+}
+
+/* === CITAÇÃO COM VOZ DESTACADA === */
+blockquote.voz {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #bfa76f;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-left: 3px solid #6e5a99;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* === BOTÃO DE ÁUDIO FLUTUANTE === */
+.botao-audio-flutuante {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fdf8f3;
+  border: 2px solid var(--cor-primaria);
+  color: #2c1e0f;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+  cursor: pointer;
+  box-shadow: var(--sombra-suave);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: var(--z-index-flutuante);
+  animation: chantGlow 1.5s infinite alternate;
+}
+
+/* Hover para botão flutuante */
+.botao-audio-flutuante:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.botao-audio-flutuante:focus-visible {
+  outline: 2px dashed #d4af37;
+  outline-offset: 2px;
+}
+
+/* === BOTÃO DE ÁUDIO CENTRAL (RODAPÉ) === */
+.botao-audio-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-index-central);
+  pointer-events: auto;
+}
+
+.botao-audio-central {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffd700;
+  color: #fff;
+  font-size: 1em;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Georgia', serif;
+  backdrop-filter: blur(4px);
+}
+
+.botao-audio-central:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* === ANIMAÇÃO DE BRILHO DOURADO === */
+@keyframes chantGlow {
+  0% {
+    text-shadow: 0 0 5px #d4af37;
+    color: #d4af37;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffd700;
+    color: #ffd700;
+  }
+  100% {
+    text-shadow: 0 0 15px #fff8dc;
+    color: #fff8dc;
+  }
+}
+
+/* === BOTÃO DE ÁUDIO FLUTUANTE COM ANIMAÇÃO === */
+.botao-audio-flutuante {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fdf8f3;
+  border: 2px solid var(--cor-primaria);
+  color: #2c1e0f;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+  cursor: pointer;
+  box-shadow: var(--sombra-suave);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: var(--z-index-flutuante);
+  animation: chantGlow 1.5s infinite alternate;
+}
+
+/* Hover para botão flutuante */
+.botao-audio-flutuante:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* === TRANSIÇÕES SUAVES GLOBAIS === */
+button,
+a,
+input[type="submit"],
+input[type="button"] {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+    }
+
+/* === ESTILO PADRÃO DE BOTÕES === */
+button,
+.btn {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  padding: var(--espacamento-medio) var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--sombra-suave);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+/* === INTERAÇÃO: HOVER, FOCUS, ACTIVE === */
+button:hover,
+.btn:hover {
+  background-color: var(--cor-destaque);
+  transform: scale(1.03);
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: var(--sombra-interna);
+}
+/* === IMAGEM DO CABEÇALHO === */
+.cabecalho-img {
+  height: 100px;              /* Altura ideal para cabeçalhos */
+  margin-right: 20px;         /* Espaço entre imagem e texto */
+  border-radius: 8px;         /* Bordas arredondadas */
+  object-fit: contain;        /* Evita distorção da imagem */
+  max-width: 100px;           /* Limita largura para manter proporção */
+  flex-shrink: 0;             /* Evita que a imagem encolha demais */
+}
+
+/* === TEXTO DO CABEÇALHO === */
 .cabecalho h1,
 .cabecalho p {
   overflow-wrap: break-word;
   word-break: break-word;
+  margin: 0;
 }
+
+/* === CONTAINER DO CABEÇALHO === */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.card {
+  background-color: #fff;
+  padding: var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+  margin-bottom: var(--espacamento-grande);
+}
+
+/* === ESTILO GLOBAL PARA IMAGENS === */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+}
+
+/* === TÍTULOS SECUNDÁRIOS === */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--cor-destaque);
+}
+
+/* === ANIMAÇÃO DE ENTRADA SUAVE === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 :root {
   /* 🎨 Cores */
-  --cor-destaque: #6b4f2c;         /* Mantida */
-  --cor-fundo-claro: #fdf8f3;      /* Mantida */
-  --cor-texto: #333;               /* Mantida */
-  --cor-primaria: #a67c52;         /* Complementar ao destaque */
-  --cor-secundaria: #d9c2a3;       /* Tons suaves para botões ou detalhes */
-  --cor-fundo-escuro: #2c1e13;     /* Para rodapé ou modo escuro */
+  --cor-destaque: #6b4f2c;
+  --cor-fundo-claro: #fdf8f3;
+  --cor-texto: #333;
+  --cor-primaria: #a67c52;
+  --cor-secundaria: #d9c2a3;
+  --cor-fundo-escuro: #2c1e13;
 
   /* 🖋️ Tipografia */
   --fonte-principal: 'Roboto', sans-serif;
@@ -122,40 +396,52 @@ body {
   --borda-radius: 8px;
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* === COMPORTAMENTO DE SCROLL === */
 html {
   scroll-behavior: smooth;
 }
 
-/* === VARIÁVEIS DE COR === */
-:root {
-  --cor-destaque: #6b4f2c;
-  --cor-fundo-claro: #fdf8f3;
-  --cor-texto: #333;
+/* === ANIMAÇÃO DE ENTRADA SUAVE === */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* === TRANSIÇÕES SUAVES === */
-button,
-a {
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* === ANIMAÇÃO DE BRILHO CERIMONIAL === */
+@keyframes chantGlow {
+  from {
+    text-shadow: 0 0 5px #d4af37;
+  }
+  to {
+    text-shadow: 0 0 15px #ffd700;
+  }
 }
-button,
-.btn {
-  background-color: var(--cor-primaria);
-  color: #fff;
-  border: none;
-  padding: var(--espacamento-medio) var(--espacamento-grande);
+
+/* === IMAGENS RESPONSIVAS === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   border-radius: var(--borda-radius);
-  font-family: var(--fonte-principal);
-  font-size: 1rem;
-  cursor: pointer;
   box-shadow: var(--sombra-suave);
-  transition: background-color 0.3s ease;
 }
 
-button:hover,
-.btn:hover {
-  background-color: var(--cor-destaque);
-}
+/* === RESPONSIVIDADE PARA BOTÃO FLUTUANTE === */
+@media (max-width: 600px) {
+  .botao-audio-flutuante {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  }
+
+
+
+
 
 
 /* === MODO ESCURO AUTOMÁTICO === */
@@ -165,19 +451,7 @@ button:hover,
     color: #e0e0e0;
   }
 
-  header {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #444;
-  }
-
-  header h1 {
-    color: #f0f0f0;
-  }
-
-  header button {
-    background-color: #333;
-    color: #fff;
-  }
+  
 
   .rodape-cerimonial {
     background-color: #1a1a1a;
@@ -303,22 +577,7 @@ button:hover,
   font-weight: normal;
 }
 
-.botao-audio-flutuante {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-}
 
-.botao-audio-flutuante:hover {
-  background-color: #e0e0e0;
-}
 
 .conteudo-topo {
   text-align: center;
@@ -739,49 +998,7 @@ nav {
   margin: 5px 0 0;
   }
 /* 🔶 Bloco cerimonial com fundo decorativo */
-.bloco-cerimonial {
-  background-image: url('imagens/fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  color: #3b2f1c; /* tom terroso para combinar com o fundo */
-  font-family: 'Georgia', serif;
-  text-align: center;
-}
-/* 📜 Estilo cerimonial para o bloco de apresentação */
-.bloco-cerimonial {
-  background-image: url('imagens/fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  color: #3b2f1c;
-  font-family: 'Georgia', serif;
-  text-align: center;
-}
-/* Fonte recomendada: Google Fonts - 'Cormorant Garamond' para texto, 'Cinzel Decorative' para títulos */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
-.ceremonial-block {
-  background-color: #0e0e0e;
-  color: #e0d8c3;
-  padding: 3rem;
-  border-left: 6px solid #d4af37;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
 
 .chapter-title {
   font-family: 'Cinzel Decorative', serif;
@@ -851,17 +1068,57 @@ p em {
   font-style: italic;
 }
 /* Estilo Cerimonial para o Evangelho de Avalokka */
+/* === IMPORTAÇÃO DE FONTES CERIMONIAIS === */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
-
-body {
-  background-color: #0e0e10;
-  color: #7a68a2;
+/* === BLOCO CERIMONIAL UNIFICADO === */
+.bloco-cerimonial {
+  background-image: url('imagens/fundo-bloco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  margin: 2.5rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #3a2f2b;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   line-height: 1.7;
-  padding: 2rem;
+  text-align: center;
 }
+
+/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
+.bloco-cerimonial h1,
+.bloco-cerimonial h2,
+.bloco-cerimonial h3,
+.bloco-apresentacao h1,
+.bloco-apresentacao h2,
+.bloco-apresentacao h3,
+.bloco-sinopse h1,
+.bloco-sinopse h2,
+.bloco-sinopse h3 {
+  font-family: 'Cinzel', serif;
+  color: #6e5a99;
+  margin-bottom: 0.5rem;
+}
+
+/* === BLOCO CERIMONIAL ALTERNATIVO === */
+.ceremonial-block {
+  background-color: #0e0e0e;
+  color: #e0d8c3;
+  padding: 3rem;
+  border-left: 6px solid #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
+
+
 
 /* Cabeçalho principal */
 header.principal {
@@ -957,56 +1214,7 @@ ul.visoes {
   margin-left: 1.5rem;
   color: #7a68a2;
 }
-/* Fonte recomendada */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
 
-.bloco-cerimonial,
-.bloco-apresentacao,
-.bloco-sinopse {
-  background-image: url('fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #3a2f2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  padding: 2rem;
-  border-left: 3px solid #bfa76f;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  margin: 2rem auto;
-}
-
-.bloco-cerimonial h1,
-.bloco-cerimonial h2,
-.bloco-cerimonial h3,
-.bloco-apresentacao h1,
-.bloco-apresentacao h2,
-.bloco-apresentacao h3,
-.bloco-sinopse h1,
-.bloco-sinopse h2,
-.bloco-sinopse h3 {
-  font-family: 'Cinzel', serif;
-  color: #6e5a99;
-  margin-bottom: 0.5rem;
-}
-.bloco-cerimonial {
-  background-image: url('fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #3a2f2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 800px;
-  margin: 2rem auto;
-  }
 
 .subtitulo {
   font-size: 1rem;
@@ -1015,12 +1223,7 @@ ul.visoes {
   margin-top: 0.2rem;
 }
 
-.bloco-cerimonial p,
-.bloco-apresentacao p,
-.bloco-sinopse p {
-  text-align: justify;
-  margin-bottom: 1rem;
-}
+
 
 em {
   color: #6e5a99;
@@ -1032,78 +1235,16 @@ strong {
   font-weight: bold;
 }
 
-blockquote {
-  font-style: italic;
-  color: #3a2f2b;
-  border-left: 3px solid #bfa76f;
-  padding-left: 1rem;
-  margin: 1.5rem 0;
-  background-color: rgba(255, 255, 255, 0.7); /* fundo semi-opaco para legibilidade */
-  border-radius: 6px;
-}
 
-blockquote.evangelho {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid #bfa76f;
-  padding: 1rem;
-  color: #3a2f2b;
-}
-
-blockquote.evangelho .traducao {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #6e5a99;
-}
-
-blockquote.voz {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  color: #bfa76f;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid #6e5a99;
-  padding: 1rem;
-  margin: 2rem 0;
-  text-align: center;
-  border-radius: 6px;
-}
 
 ul {
   list-style-type: "✦ ";
   margin-left: 1.5rem;
   color: #3a2f2b;
 }
-/* Estilo dos títulos */
-.bloco-cerimonial h1,
-.bloco-cerimonial h2,
-.bloco-cerimonial h3,
-.bloco-apresentacao h1,
-.bloco-apresentacao h2,
-.bloco-apresentacao h3,
-.bloco-sinopse h1,
-.bloco-sinopse h2,
-.bloco-sinopse h3 {
-  font-family: 'Cinzel', serif;
-  color: #6e5a99;
-  margin-bottom: 0.5rem;
-}
 
-/* Estilo do bloco cerimonial */
-.bloco-cerimonial {
-  background-image: url('fundo-bloco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #3a2f2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 800px;
-  margin: 2rem auto;
-}
+section {
+  margin-bottom: 3rem;
 .texto-bloco {
   color: #3a2f2b;
   font-size: 1.05rem;
