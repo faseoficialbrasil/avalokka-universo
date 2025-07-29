@@ -79,7 +79,32 @@ body {
   /* 🌫️ Sombra */
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+/* Visibilidade forçada */
+.visivel-forcado {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  color: inherit !important;
+  position: relative;
+  z-index: 10;
+}
 
+/* Supressão total de cores indesejadas */
+* {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+}
+
+/* Classes que contenham nomes de cores indesejadas */
+[class*="amarelo"],
+[class*="roxo"],
+[class*="cinza"] {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+}
 
 
 .bloco-cerimonial,
@@ -1310,5 +1335,21 @@ section {
   color: inherit !important;
   position: relative;
   z-index: 10;
+}
+/* Supressão total de cores indesejadas */
+* {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+}
+
+/* Se houver classes específicas com essas cores */
+[class*="amarelo"],
+[class*="roxo"],
+[class*="cinza"] {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
 }
 
