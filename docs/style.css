@@ -1,14 +1,14 @@
+
 /* === 🌿 DNA CERIMONIAL DE AVALOKKA === */
+
+/* === RESET GLOBAL === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a {
-  color: var(--cor-destaque);
-  text-decoration: none;
-}
 
+/* === LINKS === */
 a {
   color: var(--cor-destaque);
   text-decoration: none;
@@ -19,19 +19,23 @@ a:hover {
   color: var(--cor-primaria);
   text-decoration: underline;
 }
+
+/* === CABEÇALHO === */
 header {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #444;
-  }
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #444;
+}
 
-  header h1 {
-    color: #f0f0f0;
-  }
+header h1 {
+  color: #f0f0f0;
+}
 
-  header button {
-    background-color: #333;
-    color: #fff;
-  }
+header button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* === CORPO === */
 body {
   font-family: 'Marcellus', serif;
   font-size: 1.1rem;
@@ -48,8 +52,8 @@ body {
   scroll-behavior: smooth;
   padding: 2rem;
 }
-/* === BASE === */
-:root {
+
+/* === BASE DE VARIÁVEIS === */
 :root {
   --cor-fundo-claro: #fdf8f3;
   --cor-texto: #3a2f2b;
@@ -60,11 +64,11 @@ body {
   --cor-dourado: #d4af37;
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 /* === IMPORTAÇÃO DE FONTES RECOMENDADAS === */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* === BLOCO CERIMONIAL UNIFICADO === */
-/* === BASE DO BLOCO CERIMONIAL === */
+/* === BLOCOS CERIMONIAIS UNIFICADOS === */
 .bloco-cerimonial,
 .ceremonial-block {
   max-width: 800px;
@@ -84,15 +88,36 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #3a2f2b;
+  color: var(--cor-texto);
 }
 
 /* === VARIAÇÃO ESCURA === */
 .ceremonial-block {
   background-color: #0e0e0e;
   color: #e0d8c3;
-  border-left: 6px solid #d4af37;
+  border-left: 6px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  /* 🎨 Cores adicionais */
+  --cor-titulo-cerimonial: #6e5a99;
+  --cor-citacao: #3a2f2b;
+  --cor-destaque-citacao: #bfa76f;
+
+  /* 🪄 Camadas */
+  --z-index-flutuante: 1000;
+  --z-index-central: 900;
 }
 
 /* === TÍTULOS EM BLOCOS CERIMONIAIS === */
@@ -109,15 +134,15 @@ body {
 .ceremonial-block h2,
 .ceremonial-block h3 {
   font-family: 'Cinzel', serif;
-  color: #6e5a99;
+  color: var(--cor-titulo-cerimonial);
   margin-bottom: 0.5rem;
 }
 
 /* === CITAÇÕES PADRÃO === */
 blockquote {
   font-style: italic;
-  color: #3a2f2b;
-  border-left: 3px solid #bfa76f;
+  color: var(--cor-citacao);
+  border-left: 3px solid var(--cor-destaque-citacao);
   padding-left: 1rem;
   margin: 1.5rem 0;
   background-color: rgba(255, 255, 255, 0.7);
@@ -127,9 +152,9 @@ blockquote {
 /* === CITAÇÃO DO EVANGELHO === */
 blockquote.evangelho {
   background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid #bfa76f;
+  border-left: 3px solid var(--cor-destaque-citacao);
   padding: 1rem;
-  color: #3a2f2b;
+  color: var(--cor-citacao);
 }
 
 /* Tradução dentro do evangelho */
@@ -137,16 +162,16 @@ blockquote.evangelho .traducao {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #6e5a99;
+  color: var(--cor-titulo-cerimonial);
 }
 
 /* === CITAÇÃO COM VOZ DESTACADA === */
 blockquote.voz {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
-  color: #bfa76f;
+  color: var(--cor-destaque-citacao);
   background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid #6e5a99;
+  border-left: 3px solid var(--cor-titulo-cerimonial);
   padding: 1rem;
   margin: 2rem 0;
   text-align: center;
@@ -158,7 +183,7 @@ blockquote.voz {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #fdf8f3;
+  background-color: var(--cor-fundo-claro);
   border: 2px solid var(--cor-primaria);
   color: #2c1e0f;
   border-radius: 50px;
@@ -167,12 +192,11 @@ blockquote.voz {
   font-family: var(--fonte-principal);
   cursor: pointer;
   box-shadow: var(--sombra-suave);
-  transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: var(--z-index-flutuante);
   animation: chantGlow 1.5s infinite alternate;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover para botão flutuante */
 .botao-audio-flutuante:hover {
   background-color: var(--cor-primaria);
   color: #fff;
@@ -180,7 +204,7 @@ blockquote.voz {
 }
 
 .botao-audio-flutuante:focus-visible {
-  outline: 2px dashed #d4af37;
+  outline: 2px dashed var(--cor-dourado);
   outline-offset: 2px;
 }
 
@@ -192,19 +216,55 @@ blockquote.voz {
   transform: translateX(-50%);
   z-index: var(--z-index-central);
   pointer-events: auto;
+  }
+
+
+
+
+
+
+  
+:root {
+  /* 🎨 Cores */
+  --cor-destaque: #6b4f2c;
+  --cor-fundo-claro: #fdf8f3;
+  --cor-texto: #333;
+  --cor-primaria: #a67c52;
+  --cor-secundaria: #d9c2a3;
+  --cor-fundo-escuro: #2c1e13;
+  --cor-dourado: #ffd700;
+
+  /* 🖋️ Tipografia */
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-titulo: 'Playfair Display', serif;
+  --tamanho-base: 16px;
+
+  /* 📏 Espaçamento */
+  --espacamento-pequeno: 0.5rem;
+  --espacamento-medio: 1rem;
+  --espacamento-grande: 2rem;
+
+  /* 🧭 Bordas e sombras */
+  --borda-radius: 8px;
+  --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --sombra-interna: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* 🪄 Camadas */
+  --z-index-flutuante: 1000;
 }
 
+/* === BOTÃO DE ÁUDIO CENTRAL === */
 .botao-audio-central {
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #ffd700;
+  border: 1px solid var(--cor-dourado);
   color: #fff;
   font-size: 1em;
   padding: 12px 18px;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Georgia', serif;
   backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .botao-audio-central:hover {
@@ -219,8 +279,8 @@ blockquote.voz {
     color: #d4af37;
   }
   50% {
-    text-shadow: 0 0 10px #ffd700;
-    color: #ffd700;
+    text-shadow: 0 0 10px var(--cor-dourado);
+    color: var(--cor-dourado);
   }
   100% {
     text-shadow: 0 0 15px #fff8dc;
@@ -233,7 +293,7 @@ blockquote.voz {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #fdf8f3;
+  background-color: var(--cor-fundo-claro);
   border: 2px solid var(--cor-primaria);
   color: #2c1e0f;
   border-radius: 50px;
@@ -242,12 +302,11 @@ blockquote.voz {
   font-family: var(--fonte-principal);
   cursor: pointer;
   box-shadow: var(--sombra-suave);
-  transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: var(--z-index-flutuante);
   animation: chantGlow 1.5s infinite alternate;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover para botão flutuante */
 .botao-audio-flutuante:hover {
   background-color: var(--cor-primaria);
   color: #fff;
@@ -264,7 +323,7 @@ input[type="button"] {
     color 0.3s ease,
     border-color 0.3s ease,
     transform 0.3s ease;
-    }
+}
 
 /* === ESTILO PADRÃO DE BOTÕES === */
 button,
@@ -278,102 +337,33 @@ button,
   font-size: 1rem;
   cursor: pointer;
   box-shadow: var(--sombra-suave);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
     transform 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 /* === INTERAÇÃO: HOVER, FOCUS, ACTIVE === */
-button:hover,
-.btn:hover {
-  background-color: var(--cor-destaque);
-  transform: scale(1.03);
-}
-
-button:focus,
-.btn:focus {
-  outline: 2px solid var(--cor-destaque);
-  outline-offset: 2px;
-}
-
-button:active,
-.btn:active {
-  transform: scale(0.98);
-  box-shadow: var(--sombra-interna);
-}
-/* === IMAGEM DO CABEÇALHO === */
-.cabecalho-img {
-  height: 100px;              /* Altura ideal para cabeçalhos */
-  margin-right: 20px;         /* Espaço entre imagem e texto */
-  border-radius: 8px;         /* Bordas arredondadas */
-  object-fit: contain;        /* Evita distorção da imagem */
-  max-width: 100px;           /* Limita largura para manter proporção */
-  flex-shrink: 0;             /* Evita que a imagem encolha demais */
-}
-
-/* === TEXTO DO CABEÇALHO === */
-.cabecalho h1,
-.cabecalho p {
-  overflow-wrap: break-word;
-  word-break: break-word;
-  margin: 0;
-}
-
-/* === CONTAINER DO CABEÇALHO === */
-.cabecalho {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.card {
-  background-color: #fff;
-  padding: var(--espacamento-grande);
-  border-radius: var(--borda-radius);
-  box-shadow: var(--sombra-suave);
-  margin-bottom: var(--espacamento-grande);
-}
-
-/* === ESTILO GLOBAL PARA IMAGENS === */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--borda-radius);
-  box-shadow: var(--sombra-suave);
-}
-
-/* === TÍTULOS SECUNDÁRIOS === */
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  color: var(--cor-destaque);
-}
-
-/* === ANIMAÇÃO DE ENTRADA SUAVE === */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 :root {
   /* 🎨 Cores */
@@ -397,19 +387,103 @@ h2 {
   /* 🧭 Bordas e sombras */
   --borda-radius: 8px;
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --sombra-interna: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* === BOTÕES === */
+button:hover,
+.btn:hover {
+  background-color: var(--cor-destaque);
+  transform: scale(1.03);
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: var(--sombra-interna);
+}
+
+/* === CABEÇALHO === */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.cabecalho-img {
+  height: 100px;
+  margin-right: 20px;
+  border-radius: var(--borda-radius);
+  object-fit: contain;
+  max-width: 100px;
+  flex-shrink: 0;
+}
+
+.cabecalho h1,
+.cabecalho p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin: 0;
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* === CARD === */
+.card {
+  background-color: #fff;
+  padding: var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+  margin-bottom: var(--espacamento-grande);
+}
+
+/* === IMAGENS GLOBAIS === */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra-suave);
+}
+
+/* === TÍTULOS SECUNDÁRIOS === */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--cor-destaque);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 /* === COMPORTAMENTO DE SCROLL === */
 html {
   scroll-behavior: smooth;
-}
-
-/* === ANIMAÇÃO DE ENTRADA SUAVE === */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* === ANIMAÇÃO DE BRILHO CERIMONIAL === */
@@ -422,43 +496,26 @@ html {
   }
 }
 
+/* === ANIMAÇÃO DE SURGIMENTO === */
+@keyframes surgir {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* === IMAGENS RESPONSIVAS === */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--borda-radius);
-  box-shadow: var(--sombra-suave);
+  border-radius: var(--borda-radius, 12px);
+  box-shadow: var(--sombra-suave, 0 0 15px rgba(0, 0, 0, 0.1));
 }
-
-/* === RESPONSIVIDADE PARA BOTÃO FLUTUANTE === */
-@media (max-width: 600px) {
-  .botao-audio-flutuante {
-    top: 10px;
-    right: 10px;
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-  }
-
-
-
-
-
-
-/* === MODO ESCURO AUTOMÁTICO === */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  
-
-  .rodape-cerimonial {
-    background-color: #1a1a1a;
-    color: #ccc;
-  }
 
 /* === ÁUDIO === */
 .audio-container {
@@ -504,11 +561,71 @@ img {
   animation: surgir 1.5s ease-in-out;
 }
 
-/* === CONTEÚDO === */
+/* === RESPONSIVIDADE PARA BOTÃO FLUTUANTE === */
+@media (max-width: 600px) {
+  .botao-audio-flutuante {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* === MODO ESCURO AUTOMÁTICO === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .rodape-cerimonial {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
+
+  .bloco-capitulo {
+    background-color: rgba(30, 30, 30, 0.8);
+    border-color: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  }
+
+  .botao-audio {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+    border-color: #ffd700;
+  }
+
+  .botao-audio:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* === CONTEÚDO GERAL === */
 .conteudo {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .conteudo h1 {
@@ -534,96 +651,22 @@ img {
   box-shadow: 0 0 20px rgba(44, 30, 15, 0.3);
 }
 
-/* === TOPO CERIMONIAL === */
+/* === TOPO CERIMONIAL COM IMAGEM DE FUNDO === */
 .topo-cerimonial {
   background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
   background-position: center;
-  padding: 40px;
-  color: #000; /* ← cor da fonte ajustada para preto */
-  text-align: center;
+  background-color: #f5f5f5;
   position: relative;
-}
   width: 100%;
-  min-height: 520px; /* altura mínima para evitar corte */
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5; /* cor de fundo suave */
-  position: relative; /* necessário para posicionar elementos internos */
-  text-align: center;
 }
 
-.conteudo-topo {
-  max-width: 800px;
-  padding: 20px;
-  text-align: center;
-}
-
-.conteudo-topo .selo {
-  max-width: 120px;
-  margin-bottom: 20px;
-}
-
-.conteudo-topo h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-.conteudo-topo h2 {
-  font-size: 1.5em;
-  margin-top: 10px;
-  font-weight: normal;
-}
-
-
-
-.conteudo-topo {
-  text-align: center;
-}
-
-.conteudo-topo .selo {
-  max-width: 120px;
-  margin-bottom: 20px;
-}
-
-.conteudo-topo h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-.conteudo-topo h2 {
-  font-size: 1.5em;
-  margin-top: 10px;
-  font-weight: normal;
-}
-
-.imagem-fundo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  filter: brightness(60%);
-}
-  /* Seção principal com imagem de fundo */
-.topo-cerimonial {
-  background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Camada de conteúdo sobre a imagem */
+/* === CAMADA DE CONTEÚDO SOBREPOSTA === */
 .conteudo-topo {
   position: absolute;
   top: 0;
@@ -636,12 +679,39 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem para dar contraste */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   box-sizing: border-box;
+  color: #f5f5f5;
 }
 
-/* Título principal */
+.conteudo-topo .selo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+/* === IMAGEM DE FUNDO ESCURECIDA (OPCIONAL) === */
+.imagem-fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(60%);
+}
+
+
+
+
+
+
+
+
+
+  
+/* === TOPO CERIMONIAL === */
 .conteudo-topo h1 {
   font-size: 3.5em;
   color: #FFD700; /* dourado */
@@ -650,15 +720,12 @@ img {
   text-shadow: 1px 1px 4px #000;
 }
 
-/* Subtítulo */
 .conteudo-topo h2 {
   font-size: 2em;
-  color: #f5f5f5;
   margin-bottom: 10px;
   font-weight: 400;
 }
 
-/* Texto complementar */
 .conteudo-topo p {
   font-size: 1.2em;
   line-height: 1.6;
@@ -666,48 +733,12 @@ img {
   color: #ddd;
   max-width: 800px;
   margin-bottom: 20px;
-                     }
-
-.conteudo-topo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #f5f5f5;
-  background-color: transparent;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
-.conteudo-topo h1 {
-  font-size: 3em;
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-.conteudo-topo h2 {
-  font-size: 1.6em;
-  margin-bottom: 10px;
-}
-
-.conteudo-topo p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  font-style: italic;
-  max-width: 800px;
-  margin-bottom: 20px;
-}
-
+/* === BOTÃO DE ÁUDIO === */
 .botao-audio {
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #ffd700;
+  border: 1px solid #FFD700;
   color: #fff;
   font-size: 1em;
   padding: 12px 18px;
@@ -717,7 +748,7 @@ img {
 }
 
 .botao-audio:focus {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #FFD700;
   outline-offset: 2px;
 }
 
@@ -729,28 +760,6 @@ img {
 }
 
 /* === RODAPÉ CERIMONIAL === */
-footer {
-  text-align: center;
-  padding: var(--espacamento-grande);
-  background-color: rgba(255, 255, 255, 0.6);
-  color: var(--cor-destaque);
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(44, 30, 15, 0.3);
-  font-family: var(--fonte-principal);
-  box-shadow: var(--sombra-suave);
-}
-
-footer a {
-  color: var(--cor-destaque);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: var(--cor-primaria);
-  text-decoration: underline;
-}
-
 .rodape-cerimonial {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('imagens/detalhe-topo.jpg');
   background-size: cover;
@@ -768,6 +777,45 @@ footer a:hover {
   transition: background 1s ease-in-out;
 }
 
+/* === FOOTER PADRÃO COM VARIÁVEIS === */
+footer {
+  text-align: center;
+  padding: var(--espacamento-grande, 40px);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--cor-destaque, #3a2f2b);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(44, 30, 15, 0.3);
+  font-family: var(--fonte-principal, 'Cormorant Garamond', serif);
+  box-shadow: var(--sombra-suave, 0 2px 6px rgba(0, 0, 0, 0.1));
+}
+
+footer a {
+  color: var(--cor-destaque, #3a2f2b);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--cor-primaria, #6e5a99);
+  text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/* === CONTEÚDO DO RODAPÉ CERIMONIAL === */
 .conteudo-rodape {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 30px;
@@ -801,7 +849,6 @@ footer a:hover {
   }
 }
 
-/* Exemplo de uso */
 .surgir {
   animation: surgir 0.8s ease-out forwards;
 }
@@ -825,6 +872,19 @@ footer a:hover {
     font-size: 12px;
     padding: 6px 12px;
   }
+
+  .conteudo h1 {
+    font-size: 1.4rem;
+  }
+
+  .conteudo p {
+    font-size: 0.95rem;
+  }
+
+  #audioToggle {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
 }
 
 /* === MODO ESCURO AUTOMÁTICO === */
@@ -840,6 +900,11 @@ footer a:hover {
     color: #f5f5f5;
   }
 
+  .conteudo-rodape {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+
   button {
     background-color: #333;
     color: #fff;
@@ -849,60 +914,52 @@ footer a:hover {
   a {
     color: #90caf9;
   }
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+/* 🔷 Rodapé cerimonial */
+.rodape-cerimonial {
+  height: auto;
+  padding: 40px 20px;
 }
-.topo-cerimonial {
-  background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-  color: #fff;
+
+.conteudo-rodape {
+  padding: 15px;
+}
+
+.conteudo-rodape p {
+  font-size: 0.9rem;
   text-align: center;
-  position: relative;
 }
-  .conteudo h1 {
-    font-size: 1.6rem;
-  }
 
-  .conteudo p {
-    font-size: 1rem;
-  }
+.conteudo-rodape h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
 
-  #audioToggle {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-
-  .rodape-cerimonial {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .conteudo-rodape {
-    padding: 15px;
-  }
-
-  .conteudo-topo h1 {
-    font-size: 2.2em;
-  }
-
-  .conteudo-topo h2 {
-    font-size: 1.3em;
-  }
-
-  .conteudo-topo p {
-    font-size: 1em;
-  }
-  header {
+/* 🔷 Cabeçalho padrão */
+header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* Espaço entre os elementos */
+  gap: 1rem;
   padding: 0.5rem 1rem;
-  height: 80px; /* Altura reduzida */
+  height: 80px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ccc;
-  }
-  header h1 {
+}
+
+header h1 {
   font-size: 1.5rem;
   margin: 0;
 }
@@ -910,76 +967,85 @@ footer a:hover {
 header button {
   padding: 0.4rem 0.8rem;
   font-size: 0.9rem;
-    }
+}
+
+/* 🔷 Ícone cerimonial */
 .icone-cerimonial {
-    width: 40px;
-    height: 40px;
-  }
+  width: 40px;
+  height: 40px;
+}
 
-  .bloco-capitulo h2 {
-    font-size: 1.3rem;
-  }
+/* 🔷 Bloco de capítulo */
+.bloco-capitulo h2 {
+  font-size: 1.3rem;
+}
 
-  .bloco-capitulo p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+.bloco-capitulo p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  .botao-acao {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.8rem;
-    margin-top: 1rem;
-  }
+/* 🔷 Botão de ação */
+.botao-acao {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
 
-  .audio-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
+/* 🔷 Container de áudio */
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  audio {
-    width: 100%;
-  }
+audio {
+  width: 100%;
+}
 
-  .conteudo-rodape p {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .conteudo-rodape h3 {
-    font-size: 1.2rem;
-    text-align: center;
-  } /*
+/* 🔷 Navegação fixa (ajuste de variáveis recomendado) */
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--cor-fundo-claro);
-  padding: var(--espacamento-medio);
-  box-shadow: var(--sombra-suave);
+  background-color: #fdfdfd; /* substitui var(--cor-fundo-claro) */
+  padding: 1rem; /* substitui var(--espacamento-medio) */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* substitui var(--sombra-suave) */
   z-index: 1000;
-    }
-  
-/* 🔷 Estilo específico para o cabeçalho cerimonial */
+}
+
+/* 🔷 Cabeçalho cerimonial com imagem decorativa */
 .cabecalho-cerimonial {
   background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px; /* ajuste conforme necessário */
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  margin-top: 0 !important; /* evita faixa branca */
+  margin-top: 0 !important;
   padding: 0 !important;
   border: none;
-}
+    }
+
+
+
+
+
+
+
+  
+
+/* === IMPORTAÇÃO DE FONTES CERIMONIAIS === */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* 🔷 Título sobreposto */
 .titulo-sobreposto {
-  background-color: rgba(0, 0, 0, 0.4); /* contraste leve */
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 8px;
   color: #fff;
@@ -998,10 +1064,9 @@ nav {
 .titulo-sobreposto p {
   font-size: 1em;
   margin: 5px 0 0;
-  }
-/* 🔶 Bloco cerimonial com fundo decorativo */
+}
 
-
+/* 🔶 Título cerimonial decorativo */
 .chapter-title {
   font-family: 'Cinzel Decorative', serif;
   font-size: 2.5rem;
@@ -1017,6 +1082,7 @@ nav {
   margin-top: 0.5rem;
 }
 
+/* 🔶 Citação cerimonial com animação */
 blockquote.chant {
   font-style: italic;
   font-size: 1.2rem;
@@ -1033,13 +1099,16 @@ blockquote.chant.repeat {
   font-size: 1.3rem;
 }
 
-blockquote.chant cite {
+blockquote.chant cite,
+.chant-translation {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #a89c84;
+  color: #c0b283;
+  font-style: italic;
 }
 
+/* ✨ Animação de brilho cerimonial */
 @keyframes chantGlow {
   from {
     text-shadow: 0 0 5px #d4af37;
@@ -1049,30 +1118,25 @@ blockquote.chant cite {
   }
 }
 
+/* 🔸 Ênfase e destaque em parágrafos */
 p em {
-  color: #c0b283;
+  color: #bfa76f;
   font-style: italic;
 }
 
 p strong {
   color: #ffd700;
   font-weight: bold;
-  }
-.chant-translation {
-  font-size: 1rem;
-  color: #c0b283;
-  margin-top: 0.5rem;
-  font-style: italic;
 }
 
-p em {
-  color: #bfa76f;
-  font-style: italic;
-}
-/* Estilo Cerimonial para o Evangelho de Avalokka */
-/* === IMPORTAÇÃO DE FONTES CERIMONIAIS === */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
+
+
+
+
+
+
+  
 /* === BLOCO CERIMONIAL UNIFICADO === */
 .bloco-cerimonial {
   background-image: url('imagens/fundo-bloco.jpg');
@@ -1091,21 +1155,6 @@ p em {
   text-align: center;
 }
 
-/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
-.bloco-cerimonial h1,
-.bloco-cerimonial h2,
-.bloco-cerimonial h3,
-.bloco-apresentacao h1,
-.bloco-apresentacao h2,
-.bloco-apresentacao h3,
-.bloco-sinopse h1,
-.bloco-sinopse h2,
-.bloco-sinopse h3 {
-  font-family: 'Cinzel', serif;
-  color: #6e5a99;
-  margin-bottom: 0.5rem;
-}
-
 /* === BLOCO CERIMONIAL ALTERNATIVO === */
 .ceremonial-block {
   background-color: #0e0e0e;
@@ -1117,33 +1166,26 @@ p em {
   max-width: 800px;
   margin: auto;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-  }
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
-
-
-
-/* Cabeçalho principal */
-header.principal {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0;
-  border: none;
 }
 
-header.principal h1 {
-  font-size: 2.5rem;
-  color: #6e5a99;
-  font-family: 'Cinzel', serif;
-  margin: 0;
-}
-
-/* Títulos */
+/* === TÍTULOS EM BLOCOS CERIMONIAIS === */
+.bloco-cerimonial h1,
+.bloco-cerimonial h2,
+.bloco-cerimonial h3,
+.bloco-apresentacao h1,
+.bloco-apresentacao h2,
+.bloco-apresentacao h3,
+.bloco-sinopse h1,
+.bloco-sinopse h2,
+.bloco-sinopse h3,
+header.principal h1,
 h1, h2, h3 {
   font-family: 'Cinzel', serif;
   color: #6e5a99;
   margin-bottom: 0.5rem;
 }
 
+/* === SUBTÍTULO === */
 .subtitulo {
   font-size: 1rem;
   color: #5c4a80;
@@ -1151,13 +1193,13 @@ h1, h2, h3 {
   margin-top: 0.2rem;
 }
 
-/* Parágrafos */
+/* === PARÁGRAFOS === */
 p {
   color: #7a68a2;
   text-align: justify;
 }
 
-/* Ênfase e destaque */
+/* === ÊNFASE E DESTAQUE === */
 em {
   color: #6e5a99;
   font-style: italic;
@@ -1166,6 +1208,14 @@ em {
 strong {
   color: #8a76b9;
   font-weight: bold;
+}
+
+/* === CABEÇALHO PRINCIPAL === */
+header.principal {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0;
+  border: none;
 }
 
 /* Bloco de citação geral */
@@ -1205,19 +1255,14 @@ blockquote.voz {
 }
 
 /* Listas cerimoniais */
-ul {
-  list-style-type: "✦ ";
-  margin-left: 1.5rem;
-  color: #7a68a2;
-}
-
+ul,
 ul.visoes {
   list-style-type: "✦ ";
   margin-left: 1.5rem;
   color: #7a68a2;
 }
 
-
+/* Subtítulo cerimonial */
 .subtitulo {
   font-size: 1rem;
   color: #bfa76f;
@@ -1225,8 +1270,7 @@ ul.visoes {
   margin-top: 0.2rem;
 }
 
-
-
+/* Ênfase e destaque */
 em {
   color: #6e5a99;
   font-style: italic;
@@ -1237,24 +1281,22 @@ strong {
   font-weight: bold;
 }
 
-
-
-ul {
-  list-style-type: "✦ ";
-  margin-left: 1.5rem;
-  color: #3a2f2b;
-}
-
-section {
-  margin-bottom: 3rem;
+/* Texto geral dos blocos */
 .texto-bloco {
   color: #3a2f2b;
   font-size: 1.05rem;
   line-height: 1.7;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.3px;
-  }
-  section,
+}
+
+/* Espaçamento entre seções */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Visibilidade forçada (se necessário) */
+section,
 header,
 figure,
 p,
@@ -1262,11 +1304,10 @@ h1,
 h2,
 h3,
 blockquote {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-  color: #000 !important;
-  position: relative !important;
-  z-index: 10 !important;
-}
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  color: #000;
+  position: relative;
+  z-index: 10;
 }
