@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Avalokka – Livro Cerimonial</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="livro.css">
   <style>
     body {
       background-color: #1e1e1e;
@@ -18,8 +18,18 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: var(--cor-dourado, #8b6f3d);
+    }
+
+    .descricao {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #c2b8a3;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .sinopse {
@@ -27,12 +37,14 @@
       line-height: 1.8;
       margin-bottom: 3rem;
       white-space: pre-line;
+      text-align: center;
     }
 
     .info-livro {
       font-size: 0.9rem;
       margin-bottom: 2rem;
       color: #c2b8a3;
+      text-align: center;
     }
 
     .capitulo {
@@ -50,7 +62,6 @@
 
     .conteudo-capitulo {
       margin-bottom: 1.5rem;
-      font-style: normal;
       white-space: pre-line;
     }
 
@@ -105,14 +116,34 @@
 
   <header>
     <h1>Avalokka</h1>
-    <p>por Marcelo Honorio da Silva</p>
+    <p class="descricao">
+      Avalokka, escrito por Marcelo Honorio da Silva, é uma jornada mística, filosófica e simbólica rumo à descoberta do Eu Autêntico. A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior.
+    </p>
   </header>
 
   <section class="sinopse">
     Antes que houvesse forma,  
     antes que os nomes tivessem boca,  
     havia um sussurro.  
-    ...
+
+    Ele cruzava os véus do visível,  
+    rasgava o tempo em silêncio,  
+    e tocava apenas aqueles que ainda sabiam escutar  
+    com a alma.  
+
+    Avalokka não é um lugar.  
+    É um chamado.  
+    Um fio dourado que dança entre mundos –  
+    onde símbolos respiram,  
+    e o Eu se despe de suas peles.  
+
+    Neste livro, você não encontrará respostas.  
+    Mas encontrará portas.  
+    Algumas abrirão para dentro.  
+    Outras... jamais se fecharão.  
+
+    Siga a luz vertical.  
+    Caminhe com os pés da lembrança.  
     E se perder for necessário –  
     é porque algo antigo em você deseja ser encontrado.
   </section>
@@ -123,30 +154,28 @@
     <strong>Tags:</strong> #avalokka #bastardus #brethren #candelastrae #compassiva #nedowalkers #portadordosilencio #torreinvertida
   </section>
 
-  <!-- Capítulos com cânticos -->
+  <!-- Capítulo 1 -->
   <section class="capitulo">
     <h2>Capítulo 1 – O Sussurro Iniciado</h2>
     <div class="conteudo-capitulo">
-      <!-- Conteúdo do capítulo 1 -->
-      [Insira aqui o texto completo do capítulo 1]
+      Jiranariya rinda yogam yadahin na zagahiro yamana yogana.  
+      (Fragmento do Primeiro Cântico de Candelestrae)
+
+      O som veio antes da luz.  
+      Nem um trovão, nem um grito.  
+      Era um murmúrio – costurado entre os segundos, costurado nos olhos de quem já havia desistido de ver.  
+      ...
+      E assim, com os pés na poeira dos esquecidos e os olhos no feixe que subia,  
+      ele deu o primeiro passo.
     </div>
-    <div class="cantico">
-      <h3>Cântico do Início</h3>
-      <div class="versos">
-        <p>[Verso 1]</p>
-        <p>[Verso 2]</p>
-        <p>[Verso 3]</p>
-        <p>[Verso 4]</p>
-      </div>
-      <button onclick="tocarTrilha('audios/cantico-inicio.mp3')">🎶 Ouvir Cântico</button>
-    </div>
-    <button onclick="tocarTrilha('audios/capitulo1.mp3')">🎵 Ouvir Trilha</button>
+    <button onclick="tocarTrilha('audios/eco_vazio.mp3')">🎵 Ouvir Trilha</button>
   </section>
 
+  <!-- Capítulo 2 -->
   <section class="capitulo">
     <h2>Capítulo 2 – Portais que Respiram</h2>
     <div class="conteudo-capitulo">
-      [Insira aqui o texto completo do capítulo 2]
+      [Conteúdo completo do capítulo 2]
     </div>
     <div class="cantico">
       <h3>Cântico da Travessia</h3>
@@ -156,55 +185,36 @@
         <p>O passo é rito, o olhar é ponte,</p>
         <p>E o portal, um ser que escuta.</p>
       </div>
-      <button onclick="tocarTrilha('audios/cantico-travessia.mp3')">🎶 Ouvir Cântico</button>
+      <button onclick="tocarTrilha('audios/voz_portal.mp3')">🎶 Ouvir Cântico</button>
     </div>
-    <button onclick="tocarTrilha('audios/capitulo2.mp3')">🎵 Ouvir Trilha</button>
+    <button onclick="tocarTrilha('audios/respiracao_silencio.mp3')">🎵 Ouvir Trilha</button>
   </section>
 
-  <!-- Repetição para os demais capítulos -->
-  <!-- Capítulo 3 ao 16 seguem o mesmo padrão -->
-
-  <!-- Exemplo genérico para os próximos capítulos -->
-  <!-- Você pode duplicar e preencher conforme desejar -->
-
-  <!-- Capítulo 3 -->
+  <!-- Capítulo 3 a 16 -->
+  <!-- Estrutura repetida com trilhas associadas -->
+  <!-- Exemplo para Capítulo 3 -->
   <section class="capitulo">
     <h2>Capítulo 3 – A Marcha dos Bethren</h2>
-    <div class="conteudo-capitulo">
-      [Insira aqui o texto completo do capítulo 3]
-    </div>
+    <div class="conteudo-capitulo">[Conteúdo completo do capítulo 3]</div>
     <div class="cantico">
-      <h3>Cântico da Marcha</h3>
+      <h3>Cântico dos Irmãos</h3>
       <div class="versos">
         <p>[Verso 1]</p>
         <p>[Verso 2]</p>
         <p>[Verso 3]</p>
         <p>[Verso 4]</p>
       </div>
-      <button onclick="tocarTrilha('audios/cantico-marcha.mp3')">🎶 Ouvir Cântico</button>
+      <button onclick="tocarTrilha('audios/pacto_irmaos.mp3')">🎶 Ouvir Cântico</button>
     </div>
-    <button onclick="tocarTrilha('audios/capitulo3.mp3')">🎵 Ouvir Trilha</button>
+    <button onclick="tocarTrilha('audios/passos_pacto.mp3')">🎵 Ouvir Trilha</button>
   </section>
 
-  <!-- Repita esse bloco para os capítulos 4 a 16 -->
-
-  <!-- ... -->
+  <!-- Continue com capítulos 4 a 16, usando os áudios:
+       - veu_meianoite.mp3
+       - pulso_veus.mp3
+       - hino_feminino.mp3
+       - hino_masculino.mp3
+       - e outros conforme o tom de cada capítulo -->
 
   <footer>
     Todos os direitos reservados © Marcelo Honorio da Silva
-  </footer>
-
-  <script>
-    let audioAtual;
-    function tocarTrilha(caminho) {
-      if (audioAtual) {
-        audioAtual.pause();
-        audioAtual.currentTime = 0;
-      }
-      audioAtual = new Audio(caminho);
-      audioAtual.play();
-    }
-  </script>
-
-</body>
-</html>
