@@ -16,23 +16,38 @@ a {
 }
 
 a:hover {
-  color: #bfa76f; /* tom mais claro para destaque */
+  color: var(--cor-destaque-citacao); /* #bfa76f */
   text-shadow: 0 0 6px rgba(191, 167, 111, 0.4);
 }
 
 /* === CABEÇALHO === */
 header {
-  background-color: #1e1e1e;
-  border-bottom: 1px solid #444;
+  background-color: var(--cor-fundo-escuro); /* #2c1e13 */
+  border-bottom: 1px solid var(--cor-dourado); /* tom cerimonial */
+  padding: 1.5rem 5vw;
 }
 
 header h1 {
-  color: #f0f0f0;
+  color: var(--cor-titulo-cerimonial); /* #4b3621 */
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 header button {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--cor-dourado); /* #8b6f3d */
+  color: #f5f0e6;
+  border: 1px solid #a68b5b;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: var(--fonte-principal);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header button:hover {
+  background-color: #7a5f34;
+  transform: scale(1.05);
 }
 
 /* === CORPO === */
