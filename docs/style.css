@@ -19,7 +19,125 @@ a:hover {
   color: var(--cor-destaque-citacao); /* #bfa76f */
   text-shadow: 0 0 6px rgba(191, 167, 111, 0.4);
 }
+/* === 🎧 BOTÕES DE ÁUDIO === */
+.botao-audio,
+.botao-audio-central,
+.botao-audio-flutuante {
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(139, 111, 61, 0.3);
+  backdrop-filter: blur(4px);
+}
 
+/* Estilo base */
+.botao-audio {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFD700;
+  color: #fff;
+}
+
+.botao-audio:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.botao-audio:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* Botão central no rodapé */
+.botao-audio-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-index-central);
+  pointer-events: auto;
+}
+
+/* Botão flutuante no topo */
+.botao-audio-flutuante {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(26, 22, 19, 0.6);
+  border: 2px solid var(--cor-dourado);
+  color: #d9c2a3;
+  border-radius: 50px;
+  animation: chantGlow 1.5s infinite alternate;
+  z-index: var(--z-index-flutuante);
+}
+
+.botao-audio-flutuante:hover {
+  background-color: #7a5f34;
+  color: #f5f0e6;
+  transform: scale(1.05);
+}
+
+.botao-audio-flutuante:focus-visible {
+  outline: 2px dashed var(--cor-dourado);
+  outline-offset: 2px;
+}
+
+/* === 🟡 BOTÕES PADRÃO === */
+button,
+.btn {
+  background-color: var(--cor-dourado);
+  color: #f5f0e6;
+  border: 1px solid #a68b5b;
+  padding: var(--espacamento-medio) var(--espacamento-grande);
+  border-radius: var(--borda-radius);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #7a5f34;
+  color: #e8dcc2;
+  transform: scale(1.02);
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--cor-destaque-citacao);
+  outline-offset: 2px;
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 4px rgba(44, 30, 19, 0.4);
+}
+
+/* === 🔷 BOTÃO DE AÇÃO === */
+.botao-acao {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* === TRANSIÇÕES SUAVES GLOBAIS === */
+button,
+a,
+input[type="submit"],
+input[type="button"] {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
 /* 🔱 Cabeçalho Cerimonial com Imagem */
 header.cerimonial-imagem {
   background-image: url('imagens/detalhe-topo.jpg');
@@ -318,44 +436,6 @@ h1, h2, h3 {
 
 
 /* === BOTÃO DE ÁUDIO FLUTUANTE === */
-.botao-audio-flutuante {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: var(--cor-fundo-claro);
-  border: 2px solid var(--cor-primaria);
-  color: #2c1e0f;
-  border-radius: 50px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: var(--fonte-principal);
-  cursor: pointer;
-  box-shadow: var(--sombra-suave);
-  z-index: var(--z-index-flutuante);
-  animation: chantGlow 1.5s infinite alternate;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.botao-audio-flutuante:hover {
-  background-color: var(--cor-primaria);
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.botao-audio-flutuante:focus-visible {
-  outline: 2px dashed var(--cor-dourado);
-  outline-offset: 2px;
-}
-
-/* === BOTÃO DE ÁUDIO CENTRAL (RODAPÉ) === */
-.botao-audio-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: var(--z-index-central);
-  pointer-events: auto;
-  }
 
 
 
@@ -378,24 +458,7 @@ h1, h2, h3 {
   --z-index-flutuante: 1000;
 }
 
-/* === BOTÃO DE ÁUDIO CENTRAL === */
-.botao-audio-central {
-  background-color: rgba(44, 30, 19, 0.4); /* fundo escuro translúcido */
-  border: 1px solid var(--cor-dourado); /* #8b6f3d */
-  color: #d9c2a3; /* tom claro suave */
-  font-size: 1em;
-  padding: 12px 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Georgia', serif;
-  backdrop-filter: blur(4px);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.botao-audio-central:hover {
-  background-color: rgba(139, 111, 61, 0.3); /* dourado escuro translúcido */
-  transform: scale(1.05);
-}
 
 /* === ANIMAÇÃO DE BRILHO DOURADO === */
 @keyframes chantGlow {
@@ -411,90 +474,6 @@ h1, h2, h3 {
     text-shadow: 0 0 15px #d9c2a3;
     color: #d9c2a3;
   }
-}
-
-/* === BOTÃO DE ÁUDIO FLUTUANTE COM ANIMAÇÃO === */
-.botao-audio-flutuante {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(26, 22, 19, 0.6); /* fundo escuro translúcido */
-  border: 2px solid var(--cor-dourado); /* #8b6f3d */
-  color: #d9c2a3;
-  border-radius: 50px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: var(--fonte-principal);
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(139, 111, 61, 0.3);
-  z-index: var(--z-index-flutuante);
-  animation: chantGlow 1.5s infinite alternate;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.botao-audio-flutuante:hover {
-  background-color: #7a5f34; /* dourado ainda mais escuro */
-  color: #f5f0e6;
-  transform: scale(1.05);
-}
-/* === BOTÕES === */
-button:hover,
-.btn:hover {
-  background-color: var(--cor-destaque-citacao); /* #bfa76f — tom dourado suave */
-  color: #f5f0e6;
-  transform: scale(1.03);
-}
-
-button:focus,
-.btn:focus {
-  outline: 2px solid var(--cor-destaque-citacao); /* realce cerimonial */
-  outline-offset: 2px;
-}
-
-button:active,
-.btn:active {
-  transform: scale(0.98);
-  box-shadow: inset 0 2px 4px rgba(44, 30, 19, 0.4); /* sombra interna escura */
-}
-
-/* === TRANSIÇÕES SUAVES GLOBAIS === */
-button,
-a,
-input[type="submit"],
-input[type="button"] {
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
-}
-
-/* === ESTILO PADRÃO DE BOTÕES === */
-button,
-.btn {
-  background-color: var(--cor-dourado); /* #8b6f3d */
-  color: #f5f0e6; /* tom claro suave */
-  border: 1px solid #a68b5b; /* borda bronzeada */
-  padding: var(--espacamento-medio) var(--espacamento-grande);
-  border-radius: var(--borda-radius);
-  font-family: var(--fonte-principal);
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(139, 111, 61, 0.3); /* sombra dourada escura */
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.2s ease;
-}
-
-button:hover,
-.btn:hover {
-  background-color: #7a5f34; /* dourado ainda mais escuro */
-  color: #e8dcc2;
-  transform: scale(1.02);
 }
 
 
@@ -634,31 +613,7 @@ img {
 }
 
 .botao-audio {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #ffd700;
-  color: #fff;
-  font-size: 1em;
-  padding: 12px 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.botao-audio:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.botao-audio:focus {
-  outline: 2px solid #ffd700;
-  outline-offset: 2px;
-}
-
-.botao-audio-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 
 
@@ -690,16 +645,7 @@ img {
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
   }
 
-  .botao-audio {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffd700;
-    border-color: #ffd700;
-  }
 
-  .botao-audio:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  }
 
 
 
@@ -836,29 +782,7 @@ img {
   margin-bottom: 20px;
 }
 
-/* === BOTÃO DE ÁUDIO === */
-.botao-audio {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #FFD700;
-  color: #fff;
-  font-size: 1em;
-  padding: 12px 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.botao-audio:focus {
-  outline: 2px solid #FFD700;
-  outline-offset: 2px;
-}
-
-.botao-audio-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 /* === RODAPÉ CERIMONIAL === */
 .rodape-cerimonial {
@@ -963,10 +887,7 @@ footer a:hover {
 
 
 
-  button {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
+  
 
   .conteudo h1 {
     font-size: 1.4rem;
@@ -996,16 +917,9 @@ footer a:hover {
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
   }
 
-  button {
-    background-color: #333;
-    color: #fff;
-    border-color: #555;
-  }
+  
 
-  a {
-    color: #90caf9;
-  }
-  }
+  
 
 
 
@@ -1040,10 +954,7 @@ footer a:hover {
 
 
 
-header button {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-}
+
 
 /* 🔷 Ícone cerimonial */
 .icone-cerimonial {
@@ -1061,13 +972,7 @@ header button {
   line-height: 1.6;
 }
 
-/* 🔷 Botão de ação */
-.botao-acao {
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.8rem;
-  margin-top: 1rem;
-}
+
 
 /* 🔷 Container de áudio */
 .audio-container {
