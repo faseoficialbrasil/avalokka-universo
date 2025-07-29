@@ -124,11 +124,19 @@ body {
 }
 
 .bloco-cerimonial {
+  width: 100vw; /* ocupa toda a largura da tela */
+  padding: 3rem 10vw; /* espaçamento lateral proporcional */
+  box-sizing: border-box;
+
   background-image: url('imagens/fundo-bloco.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   color: var(--cor-texto);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: 'Georgia', serif;
 }
 
 .ceremonial-block {
