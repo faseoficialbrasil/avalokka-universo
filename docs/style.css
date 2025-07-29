@@ -1254,4 +1254,19 @@ section {
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.3px;
   }
+  section,
+header,
+figure,
+p,
+h1,
+h2,
+h3,
+blockquote {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  color: #000 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
 }
