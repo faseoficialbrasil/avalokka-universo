@@ -66,21 +66,35 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* === BLOCO CERIMONIAL UNIFICADO === */
+/* === BASE DO BLOCO CERIMONIAL === */
+.bloco-cerimonial,
+.ceremonial-block {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  border-radius: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === VARIAÇÃO CLARA === */
 .bloco-cerimonial {
   background-image: url('imagens/fundo-bloco.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2.5rem;
-  margin: 2.5rem auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: #3a2f2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  text-align: center;
+}
+
+/* === VARIAÇÃO ESCURA === */
+.ceremonial-block {
+  background-color: #0e0e0e;
+  color: #e0d8c3;
+  border-left: 6px solid #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 /* === TÍTULOS EM BLOCOS CERIMONIAIS === */
@@ -92,23 +106,13 @@ body {
 .bloco-apresentacao h3,
 .bloco-sinopse h1,
 .bloco-sinopse h2,
-.bloco-sinopse h3 {
+.bloco-sinopse h3,
+.ceremonial-block h1,
+.ceremonial-block h2,
+.ceremonial-block h3 {
   font-family: 'Cinzel', serif;
   color: #6e5a99;
   margin-bottom: 0.5rem;
-}
-
-/* === BLOCO CERIMONIAL ALTERNATIVO === */
-.ceremonial-block {
-  background-color: #0e0e0e;
-  color: #e0d8c3;
-  padding: 3rem;
-  border-left: 6px solid #d4af37;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 /* === CITAÇÕES PADRÃO === */
