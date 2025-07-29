@@ -53,22 +53,37 @@ body {
   padding: 2rem;
 }
 
-/* === BASE DE VARIÁVEIS === */
+
+
 :root {
+  /* 🎨 Cores */
   --cor-fundo-claro: #fdf8f3;
-  --cor-texto: #3a2f2b;
+  --cor-fundo-cerimonial-escuro: #0e0e0e;
+  --cor-texto-cerimonial-escuro: #e0d8c3;
+  --cor-texto: #333;
   --cor-primaria: #a67c52;
-  --cor-destaque: #6b4f2c;
-  --cor-titulo: #6e5a99;
+  --cor-secundaria: #d9c2a3;
   --cor-fundo-escuro: #2c1e13;
-  --cor-dourado: #d4af37;
+  --cor-dourado: #ffd700;
+  --cor-destaque: #6b4f2c;
+  --cor-titulo: #4b3621;
+  --cor-titulo-cerimonial: #4b3621;
+  --cor-citacao: #3a2f2b;
+  --cor-destaque-citacao: #bfa76f;
+}
+
+  /* 🖋️ Tipografia */
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-titulo: 'Playfair Display', serif;
+  --tamanho-base: 16px;
+}
+
+  /* 🌫️ Sombra */
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === IMPORTAÇÃO DE FONTES RECOMENDADAS === */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* === BLOCOS CERIMONIAIS UNIFICADOS === */
+
 .bloco-cerimonial,
 .ceremonial-block {
   max-width: 800px;
@@ -82,7 +97,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* === VARIAÇÃO CLARA === */
 .bloco-cerimonial {
   background-image: url('imagens/fundo-bloco.jpg');
   background-size: cover;
@@ -91,14 +105,24 @@ body {
   color: var(--cor-texto);
 }
 
-/* === VARIAÇÃO ESCURA === */
 .ceremonial-block {
-  background-color: #0e0e0e;
-  color: #e0d8c3;
+  background-color: var(--cor-fundo-cerimonial-escuro);
+  color: var(--cor-texto-cerimonial-escuro);
   border-left: 6px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
+.bloco-cerimonial h2,
+.ceremonial-block h2 {
+  color: var(--cor-titulo-cerimonial);
+  font-family: var(--fonte-titulo);
+}
+
+.decorativo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  }
 
 
 
@@ -107,13 +131,6 @@ body {
 
 
 
-
-
-:root {
-  /* 🎨 Cores adicionais */
-  --cor-titulo-cerimonial: #6e5a99;
-  --cor-citacao: #3a2f2b;
-  --cor-destaque-citacao: #bfa76f;
 
   /* 🪄 Camadas */
   --z-index-flutuante: 1000;
@@ -150,11 +167,12 @@ blockquote {
 }
 
 /* === CITAÇÃO DO EVANGELHO === */
+
 blockquote.evangelho {
   background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid var(--cor-destaque-citacao);
+  border-left: 3px solid var(--cor-destaque);
   padding: 1rem;
-  color: var(--cor-citacao);
+  color: var(--cor-texto);
 }
 
 /* Tradução dentro do evangelho */
@@ -162,16 +180,17 @@ blockquote.evangelho .traducao {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: var(--cor-titulo-cerimonial);
-}
+  color: var(--cor-titulo); /* agora marrom escuro */
+    }
+
 
 /* === CITAÇÃO COM VOZ DESTACADA === */
 blockquote.voz {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
-  color: var(--cor-destaque-citacao);
+  color: #bfa76f;
   background-color: rgba(255, 255, 255, 0.7);
-  border-left: 3px solid var(--cor-titulo-cerimonial);
+  border-left: 3px solid var(--cor-titulo); /* agora marrom escuro */
   padding: 1rem;
   margin: 2rem 0;
   text-align: center;
@@ -223,21 +242,7 @@ blockquote.voz {
 
 
 
-  
-:root {
-  /* 🎨 Cores */
-  --cor-destaque: #6b4f2c;
-  --cor-fundo-claro: #fdf8f3;
-  --cor-texto: #333;
-  --cor-primaria: #a67c52;
-  --cor-secundaria: #d9c2a3;
-  --cor-fundo-escuro: #2c1e13;
-  --cor-dourado: #ffd700;
 
-  /* 🖋️ Tipografia */
-  --fonte-principal: 'Roboto', sans-serif;
-  --fonte-titulo: 'Playfair Display', serif;
-  --tamanho-base: 16px;
 
   /* 📏 Espaçamento */
   --espacamento-pequeno: 0.5rem;
@@ -363,16 +368,7 @@ button,
 
   
 
-/* === INTERAÇÃO: HOVER, FOCUS, ACTIVE === */
 
-:root {
-  /* 🎨 Cores */
-  --cor-destaque: #6b4f2c;
-  --cor-fundo-claro: #fdf8f3;
-  --cor-texto: #333;
-  --cor-primaria: #a67c52;
-  --cor-secundaria: #d9c2a3;
-  --cor-fundo-escuro: #2c1e13;
 
   /* 🖋️ Tipografia */
   --fonte-principal: 'Roboto', sans-serif;
