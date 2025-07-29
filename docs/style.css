@@ -20,34 +20,83 @@ a:hover {
   text-shadow: 0 0 6px rgba(191, 167, 111, 0.4);
 }
 
-/* === CABEÇALHO === */
-header {
-  background-color: var(--cor-fundo-escuro); /* #2c1e13 */
-  border-bottom: 1px solid var(--cor-dourado); /* tom cerimonial */
-  padding: 1.5rem 5vw;
-}
-
-header h1 {
-  color: var(--cor-titulo-cerimonial); /* #4b3621 */
+/* 🔱 Cabeçalho Cerimonial com Imagem */
+header.cerimonial-imagem {
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  border: none;
+  color: #f5f5f5;
   font-family: var(--fonte-titulo);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 
-header button {
-  background-color: var(--cor-dourado); /* #8b6f3d */
-  color: #f5f0e6;
-  border: 1px solid #a68b5b;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+/* 🔱 Cabeçalho Cerimonial com Logotipo */
+header.cerimonial-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 5vw;
+  background-color: var(--cor-fundo-escuro);
+  color: #f5f5f5;
+}
+
+header.cerimonial-logo .cabecalho-img {
+  height: 100px;
+  max-width: 100px;
+  margin-right: 20px;
+  border-radius: var(--borda-radius);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+header.cerimonial-logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: var(--fonte-titulo);
+}
+
+header.cerimonial-logo p {
+  font-size: 1rem;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
   font-family: var(--fonte-principal);
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-header button:hover {
-  background-color: #7a5f34;
-  transform: scale(1.05);
+/* 🛠️ Cabeçalho Padrão */
+header.padrao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+header.padrao h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* 📄 Cabeçalho Principal Simples */
+header.principal {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0;
+  border: none;
 }
 
 /* === CORPO === */
@@ -493,30 +542,7 @@ button:hover,
 
 
 
-/* === CABEÇALHO === */
-.cabecalho {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem 0;
-}
 
-.cabecalho-img {
-  height: 100px;
-  margin-right: 20px;
-  border-radius: var(--borda-radius);
-  object-fit: contain;
-  max-width: 100px;
-  flex-shrink: 0;
-}
-
-.cabecalho h1,
-.cabecalho p {
-  overflow-wrap: break-word;
-  word-break: break-word;
-  margin: 0;
-}
 
 /* === CONTAINER === */
 .container {
@@ -935,13 +961,7 @@ footer a:hover {
     padding: 20px;
   }
 
-  .cabecalho h1 {
-    font-size: 1.8rem;
-  }
 
-  .cabecalho p {
-    font-size: 1rem;
-  }
 
   button {
     font-size: 12px;
@@ -969,11 +989,7 @@ footer a:hover {
     color: #e0e0e0;
   }
 
-  .cabecalho,
-  .topo-cerimonial {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-  }
+
 
   .conteudo-rodape {
     background-color: rgba(255, 255, 255, 0.05);
@@ -1022,22 +1038,7 @@ footer a:hover {
   text-align: center;
 }
 
-/* 🔷 Cabeçalho padrão */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-  height: 80px;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ccc;
-}
 
-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
 
 header button {
   padding: 0.4rem 0.8rem;
@@ -1090,22 +1091,6 @@ nav {
   z-index: 1000;
 }
 
-/* 🔷 Cabeçalho cerimonial com imagem decorativa */
-.cabecalho-cerimonial {
-  background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin-top: 0 !important;
-  padding: 0 !important;
-  border: none;
-    }
 
 
 
@@ -1252,13 +1237,7 @@ strong {
   font-weight: bold;
 }
 
-/* === CABEÇALHO PRINCIPAL === */
-header.principal {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0;
-  border: none;
-}
+
 
 /* Bloco de citação geral */
 blockquote {
