@@ -41,7 +41,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #2c1e0f;
-  background-color: #0e0e10;
+  background-color: transparent; /* ou simplesmente remova */
   background-image: url('imagens/fundo-folha-antiga.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -109,7 +109,7 @@ body {
 
 .bloco-cerimonial,
 .ceremonial-block {
-  background-color: var(--cor-fundo-escuro);
+  background-color: transparent; /* ou simplesmente remova */
   color: #c2b8a3; /* substituído: bege claro → tom mais escuro */
   border-left: 6px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(139, 111, 61, 0.2); /* sombra dourada escura */
@@ -118,7 +118,7 @@ body {
   max-width: clamp(600px, 80vw, 1400px);
   padding: 3rem 5vw;
   margin: 0 auto;
-  background-color: #f9f9f9;
+  background-color: transparent; /* ou simplesmente remova */
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
@@ -127,7 +127,7 @@ body {
   width: 100vw; /* ocupa toda a largura da tela */
   padding: 3rem 10vw; /* espaçamento lateral proporcional */
   box-sizing: border-box;
-
+  background-color: transparent; /* ou simplesmente remova */
   background-image: url('imagens/fundo-bloco.jpg');
   background-size: cover;
   background-position: center;
@@ -140,7 +140,8 @@ body {
 }
 
 .ceremonial-block {
-  background-color: var(--cor-fundo-cerimonial-escuro);
+  background-color: transparent; /* ou simplesmente remova */
+  ;
   color: var(--cor-texto-cerimonial-escuro);
   border-left: 6px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
