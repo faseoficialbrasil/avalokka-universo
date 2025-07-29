@@ -10,14 +10,14 @@
 
 /* === LINKS === */
 a {
-  color: var(--cor-destaque);
+  color: var(--cor-dourado); /* #8b6f3d */
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: var(--cor-primaria);
-  text-decoration: underline;
+  color: #bfa76f; /* tom mais claro para destaque */
+  text-shadow: 0 0 6px rgba(191, 167, 111, 0.4);
 }
 
 /* === CABEÇALHO === */
@@ -56,20 +56,18 @@ body {
 
 
 :root {
-  /* 🎨 Cores */
-  --cor-fundo-claro: #fdf8f3;
-  --cor-fundo-cerimonial-escuro: #0e0e0e;
-  --cor-texto-cerimonial-escuro: #e0d8c3;
+:root {
+  --cor-fundo-claro: #1a1613; /* substituído: cinza claro → marrom escuro */
   --cor-texto: #333;
   --cor-primaria: #a67c52;
   --cor-secundaria: #d9c2a3;
   --cor-fundo-escuro: #2c1e13;
-  --cor-dourado: #ffd700;
-  --cor-destaque: #6b4f2c;
+  --cor-dourado: #8b6f3d; /* substituído: amarelo → dourado escuro */
   --cor-titulo: #4b3621;
   --cor-titulo-cerimonial: #4b3621;
   --cor-citacao: #3a2f2b;
   --cor-destaque-citacao: #bfa76f;
+  --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
   /* 🖋️ Tipografia */
@@ -86,15 +84,10 @@ body {
 
 .bloco-cerimonial,
 .ceremonial-block {
-  max-width: 800px;
-  margin: 2.5rem auto;
-  padding: 2.5rem;
-  border-radius: 10px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  line-height: 1.75;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--cor-fundo-escuro);
+  color: #c2b8a3; /* substituído: bege claro → tom mais escuro */
+  border-left: 6px solid var(--cor-dourado);
+  box-shadow: 0 0 20px rgba(139, 111, 61, 0.2); /* sombra dourada escura */
 }
 
 .bloco-cerimonial {
@@ -260,9 +253,9 @@ blockquote.voz {
 
 /* === BOTÃO DE ÁUDIO CENTRAL === */
 .botao-audio-central {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid var(--cor-dourado);
-  color: #fff;
+  background-color: rgba(44, 30, 19, 0.4); /* fundo escuro translúcido */
+  border: 1px solid var(--cor-dourado); /* #8b6f3d */
+  color: #d9c2a3; /* tom claro suave */
   font-size: 1em;
   padding: 12px 18px;
   border-radius: 10px;
@@ -273,23 +266,23 @@ blockquote.voz {
 }
 
 .botao-audio-central:hover {
-  background-color: rgba(255, 215, 0, 0.2);
+  background-color: rgba(139, 111, 61, 0.3); /* dourado escuro translúcido */
   transform: scale(1.05);
 }
 
 /* === ANIMAÇÃO DE BRILHO DOURADO === */
 @keyframes chantGlow {
   0% {
-    text-shadow: 0 0 5px #d4af37;
-    color: #d4af37;
+    text-shadow: 0 0 5px #a68b5b;
+    color: #a68b5b;
   }
   50% {
-    text-shadow: 0 0 10px var(--cor-dourado);
+    text-shadow: 0 0 10px var(--cor-dourado); /* #8b6f3d */
     color: var(--cor-dourado);
   }
   100% {
-    text-shadow: 0 0 15px #fff8dc;
-    color: #fff8dc;
+    text-shadow: 0 0 15px #d9c2a3;
+    color: #d9c2a3;
   }
 }
 
@@ -298,24 +291,43 @@ blockquote.voz {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: var(--cor-fundo-claro);
-  border: 2px solid var(--cor-primaria);
-  color: #2c1e0f;
+  background-color: rgba(26, 22, 19, 0.6); /* fundo escuro translúcido */
+  border: 2px solid var(--cor-dourado); /* #8b6f3d */
+  color: #d9c2a3;
   border-radius: 50px;
   padding: 10px 20px;
   font-size: 16px;
   font-family: var(--fonte-principal);
   cursor: pointer;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 2px 6px rgba(139, 111, 61, 0.3);
   z-index: var(--z-index-flutuante);
   animation: chantGlow 1.5s infinite alternate;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .botao-audio-flutuante:hover {
-  background-color: var(--cor-primaria);
-  color: #fff;
+  background-color: #7a5f34; /* dourado ainda mais escuro */
+  color: #f5f0e6;
   transform: scale(1.05);
+}
+/* === BOTÕES === */
+button:hover,
+.btn:hover {
+  background-color: var(--cor-destaque-citacao); /* #bfa76f — tom dourado suave */
+  color: #f5f0e6;
+  transform: scale(1.03);
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid var(--cor-destaque-citacao); /* realce cerimonial */
+  outline-offset: 2px;
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 4px rgba(44, 30, 19, 0.4); /* sombra interna escura */
 }
 
 /* === TRANSIÇÕES SUAVES GLOBAIS === */
@@ -333,15 +345,15 @@ input[type="button"] {
 /* === ESTILO PADRÃO DE BOTÕES === */
 button,
 .btn {
-  background-color: var(--cor-primaria);
-  color: #fff;
-  border: none;
+  background-color: var(--cor-dourado); /* #8b6f3d */
+  color: #f5f0e6; /* tom claro suave */
+  border: 1px solid #a68b5b; /* borda bronzeada */
   padding: var(--espacamento-medio) var(--espacamento-grande);
   border-radius: var(--borda-radius);
   font-family: var(--fonte-principal);
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 2px 6px rgba(139, 111, 61, 0.3); /* sombra dourada escura */
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -349,10 +361,14 @@ button,
     background-color 0.3s ease,
     color 0.3s ease,
     transform 0.2s ease;
-  }
+}
 
-
-
+button:hover,
+.btn:hover {
+  background-color: #7a5f34; /* dourado ainda mais escuro */
+  color: #e8dcc2;
+  transform: scale(1.02);
+}
 
 
 
@@ -386,24 +402,18 @@ button,
   --sombra-interna: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* === BOTÕES === */
-button:hover,
-.btn:hover {
-  background-color: var(--cor-destaque);
-  transform: scale(1.03);
-}
 
-button:focus,
-.btn:focus {
-  outline: 2px solid var(--cor-destaque);
-  outline-offset: 2px;
-}
 
-button:active,
-.btn:active {
-  transform: scale(0.98);
-  box-shadow: var(--sombra-interna);
-}
+
+
+
+
+
+
+
+
+
+
 
 /* === CABEÇALHO === */
 .cabecalho {
@@ -1287,23 +1297,18 @@ strong {
 }
 
 /* Espaçamento entre seções */
+:root {
+  --espacamento-secao: 3rem;
+  }
 section {
-  margin-bottom: 3rem;
+  margin-bottom: var(--espacamento-secao);
 }
-
-/* Visibilidade forçada (se necessário) */
-section,
-header,
-figure,
-p,
-h1,
-h2,
-h3,
-blockquote {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-  color: #000;
+.visivel-forcado {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  color: inherit !important;
   position: relative;
   z-index: 10;
 }
+
