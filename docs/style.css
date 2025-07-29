@@ -50,17 +50,15 @@ body {
 }
 /* === BASE === */
 :root {
-  --z-index-flutuante: 10;
-  --z-index-central: 9;
-  --cor-primaria: #6b4f2c;
-  --cor-destaque: #a67c52;
-  --z-index-flutuante: 10;
-  --z-index-central: 9;
-  --espacamento-medio: 10px;
-  --espacamento-grande: 20px;
-  --borda-radius: 8px;
-  --fonte-principal: 'Cormorant Garamond', serif;
-  --sombra-suave: 0 2px 6px rgba(44, 30, 15, 0.3);
+:root {
+  --cor-fundo-claro: #fdf8f3;
+  --cor-texto: #3a2f2b;
+  --cor-primaria: #a67c52;
+  --cor-destaque: #6b4f2c;
+  --cor-titulo: #6e5a99;
+  --cor-fundo-escuro: #2c1e13;
+  --cor-dourado: #d4af37;
+  --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 /* === IMPORTAÇÃO DE FONTES RECOMENDADAS === */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
