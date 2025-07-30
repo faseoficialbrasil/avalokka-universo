@@ -72,6 +72,10 @@ p {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
+  min-height: 100px; /* Garante altura mínima */
+  display: block;     /* Assegura que cada bloco tenha comportamento de bloco */
+  background-color: #f8f8f8; /* Temporário para visualização, remova se não precisar */
+  border: 1px solid #ddd; /* Opcional: define limites suaves */
 }
 
 /* 🎶 CAPÍTULO VIII — BLOCOS DOS CÂNTICOS */
