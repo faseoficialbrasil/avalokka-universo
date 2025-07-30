@@ -1,83 +1,107 @@
-/* Tipografia e fundo */
+/* ===============================
+   🌌 Layout Geral
+================================= */
 body {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #0e0c0b;
-  color: #f5f0e6;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.6;
 }
 
-/* Título do capítulo */
+/* ===============================
+   📖 Capítulos
+================================= */
+.capitulo {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  border-left: 4px solid #5a189a;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px rgba(90, 24, 154, 0.3);
+}
+
 .capitulo h2 {
   font-size: 2rem;
-  color: var(--cor-dourado, #d4af37);
-  margin: 2rem 0 1rem;
-  text-align: center;
+  color: #c9a3ff;
+  margin-bottom: 20px;
 }
 
-/* Bloco do cântico */
+/* ===============================
+   🎵 Botões de Trilha Sonora
+================================= */
+.capitulo button {
+  background-color: #5a189a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.capitulo button:hover {
+  background-color: #7b2cbf;
+}
+
+/* ===============================
+   ✨ Conteúdo do Capítulo
+================================= */
+.conteudo-capitulo {
+  white-space: pre-line;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* ===============================
+   🕯️ Cânticos e Versos
+================================= */
 .cantico {
-  background-color: rgba(255, 255, 255, 0.04);
-  border-left: 4px solid var(--cor-dourado, #d4af37);
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 700px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2a1a3f;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(122, 84, 200, 0.4);
 }
 
 .cantico h3 {
-  font-size: 1.5rem;
-  color: var(--cor-dourado, #d4af37);
-  margin-bottom: 1rem;
-  text-align: center;
+  color: #e0b3ff;
+  margin-bottom: 10px;
 }
 
-.cantico .versos p {
-  margin: 0.5rem 0;
+.versos p {
   font-style: italic;
-  text-align: center;
+  color: #f0e6ff;
+  margin: 6px 0;
 }
 
-/* Botões sonoros */
-button {
-  display: block;
-  margin: 1.5rem auto;
-  background-color: var(--cor-dourado, #d4af37);
-  color: #0e0c0b;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background-color: #a88c3d;
-  transform: scale(1.05);
-}
-.continua-leitura {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f4f4f4;
-  border-top: 2px solid #ccc;
-}
-
+/* ===============================
+   📚 Link para Wattpad
+================================= */
 .botao-leitura {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #ff5a5f;
-  color: white;
-  font-weight: bold;
+  background-color: #5a189a;
+  color: #fff;
+  padding: 10px 16px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .botao-leitura:hover {
-  background-color: #e0484c;
-  }
-  
+  background-color: #7b2cbf;
+}
+
+/* ===============================
+   🧾 Rodapé
+================================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
