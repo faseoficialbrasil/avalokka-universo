@@ -178,24 +178,3 @@ audio { /* ... */ }
 .cabecalho-templo .menu-templo a:hover {
   background-color: #dcd3c0;
 }
-/* 🌬️ CAPÍTULO XVIII — Fôlego dos Blocos Cerimoniais */
-.sala-fundador,
-.capela-selos,
-.galeria-guardioes,
-.camara-veus,
-.biblioteca-ascendente,
-.camara-manuscritos,
-.jardim-ecos,
-.portal-iniciados,
-.circulo-silenciosos,
-.altar-escuta,
-.cripta-veus,
-.canticos,
-.cronicas-cerimoniais,
-.formulario-cerimonial,
-.mapa-iniciados {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-bottom: 4rem;
-  }
-}
