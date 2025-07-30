@@ -1,0 +1,198 @@
+/* 🌕 CAPÍTULO I — BASE EDITORIAL */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fdf6e3;
+  color: #333;
+  line-height: 1.6;
+  animation: respirar 12s ease-in-out infinite;
+}
+
+header {
+  background-color: #e0d7b7;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #c2b280;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #6b4f1d;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* 🖼️ CAPÍTULO II — TAPEÇARIA CERIMONIAL */
+figure {
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: surgir 1s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+figure:hover img {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+/* 🔮 CAPÍTULO III — SALAS TEMÁTICAS */
+.sala-fundador,
+.capela-selos,
+.galeria-guardioes,
+.camara-veus,
+.biblioteca-ascendente,
+.camara-manuscritos,
+.jardim-ecos,
+.portal-iniciados,
+.circulo-silenciosos,
+.altar-escuta,
+.cripta-veus {
+  background-color: #f8f6f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.sala-fundador { background-color: #f5f0e6; }
+.capela-selos { background-color: #fdfaf5; }
+.camara-veus { background-color: #f3f1ed; }
+.biblioteca-ascendente { background-color: #f4f2ef; }
+.camara-manuscritos { background-color: #f2f0ec; }
+.jardim-ecos { background-color: #f1f0ed; }
+.portal-iniciados { background-color: #f5f3f0; }
+.circulo-silenciosos { background-color: #f4f3f0; }
+.altar-escuta { background-color: #f6f5f2; }
+.cripta-veus { background-color: #f3f2ef; }
+
+.sala-fundador .imagem-central,
+.retrato-sacerdotal img,
+.capela-selos img,
+.galeria-guardioes img,
+.camara-veus img,
+.biblioteca-ascendente img,
+.camara-manuscritos img,
+.jardim-ecos img,
+.portal-iniciados img,
+.circulo-silenciosos img,
+.altar-escuta img,
+.cripta-veus img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #5a5144;
+}
+
+/* 🧭 CAPÍTULO IV — ÍNDICE E RODAPÉS CERIMONIAIS */
+.cabecalho-indice,
+.indice,
+.rodape-indice,
+.rodape-templo,
+.selo-final {
+  background-color: #fdfaf5;
+  padding: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #3e362c;
+}
+
+.indice h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  color: #4e4433;
+}
+
+.indice ul {
+  list-style: none;
+  padding: 0;
+}
+
+.indice li {
+  margin: 8px 0;
+}
+
+.indice a,
+.rodape-templo a {
+  text-decoration: none;
+  color: #6b4f1d;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.indice a:hover,
+.rodape-templo a:hover {
+  color: #b8860b;
+}
+
+/* 🌬️ CAPÍTULO V — ANIMAÇÕES */
+@keyframes surgir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes respirar {
+  0%, 100% {
+    background-color: #fdf6e3;
+  }
+  50% {
+    background-color: #fceecb;
+  }
+}
+
+/* 🌀 CAPÍTULO VI — RETIFICAÇÕES TÉCNICAS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #6b4f1d;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b8860b;
+}
