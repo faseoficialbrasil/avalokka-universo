@@ -240,7 +240,39 @@
   <p>Contato cerimonial: faseoficialbrasil@gmail.com</p>
   <p>Localização simbólica: Câmara dos Ecos, Terceiro Véu</p>
 </footer>
+<!-- 💫 Script Litúrgico para Efeitos -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // ✨ Efeito de revelação dos véus ao rolar
+    const elementos = document.querySelectorAll(".cerimonial-img, section");
+    const options = { threshold: 0.1 };
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add("revelar-veus");
+        }
+      });
+    }, options);
+    elementos.forEach(el => observador.observe(el));
 
+    // 🌘 Alternância de modo noturno cerimonial
+    const botaoModo = document.createElement("button");
+    botaoModo.innerText = "🌌 Alternar Véu Noturno";
+    botaoModo.className = "botao-noturno";
+    document.body.appendChild(botaoModo);
+    botaoModo.addEventListener("click", () => {
+      document.body.classList.toggle("modo-noturno");
+    });
+
+    // 🔊 Sons litúrgicos de fundo (opcional)
+    const audio = new Audio("sons/eco-liturgico.mp3");
+    audio.loop = true;
+    audio.volume = 0.4;
+    audio.play().catch(() => {
+      console.warn("Som litúrgico não iniciado automaticamente.");
+    });
+  });
+</script>
 <!-- 🔚 Fechamento -->
 </body>
 </html>
