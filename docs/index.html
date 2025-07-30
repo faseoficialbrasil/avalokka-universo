@@ -2,293 +2,182 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <title>Templo Avalokka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Templo de Avalokka</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 🎴 Base Cerimonial */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fdf6e3, #ede7d7);
+      font-family: 'Georgia', serif;
+      color: #4b3b2b;
+      line-height: 1.7;
+    }
+
+    /* 🕍 Cabeçalho Ritual */
+    header {
+      background: linear-gradient(to right, #f7e7ce, #dac8a0);
+      text-align: center;
+      padding: 2em;
+      border-bottom: 2px solid #c8b08f;
+    }
+    header h1::before {
+      content: "🕍 ";
+    }
+    header p {
+      font-style: italic;
+      color: #6d5c47;
+    }
+
+    /* 🪷 Galeria dos Selos */
+    #galeria-selos {
+      padding: 2em;
+      background: #fdfaf4;
+    }
+    #galeria-selos h2::before {
+      content: "🪷 ";
+    }
+    #galeria-selos h2 {
+      border-bottom: 1px solid #e0d6c2;
+      padding-bottom: 0.5em;
+    }
+
+    /* 🧿 Entidades e Arquétipos */
+    #entidades {
+      padding: 2em;
+      background: #f4f1eb;
+    }
+    #entidades h2::before {
+      content: "🧿 ";
+    }
+    #entidades h2 {
+      border-bottom: 1px solid #d6cec2;
+      padding-bottom: 0.5em;
+    }
+
+    /* 🖼️ Figuras Cerimoniais */
+    figure {
+      margin: 2em 0;
+      text-align: center;
+    }
+    figcaption {
+      font-size: 1em;
+      color: #5a4b3c;
+      background: rgba(245, 238, 221, 0.6);
+      padding: 1em;
+      margin-top: 0.5em;
+      border-left: 4px solid #d2b48c;
+    }
+
+    /* 🌌 Rodapé com Bruma Estática */
+    footer {
+      background: #eae4d9;
+      text-align: center;
+      padding: 2em;
+      color: #4b3b2b;
+      border-top: 2px solid #c2b7a3;
+      position: relative;
+      overflow: hidden;
+    }
+    footer::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      background: radial-gradient(circle at center, transparent 40%, rgba(10,10,10,0.2) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    footer p,
+    footer .apagar-luzes {
+      position: relative;
+      z-index: 1;
+    }
+    footer p::before {
+      content: "🌌 ";
+    }
+    footer .apagar-luzes {
+      margin-top: 1.5em;
+      padding: 1.5em;
+      background: rgba(10,10,10,0.05);
+      color: #ccc;
+      font-style: italic;
+      border-radius: 8px;
+    }
+    footer .apagar-luzes p::before {
+      content: "🕯️ ";
+    }
+
+    /* 📱 Responsividade */
+    @media (max-width: 768px) {
+      body {
+        font-size: 1em;
+      }
+      header h1, section h2 {
+        font-size: 1.3em;
+      }
+      figcaption {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- 🟤 Topo cerimonial com selo e nome -->
-  <header class="portal-avalokka">
-    <div class="titulo-sobreposto">
-      <header>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <img src="imagens/detalhe-topo.jpg" alt="Cabeçalho" class="cabecalho-img">
-          <h1>Avalokka</h1>
-        </div>
-      </header>
-    </div>
+
+  <header>
+    <h1>Entrada Cerimonial do Templo Avalokka</h1>
+    <p>Que os véus se revelem à escuta que transcende.</p>
   </header>
 
-  <!-- 🕯️ Mensagem de boas-vindas -->
-  <section id="boas-vindas">
-    <h1>🕯️ Templo de Avalokka</h1>
-    <p>Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
-  </section>
+  <main>
+    <section id="galeria-selos">
+      <h2>Galeria dos Selos Sagrados</h2>
 
-  <!-- Eco Reflexo -->
-  <section id="eco-reflexo" class="moldura-auriflama">
-    <figure>
-      <img src="imagens/eco-reflexo-cerimonial.jpg" 
-           alt="Eco Reflexo — imagem cerimonial estática" 
-           width="100%" 
-           loading="lazy"
-           class="cerimonial-img">
-      <figcaption>Eco Reflexo — imagem cerimonial estática que evoca ciclos meditativos e escuta profunda</figcaption>
-    </figure>
-  </section>
+      <figure>
+        <img src="selo-transcendencia.jpg" alt="Selo da Transcendência">
+        <figcaption>Emblema cerimonial dourado composto por três círculos entrelaçados em harmonia. Posicionado na entrada ritual do templo, marca o limiar entre o mundo profano e a escuta sagrada.</figcaption>
+      </figure>
 
-  <!-- 🖼️ Tapeçaria Visual -->
-  <section class="tapeçaria">
-    <figure id="cidade-avalokka" class="moldura-auriflama">
-      <img src="imagens/cidade-avalokka.jpg" alt="Cidade Suspensa dos Véus" class="cerimonial-img">
-      <figcaption>Cidade Suspensa dos Véus — Uma árvore colossal sustenta uma cidade entre as nuvens, com três peregrinos encapuzados caminhando sob um céu estrelado.</figcaption>
-    </figure>
+      <figure>
+        <img src="selo-alma-central.jpg" alt="Selo da Alma Central">
+        <figcaption>Núcleo circular em radiação cerimonial, pulsando com luz interior. Representa o eixo espiritual do templo Avalokka e a convergência dos véus internos.</figcaption>
+      </figure>
 
-    <figure id="arvores-dos-espiritos" class="moldura-primordia">
-      <img src="imagens/arvore-dos-espiritos.jpg" alt="Árvore dos Espíritos Reunidos" class="cerimonial-img">
-      <figcaption>Árvore dos Espíritos Reunidos — Galhos etéreos envoltos em energia dourada, com seres flutuantes em comunhão espiritual.</figcaption>
-    </figure>
+      <figure>
+        <img src="selo-escuta-infinita.jpg" alt="Selo da Escuta Infinita">
+        <figcaption>Emblema translúcido envolto por espirais douradas flutuantes. Utilizado em ritos de iniciação, consagra a escuta perpétua entre véus não ditos.</figcaption>
+      </figure>
+    </section>
 
-    <figure id="tres-selos-luz" class="moldura-auricelia">
-      <img src="imagens/tres-selos-luz.jpg" alt="Três Selos da Luz Interior" class="cerimonial-img">
-      <figcaption>Três Selos da Luz Interior — Pedestais iluminados por feixes coloridos diante de uma construção monumental sob a lua cheia.</figcaption>
-    </figure>
+    <section id="entidades">
+      <h2>Guardiões e Arquétipos</h2>
 
-    <figure id="reflexo-veu-aquoso" class="moldura-auriflama">
-      <img src="imagens/reflexo-veu-aquoso.jpg" alt="Reflexo sobre o Véu Aquoso" class="cerimonial-img">
-      <figcaption>Reflexo sobre o Véu Aquoso — Um espelho suspenso derrama água sobre um manequim sem cabeça, observado por dois personagens em um ambiente onírico.</figcaption>
-    </figure>
+      <figure>
+        <img src="guardiao-escuta.jpg" alt="Guardião da Escuta Infinita">
+        <figcaption>Entidade envolta em mantos prateados texturizados com correntes cerimoniais. Seus olhos espiralados projetam escuta simbólica sobre véus suspensos e altares ancestrais.</figcaption>
+      </figure>
 
-    <figure id="salao-colunas-escuta" class="moldura-auriflama">
-      <img src="imagens/salao-colunas-escuta.jpg" alt="Salão das Colunas da Escuta" class="cerimonial-img">
-      <figcaption>Salão das Colunas da Escuta — Templo monumental com pilares inscritos em linguagem antiga, onde dois seres recebem um feixe de luz divina.</figcaption>
-    </figure>
+      <figure>
+        <img src="sacerdote-fundador.jpg" alt="Retrato Cerimonial do Sacerdote Fundador">
+        <figcaption>Arquétipo ritual em pé diante do arco templário, com vestes litúrgicas escuras e colar clerical. O halo dourado manifesta sua ligação com o véu superior e a missão da escuta compassiva.</figcaption>
+      </figure>
 
-    <figure id="guardia-da-origem" class="moldura-primordia">
-      <img src="imagens/guardia-da-origem.jpg" alt="O Encontro com a Guardiã da Origem" class="cerimonial-img">
-      <figcaption>O Encontro com a Guardiã da Origem — Uma esfinge colossal repousa em um deserto fissurado, enquanto três figuras futuristas se aproximam em reverência.</figcaption>
-    </figure>
+      <figure>
+        <img src="eco-reflexo.jpg" alt="Eco Reflexo">
+        <figcaption>Reflexo cerimonial circular em superfície aquática silenciosa. Evoca ciclos meditativos e reverberações internas entre iniciados em escuta profunda.</figcaption>
+      </figure>
+    </section>
+  </main>
 
-    <figure id="biblioteca-ascendente" class="moldura-auricelia">
-      <img src="imagens/biblioteca-ascendente.jpg" alt="Biblioteca Ascendente dos Véus" class="cerimonial-img">
-      <figcaption>Biblioteca Ascendente dos Véus — Escadaria espiral envolta por paredes manuscritas em vários idiomas — cada degrau é uma camada de saber ancestral.</figcaption>
-    </figure>
+  <footer>
+    <p>“Entre véus flutuantes, a escuta se torna luz.”</p>
+    <div class="apagar-luzes">
+      <p>Ao final da jornada, a luz se recolhe.<br>Que permaneça a escuta na penumbra sagrada.</p>
+    </div>
+  </footer>
 
-    <figure id="descida-bethrem" class="moldura-auriflama">
-      <img src="imagens/descida-bethrem.jpg" alt="Descida dos Bethrem ao Véu Escuro" class="cerimonial-img">
-      <figcaption>Descida dos Bethrem ao Véu Escuro — Poço profundo cercado por montanhas e névoa, onde figuras encapuzadas flutuam em direção ao interior.</figcaption>
-    </figure>
-
-    <figure id="cupula-estelar" class="moldura-auriflama">
-      <img src="imagens/cupula-estelar.jpg" alt="A Escuta da Cúpula Estelar" class="cerimonial-img">
-      <figcaption>A Escuta da Cúpula Estelar — Um personagem solitário contempla o céu estrelado através de uma abertura circular em uma caverna.</figcaption>
-    </figure>
-
-    <figure id="faces-do-silencio" class="moldura-primordia">
-      <img src="imagens/faces-do-silencio.jpg" alt="As Faces Dadas ao Silêncio" class="cerimonial-img">
-      <figcaption>As Faces Dadas ao Silêncio — Grupo de iniciados com cabeças raspadas e túnicas escuras, em posição frontal e coletiva, aguardando um chamado sem palavras.</figcaption>
-    </figure>
-
-    <figure id="mediador-selos-silenciosos" class="moldura-auricelia">
-      <img src="imagens/mediador-selos-silenciosos.jpg" alt="O Mediador entre os Selos Silenciosos" class="cerimonial-img">
-      <figcaption>O Mediador entre os Selos Silenciosos — Personagem solitário conectado por cabos azuis luminosos a pilares inclinados em uma paisagem árida sob céu dourado.</figcaption>
-    </figure>
-
-    <figure id="revelacao-fundador" class="moldura-primordia">
-      <img src="imagens/revelacao-fundador.jpg" alt="A Revelação do Fundador" class="cerimonial-img">
-      <figcaption>A Revelação do Fundador — Figura encapuzada diante de um símbolo místico central em céu dourado, envolta por nuvens etéreas e ícones cerimoniais.</figcaption>
-    </figure>
-  </section>
-<!-- 🧿 Capela dos Selos -->
-<section id="capela-dos-selos" class="capela-selos moldura-auricelia">
-  <h2>🧿 Capela dos Selos</h2>
-  <p>Emblemas cerimoniais que sustentam a escuta infinita, a transcendência e a alma central do templo Avalokka.</p>
-
-  <figure id="selo-transcendencia">
-    <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" class="cerimonial-img">
-    <figcaption>Selo da Transcendência — Emblema dourado com três círculos entrelaçados, usado na entrada cerimonial do templo.</figcaption>
-  </figure>
-
-  <figure id="selo-alma-central">
-    <img src="imagens/selo-alma-central.jpg" alt="Selo da Alma Central" class="cerimonial-img">
-    <figcaption>Selo da Alma Central — Símbolo circular com núcleo brilhante, representando o centro espiritual do templo.</figcaption>
-  </figure>
-
-  <figure id="selo-escuta-infinita-full">
-    <img src="imagens/selo-escuta-infinita-full.webp" alt="Selo da Escuta Infinita (Versão Completa)" class="cerimonial-img">
-    <figcaption>Selo da Escuta Infinita (Versão Completa) — Emblema com espirais douradas e fundo translúcido, usado em cerimônias de iniciação.</figcaption>
-  </figure>
-</section>
-
-<!-- 🛡️ Galeria dos Guardiões -->
-<section id="galeria-dos-guardioes" class="galeria-guardioes">
-  <h2>🛡️ Galeria dos Guardiões</h2>
-  <p>Entidades cerimoniais que vigiam os selos, protegem os véus e sustentam o templo Avalokka em sua escuta eterna.</p>
-
-  <figure id="ente-escuta-suprema" class="moldura-primordia">
-    <img src="imagens/ente-escuta-suprema.jpg" alt="Ente da Escuta Suprema" class="cerimonial-img">
-    <figcaption>Ente da Escuta Suprema — Ser alado com olhos múltiplos, pairando sobre um altar de luz, em postura de revelação.</figcaption>
-  </figure>
-
-  <figure id="escuta-veu-submerso" class="moldura-auriflama">
-    <img src="imagens/escuta-veu-submerso.jpg" alt="Escuta sob o Véu Submerso" class="cerimonial-img">
-    <figcaption>Escuta sob o Véu Submerso — Figura submersa em lago dourado, com olhos fechados e véus flutuantes, em estado de escuta meditativa.</figcaption>
-  </figure>
-
-  <figure id="enaileal" class="moldura-auricelia">
-    <img src="imagens/enaileal.webp" alt="Retrato de Enaileal" class="cerimonial-img">
-    <figcaption>Retrato de Enaileal — Figura feminina envolta em véus brancos, com olhar sereno e fundo etéreo, representando a escuta compassiva.</figcaption>
-  </figure>
-</section>
-
-<!-- 🌫️ Câmara dos Véus -->
-<section id="camara-dos-veus" class="camara-veus">
-  <h2>🌫️ Câmara dos Véus</h2>
-  <p>Espaço dedicado às transições espirituais, à revelação dos mistérios e à contemplação dos véus que separam os mundos.</p>
-
-  <figure id="textura-nevoa" class="moldura-auriflama">
-    <img src="imagens/textura-nevoa.jpg" alt="Textura Cerimonial de Névoa" class="cerimonial-img">
-    <figcaption>Textura Cerimonial de Névoa — Fundo esfumado em tons cinzentos, usado para transições entre seções e véus visuais.</figcaption>
-  </figure>
-
-  <figure id="fundo-folha-antiga" class="moldura-auricelia">
-    <img src="imagens/fundo-folha-antiga.jpg" alt="Fundo de Folha Antiga" class="cerimonial-img">
-    <figcaption>Fundo de Folha Antiga — Papel envelhecido com bordas queimadas, usado em pergaminhos e registros ancestrais.</figcaption>
-  </figure>
-
-  <figure id="fechar-portal" class="moldura-primordia">
-    <img src="imagens/fechar-portal.jpg" alt="Fechamento do Portal" class="cerimonial-img">
-    <figcaption>Fechamento do Portal — Portas de pedra se cruzando sob luz violeta, encerrando o ciclo cerimonial da escuta.</figcaption>
-  </figure>
-</section>
-
-<!-- 📚 Biblioteca Ascendente -->
-<section id="biblioteca-ascendente" class="biblioteca-ascendente">
-  <h2>📚 Biblioteca Ascendente</h2>
-  <p>Escadaria espiral envolta por paredes manuscritas em múltiplos idiomas — cada degrau revela uma camada do saber ancestral.</p>
-
-  <figure id="biblioteca-ascendente-img" class="moldura-auricelia">
-    <img src="imagens/biblioteca-ascendente.jpg" alt="Biblioteca Ascendente dos Véus" class="cerimonial-img">
-    <figcaption>Biblioteca Ascendente dos Véus — Escadaria espiral envolta por paredes manuscritas em vários idiomas, onde cada degrau é uma camada de saber ancestral.</figcaption>
-  </figure>
-</section>
-
-<!-- 📜 Câmara dos Manuscritos -->
-<section id="camara-dos-manuscritos" class="camara-manuscritos">
-  <h2>📜 Câmara dos Manuscritos</h2>
-  <p>Espaço reservado aos textos cerimoniais, registros ancestrais e pergaminhos que documentam os véus e os ciclos do templo Avalokka.</p>
-
-  <figure id="manuscrito-ouro" class="moldura-auriflama">
-    <img src="imagens/manuscrito-ouro.jpg" alt="Manuscrito Dourado" class="cerimonial-img">
-    <figcaption>Manuscrito Dourado — Texto cerimonial em folha dourada, com inscrições em linguagem antiga e bordas iluminadas.</figcaption>
-  </figure>
-
-  <figure id="pergaminho-ancestral" class="moldura-auricelia">
-    <img src="imagens/pergaminho-ancestral.jpg" alt="Pergaminho Ancestral" class="cerimonial-img">
-    <figcaption>Pergaminho Ancestral — Rolo de papel envelhecido com símbolos místicos e lacre cerimonial.</figcaption>
-  </figure>
-
-  <figure id="registro-velado" class="moldura-nebulith">
-    <img src="imagens/registro-velado.jpg" alt="Registro Velado" class="cerimonial-img">
-    <figcaption>Registro Velado — Página parcialmente apagada por névoa, revelando apenas fragmentos de sabedoria oculta.</figcaption>
-  </figure>
-</section>
-
-<!-- 🌿 Jardim dos Ecos -->
-<section id="jardim-dos-ecos" class="jardim-ecos">
-  <h2>🌿 Jardim dos Ecos</h2>
-  <p>Espaço contemplativo onde os ecos da escuta infinita reverberam entre reflexos, névoas e murmúrios cerimoniais.</p>
-</section>
-<!-- 🌿 Jardim dos Ecos -->
-<section id="jardim-dos-ecos" class="jardim-ecos">
-  <h2>🌿 Jardim dos Ecos</h2>
-  <p>Domínio liminar onde os murmúrios da escuta infinita reverberam entre véus de névoa e reflexos cerimoniais. Espaço consagrado à transmutação auditiva, guardado por entidades que velam os segredos não ditos.</p>
-</section>
-
-
-
-<!-- 🔮 Guardião Final -->
-<section id="guardiao-da-escuta" class="galeria-guardioes moldura-primordia">
-  <h2>🔮 Guardião da Escuta Infinita e da Revelação dos Véus</h2>
-  <figure id="guardiao-revelacao-veus">
-    <img src="imagens/guardiao-escuta-revelacao.jpg" alt="Guardião da Escuta Infinita e da Revelação dos Véus" class="cerimonial-img">
-    <figcaption>Guardião da Escuta Infinita e da Revelação dos Véus — Entidade envolta em mantos prateados com olhos em espiral, posicionada diante de véus flutuantes e altares cerimoniais.</figcaption>
-  </figure>
-</section>
-
-<!-- 👁️ Retrato Cerimonial do Fundador -->
-<section id="sacerdote-fundador" class="camara-manuscritos moldura-auriflama">
-  <h2>👁️ Retrato Cerimonial do Sacerdote Fundador</h2>
-  <figure id="retrato-sacerdote">
-    <img src="imagens/sacerdote-fundador.jpg" alt="Retrato Cerimonial do Sacerdote Fundador com Moldura Integrada" class="cerimonial-img">
-    <figcaption>Retrato Cerimonial do Sacerdote Fundador — Figura em pé com vestes religiosas escuras e colar clerical, segurando um crucifixo dourado sobre o peito. As mãos estão cruzadas em frente ao corpo, e um halo dourado envolve sua cabeça diante de um arco templário.</figcaption>
-  </figure>
-</section>
-
-<!-- 🔏 Selo Editorial Final -->
-<section id="selo-editorial" class="capela-selos moldura-nebulith">
-  <h2>🔏 Selo Editorial Final</h2>
-  <p>© Templo Avalokka — Todos os selos são protegidos por véus editoriais.</p>
-</section>
-
-<!-- 🫧 Encerramento Litúrgico -->
-<section id="encerramento-liturgico" class="camara-veus">
-  <h2>🫧 Encerramento Cerimonial</h2>
-  <p>Em nome da escuta infinita, selamos o templo Avalokka.</p>
-  <p>Que os iniciados encontrem aqui não apenas beleza, mas silêncio, presença e revelação.</p>
-  <p>Que os véus se dissolvam com respeito.</p>
-  <p>Que a escuta continue.</p>
-</section>
-<!-- 🪙 Rodapé Cerimonial -->
-<footer id="rodape-avalokka" class="rodape-cerimonial moldura-nebulith">
-  <div class="selo-footer">
-    <img src="imagens/selo-footer.jpg" alt="Selo Cerimonial do Rodapé" class="cerimonial-img">
-  </div>
-  <p>© Templo Avalokka — A escuta é eterna, e os véus são honrados.</p>
-  <p>Contato cerimonial: faseoficialbrasil@gmail.com</p>
-  <p>Localização simbólica: Câmara dos Ecos, Terceiro Véu</p>
-</footer>
-<!-- 💫 Script Litúrgico para Efeitos -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // ✨ Efeito de revelação dos véus ao rolar
-    const elementos = document.querySelectorAll(".cerimonial-img, section");
-    const options = { threshold: 0.1 };
-    const observador = new IntersectionObserver((entradas) => {
-      entradas.forEach(entrada => {
-        if (entrada.isIntersecting) {
-          entrada.target.classList.add("revelar-veus");
-        }
-      });
-    }, options);
-    elementos.forEach(el => observador.observe(el));
-
-    // 🌘 Alternância de modo noturno cerimonial
-    const botaoModo = document.createElement("button");
-    botaoModo.innerText = "🌌 Alternar Véu Noturno";
-    botaoModo.className = "botao-noturno";
-    document.body.appendChild(botaoModo);
-    botaoModo.addEventListener("click", () => {
-      document.body.classList.toggle("modo-noturno");
-    });
-
-    // 🔊 Sons litúrgicos de fundo (opcional)
-    const audio = new Audio("sons/eco-liturgico.mp3");
-    audio.loop = true;
-    audio.volume = 0.4;
-    audio.play().catch(() => {
-      console.warn("Som litúrgico não iniciado automaticamente.");
-    });
-  });
-</script>
-  <!-- 🔏 Selo Editorial Final -->
-  <footer>... conteúdo do rodapé ...</footer>
-
-  <!-- 🌒 Aumentos Cerimoniais -->
-  <script>... seu JavaScript cerimonial ...</script>
-
-</body>
-</html>
-<!-- 🔚 Fechamento -->
 </body>
 </html>
