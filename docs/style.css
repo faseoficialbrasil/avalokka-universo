@@ -76,3 +76,11 @@ footer img {
   color: #aaa;
   border-top: 4px solid #777;
 }
+.apagar-luzes {
+  background: linear-gradient(to bottom, transparent, #0a0a0a);
+  color: #ccc;
+  padding: 1em;
+  text-align: center;
+  font-style: italic;
+  }
+}
