@@ -255,3 +255,18 @@
 <footer>
   <p>Todos os direitos reservados © Marcelo Honorio da Silva</p>
 </footer>
+      <script>
+  let audioAtual;
+
+  function tocarTrilha(caminho) {
+    if (audioAtual) {
+      audioAtual.pause();
+      audioAtual.currentTime = 0;
+    }
+    audioAtual = new Audio(caminho);
+    audioAtual.play();
+  }
+      </script>
+    </div>
+</body>
+</html>
