@@ -189,4 +189,26 @@ footer {
   text-align: center;
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
-    
+    /* 🟤 CAPÍTULO XIV — Cabeçalho Cerimonial sobre Moldura */
+.cabecalho-cerimonial {
+  background-image: url('imagens/moldura-retangular-capitulo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #3a2f1d;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.cabecalho-cerimonial h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cabecalho-cerimonial .slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.9;
+        }
