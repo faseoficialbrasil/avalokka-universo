@@ -160,4 +160,33 @@ footer {
   .cabecalho-img {
     max-height: 60px;
   }
+/* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos */
+.moldura-capitulo {
+  background-image: url('imagens/moldura-retangular-capitulo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  color: #3a2f1d;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
+
+/* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação */
+.moldura-primordia {
+  background-image: url('imagens/moldura-primordia.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  color: #3a2f1d;
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+    
