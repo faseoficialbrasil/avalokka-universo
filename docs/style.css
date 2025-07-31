@@ -54,6 +54,41 @@ h2 {
   margin: 2rem auto;
   border-radius: var(--raio);
 }
+.moldura-cruzalva {
+  position: relative;
+  display: inline-block;
+  width: 400px; /* ajuste conforme necessário */
+  height: 400px;
+  margin: 0 auto;
+}
+
+.moldura-cruzalva img {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.moldura-cruzalva::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background-image: url('imagens/moldura-cruzalva.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.moldura-cruzalva img {
+  z-index: 2;
+}
 
 .moldura-altar {
   border: 2px dashed #a67c52;
