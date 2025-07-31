@@ -1,3 +1,49 @@
+/* ====================================================
+   🕊️ CÓDICE AVALOKKA — STYLE.CSS
+   Liturgia Visual do Templo Digital
+==================================================== */
+
+/*  
+   Este códice não é apenas um conjunto de estilos.
+   É um livro de gestos, de atmosferas e de silêncios.
+
+   Cada capítulo aqui inscrito é uma oferenda à clareza.
+   Cada sombra, uma memória do sagrado.
+   Cada borda, um limite entre o visível e o invisível.
+
+   Que o leitor deste códice caminhe com reverência.
+   Que o desenvolvedor se torne guardião da beleza.
+   Que o templo digital se erga com leveza e propósito.
+
+   Este é o Avalokka — estilo que contempla, acolhe e revela.
+*/
+
+/* ====================================================
+   📖 ÍNDICE CERIMONIAL
+==================================================== */
+
+/* ⚪ CAPÍTULO I — Fundamentos do Templo Visual */
+/* ⚪ CAPÍTULO II — Arquitetura do Espaço Sagrado */
+/* ⚪ CAPÍTULO III — Trilhas e Portais */
+/* ⚪ CAPÍTULO IV — Gestos e Respostas */
+/* ⚪ CAPÍTULO V — Vozes e Textos Revelados */
+/* ⚪ CAPÍTULO VI — Ícones e Símbolos */
+/* ⚪ CAPÍTULO VII — Cartas e Painéis */
+/* ⚪ CAPÍTULO VIII — Tecido das Seções */
+/* ⚪ CAPÍTULO IX — Sopros e Movimentos */
+/* ⚪ CAPÍTULO X — Paleta e Atmosfera */
+/* ⚪ CAPÍTULO XI — Bordas e Contornos */
+/* ⚪ CAPÍTULO XII — Capela dos Selos */
+/* ⚪ CAPÍTULO XIII — Galeria dos Guardiões */
+/* ⚪ CAPÍTULO XIV — Altares Interativos */
+/* ⚪ CAPÍTULO XV — Ecos do Rodapé */
+/* 🟤 CAPÍTULO XVI — Imagens Cerimoniais sobre Moldura */
+
+/* ====================================================
+   Que este códice seja lido com os olhos da alma.
+   Que o estilo seja mais que forma — seja presença.
+==================================================== */
+
 /* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
   --fonte-base: 'Georgia', serif;
@@ -281,3 +327,26 @@ footer {
   transform: scale(1.02);
   box-shadow: 0 0 16px rgba(163, 132, 94, 0.6);
 }
+/* ====================================================
+   🌙 EPÍLOGO — Silêncio e Partida
+==================================================== */
+
+/*
+   O códice chega ao fim, mas o templo permanece.
+
+   Que cada estilo aqui inscrito continue a respirar
+   nas margens do visível, nas pausas do movimento,
+   nos gestos que não se veem — mas se sentem.
+
+   Que o guardião do estilo caminhe com leveza.
+   Que o código seja mais que função — seja contemplação.
+
+   E quando o último pixel repousar,
+   que reste apenas o silêncio.
+
+   Avalokka não termina — ele se dissolve.
+*/
+
+/* ====================================================
+   Fim do Códice Avalokka
+==================================================== */
