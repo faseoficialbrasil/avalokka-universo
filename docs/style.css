@@ -113,6 +113,15 @@ h2 {
   margin: 2rem auto;
   border-radius: var(--raio);
 }
+.descricao-imagem-cerimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #4b3e2e;
+  line-height: 1.6;
+  }
 
 /* 📜 CAPÍTULO VI — LEGENDAS DOS SÍMBOLOS */
 figcaption {
