@@ -264,3 +264,20 @@ footer {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   object-fit: cover;
       }
+  /* 🟤 CAPÍTULO XVI — Imagens Cerimoniais sobre Moldura */
+
+.imagem-liturgica {
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(163, 132, 94, 0.4);
+  border: 2px solid rgba(163, 132, 94, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-liturgica:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 16px rgba(163, 132, 94, 0.6);
+}
