@@ -1,201 +1,163 @@
 /* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
-  --fonte-base: 'Garamond', 'Georgia', serif;
-  --espacamento: 2rem;
+  --fonte-base: 'Georgia', serif;
+  --cor-fundo: #f9f7f4;
+  --cor-titulo: #4b3b2a;
+  --cor-texto: #333;
   --raio: 12px;
-  --cor-fundo-claro: rgba(255, 255, 255, 0.85);
-  --sombra-leve: 0 0 12px rgba(0,0,0,0.2);
-  --overlay-bloco: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7));
+  --sombra-leve: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
 /* 🧱 CAPÍTULO II — CORPO DO TEMPLO */
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--fonte-base);
-  background-image: url('imagens/fundo-folha-antiga.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color: #333;
-  line-height: 1.6;
-  animation: respirar 12s ease-in-out infinite;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 
-/* 🖼️ CAPÍTULO III — IMAGENS COM AURA */
-img {
+/* 🖋️ CAPÍTULO III — TIPOGRAFIA CERIMONIAL */
+h1, h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-titulo);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* 🖼️ CAPÍTULO IV — IMAGENS COM AURA */
+.cerimonial-img {
   max-width: 100%;
+  height: auto;
   border-radius: var(--raio);
   box-shadow: var(--sombra-leve);
-  transition: transform 0.3s ease, filter 0.3s ease;
-  will-change: transform;
+  transition: transform 0.3s ease;
 }
 
-/* 🎠 CAPÍTULO IV — BALANÇO DAS IMAGENS */
-img.scroll-balanço {
-  transform: rotate(0deg); /* aplicado via JS */
+.cerimonial-img:hover {
+  transform: scale(1.02);
 }
 
-/* 📚 CAPÍTULO V — TIPOGRAFIA SACRA */
-h1, h2, h3 {
-  font-weight: normal;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-p {
-  margin-bottom: 1.5rem;
+/* 🧩 CAPÍTULO V — MOLDURAS CERIMONIAIS */
+.moldura-capela {
+  border: 2px solid #d4af37;
+  background-color: #fffdf5;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
 }
 
-/* 🌬️ CAPÍTULO VI — ANIMAÇÕES DO TEMPLO */
-@keyframes respirar {
-  0%   { filter: brightness(1); }
-  50%  { filter: brightness(1.02); }
-  100% { filter: brightness(1); }
+.moldura-altar {
+  border: 2px dashed #a67c52;
+  background-color: #f5f2eb;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+}
+
+.moldura-escuta {
+  border: 2px solid #6a5acd;
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+}
+
+.moldura-veus {
+  border: 2px dotted #708090;
+  background-color: #eef1f4;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+}
+
+/* 📜 CAPÍTULO VI — LEGENDAS DOS SÍMBOLOS */
+figcaption {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #555;
 }
 
 /* 🛕 CAPÍTULO VII — BLOCOS CERIMONIAIS */
-.sala-fundador,
-.capela-selos,
-.galeria-guardioes,
-.camara-veus,
-.biblioteca-ascendente,
-.camara-manuscritos,
-.jardim-ecos,
-.portal-iniciados,
-.circulo-silenciosos,
-.altar-escuta,
-.cripta-veus,
-.canticos,
-.cronicas-cerimoniais,
-.formulario-cerimonial,
-.mapa-iniciados {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  min-height: 100px; /* Garante altura mínima */
-  display: block;     /* Assegura que cada bloco tenha comportamento de bloco */
-  background-color: #f8f8f8; /* Temporário para visualização, remova se não precisar */
-  border: 1px solid #ddd; /* Opcional: define limites suaves */
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-/* 🎶 CAPÍTULO VIII — BLOCOS DOS CÂNTICOS */
-.canticos {
-  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('imagens/bloco-texto.jpg');
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: var(--espacamento);
-  text-align: center;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra-leve);
-  backdrop-filter: blur(3px);
-  font-family: 'Palatino Linotype', 'Garamond', serif;
-  font-style: italic;
-  color: #4b3f2f;
+/* 🟤 CAPÍTULO VIII — CABEÇALHO DO TEMPLO */
+.portal-avalokka {
+  background-color: #eae7e2;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #d4af37;
 }
-.canticos h2 {
-  font-size: 2rem;
-  letter-spacing: 2px;
+
+.titulo-sobreposto h1 {
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: #3a2f1d;
+}
+
+.cabecalho-img {
+  max-height: 80px;
+  margin-right: 1rem;
+}
+
+/* 🪙 CAPÍTULO IX — RODAPÉ DOS MESTRES */
+footer {
+  background-color: #eae7e2;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  border-top: 2px solid #d4af37;
+}
+
+.selo-footer img {
+  max-height: 60px;
   margin-bottom: 1rem;
-  text-shadow: 1px 1px rgba(0,0,0,0.1);
-}
-.canticos p {
-  margin: 1rem 0;
-  line-height: 1.8;
 }
 
-/* 🔊 CAPÍTULO IX — BLOCOS DE ÁUDIO CERIMONIAL */
-.audio-container { /* ...conteúdo omitido para brevidade... */ }
-.audioAmbient { /* ... */ }
-.audioToggle { /* ... */ }
-audio { /* ... */ }
-.audio-indice { /* ... */ }
-
-/* ✍️ CAPÍTULO X — FORMULÁRIO DE SÚPLICA */
-.formulario-cerimonial { /* ... */ }
-.formulario-cerimonial label { /* ... */ }
-.formulario-cerimonial input,
-.formulario-cerimonial textarea { /* ... */ }
-.formulario-cerimonial button { /* ... */ }
-
-/* 🔮 CAPÍTULO XI — BOTÕES RITUALÍSTICOS */
-.botao-ritual { /* ... */ }
-.botao-ritual:hover { /* ... */ }
-
-/* 📖 CAPÍTULO XII — CRÔNICAS CERIMONIAIS */
-.cronicas-cerimoniais { /* ... */ }
-
-/* 🗺️ CAPÍTULO XIII — MAPA DOS INICIADOS */
-.mapa-iniciados { /* ... */ }
-.mapa-iniciados iframe { /* ... */ }
-
-/* 🧭 CAPÍTULO XIV — NAVEGAÇÃO TRANSCENDENTE */
-.menu-templo { /* ... */ }
-.menu-templo a { /* ... */ }
-
-/* 🧮 CAPÍTULO XV — TABELAS DOS ARCANOS */
-.tabela-cerimonial { /* ... */ }
-.tabela-cerimonial th,
-.tabela-cerimonial td { /* ... */ }
-
-/* 🕯️ CAPÍTULO XVI — RODAPÉ DOS MESTRES */
-.rodape-templo { /* ... */ }
-.rodape-templo a { /* ... */ }
-
-/* 👑 CAPÍTULO XVII — CABEÇALHO DO TEMPLO */
-.cabecalho-templo {
-  background-image: url('imagens/moldura-retangular-capitulo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 3rem;
-  text-align: center;
-  border-bottom: 2px solid #e5ddcc;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  color: #4b3f2f;
+/* 🌬️ CAPÍTULO X — TRANSIÇÕES DOS VÉUS */
+section,
+figure,
+footer {
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
-.cabecalho-templo h1 {
-  font-size: 2.8rem;
-  font-family: 'Palatino Linotype', 'Garamond', serif;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-.cabecalho-templo .menu-templo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-.cabecalho-templo .menu-templo a {
-  background-color: #f0e8d8;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #3e382b;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.cabecalho-templo .menu-templo a:hover {
-  background-color: #dcd3c0;
-}
-/* 🌬️ CAPÍTULO XVIII — Fôlego dos Blocos Cerimoniais */
-.sala-fundador,
-.capela-selos,
-.galeria-guardioes,
-.camara-veus,
-.biblioteca-ascendente,
-.camara-manuscritos,
-.jardim-ecos,
-.portal-iniciados,
-.circulo-silenciosos,
-.altar-escuta,
-.cripta-veus,
-.canticos,
-.cronicas-cerimoniais,
-.formulario-cerimonial,
-.mapa-iniciados {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-bottom: 4rem;
+
+/* 📱 CAPÍTULO XI — RESPONSIVIDADE DOS INICIADOS */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
+
+  h2 {
+    font-size: 1.5rem;
   }
+
+  section {
+    padding: 1rem;
+  }
+
+  .cerimonial-img {
+    border-radius: 6px;
+  }
+
+  .titulo-sobreposto h1 {
+    font-size: 2.2rem;
+  }
+
+  .cabecalho-img {
+    max-height: 60px;
+  }
+}
