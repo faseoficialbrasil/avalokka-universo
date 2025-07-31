@@ -252,3 +252,15 @@ footer {
   font-style: italic;
   opacity: 0.9;
         }
+  /* 🟤 CAPÍTULO XV — Imagens Cerimoniais sobre Moldura */
+
+.cerimonial-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+      }
