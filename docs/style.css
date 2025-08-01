@@ -330,6 +330,14 @@ footer {
   transform: scale(1.02);
   box-shadow: 0 0 16px rgba(163, 132, 94, 0.6);
 }
+   /* Imagens exceto cabeçalho e rodapé */
+body img:not(header img):not(footer img) {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 /* ====================================================
    🌙 EPÍLOGO — Silêncio e Partida
 ==================================================== */
