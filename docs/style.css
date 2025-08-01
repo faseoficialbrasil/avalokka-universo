@@ -3,7 +3,7 @@
    Liturgia Visual do Templo Digital
 ==================================================== */
 
-/*  
+/*
    Este códice não é apenas um conjunto de estilos.
    É um livro de gestos, de atmosferas e de silêncios.
 
@@ -19,16 +19,18 @@
 */
 
 /* ====================================================
-   🕊️ CÓDICE AVALOKKA — STYLE.CSS
-   Liturgia Visual do Templo Digital
-   Índice Navegável dos Capítulos e Rituais Estéticos
+   📜 ÍNDICE NAVEGÁVEL DOS CAPÍTULOS E RITUAIS ESTÉTICOS
 ==================================================== */
+
 /* ╔════════════════════════════════════════════════════════════╗ */
-/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens e Containers     ║ */
+/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID           ║ */
 /* ╠════════════════════════════════════════════════════════════╣ */
 
-/* 🔹 Imagens responsivas e proporcionais */
-img {
+#img-guardiao,
+#img-simbolo,
+#img-revelacao,
+#img-tempo,
+#img-condicional {
   max-width: 100%;
   height: auto;
   display: block;
@@ -36,15 +38,29 @@ img {
   border-radius: 4px;
 }
 
-/* 🔹 Moldura ritualística */
-.img-ritual {
+#img-guardiao {
   border: 2px solid var(--cor-guardiao, #444);
-  padding: 8px;
-  background-color: var(--fundo-ritual, #111);
-  box-shadow: 0 0 12px var(--brilho-ritual, #888);
+  box-shadow: 0 0 12px var(--brilho-guardiao, #888);
+  background-color: var(--fundo-guardiao, #111);
 }
 
-/* 🔹 Container consagrado */
+#img-revelacao {
+  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  background-color: var(--fundo-revelacao, #000);
+  padding: 12px;
+}
+
+#img-tempo {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+#img-condicional {
+  display: none;
+}
+
 .container-imagem {
   width: 100%;
   max-width: 600px;
@@ -52,55 +68,7 @@ img {
   text-align: center;
 }
 
-/* 🔹 Aspect Ratio simbólico */
-.aspect-ritual {
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  position: relative;
-}
-.aspect-ritual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 /* ╚════════════════════════════════════════════════════════════╝ */
-/* 🌿 CAPÍTULO I   — Raízes Ritualísticas           [#raizes] */
-/* 🧱 CAPÍTULO II  — Corpo do Templo               [#corpo] */
-/* 🖋️ CAPÍTULO III — Tipografia Cerimonial         [#tipografia] */
-/* 🖼️ CAPÍTULO IV  — Imagens com Aura              [#imagens-aura] */
-/* 🧩 CAPÍTULO V   — Molduras Cerimoniais           [#molduras] */
-/* 📜 CAPÍTULO VI  — Legendas dos Símbolos          [#legendas] */
-/* 🛕 CAPÍTULO VII — Blocos Cerimoniais             [#blocos] */
-/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo            [#cabecalho] */
-/* 🪙 CAPÍTULO IX  — Rodapé dos Mestres             [#rodape] */
-/* 🌬️ CAPÍTULO X   — Transições dos Véus            [#transicoes] */
-/* 📱 CAPÍTULO XI  — Responsividade dos Iniciados   [#responsivo] */
-/* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos [#moldura-retangular] */
-/* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação [#moldura-primordial] */
-/* 🟣 CAPÍTULO XIV — Pontes Cerimoniais entre Blocos [#pontes] */
-/* ⚪ CAPÍTULO XV  — Altares Interativos            [#altares] */
-/* ⚪ CAPÍTULO XVI — Ecos do Rodapé                 [#ecos] */
-/* 🟤 CAPÍTULO XVII — Imagens Cerimoniais sobre Moldura [#imagens-moldura] */
-/* 🧭 CAPÍTULO XVIII — Navegação dos Guardiões       [#navegacao] */
-/* 🔮 CAPÍTULO XIX — Revelações Interativas         [#revelacoes] */
-/* 🧿 CAPÍTULO XX  — Proteções Visuais              [#protecoes] */
-/* 🪄 CAPÍTULO XXI — Encantamentos Tipográficos     [#encantamentos] */
-/* 🔰 CAPÍTULO XXII — Guardiões do Espaço            [#guardioes] */
-/* 🧬 CAPÍTULO XXIII — DNA Cerimonial                [#dna] */
-/* 🛰️ CAPÍTULO XXIV — Conexões Externas              [#conexoes] */
-/* 🧼 CAPÍTULO XXV — Purificações Visuais            [#purificacoes] */
-/* 🧭 CAPÍTULO XXVI — Roteiros Cerimoniais           [#roteiros] */
-/* 🧙 CAPÍTULO XXVII — Magia dos Ícones              [#icones] */
-/* 🧵 CAPÍTULO XXVIII — Tecelagem dos Detalhes       [#detalhes] */
-/* 🧭 CAPÍTULO XXIX — Caminhos do Retorno            [#retorno] */
-/* 🧿 CAPÍTULO XXX — Véu Final da Harmonia           [#final] */
-/* 🌀 CAPÍTULO XXXI — O Círculo do Recomeço [#recomeco] */
-/* ====================================================
-   Que este códice seja lido com os olhos da alma.
-   Que o estilo seja mais que forma — seja presença.
-==================================================== */
 
 /* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
@@ -157,10 +125,11 @@ h2 {
   margin: 2rem auto;
   border-radius: var(--raio);
 }
+
 .moldura-cruzalva {
   width: 400px;
   height: 400px;
-  margin-bottom: 20px; /* espaço entre imagem e descrição */
+  margin-bottom: 20px;
 }
 
 .moldura-cruzalva img {
@@ -172,6 +141,7 @@ h2 {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  z-index: 2;
 }
 
 .moldura-cruzalva::before {
@@ -185,10 +155,6 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-}
-
-.moldura-cruzalva img {
-  z-index: 2;
 }
 
 .moldura-altar {
@@ -214,6 +180,7 @@ h2 {
   margin: 2rem auto;
   border-radius: var(--raio);
 }
+
 .descricao-imagem-cerimonial {
   max-width: 600px;
   text-align: center;
@@ -262,7 +229,6 @@ section {
   font-style: italic;
   opacity: 0.9;
 }
-
 
 /* 🪙 CAPÍTULO IX — Rodapé dos Mestres [#rodape] */
 footer {
@@ -319,70 +285,56 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem;
-  margin: 3rem auto;
-  border-radius: 16px;
-  color: #3a2f1d;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-leve);
+  border: 2px solid #d4af37;
+  max-width: 960px;
+  color: var(--cor-titulo);
   font-family: 'Cinzel', serif;
   text-align: center;
-  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 1;
 }
 
-/* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação [#moldura-primordial] */
-.moldura-primordia {
-  background-image: url('imagens/moldura-primordia.jpg');
-  background-size: contain;
+.moldura-capitulo::after {
+  content: "✦";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #d4af37;
+  opacity: 0.8;
+}
+
+/* Elementos internos */
+.moldura-capitulo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.moldura-capitulo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 720px;
+  color: #5a4a3b;
+}
+
+
+/* 🪞 CAPÍTULO XIII — Moldura Retangular dos Capítulos [#moldura-retangular] */
+.moldura-capitulo {
+  background-image: url('imagens/moldura-retangular-capitulo.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem;
-  margin: 3rem auto;
-  border-radius: 16px;
-  color: #3a2f1d;
-  font-family: 'Cinzel Decorative', cursive;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-leve);
 }
 
-/* 🟣 CAPÍTULO XIV — Pontes Cerimoniais entre Blocos [#pontes] */
-/* (Placeholder para estilos de transição entre seções cerimoniais) */
-
-/* ⚪ CAPÍTULO XV — Altares Interativos [#altares] */
-/* (Placeholder para interações JS, efeitos de clique ou revelações) */
-
-/* ⚪ CAPÍTULO XVI — Ecos do Rodapé [#ecos] */
-/* (Placeholder para estilos complementares ao rodapé ou animações finais) */
-
-/* 🟤 CAPÍTULO XVII — Imagens Cerimoniais sobre Moldura [#imagens-moldura] */
-.imagem-cerimonial,
-.cerimonial-img,
-.imagem-liturgica {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  display: block;
-  margin: 0 auto 24px auto;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 0 12px rgba(163, 132, 94, 0.4);
-  border: 2px solid rgba(163, 132, 94, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.imagem-cerimonial:hover,
-.cerimonial-img:hover,
-.imagem-liturgica:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 16px rgba(163, 132, 94, 0.6);
-}
-
-/* Imagens Globais (exceto cabeçalho e rodapé) */
-body img:not(header img):not(footer img) {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 /* 🧭 CAPÍTULO XVIII — Navegação dos Guardiões [#navegacao] */
 /* (Placeholder para estilos de menu cerimonial, botões de navegação ou âncoras entre seções) */
 
@@ -421,9 +373,10 @@ body img:not(header img):not(footer img) {
 
 /* 🧿 CAPÍTULO XXX — Véu Final da Harmonia [#final] */
 /* (Placeholder para estilos de encerramento, animações finais ou selos de conclusão cerimonial) */
+
 /* 🌀 CAPÍTULO XXXI — O Círculo do Recomeço [#recomeco] */
 /* (Estilos de reinício, loops visuais, retorno à Raiz Ritualística ou botão “Iniciar Ritual”) */
-    
+
 /* ====================================================
    🌙 EPÍLOGO — Silêncio e Partida
 ==================================================== */
@@ -447,6 +400,7 @@ body img:not(header img):not(footer img) {
 /* ====================================================
    Fim do Códice Avalokka
 ==================================================== */
+
 /* ╔════════════════════════════════════════════════════════════╗ */
 /* ║ 📖 APÊNDICE CERIMONIAL — Capítulos Ocultos e Simbólicos     ║ */
 /* ╠════════════════════════════════════════════════════════════╣ */
@@ -456,21 +410,57 @@ body img:not(header img):not(footer img) {
 /* ║ ∞ — Rituais Temporais                     [#tempo]          ║ */
 /* ║ Ψ — Revelações do Iniciado                [#iniciado]       ║ */
 /* ╚════════════════════════════════════════════════════════════╝ */
-/ Ω — Véu Condicional da Presença [#condicional] /
-/ (Estilos que só se manifestam sob condições específicas: tempo, clique, estado mental do ritualista) /
 
-/ A — Arquivos dos Guardiões [#arquivos] /
-/ (Referências cruzadas, estilos herdados, registros ancestrais e camadas de proteção visual) /
+/* Ω — Véu Condicional da Presença [#condicional] */
+.condicional[data-estado="ativo"] {
+  display: block;
+  animation: revelar 1s ease-in-out forwards;
+}
 
-/ B — Laboratório Ritualístico [#laboratorio] /
-/ (Experimentos visuais, transições alquímicas, testes de cor, forma e movimento ritual) /
+@keyframes revelar {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
 
-/ ∞ — Rituais Temporais [#tempo] /
-/ (Loops, delays, animações cíclicas, invocações que dependem da passagem do tempo) /
+/* A — Arquivos dos Guardiões [#arquivos] */
+.arquivo-guardiao {
+  font-family: 'Courier New', monospace;
+  background-color: #f4f4f4;
+  border-left: 4px solid #444;
+  padding: 1rem;
+  margin: 1rem 0;
+}
 
-/ Ψ — Revelações do Iniciado [#iniciado] /
-/ (Estilos que só se revelam após determinada sequência, como se fossem desbloqueados por sabedoria ritual) /
+/* B — Laboratório Ritualístico [#laboratorio] */
+.laboratorio-ritual {
+  transition: all 0.5s ease;
+}
 
-/ ╚════════════════════════════════════════════════════════════╝ /
+.laboratorio-ritual:hover {
+  transform: rotate(1deg) scale(1.01);
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
 
+/* ∞ — Rituais Temporais [#tempo] */
+.ritual-temporal {
+  animation: pulsar 3s infinite;
+}
 
+@keyframes pulsar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Ψ — Revelações do Iniciado [#iniciado] */
+.revelacao-iniciado {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.revelacao-iniciado.desbloqueado {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ╚════════════════════════════════════════════════════════════╝ */
