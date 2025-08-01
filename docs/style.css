@@ -24,24 +24,36 @@
    Índice Navegável dos Capítulos e Rituais Estéticos
 ==================================================== */
 
-/* 🌿 CAPÍTULO I — Raízes Ritualísticas           [#raizes] */
-/* 🧱 CAPÍTULO II — Corpo do Templo               [#corpo] */
-/* 🖋️ CAPÍTULO III — Tipografia Cerimonial       [#tipografia] */
-/* 🖼️ CAPÍTULO IV — Imagens com Aura             [#imagens-aura] */
-/* 🧩 CAPÍTULO V — Molduras Cerimoniais          [#molduras] */
-/* 📜 CAPÍTULO VI — Legendas dos Símbolos        [#legendas] */
-/* 🛕 CAPÍTULO VII — Blocos Cerimoniais          [#blocos] */
-/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo         [#cabecalho] */
-/* 🪙 CAPÍTULO IX — Rodapé dos Mestres           [#rodape] */
-/* 🌬️ CAPÍTULO X — Transições dos Véus           [#transicoes] */
-/* 📱 CAPÍTULO XI — Responsividade dos Iniciados [#responsivo] */
+/* 🌿 CAPÍTULO I   — Raízes Ritualísticas           [#raizes] */
+/* 🧱 CAPÍTULO II  — Corpo do Templo               [#corpo] */
+/* 🖋️ CAPÍTULO III — Tipografia Cerimonial         [#tipografia] */
+/* 🖼️ CAPÍTULO IV  — Imagens com Aura              [#imagens-aura] */
+/* 🧩 CAPÍTULO V   — Molduras Cerimoniais           [#molduras] */
+/* 📜 CAPÍTULO VI  — Legendas dos Símbolos          [#legendas] */
+/* 🛕 CAPÍTULO VII — Blocos Cerimoniais             [#blocos] */
+/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo            [#cabecalho] */
+/* 🪙 CAPÍTULO IX  — Rodapé dos Mestres             [#rodape] */
+/* 🌬️ CAPÍTULO X   — Transições dos Véus            [#transicoes] */
+/* 📱 CAPÍTULO XI  — Responsividade dos Iniciados   [#responsivo] */
 /* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos [#moldura-retangular] */
 /* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação [#moldura-primordial] */
 /* 🟣 CAPÍTULO XIV — Pontes Cerimoniais entre Blocos [#pontes] */
-/* ⚪ CAPÍTULO XV — Altares Interativos           [#altares] */
-/* ⚪ CAPÍTULO XVI — Ecos do Rodapé               [#ecos] */
+/* ⚪ CAPÍTULO XV  — Altares Interativos            [#altares] */
+/* ⚪ CAPÍTULO XVI — Ecos do Rodapé                 [#ecos] */
 /* 🟤 CAPÍTULO XVII — Imagens Cerimoniais sobre Moldura [#imagens-moldura] */
-
+/* 🧭 CAPÍTULO XVIII — Navegação dos Guardiões       [#navegacao] */
+/* 🔮 CAPÍTULO XIX — Revelações Interativas         [#revelacoes] */
+/* 🧿 CAPÍTULO XX  — Proteções Visuais              [#protecoes] */
+/* 🪄 CAPÍTULO XXI — Encantamentos Tipográficos     [#encantamentos] */
+/* 🔰 CAPÍTULO XXII — Guardiões do Espaço            [#guardioes] */
+/* 🧬 CAPÍTULO XXIII — DNA Cerimonial                [#dna] */
+/* 🛰️ CAPÍTULO XXIV — Conexões Externas              [#conexoes] */
+/* 🧼 CAPÍTULO XXV — Purificações Visuais            [#purificacoes] */
+/* 🧭 CAPÍTULO XXVI — Roteiros Cerimoniais           [#roteiros] */
+/* 🧙 CAPÍTULO XXVII — Magia dos Ícones              [#icones] */
+/* 🧵 CAPÍTULO XXVIII — Tecelagem dos Detalhes       [#detalhes] */
+/* 🧭 CAPÍTULO XXIX — Caminhos do Retorno            [#retorno] */
+/* 🧿 CAPÍTULO XXX — Véu Final da Harmonia           [#final] */
 /* ====================================================
    Que este códice seja lido com os olhos da alma.
    Que o estilo seja mais que forma — seja presença.
@@ -184,25 +196,32 @@ section {
   padding: 1rem;
 }
 
-/* 🟤 CAPÍTULO VIII — CABEÇALHO DO TEMPLO */
-.portal-avalokka {
-  background-color: #eae7e2;
-  padding: 2rem 1rem;
-  border-bottom: 2px solid #d4af37;
-}
-
-.titulo-sobreposto h1 {
-  font-size: 3rem;
-  margin-left: 1rem;
+/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
+.cabecalho-cerimonial {
+  background-image: url('imagens/moldura-retangular-capitulo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 4rem 2rem;
   color: #3a2f1d;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
-.cabecalho-img {
-  max-height: 80px;
-  margin-right: 1rem;
+.cabecalho-cerimonial h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-/* 🪙 CAPÍTULO IX — RODAPÉ DOS MESTRES */
+.cabecalho-cerimonial .slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+
+/* 🪙 CAPÍTULO IX — Rodapé dos Mestres [#rodape] */
 footer {
   background-color: #eae7e2;
   padding: 2rem;
@@ -217,14 +236,14 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* 🌬️ CAPÍTULO X — TRANSIÇÕES DOS VÉUS */
+/* 🌬️ CAPÍTULO X — Transições dos Véus [#transicoes] */
 section,
 figure,
 footer {
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-/* 📱 CAPÍTULO XI — RESPONSIVIDADE DOS INICIADOS */
+/* 📱 CAPÍTULO XI — Responsividade dos Iniciados [#responsivo] */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -249,7 +268,9 @@ footer {
   .cabecalho-img {
     max-height: 60px;
   }
-/* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos */
+}
+
+/* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos [#moldura-retangular] */
 .moldura-capitulo {
   background-image: url('imagens/moldura-retangular-capitulo.png');
   background-size: cover;
@@ -264,7 +285,7 @@ footer {
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
-/* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação */
+/* 🕊️ CAPÍTULO XIII — Moldura Primordial da Revelação [#moldura-primordial] */
 .moldura-primordia {
   background-image: url('imagens/moldura-primordia.jpg');
   background-size: contain;
@@ -278,59 +299,40 @@ footer {
   text-align: center;
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
-    /* 🟤 CAPÍTULO XIV — Cabeçalho Cerimonial sobre Moldura */
-.cabecalho-cerimonial {
-  background-image: url('imagens/moldura-retangular-capitulo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  padding: 4rem 2rem;
-  color: #3a2f1d;
-  font-family: 'Cinzel', serif;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
-}
 
-.cabecalho-cerimonial h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
+/* 🟣 CAPÍTULO XIV — Pontes Cerimoniais entre Blocos [#pontes] */
+/* (Placeholder para estilos de transição entre seções cerimoniais) */
 
-.cabecalho-cerimonial .slogan {
-  font-size: 1.2rem;
-  font-style: italic;
-  opacity: 0.9;
-        }
-  /* 🟤 CAPÍTULO XV — Imagens Cerimoniais sobre Moldura */
+/* ⚪ CAPÍTULO XV — Altares Interativos [#altares] */
+/* (Placeholder para interações JS, efeitos de clique ou revelações) */
 
-.cerimonial-img {
+/* ⚪ CAPÍTULO XVI — Ecos do Rodapé [#ecos] */
+/* (Placeholder para estilos complementares ao rodapé ou animações finais) */
+
+/* 🟤 CAPÍTULO XVII — Imagens Cerimoniais sobre Moldura [#imagens-moldura] */
+.imagem-cerimonial,
+.cerimonial-img,
+.imagem-liturgica {
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   height: auto;
   display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
-      }
-  /* 🟤 CAPÍTULO XVI — Imagens Cerimoniais sobre Moldura */
-
-.imagem-liturgica {
-  display: block;
   margin: 0 auto 24px auto;
-  max-width: 320px;
-  width: 100%;
   border-radius: 12px;
+  object-fit: cover;
   box-shadow: 0 0 12px rgba(163, 132, 94, 0.4);
   border: 2px solid rgba(163, 132, 94, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.imagem-cerimonial:hover,
+.cerimonial-img:hover,
 .imagem-liturgica:hover {
   transform: scale(1.02);
   box-shadow: 0 0 16px rgba(163, 132, 94, 0.6);
 }
-   /* Imagens exceto cabeçalho e rodapé */
+
+/* Imagens Globais (exceto cabeçalho e rodapé) */
 body img:not(header img):not(footer img) {
   width: 100%;
   max-width: 400px;
@@ -338,6 +340,45 @@ body img:not(header img):not(footer img) {
   display: block;
   margin: 0 auto;
 }
+/* 🧭 CAPÍTULO XVIII — Navegação dos Guardiões [#navegacao] */
+/* (Placeholder para estilos de menu cerimonial, botões de navegação ou âncoras entre seções) */
+
+/* 🔮 CAPÍTULO XIX — Revelações Interativas [#revelacoes] */
+/* (Placeholder para animações, interações JS, efeitos de revelação ou transformações visuais) */
+
+/* 🧿 CAPÍTULO XX — Proteções Visuais [#protecoes] */
+/* (Placeholder para estilos de bordas, sombras, camadas de proteção visual ou filtros cerimoniais) */
+
+/* 🪄 CAPÍTULO XXI — Encantamentos Tipográficos [#encantamentos] */
+/* (Placeholder para variações de fontes, efeitos de texto, gradientes ou animações tipográficas) */
+
+/* 🔰 CAPÍTULO XXII — Guardiões do Espaço [#guardioes] */
+/* (Placeholder para controle de margens, espaçamentos, alinhamentos e zonas de respiro cerimonial) */
+
+/* 🧬 CAPÍTULO XXIII — DNA Cerimonial [#dna] */
+/* (Placeholder para variáveis CSS, paleta de cores, fontes base e estilos fundamentais) */
+
+/* 🛰️ CAPÍTULO XXIV — Conexões Externas [#conexoes] */
+/* (Placeholder para links externos, ícones sociais, integrações ou conexões com outros templos digitais) */
+
+/* 🧼 CAPÍTULO XXV — Purificações Visuais [#purificacoes] */
+/* (Placeholder para reset CSS, normalizações e limpeza de estilos indesejados) */
+
+/* 🧭 CAPÍTULO XXVI — Roteiros Cerimoniais [#roteiros] */
+/* (Placeholder para listas ordenadas, cronogramas, etapas ou sequências cerimoniais) */
+
+/* 🧙 CAPÍTULO XXVII — Magia dos Ícones [#icones] */
+/* (Placeholder para ícones SVG, fontes de ícones, animações ou efeitos simbólicos) */
+
+/* 🧵 CAPÍTULO XXVIII — Tecelagem dos Detalhes [#detalhes] */
+/* (Placeholder para botões, ornamentos, linhas decorativas e microelementos cerimoniais) */
+
+/* 🧭 CAPÍTULO XXIX — Caminhos do Retorno [#retorno] */
+/* (Placeholder para botões de retorno, navegação reversa ou encerramento cerimonial) */
+
+/* 🧿 CAPÍTULO XXX — Véu Final da Harmonia [#final] */
+/* (Placeholder para estilos de encerramento, animações finais ou selos de conclusão cerimonial) */
+    
 /* ====================================================
    🌙 EPÍLOGO — Silêncio e Partida
 ==================================================== */
