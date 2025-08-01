@@ -1,3 +1,5 @@
+CÓPIA SECURITY STYLE
+
 /* ====================================================
    🕊️ CÓDICE AVALOKKA — STYLE.CSS
    Liturgia Visual do Templo Digital
@@ -72,10 +74,10 @@
 
 /* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
-  --fonte-base: 'Georgia', serif;
-  --cor-fundo: #f9f7f4;
-  --cor-titulo: #4b3b2a;
-  --cor-texto: #333;
+  --fonte-base: 'Cinzel', serif;
+  --cor-fundo: #0b0b0b;
+  --cor-titulo: #e0c97f;
+  --cor-texto: #ddd;
   --raio: 12px;
   --sombra-leve: 0 0 12px rgba(0, 0, 0, 0.15);
 }
@@ -90,87 +92,72 @@ body {
 }
 
 /* 🖋️ CAPÍTULO III — TIPOGRAFIA CERIMONIAL */
-h1, h2 {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
   color: var(--cor-titulo);
+  text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--cor-texto);
 }
 
-h2 {
-  font-size: 2rem;
+.verso-liturgico,
+.verso-transicao {
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  color: #cfcfcf;
+  margin: 1.5rem 0;
+}
+
+.sinal-de-passagem {
+  text-align: center;
+  font-weight: bold;
+  color: #ffd700;
+  margin-top: 1rem;
 }
 
 /* 🖼️ CAPÍTULO IV — IMAGENS COM AURA */
-.imagem-cerimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
+.cerimonial-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
 }
 
-.cerimonial-img:hover {
-  transform: scale(1.02);
+.imagem-liturgica {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.container-imagem {
+  margin: 2rem 0;
+}
+
+.aspect-ritual {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.aspect-liturgica {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
 /* 🧩 CAPÍTULO V — MOLDURAS CERIMONIAIS */
 .moldura-capela {
-  border: 2px solid #d4af37;
-  background-color: #fffdf5;
-  padding: 1.5rem;
-  margin: 2rem auto;
+.moldura-auriflama {
+  border: 2px solid gold;
+  padding: 1rem;
   border-radius: var(--raio);
-}
-
-.moldura-cruzalva {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 20px;
-}
-
-.moldura-cruzalva img {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
-  z-index: 2;
-}
-
-.moldura-cruzalva::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 400px;
-  background-image: url('imagens/moldura-cruzalva.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.moldura-altar {
-  border: 2px dashed #a67c52;
-  background-color: #f5f2eb;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  border-radius: var(--raio);
-}
-
-.moldura-escuta {
-  border: 2px solid #6a5acd;
-  background-color: #f0f8ff;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  border-radius: var(--raio);
+  background-color: rgba(255, 248, 220, 0.05);
 }
 
 .moldura-veus {
@@ -179,15 +166,6 @@ h2 {
   padding: 1.5rem;
   margin: 2rem auto;
   border-radius: var(--raio);
-}
-
-.descricao-imagem-cerimonial {
-  max-width: 600px;
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 1.1rem;
-  color: #4b3e2e;
-  line-height: 1.6;
 }
 
 /* 📜 CAPÍTULO VI — LEGENDAS DOS SÍMBOLOS */
@@ -199,6 +177,15 @@ figcaption {
   color: #555;
 }
 
+.descricao-imagem-cerimonial {
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #4b3e2e;
+  line-height: 1.6;
+}
+
 /* 🛕 CAPÍTULO VII — BLOCOS CERIMONIAIS */
 section {
   max-width: 960px;
@@ -206,28 +193,72 @@ section {
   padding: 1rem;
 }
 
-/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
-.cabecalho-cerimonial {
-  background-image: url('imagens/moldura-retangular-capitulo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.camara-veus {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.capela-selos {
+  background-color: #111;
+  padding: 2rem;
+  border-top: 2px solid gold;
   text-align: center;
-  padding: 4rem 2rem;
-  color: #3a2f1d;
-  font-family: 'Cinzel', serif;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
-.cabecalho-cerimonial h1 {
-  font-size: 3rem;
+.rodape-cerimonial {
+  background-color: #0a0a0a;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px solid gold;
+}
+
+.rodape-cerimonial a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.selo-footer img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
+header.templo-cabecalho {
+  background-color: #1a1a1a;
+  color: var(--cor-titulo);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid gold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.templo-cabecalho h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.cabecalho-cerimonial .slogan {
+.templo-cabecalho p.subtitulo {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 0;
   font-style: italic;
-  opacity: 0.9;
+}
+
+.templo-cabecalho .selo-ritual {
+  margin-top: 1rem;
+}
+
+.templo-cabecalho .selo-ritual img {
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.5));
 }
 
 /* 🪙 CAPÍTULO IX — Rodapé dos Mestres [#rodape] */
