@@ -19,15 +19,13 @@ CÓPIA SECURITY STYLE
 
    Este é o Avalokka — estilo que contempla, acolhe e revela.
 */
-
-/* ====================================================
-   📜 ÍNDICE NAVEGÁVEL DOS CAPÍTULOS E RITUAIS ESTÉTICOS
-==================================================== */
-
-/* ╔════════════════════════════════════════════════════════════╗ */
-/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID           ║ */
-/* ╠════════════════════════════════════════════════════════════╣ */
-
+/* ╔════════════════════════════════════════════════════════════════════════════════════════╗ */
+/* ║                         PRÓLOGO CERIMONIAL – Rituais Iniciais                         ║ */
+/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID                                     ║ */
+/* ║    → Estilos que alinham imagens específicas com a aura do templo                     ║ */
+/* ║    → Exemplo: #imagem-guardiao, #imagem-templo, etc.                                  ║ */
+/* ╚════════════════════════════════════════════════════════════════════════════════════════╝ */
 #img-guardiao,
 #img-simbolo,
 #img-revelacao,
@@ -71,6 +69,63 @@ CÓPIA SECURITY STYLE
   margin: 24px auto;
   text-align: center;
 }
+/* ╔════════════════════════════════════════════════════════════════════════════════════════╗ */
+/* ║                             CÓDICE CERIMONIAL – ÍNDICE COMPLETO                        ║ */
+/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ Capítulo I     – Raízes Ritualísticas                                                 ║ */
+/* ║ Capítulo II    – Corpo do Templo                                                      ║ */
+/* ║ Capítulo III   – Tipografia Cerimonial                                                ║ */
+/* ║ Capítulo IV    – Imagens com Aura                                                     ║ */
+/* ║ Capítulo V     – Molduras Cerimoniais                                                 ║ */
+/* ║ Capítulo VI    – Legendas dos Símbolos                                                ║ */
+/* ║ Capítulo VII   – Blocos Cerimoniais                                                   ║ */
+/* ║ Capítulo VIII  – Cabeçalho do Templo                                                  ║ */
+/* ║ Capítulo IX    – Rodapé dos Mestres                                                   ║ */
+/* ║ Capítulo X     – Transições dos Véus                                                  ║ */
+/* ║ Capítulo XI    – Responsividade dos Iniciados                                         ║ */
+/* ║ Capítulo XII   – Proteções e Encantamentos                                            ║ */
+/* ║ Capítulo XIII  – Véu Final e Dissolução                                               ║ */
+/* ║ Capítulo XIV   – Molduras do Tempo                                                    ║ */
+/* ║ Capítulo XV    – Navegação dos Guardiões                                              ║ */
+/* ║ Capítulo XVI   – Revelações Interativas                                               ║ */
+/* ║ Capítulo XVII  – Proteções Simbólicas                                                 ║ */
+/* ║ Capítulo XVIII – Encantamentos de Hover                                               ║ */
+/* ║ Capítulo XIX   – DNA Cerimonial                                                       ║ */
+/* ║ Capítulo XX    – Conexões Ocultas                                                     ║ */
+/* ║ Capítulo XXI   – Purificações Visuais                                                 ║ */
+/* ║ Capítulo XXII  – Roteiros do Templo                                                   ║ */
+/* ║ Capítulo XXIII – Ícones dos Iniciados                                                 ║ */
+/* ║ Capítulo XXIV  – Detalhes do Véu                                                      ║ */
+/* ║ Capítulo XXV   – Retorno ao Portal                                                    ║ */
+/* ║ Capítulo XXVI  – Véu Final                                                            ║ */
+/* ║ Capítulo XXVII – Recomeço Cerimonial                                                  ║ */
+/* ║ Capítulo XXVIII– Aura dos Elementos                                                   ║ */
+/* ║ Capítulo XXIX  – Transfiguração dos Símbolos                                          ║ */
+/* ║ Capítulo XXX   – Silêncio do Código                                                   ║ */
+/* ║ Capítulo XXXI  – Dissolução e Contemplação                                            ║ */
+/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ ⊹ Apêndice Cerimonial:                                                                ║ */
+/* ║   – .condicional[data-estado="ativo"] → Revelação ritualística                       ║ */
+/* ║   – .arquivo-guardiao                → Terminal do Guardião                           ║ */
+/* ║   – .laboratorio-ritual              → Efeitos de interação mística                   ║ */
+/* ║   – .ritual-temporal                 → Pulsação do tempo cerimonial                   ║ */
+/* ║   – .revelacao-iniciado              → Transição de iniciação                         ║ */
+/* ║   – .selo-cerimonial                 → Ícone simbólico de navegação                   ║ */
+/* ║   – .indice-cerimonial               → Estrutura do índice responsivo                 ║ */
+/* ║   – .botao-revelacao                 → Portal de abertura em telas menores            ║ */
+/* ║   – .lista-cerimonial                → Caminhos internos do códice                    ║ */
+/* ║   – .elemento-oculto                 → Véu de ocultação cerimonial                    ║ */
+/* ║   – .transicao-aurica                → Animações suaves entre planos                  ║ */
+/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ ❖ Observação: Este códice é contemplativo. Cada capítulo é um portal.                ║ */
+/* ║   Leia com reverência, implemente com intenção. O estilo é um ritual.                ║ */
+/* ╚════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* ╔════════════════════════════════════════════════════════════╗ */
+/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID           ║ */
+/* ╠════════════════════════════════════════════════════════════╣ */
+
+
 
 /* ╚════════════════════════════════════════════════════════════╝ */
 
