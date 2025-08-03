@@ -315,22 +315,15 @@ section {
    🔚 Fim do Capítulo VII — Selo Final
 ════════════════════════════════════════════════ */
 /* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
-
 header.portal-avalokka {
-  background-image: url('imagens/detalhe-topo.jpg'); /* ajuste o caminho se necessário */
+  width: 100%;
+  height: 300px;
+  background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem 1rem;
-  color: var(--cor-titulo);
-  text-align: center;
   border-bottom: 2px solid gold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .templo-cabecalho h1 {
