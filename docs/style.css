@@ -139,7 +139,7 @@ CÓPIA SECURITY STYLE
 
 /* ╚════════════════════════════════════════════════════════════╝ */
 
-/* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
+ 
 /* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
   --fonte-base: 'Cinzel', serif;
@@ -314,7 +314,9 @@ header.portal-avalokka {
   align-items: center;
   text-align: center;
 }
-/* 📱 CAPÍTULO VIII — RITUAL RESPONSIVO */
+/* 📱 CAPÍTULO IX — RODAPÉ DOS MESTRES*/
+
+/* 📱 CAPÍTULO X — RITUAL RESPONSIVO */
 @media (max-width: 600px) {
   footer {
     padding: 1.5rem;
@@ -332,9 +334,7 @@ header.portal-avalokka {
   }
 }
 
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo VII — Selo Final
-════════════════════════════════════════════════ */
+
 /* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
 
 header.portal-avalokka {
@@ -375,23 +375,13 @@ header.portal-avalokka {
   margin-top: 0.5rem;
 }
 
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo VIII — Selo Final
-════════════════════════════════════════════════ */
-Rodapé dos Mestres [#rodape] */
-   /* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo IX — Selo Final
-════════════════════════════════════════════════ */
-
 /* 🌬️ CAPÍTULO X — Transições dos Véus [#transicoes] */
 section,
 figure,
 footer {
   transition: background-color 0.3s ease, border 0.3s ease;
 }
-   /* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo X — Selo Final
-════════════════════════════════════════════════ */
+
 
 /* 📱 CAPÍTULO XI — Responsividade dos Iniciados [#responsivo] */
 @media (max-width: 768px) {
@@ -440,9 +430,7 @@ footer {
     margin-bottom: 1rem;
   }
 }
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo XI — Selo Final
-════════════════════════════════════════════════ */
+
 /* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos [#moldura-retangular] */
 .moldura-capitulo {
   background-image: url('imagens/moldura-retangular-capitulo.png');
@@ -490,10 +478,7 @@ footer {
   color: #5a4a3b;
   font-family: var(--fonte-base);
 }
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo XII — Selo Final
-════════════════════════════════════════════════ */
-/* 🪞 CAPÍTULO XIII — Moldura Retangular dos Capítulos [#moldura-retangular] */
+
 /* 🪞 CAPÍTULO XIII — Moldura Retangular dos Capítulos [#moldura-retangular] */
 .moldura-capitulo {
   background-image: url('imagens/moldura-retangular-capitulo.png');
