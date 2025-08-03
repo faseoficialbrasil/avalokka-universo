@@ -293,27 +293,7 @@ section {
   color: #fff8dc;
 }
 
-/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
-/* 🔱 Estilo do cabeçalho com imagem e texto sobreposto */
 
-header.portal-avalokka {
-  position: relative;
-  width: 100%;
-  height: 300px;
-
-  background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  border-bottom: 2px solid gold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 /* 📱 CAPÍTULO IX — RODAPÉ DOS MESTRES*/
 
 /* 📱 CAPÍTULO X — RITUAL RESPONSIVO */
@@ -336,9 +316,8 @@ header.portal-avalokka {
 
 
 /* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
-
-header.portal-avalokka {
 /* 🔱 Estilo do cabeçalho com imagem e texto sobreposto */
+
 header.portal-avalokka {
   position: relative;
   width: 100%;
@@ -355,26 +334,6 @@ header.portal-avalokka {
   align-items: center;
   text-align: center;
 }
-
-/* Conteúdo sobreposto */
-.conteudo-cabecalho {
-  color: var(--cor-titulo); /* ou #fff */
-  background: rgba(0, 0, 0, 0.4); /* fundo escuro translúcido */
-  padding: 1rem 2rem;
-  border-radius: 8px;
-}
-
-/* Título e subtítulo */
-.conteudo-cabecalho h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.conteudo-cabecalho p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
 /* 🌬️ CAPÍTULO X — Transições dos Véus [#transicoes] */
 section,
 figure,
