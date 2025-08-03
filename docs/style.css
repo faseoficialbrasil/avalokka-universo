@@ -317,9 +317,11 @@ section {
 /* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
 
 header.portal-avalokka {
+/* 🔱 Estilo do cabeçalho com imagem e texto sobreposto */
+header.portal-avalokka {
   position: relative;
   width: 100%;
-  height: 300px; /* ajuste conforme necessário */
+  height: 300px;
   background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -335,32 +337,21 @@ header.portal-avalokka {
 
 /* Conteúdo sobreposto */
 .conteudo-cabecalho {
-  color: var(--cor-titulo); /* ou uma cor clara como #fff */
-  background: rgba(0, 0, 0, 0.4); /* fundo escuro translúcido opcional */
+  color: var(--cor-titulo); /* ou #fff */
+  background: rgba(0, 0, 0, 0.4); /* fundo escuro translúcido */
   padding: 1rem 2rem;
   border-radius: 8px;
+}
+
+/* Título e subtítulo */
+.conteudo-cabecalho h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .conteudo-cabecalho p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
-}
-
-.templo-cabecalho h1 {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  /* color: var(--cor-titulo); ← pode remover se quiser */
-}
-/* 🌙 Subtítulo ritualístico */
-.templo-cabecalho p.subtitulo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-top: 0;
-  font-style: italic;
 }
 
 /* ════════════════════════════════════════════════
