@@ -316,15 +316,12 @@ section {
 ════════════════════════════════════════════════ */
 /* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
 
-header.templo-cabecalho {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  min-height: 200px; /* altura ajustável do cabeçalho */
-  background-image: url('imagens/cabecalho-templo.jpg'); /* caminho da imagem */
+header.portal-avalokka {
+  background-image: url('imagens/detalhe-topo.jpg'); /* ajuste o caminho se necessário */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 3rem 1rem;
   color: var(--cor-titulo);
   text-align: center;
   border-bottom: 2px solid gold;
