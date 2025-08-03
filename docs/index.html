@@ -95,93 +95,17 @@
     <p>Você desbloqueou o primeiro selo cerimonial.</p>
   </section>
 
-  <!-- 🌙 Rodapé Cerimonial -->
-  <footer id="footer">
-    <div class="selo-footer">
-      <img src="imagens/selo-transcendencia.jpg" alt="Selo Avalokka" />
-      <p>© Templo Avalokka — Todos os rituais reservados.</p>
-    </div>
-  </footer>
-
-  <!-- 🧙 Script Cerimonial -->
-  <script>
-    // Eco inicial
-    window.addEventListener('load', () => {
-      document.getElementById('ecoVazio').play();
-    });
-
-    // Iniciar Ritual
-    document.getElementById('iniciarRitual').addEventListener('click', () => {
-      document.getElementById('pactoIrmaos').play();
-      document.getElementById('revelacao1').classList.add('desbloqueado');
-      document.getElementById('vozPortal').play();
-    });
-
-    // Pulso dos véus
-    const elementosPulso = document.querySelectorAll('.ritual-temporal');
-    elementosPulso.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        document.getElementById('pulsoVeus').play();
-      });
-      el.addEventListener('mouseleave', () => {
-        document.getElementById('pulsoVeus').pause();
-        document.getElementById('pulsoVeus').currentTime = 0;
-      });
-    });
-
-    // Rodapé — Véu da Meia-Noite
-    const rodape = document.querySelector('footer');
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        document.getElementById('veuMeianoite').play();
-      }
-    });
-    observer.observe(rodape);
-
-    // Encerramento contemplativo
-    let tempoInativo;
-    function iniciarSilencio() {
-      tempoInativo = setTimeout(() => {
-        document.getElementById('respiracaoSilencio').play();
-      }, 120000); // 2 minutos
-    }
-    function resetarSilencio() {
-      clearTimeout(tempoInativo);
-      iniciarSilencio();
-    }
-    ['mousemove', 'keydown', 'click'].forEach(evt =>
-      document.addEventListener(evt, resetarSilencio)
-    );
-    iniciarSilencio();
-
-    // Navegação cerimonial
-    function tocarPassos() {
-      const audio = document.getElementById('passosPacto');
-      audio.currentTime = 0;
-      audio.play();
-    }
-
-    // Oráculo Avalokka
-    const mensagens = [
-      "🌌 O véu se abre para quem contempla.",
-      "🕯️ O iniciado escuta o que não é dito.",
-      "🔰 Cada estilo é um selo. Cada selo, um caminho.",
-      "🧘 O silêncio também é código.",
-      "✨ O templo pulsa com o tempo do invisível.",
-      "📜 O códice não termina — ele se dissolve.",
-      "🔮 A revelação vem para quem está pronto."
-    ];
-    function revelarMensagem() {
-      const msg = mensagens[Math.floor(Math.random() * mensagens.length)];
-      document.getElementById('mensagemOraculo').textContent = msg;
-    }
-
-    setInterval(revelarMensagem, 10000); // Revela a cada 10 segundos
-    revelarMensagem(); // Primeira revelação
-  </script>
 
 
+
+
+<footer id="footer">
+  <div class="selo-footer">
+    <img src="imagens/selo-footer.jpg" alt="Selo Templo Avalokka" />
+    <p>© Templo Avalokka — Todos os rituais reservados.</p>
   </div>
 </footer>
+
+
 </body>
 </html>
