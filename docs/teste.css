@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #0f0f0f;
+  color: #f5f5dc;
+}
+
+header.portal-avalokka {
+  background-image: url('imagens/detalhe-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conteudo-cabecalho {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.evento-destaque, .galeria, .frase-poetica {
+  padding: 2rem;
+  text-align: center;
+}
+
+.frase-poetica blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+footer.rodape-cerimonial {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid gold;
+  font-size: 0.9rem;
+}
