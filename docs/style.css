@@ -90,7 +90,7 @@ CÓPIA SECURITY STYLE
 /* ║ Capítulo VI    – Legendas dos Símbolos                                                ║ */
 /* ║ Capítulo VII   – Blocos Cerimoniais                                                   ║ */
 /* ║ Capítulo VIII  – Cabeçalho do Templo                                                  ║ */
-/* ║ Capítulo IX    – Rodapé dos Mestres                                                   ║ */
+/* ║ Capítulo IX    – Hierarquia Cerimonial                                                  ║ */
 /* ║ Capítulo X     – Transições dos Véus                                                  ║ */
 /* ║ Capítulo XI    – Responsividade dos Iniciados                                         ║ */
 /* ║ Capítulo XII   – Proteções e Encantamentos                                            ║ */
@@ -294,7 +294,42 @@ section {
 }
 
 
-/* 📱 CAPÍTULO IX — RODAPÉ DOS MESTRES*/
+/* 🟤 CAPÍTULO IX — Hierarquia Cerimonial [#hierarquia] */
+
+section.hierarquia-avalokka {
+  background-color: #121212;
+  color: var(--cor-titulo);
+  padding: 3rem 2rem;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+}
+
+section.hierarquia-avalokka h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: gold;
+}
+
+article.cargo-templo {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid gold;
+  border-radius: 6px;
+}
+
+article.cargo-templo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #f5f5dc;
+}
+
+.titulo-cargo {
+  font-style: italic;
+  font-size: 1rem;
+  color: #ccc;
+}
 
 /* 📱 CAPÍTULO X — RITUAL RESPONSIVO */
 @media (max-width: 600px) {
