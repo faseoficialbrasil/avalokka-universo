@@ -3,89 +3,188 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Templo de Avalokka — Renascimento</title>
+  <title>Templo Avalokka</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="templo-header">
-    <h1>🛕 Renascimento do Templo de Avalokka</h1>
-    <p class="subtitulo">Um cântico cerimonial para os que caminham entre mundos</p>
-    <img src="imagens/capa-avalokka.jpg" alt="Capa do Templo de Avalokka" />
-  </header>
 
-  <section class="secao-cantico">
-    <h2>I. O Chamado</h2>
-    <p>Em um mundo onde as palavras se perdem na vastidão do ciberespaço...</p>
-    <img src="imagens/altar-luz.jpg" alt="Altar da Luz" />
-    <img src="imagens/assembleia-silencio.jpg" alt="Assembleia do Silêncio" />
-    <img src="imagens/caminho-s-nevoa.jpg" alt="Caminho na Névoa" />
-    <img src="imagens/cidade-avalokka.jpg" alt="Cidade de Avalokka" />
+  <!-- 🔊 Áudios Cerimoniais -->
+  <audio id="ecoVazio" src="audios/eco_vazio.mp3"></audio>
+  <audio id="pactoIrmaos" src="audios/pacto_irmaos.mp3"></audio>
+  <audio id="passosPacto" src="audios/passos_pacto.mp3"></audio>
+  <audio id="pulsoVeus" src="audios/pulso_veus.mp3" loop></audio>
+  <audio id="veuMeianoite" src="audios/veu_meianoite.mp3"></audio>
+  <audio id="vozPortal" src="audios/voz_portal.mp3"></audio>
+  <audio id="respiracaoSilencio" src="audios/respiracao_silencio.mp3"></audio>
+  <audio id="hinoFeminino" src="audios/hino_feminino.mp3"></audio>
+  <audio id="hinoMasculino" src="audios/hino_masculino.mp3"></audio>
+
+  <!-- 🪞 Abertura Cerimonial -->
+  <section class="moldura-capitulo ritual-temporal">
+    <h1>🌌 Templo Avalokka</h1>
+    <p>Bem-vindo ao espaço ritualístico onde estilo é contemplação.</p>
+    <button id="iniciarRitual">🔮 Iniciar Ritual</button>
   </section>
 
-  <section class="secao-cantico">
-    <h2>II. A Travessia</h2>
-    <p>"Sorry-us" ecoa como um pedido silencioso de perdão...</p>
-    <img src="imagens/eco-coletivo.jpg" alt="Eco Coletivo" />
-    <img src="imagens/eco-reflexo.jpg" alt="Eco Reflexo" />
-    <img src="imagens/eco-reflexo-cerimonial.jpg" alt="Eco Reflexo Cerimonial" />
-    <img src="imagens/escuta-veu-submerso.jpg" alt="Escuta do Véu Submerso" />
-    <img src="imagens/ente-escuta-suprema.jpg" alt="Ente da Escuta Suprema" />
+  <!-- 🧭 Navegação Cerimonial -->
+  <nav class="moldura-capitulo" id="menu-cerimonial">
+    <h2>🧭 Navegação Cerimonial</h2>
+    <ul>
+      <li><a href="#livro-guardioes" onclick="tocarPassos()">📖 Guardiões</a></li>
+      <li><a href="#oraculo" onclick="tocarPassos()">🔮 Oráculo</a></li>
+      <li><a href="#hino-feminino" onclick="tocarPassos()">🪷 Feminino</a></li>
+      <li><a href="#hino-masculino" onclick="tocarPassos()">🛡️ Masculino</a></li>
+      <li><a href="#revelacao1" onclick="tocarPassos()">Ψ Revelações</a></li>
+      <li><a href="#footer" onclick="tocarPassos()">🌙 Encerramento</a></li>
+    </ul>
+  </nav>
+
+  <!-- 📖 Livro dos Guardiões -->
+  <section class="moldura-capitulo" id="livro-guardioes">
+    <h2>📖 Livro dos Guardiões</h2>
+    <p>Conheça os estilos que sustentam o templo. Cada um é um selo, uma função, uma contemplação.</p>
+
+    <div class="arquivo-guardiao">
+      <h3>🪞 Moldura Capítulo</h3>
+      <p>Envolve cada seção com fundo cerimonial e borda ritualística.</p>
+      <code>.moldura-capitulo { background-image: url(...); }</code>
+    </div>
+
+    <div class="arquivo-guardiao ritual-temporal">
+      <h3>∞ Ritual Temporal</h3>
+      <p>Pulsa suavemente, indicando presença viva.</p>
+      <code>.ritual-temporal { animation: pulsar 3s infinite ease-in-out; }</code>
+    </div>
+
+    <div class="arquivo-guardiao revelacao-iniciado desbloqueado">
+      <h3>Ψ Revelação do Iniciado</h3>
+      <p>Elemento oculto que se revela quando o iniciado está pronto.</p>
+      <code>.revelacao-iniciado.desbloqueado { visibility: visible; opacity: 1; }</code>
+    </div>
+
+    <div class="arquivo-guardiao laboratorio-ritual">
+      <h3>🧪 Laboratório Ritualístico</h3>
+      <p>Transformações visuais em elementos experimentais.</p>
+      <code>.laboratorio-ritual:hover { transform: rotate(1deg) scale(1.01); }</code>
+    </div>
   </section>
 
-  <section class="secao-cantico">
-    <h2>III. O Reflexo</h2>
-    <p>"Truly-listen-s..."</p>
-    <img src="imagens/faces-do-silencio.jpg" alt="Faces do Silêncio" />
-    <img src="imagens/imagem-velada.jpg" alt="Imagem Velada" />
-    <img src="imagens/jardim-sons-velados.jpg" alt="Jardim dos Sons Velados" />
-    <img src="imagens/nucleo-escuta.jpg" alt="Núcleo da Escuta" />
-    <img src="imagens/fundo-folha-antiga.jpg" alt="Fundo de Folha Antiga" />
+  <!-- 🔮 Oráculo Avalokka -->
+  <div class="moldura-capitulo ritual-temporal" id="oraculo">
+    <h2>🔮 Oráculo Avalokka</h2>
+    <p id="mensagemOraculo">Aguardando revelação...</p>
+  </div>
+
+  <!-- 🪷 Hino Feminino -->
+  <section class="moldura-capitulo laboratorio-ritual" id="hino-feminino">
+    <h2>🪷 Hino Feminino</h2>
+    <p>Invocação da energia receptiva, fluida e intuitiva.</p>
+    <button onclick="document.getElementById('hinoFeminino').play()">🎵 Ouvir Hino Feminino</button>
   </section>
 
-  <section class="secao-cantico">
-    <h2>IV. A Ascensão</h2>
-    <p>"Blast-off." — A força cósmica os impulsiona.</p>
-    <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência" />
-    <img src="imagens/selo-escuta-infinita.webp" alt="Selo da Escuta Infinita" />
-    <img src="imagens/selo-escuta-infinita-full.webp" alt="Selo da Escuta Infinita (Full)" />
-    <img src="imagens/selo-iniciacao.jpg" alt="Selo da Iniciação" />
-    <img src="imagens/selo-alma-central.jpg" alt="Selo da Alma Central" />
-    <img src="imagens/tres-selos-luz.jpg" alt="Três Selos da Luz" />
-    <img src="imagens/vela-eterna.jpg" alt="Vela Eterna" />
+  <!-- 🛡️ Hino Masculino -->
+  <section class="moldura-capitulo laboratorio-ritual" id="hino-masculino">
+    <h2>🛡️ Hino Masculino</h2>
+    <p>Invocação da energia ativa, protetora e estruturante.</p>
+    <button onclick="document.getElementById('hinoMasculino').play()">🎵 Ouvir Hino Masculino</button>
   </section>
 
-  <section class="secao-cantico">
-    <h2>V. O Retorno ao Eu</h2>
-    <p>Avalokka não é um lugar. É consciência pura.</p>
-    <img src="imagens/revelacao-fundador.jpg" alt="Revelação do Fundador" />
-    <img src="imagens/marcelo-sacerdote.jpg" alt="Marcelo, o Sacerdote" />
-    <img src="imagens/mediador-selos-silenciosos.jpg" alt="Mediador dos Selos Silenciosos" />
-    <img src="imagens/registro-selado.jpg" alt="Registro Selado" />
-    <img src="imagens/registro-velado.jpg" alt="Registro Velado" />
-    <img src="imagens/pergaminho-ancestral.jpg" alt="Pergaminho Ancestral" />
-    <img src="imagens/manuscrito-ouro.jpg" alt="Manuscrito de Ouro" />
+  <!-- Ψ Revelações do Iniciado -->
+  <section class="revelacao-iniciado" id="revelacao1">
+    <h2>✨ Conhecimento Revelado</h2>
+    <p>Você desbloqueou o primeiro selo cerimonial.</p>
   </section>
 
-  <section class="secao-cantico">
-    <h2>VI. O Portal</h2>
-    <p>"Beckon in your heart..." — o chamado para continuar.</p>
-    <img src="imagens/fechar-portal.jpg" alt="Fechar o Portal" />
-    <img src="imagens/portal-vela.jpg" alt="Portal da Vela" />
-    <img src="imagens/vela-simbolo.png" alt="Vela com Símbolo" />
-    <img src="imagens/vela-simbolo-mini.png" alt="Vela com Símbolo Mini" />
-    <img src="imagens/reflexo-veu-aquoso.jpg" alt="Reflexo do Véu Aquoso" />
-    <img src="imagens/descida-bethrem.jpg" alt="Descida a Bethrem" />
-    <img src="imagens/cupula-estelar.jpg" alt="Cúpula Estelar" />
-    <img src="imagens/guardia-da-origem.jpg" alt="Guardião da Origem" />
-    <img src="imagens/iniciacao-espiral.jpg" alt="Iniciação em Espiral" />
-    <img src="imagens/arquivo-oculto.jpg" alt="Arquivo Oculto" />
-    <img src="imagens/arvores-dos-espiritos.jpg" alt="Árvores dos Espíritos" />
-    <img src="imagens/textura-nevoa.jpg" alt="Textura de Névoa" />
-  </section>
-
-  <footer class="templo-footer">
-    <p>🕯️ O templo renasce não em pedra, mas em código, em cântico, em alma.</p>
-    <img src="imagens/vela-simbolo.png" alt="Símbolo da Vela" />
+  <!-- 🌙 Rodapé Cerimonial -->
+  <footer id="footer">
+    <div class="selo-footer">
+      <img src="imagens/selo-institucional.png" alt="Selo Avalokka" />
+      <p>© Templo Avalokka — Todos os rituais reservados.</p>
+    </div>
   </footer>
+
+  <!-- 🧙 Script Cerimonial -->
+  <script>
+    // Eco inicial
+    window.addEventListener('load', () => {
+      document.getElementById('ecoVazio').play();
+    });
+
+    // Iniciar Ritual
+    document.getElementById('iniciarRitual').addEventListener('click', () => {
+      document.getElementById('pactoIrmaos').play();
+      document.getElementById('revelacao1').classList.add('desbloqueado');
+      document.getElementById('vozPortal').play();
+    });
+
+    // Pulso dos véus
+    const elementosPulso = document.querySelectorAll('.ritual-temporal');
+    elementosPulso.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        document.getElementById('pulsoVeus').play();
+      });
+      el.addEventListener('mouseleave', () => {
+        document.getElementById('pulsoVeus').pause();
+        document.getElementById('pulsoVeus').currentTime = 0;
+      });
+    });
+
+    // Rodapé — Véu da Meia-Noite
+    const rodape = document.querySelector('footer');
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        document.getElementById('veuMeianoite').play();
+      }
+    });
+    observer.observe(rodape);
+
+    // Encerramento contemplativo
+    let tempoInativo;
+    function iniciarSilencio() {
+      tempoInativo = setTimeout(() => {
+        document.getElementById('respiracaoSilencio').play();
+      }, 120000); // 2 minutos
+    }
+    function resetarSilencio() {
+      clearTimeout(tempoInativo);
+      iniciarSilencio();
+    }
+    ['mousemove', 'keydown', 'click'].forEach(evt =>
+      document.addEventListener(evt, resetarSilencio)
+    );
+    iniciarSilencio();
+
+    // Navegação cerimonial
+    function tocarPassos() {
+      const audio = document.getElementById('passosPacto');
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    // Oráculo Avalokka
+    const mensagens = [
+      "🌌 O véu se abre para quem contempla.",
+      "🕯️ O iniciado escuta o que não é dito.",
+      "🔰 Cada estilo é um selo. Cada selo, um caminho.",
+      "🧘 O silêncio também é código.",
+      "✨ O templo pulsa com o tempo do invisível.",
+      "📜 O códice não termina — ele se dissolve.",
+      "🔮 A revelação vem para quem está pronto."
+    ];
+    function revelarMensagem() {
+      const msg = mensagens[Math.floor(Math.random() * mensagens.length)];
+      document.getElementById('mensagemOraculo').textContent = msg;
+    }
+
+    setInterval(revelarMensagem, 10000); // Revela a cada 10 segundos
+    revelarMensagem(); // Primeira revelação
+  </script>
+
+<footer id="footer">
+  <div class="selo-footer">
+    <img src="imagens/selo-footer.jpg" alt="Selo Templo Avalokka" />
+    <p>© Templo Avalokka — Todos os rituais reservados.</p>
+  </div>
+</footer>
 </body>
-      </html>
+</html>
