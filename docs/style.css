@@ -191,6 +191,16 @@ footer#rodape-avalokka a:hover {
   h3 {
     font-size: 1.2rem;
   }
+   .menu-lista {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.menu-lista.ativo {
+  transform: translateY(0);
+  opacity: 1;
+}
 
   section, .moldura-auriflama, .moldura-capitulo {
     padding: 1.5rem;
