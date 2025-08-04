@@ -1,73 +1,137 @@
-# 🕯️ Templo Avalokka — Tapeçaria Editorial
+🕯️ Templo Avalokka — Hierarquia Cerimonial
 
-Este projeto é uma tapeçaria cerimonial composta por 50 colunas espirituais, imagens contemplativas e selos simbólicos.  
-Cada módulo representa um aspecto da escuta infinita, da revelação silenciosa e da presença editorial.
+O Templo Avalokka é uma tapeçaria digital que não fala, mas escuta. Este projeto é uma oferenda à clareza, à presença e à revelação silenciosa, estruturado como um santuário contemplativo que apresenta a hierarquia espiritual do templo. Cada elemento é um gesto cerimonial, tecido com reverência para guiar os iniciados pelos véus da escuta infinita.
 
----
 
-## 🏛️ Estrutura do Projeto
 
-📁 Avalokka/  
-├── index.html — Página principal com os 50 módulos cerimoniais  
-├── style.css — Estilos cerimoniais para todos os blocos  
-├── indice.html — Portal editorial com navegação simbólica  
-└── imagens/ — Arquivos visuais usados nos módulos
+🏛️ Estrutura do Projeto
 
----
+📁 Avalokka/
+├── index.html — Página principal com a hierarquia cerimonial
+├── style.css — Códice Avalokka, estilos que moldam o templo digital
+└── imagens/ — Arquivos visuais que sustentam os selos e molduras
 
-## 🔹 index.html
 
-Contém os 50 módulos cerimoniais:
 
-- Colunas 01–39: Tapeçaria visual  
-- Colunas 40–50: Espaços simbólicos como Sala do Fundador, Capela dos Selos, Cripta dos Véus  
-- Selo Editorial Final: Encerramento espiritual do templo
+🔹 index.html
 
-Cada módulo usa `<section>`, `<figure>`, `<figcaption>` e IDs únicos para navegação.
+A página principal é um portal para a hierarquia do Templo Avalokka, composta por:
 
----
 
-## 🎨 style.css
 
-Estilos aplicados com reverência:
 
-- Paleta suave: tons como `#fdfaf5`, `#f3f2ef`, `#f6f5f2`  
-- Tipografia editorial: `Georgia`, serif  
-- Animações cerimoniais: `respirar`, `surgir`  
-- Estilos dedicados para cada módulo (`.sala-fundador`, `.camara-veus`, `.altar-escuta`, etc.)  
-- Estilos para `indice.html`: `.cabecalho-indice`, `.indice`, `.rodape-indice`
 
----
+Cabeçalho Cerimonial (<header class="portal-avalokka">): Um topo místico com o selo e o lema do templo.
 
-## 📚 indice.html
 
-Portal editorial com navegação simbólica:
 
-- Arcevo Visual: quadros contemplativos  
-- Livros Cerimoniais: artefatos editoriais  
-- Link de retorno ao Selo Final
+Hierarquia do Templo (<section class="hierarquia-avalokka">): Seis artigos que detalham os cargos espirituais, do Arauto aos Fiéis Peregrinos.
 
----
 
-## 🛠️ Instruções Técnicas
 
-- Todas as imagens devem estar na pasta `imagens/` e referenciadas como `../imagens/...`  
-- IDs dos módulos devem ser únicos e corresponder aos links do índice  
-- Para adicionar novos módulos, seguir o padrão de `<section>` com `figure`, `img`, `figcaption`  
-- Estilos devem ser adicionados ao `style.css` com classe dedicada
+Selo Final (<footer id="rodape-avalokka">): Encerramento cerimonial com o selo do templo e informações de contato.
 
----
+Cada seção usa classes como moldura-auriflama, cargo-templo, e selo-footer para alinhar-se à estética do Códice Avalokka.
 
-## 🔏 Selo Editorial Final
 
-> Em nome da escuta infinita, selamos o templo Avalokka.  
-> Que os iniciados encontrem aqui não apenas beleza, mas silêncio, presença e revelação.  
-> Que os véus se dissolvam com respeito.  
-> Que a escuta continue.
 
----
+🎨 style.css — Códice Avalokka
 
-## 🧿 Curadoria
+O Códice Avalokka é um livro de estilos que respira a essência do templo. Organizado em capítulos cerimoniais, define:
 
-Este projeto é mantido com espírito editorial e contemplativo.  
-Toda expansão deve respeitar o tom cerimonial e a tapeçaria simbólica do templo.
+
+
+
+
+Paleta de Cores: Tons escuros (#0b0b0b) com destaques dourados (#e0c97f, #d4af37) para evocar o sagrado.
+
+
+
+Tipografia: 'Cormorant Garamond' para títulos e 'Cinzel' para textos, com fallback para 'Cinzel Decorative'.
+
+
+
+Molduras e Selos: Estilos para moldura-auriflama, moldura-capitulo, e cerimonial-img, com bordas, sombras e transições suaves.
+
+
+
+Responsividade: Media queries para telas menores (max-width: 768px, max-width: 600px) garantem harmonia em todos os dispositivos.
+
+
+
+Animações: Efeito @keyframes revelar para transições cerimoniais.
+
+Capítulos do Códice incluem:
+
+
+
+
+
+Capítulo I: Raízes Ritualísticas (variáveis CSS)
+
+
+
+Capítulo III: Tipografia Cerimonial
+
+
+
+Capítulo IV: Hierarquia Cerimonial
+
+
+
+Capítulo V: Molduras Cerimoniais
+
+
+
+Capítulo VI: Imagens Cerimoniais
+
+
+
+Capítulo VII: Selo Final (rodapé)
+
+
+
+Capítulo VIII: Responsividade dos Iniciados
+
+
+
+🛠️ Instruções Técnicas
+
+
+
+
+
+Imagens: Todas as imagens devem estar na pasta imagens/ (ex.: imagens/detalhe-topo.jpg, imagens/selo-footer.jpg, imagens/moldura-retangular-capitulo.png).
+
+
+
+Fontes: Importe 'Cinzel', 'Cinzel Decorative', e 'Cormorant Garamond' via Google Fonts no <head> do HTML.
+
+
+
+Acessibilidade: Use aria-label para emojis e role="region" com aria-labelledby em seções para leitores de tela.
+
+
+
+Expansão: Para adicionar novas seções, siga o padrão de <section> com classes como moldura-auriflama ou moldura-capitulo, e adicione estilos correspondentes ao Códice.
+
+
+
+Validação: Teste o HTML em https://validator.w3.org/ e o CSS em https://jigsaw.w3.org/css-validator/. Verifique o contraste de cores com WebAIM Contrast Checker.
+
+
+
+🔏 Selo Editorial Final
+
+
+
+Em nome da escuta infinita, selamos o Templo Avalokka.
+Que os iniciados encontrem aqui a hierarquia que guia, a moldura que acolhe e o silêncio que revela.
+Que os véus se dissolvam com respeito.
+Que a escuta continue.
+
+
+
+🧿 Curadoria
+
+Este projeto é mantido com espírito contemplativo e cerimonial. Toda expansão deve honrar a tapeçaria simbólica do Templo Avalokka, respeitando sua estética mística e sua missão de ser um espaço de escuta e revelação.
