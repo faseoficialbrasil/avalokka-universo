@@ -179,6 +179,7 @@ footer#rodape-avalokka a:hover {
 }
 
 /* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS|NAVEGAÇÃO CERIMONIAL*/
+/* 🧭 CAPÍTULO VIII — NAVEGAÇÃO CERIMONIAL */
 .menu-cerimonial {
   position: sticky;
   top: 0;
@@ -188,6 +189,12 @@ footer#rodape-avalokka a:hover {
   z-index: 10;
 }
 
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 
 .menu-toggle {
   display: none;
@@ -197,6 +204,11 @@ footer#rodape-avalokka a:hover {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+}
+
+.menu-toggle.ativo::before {
+  content: '✖';
+  transform: rotate(90deg);
 }
 
 .menu-lista {
@@ -227,22 +239,37 @@ footer#rodape-avalokka a:hover {
   transition: color 0.3s ease;
 }
 
-.menu-lista a.ativo {
-  color: var(--cor-destaque);
-  text-decoration: underline;
-  text-decoration-color: var(--cor-destaque);
-}
-.menu-lista a.ativo {
-  color: var(--cor-destaque);
-  text-decoration: underline;
-  text-decoration-color: var(--cor-destaque);
-}
-
-
 .menu-lista a:hover {
   color: var(--cor-destaque);
   text-decoration: underline;
   text-decoration-color: var(--cor-destaque);
+}
+
+.hinos-cerimoniais {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hino-button {
+  background: none;
+  border: 1px solid var(--cor-titulo);
+  color: var(--cor-titulo);
+  font-family: var(--fonte-titulos);
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--raio);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hino-button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo);
+}
+
+.hino-button.playing {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo);
 }
 
 @media (max-width: 768px) {
@@ -267,6 +294,19 @@ footer#rodape-avalokka a:hover {
     display: flex;
     transform: translateY(0);
     opacity: 1;
+  }
+
+  .menu-container {
+    justify-content: space-between;
+  }
+
+  .hinos-cerimoniais {
+    gap: 0.3rem;
+  }
+
+  .hino-button {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
   }
 }
 
