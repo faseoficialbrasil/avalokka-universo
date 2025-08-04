@@ -189,6 +189,7 @@ footer#rodape-avalokka a:hover {
   z-index: 10;
 }
 
+
 .menu-toggle {
   display: none;
   background: none;
@@ -225,6 +226,11 @@ footer#rodape-avalokka a:hover {
   font-family: var(--fonte-titulos);
   font-size: 1rem;
   transition: color 0.3s ease;
+}
+.menu-lista a.ativo {
+  color: var(--cor-destaque);
+  text-decoration: underline;
+  text-decoration-color: var(--cor-destaque);
 }
 
 .menu-lista a:hover {
