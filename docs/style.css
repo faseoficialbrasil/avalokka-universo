@@ -179,19 +179,32 @@ footer#rodape-avalokka a:hover {
 }
 
 /* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
+/* 🧭 CAPÍTULO VIII — NAVEGAÇÃO CERIMONIAL */
+.menu-cerimonial {
+  position: sticky;
+  top: 0;
+  background-color: var(--cor-fundo);
+  padding: 1rem;
+  text-align: center;
+  z-index: 10;
+}
 
-  h2 {
-    font-size: 1.5rem;
-  }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cor-titulo);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
 
-  h3 {
-    font-size: 1.2rem;
-  }
-   .menu-lista {
+.menu-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateY(-10px);
   opacity: 0;
@@ -202,36 +215,46 @@ footer#rodape-avalokka a:hover {
   opacity: 1;
 }
 
-  section, .moldura-auriflama, .moldura-capitulo {
-    padding: 1.5rem;
-    margin: 1.5rem auto;
-  }
-
-  .cerimonial-img {
-    max-width: 250px;
-  }
+.menu-lista li {
+  margin: 0;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.6rem;
+.menu-lista a {
+  color: var(--cor-titulo);
+  text-decoration: none;
+  font-family: var(--fonte-titulos);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-lista a:hover {
+  color: var(--cor-destaque);
+  text-decoration: underline;
+  text-decoration-color: var(--cor-destaque);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
-  h2 {
-    font-size: 1.3rem;
+  .menu-lista {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--cor-fundo);
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9;
   }
 
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .selo-footer img {
-    max-height: 40px;
+  .menu-lista.ativo {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
