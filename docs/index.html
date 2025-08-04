@@ -16,12 +16,43 @@
     </div>
   </header>
 <script>
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('Menu cerimonial inicializado');
+    const toggle = document.querySelector('.menu-toggle');
     const menuLista = document.querySelector('.menu-lista');
-    menuLista.classList.toggle('ativo');
-    const isOpen = menuLista.classList.contains('ativo');
-    document.querySelector('.menu-toggle').setAttribute('aria-label', isOpen ? 'Fechar o menu cerimonial' : 'Abrir o menu cerimonial');
-    document.querySelector('.menu-lista').setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    
+    if (toggle && menuLista) {
+      toggle.addEventListener('click', () => {
+        menuLista.classList.toggle('ativo');
+        toggle.classList.toggle('ativo');
+        const isOpen = menuLista.classList.contains('ativo');
+        toggle.setAttribute('aria-label', isOpen ? 'Fechar o menu cerimonial' : 'Abrir o menu cerimonial');
+        menuLista.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        console.log('Menu toggled:', isOpen ? 'Aberto' : 'Fechado');
+      });
+    } else {
+      console.error('Erro: .menu-toggle ou .menu-lista não encontrados');
+    }
+
+    window.addEventListener('scroll', () => {
+      const sections = ['hierarquia-avalokka', 'rodape-avalokka'];
+      const links = document.querySelectorAll('.menu-lista a');
+      let current = '';
+
+      sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section.getBoundingClientRect().top <= 150 && section.getBoundingClientRect().bottom > 150) {
+          current = id;
+        }
+      });
+
+      links.forEach(link => {
+        link.classList.remove('ativo');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('ativo');
+        }
+      });
+    });
   });
 </script>
   <!-- 🧭 Menu Cerimonial com Hamburguer -->
