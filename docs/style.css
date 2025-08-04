@@ -178,8 +178,7 @@ footer#rodape-avalokka a:hover {
   color: #fff8dc;
 }
 
-/* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS */
-/* 🧭 CAPÍTULO VIII — NAVEGAÇÃO CERIMONIAL */
+/* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS|NAVEGAÇÃO CERIMONIAL*/
 .menu-cerimonial {
   position: sticky;
   top: 0;
@@ -227,11 +226,18 @@ footer#rodape-avalokka a:hover {
   font-size: 1rem;
   transition: color 0.3s ease;
 }
+
 .menu-lista a.ativo {
   color: var(--cor-destaque);
   text-decoration: underline;
   text-decoration-color: var(--cor-destaque);
 }
+.menu-lista a.ativo {
+  color: var(--cor-destaque);
+  text-decoration: underline;
+  text-decoration-color: var(--cor-destaque);
+}
+
 
 .menu-lista a:hover {
   color: var(--cor-destaque);
