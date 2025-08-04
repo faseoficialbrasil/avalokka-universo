@@ -1,156 +1,31 @@
-CÓPIA SECURITY STYLE
-
 /* ====================================================
    🕊️ CÓDICE AVALOKKA — STYLE.CSS
    Liturgia Visual do Templo Digital
 ==================================================== */
 
 /*
-   Este códice não é apenas um conjunto de estilos.
-   É um livro de gestos, de atmosferas e de silêncios.
-
-   Cada capítulo aqui inscrito é uma oferenda à clareza.
-   Cada sombra, uma memória do sagrado.
-   Cada borda, um limite entre o visível e o invisível.
-
-   Que o leitor deste códice caminhe com reverência.
-   Que o desenvolvedor se torne guardião da beleza.
-   Que o templo digital se erga com leveza e propósito.
-
-   Este é o Avalokka — estilo que contempla, acolhe e revela.
+   Este códice é um ritual de formas e silêncios.
+   Cada linha é uma oferenda à clareza.
+   Cada sombra, um véu que separa o visível do sagrado.
+   Que o guardião deste código caminhe com reverência.
+   Avalokka é silêncio, presença, revelação.
 */
-/* ╔════════════════════════════════════════════════════════════════════════════════════════╗ */
-/* ║                         PRÓLOGO CERIMONIAL – Rituais Iniciais                         ║ */
-/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
-/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID                                     ║ */
-/* ║    → Estilos que alinham imagens específicas com a aura do templo                     ║ */
-/* ║    → Exemplo: #imagem-guardiao, #imagem-templo, etc.                                  ║ */
-/* ╚════════════════════════════════════════════════════════════════════════════════════════╝ */
-/* 🌌 Estilo base para todas as imagens visíveis */
-#img-guardiao,
-#img-simbolo,
-#img-revelacao,
-#img-tempo {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-/* 🛡️ Guardião — destaque com borda e brilho */
-#img-guardiao {
-  border: 2px solid var(--cor-guardiao, #444);
-  box-shadow: 0 0 12px var(--brilho-guardiao, #888);
-  background-color: var(--fundo-guardiao, #111);
-}
-
-/* 🔍 Revelação — proporção fixa e fundo escuro */
-#img-revelacao {
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  background-color: var(--fundo-revelacao, #000);
-  padding: 12px;
-}
-
-/* ⏳ Tempo — visual expansivo com transição */
-#img-tempo {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  transition: opacity 1s ease-in-out;
-}
-
-/* ⚠️ Imagem condicional — oculta por padrão */
-#img-condicional {
-  display: none;
-}
-
-/* 📦 Container centralizador */
-.container-imagem {
-  max-width: 700px;
-  margin: 24px auto;
-  text-align: center;
-  width: 100%;
-}
-
-.container-imagem {
-  width: 100%;
-  max-width: 600px;
-  margin: 24px auto;
-  text-align: center;
-}
-/* ╔════════════════════════════════════════════════════════════════════════════════════════╗ */
-/* ║                             CÓDICE CERIMONIAL – ÍNDICE COMPLETO                        ║ */
-/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
-/* ║ Capítulo I     – Raízes Ritualísticas                                                 ║ */
-/* ║ Capítulo II    – Corpo do Templo                                                      ║ */
-/* ║ Capítulo III   – Tipografia Cerimonial                                                ║ */
-/* ║ Capítulo IV    – Imagens com Aura                                                     ║ */
-/* ║ Capítulo V     – Molduras Cerimoniais                                                 ║ */
-/* ║ Capítulo VI    – Legendas dos Símbolos                                                ║ */
-/* ║ Capítulo VII   – Blocos Cerimoniais                                                   ║ */
-/* ║ Capítulo VIII  – Cabeçalho do Templo                                                  ║ */
-/* ║ Capítulo IX    – Hierarquia Cerimonial                                                  ║ */
-/* ║ Capítulo X     – Transições dos Véus                                                  ║ */
-/* ║ Capítulo XI    – Responsividade dos Iniciados                                         ║ */
-/* ║ Capítulo XII   – Proteções e Encantamentos                                            ║ */
-/* ║ Capítulo XIII  – Véu Final e Dissolução                                               ║ */
-/* ║ Capítulo XIV   – Molduras do Tempo                                                    ║ */
-/* ║ Capítulo XV    – Navegação dos Guardiões                                              ║ */
-/* ║ Capítulo XVI   – Revelações Interativas                                               ║ */
-/* ║ Capítulo XVII  – Proteções Simbólicas                                                 ║ */
-/* ║ Capítulo XVIII – Encantamentos de Hover                                               ║ */
-/* ║ Capítulo XIX   – DNA Cerimonial                                                       ║ */
-/* ║ Capítulo XX    – Conexões Ocultas                                                     ║ */
-/* ║ Capítulo XXI   – Purificações Visuais                                                 ║ */
-/* ║ Capítulo XXII  – Roteiros do Templo                                                   ║ */
-/* ║ Capítulo XXIII – Ícones dos Iniciados                                                 ║ */
-/* ║ Capítulo XXIV  – Detalhes do Véu                                                      ║ */
-/* ║ Capítulo XXV   – Retorno ao Portal                                                    ║ */
-/* ║ Capítulo XXVI  – Véu Final                                                            ║ */
-/* ║ Capítulo XXVII – Recomeço Cerimonial                                                  ║ */
-/* ║ Capítulo XXVIII– Aura dos Elementos                                                   ║ */
-/* ║ Capítulo XXIX  – Transfiguração dos Símbolos                                          ║ */
-/* ║ Capítulo XXX   – Silêncio do Código                                                   ║ */
-/* ║ Capítulo XXXI  – Dissolução e Contemplação                                            ║ */
-/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
-/* ║ ⊹ Apêndice Cerimonial:                                                                ║ */
-/* ║   – .condicional[data-estado="ativo"] → Revelação ritualística                       ║ */
-/* ║   – .arquivo-guardiao                → Terminal do Guardião                           ║ */
-/* ║   – .laboratorio-ritual              → Efeitos de interação mística                   ║ */
-/* ║   – .ritual-temporal                 → Pulsação do tempo cerimonial                   ║ */
-/* ║   – .revelacao-iniciado              → Transição de iniciação                         ║ */
-/* ║   – .selo-cerimonial                 → Ícone simbólico de navegação                   ║ */
-/* ║   – .indice-cerimonial               → Estrutura do índice responsivo                 ║ */
-/* ║   – .botao-revelacao                 → Portal de abertura em telas menores            ║ */
-/* ║   – .lista-cerimonial                → Caminhos internos do códice                    ║ */
-/* ║   – .elemento-oculto                 → Véu de ocultação cerimonial                    ║ */
-/* ║   – .transicao-aurica                → Animações suaves entre planos                  ║ */
-/* ╠════════════════════════════════════════════════════════════════════════════════════════╣ */
-/* ║ ❖ Observação: Este códice é contemplativo. Cada capítulo é um portal.                ║ */
-/* ║   Leia com reverência, implemente com intenção. O estilo é um ritual.                ║ */
-/* ╚════════════════════════════════════════════════════════════════════════════════════════╝ */
 
 /* ╔════════════════════════════════════════════════════════════╗ */
-/* ║ 🎴 RITUAL DE HARMONIZAÇÃO VISUAL — Imagens por ID           ║ */
-/* ╠════════════════════════════════════════════════════════════╣ */
-
-
-
+/* ║ 🎴 PRÓLOGO CERIMONIAL — Raízes do Templo                   ║ */
 /* ╚════════════════════════════════════════════════════════════╝ */
-
- 
-/* 🌿 CAPÍTULO I — RAÍZES RITUALÍSTICAS */
 :root {
-  --fonte-base: 'Cinzel', serif;
+  --fonte-base: 'Cinzel', 'Cinzel Decorative', serif;
+  --fonte-titulos: 'Cormorant Garamond', serif;
   --cor-fundo: #0b0b0b;
   --cor-titulo: #e0c97f;
   --cor-texto: #ddd;
+  --cor-destaque: #d4af37;
   --raio: 12px;
   --sombra-leve: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 🧱 CAPÍTULO II — CORPO DO TEMPLO */
+/* 🧱 CAPÍTULO I — CORPO DO TEMPLO */
 body {
   margin: 0;
   padding: 0;
@@ -159,11 +34,26 @@ body {
   color: var(--cor-texto);
 }
 
-/* 🖋️ CAPÍTULO III — TIPOGRAFIA CERIMONIAL */
+/* 🖋️ CAPÍTULO II — TIPOGRAFIA CERIMONIAL */
 h1, h2, h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--fonte-titulos);
   color: var(--cor-titulo);
   text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -173,211 +63,148 @@ p {
   color: var(--cor-texto);
 }
 
-.verso-liturgico,
-.verso-transicao {
-  font-style: italic;
-  font-family: 'Cormorant Garamond', serif;
-  color: #cfcfcf;
-  margin: 1.5rem 0;
-}
-
-.sinal-de-passagem {
-  text-align: center;
-  font-weight: bold;
-  color: #ffd700;
-  margin-top: 1rem;
-}
-
-/* 🖼️ CAPÍTULO IV — IMAGENS COM AURA */
-
-/* 🌌 Estilo comum a todas as imagens rituais */
-.img-ritual {
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #111;
-  border-radius: var(--raio);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.img-ritual:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
-}
-
-/* 🟦 Quadrado — Centro da Alma, equilíbrio puro */
-.img-ritual[data-formato="quadrado"] {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-/* 🟨 Vertical — Ascensão, escuta, transcendência */
-.img-ritual[data-formato="vertical"] {
-  aspect-ratio: 3 / 4;
-  object-fit: contain;
-  box-shadow: 0 0 12px rgba(173, 216, 230, 0.2);
-}
-
-/* 🟥 Horizontal — Expansão, comunhão, horizonte */
-.img-ritual[data-formato="horizontal"] {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
-}
-
-/* 🪞 CAPÍTULO V — MOLDURA DOS VÉUS */
-.moldura-veus {
-  border: 2px dotted #708090;
-  background-color: #eef1f4;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  border-radius: var(--raio);
-  max-width: 100%;
-}
-/* 🖋️ CAPÍTULO VI — LEGENDAS E DESCRIÇÕES */
-figcaption {
-  font-style: italic;
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-  text-align: center;
-  color: #555;
-}
-
-.descricao-imagem-cerimonial {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 1.1rem;
-  color: #4b3e2e;
-  line-height: 1.6;
-}
-
-/* 🛕 CAPÍTULO VII — BLOCOS CERIMONIAIS */
-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.camara-veus {
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border-radius: 10px;
-}
-
-.capela-selos {
-  background-color: #111;
-  padding: 2rem;
-  border-top: 2px solid gold;
-  text-align: center;
-}
-
-.rodape-cerimonial {
-  background-color: #0a0a0a;
-  color: #ccc;
-  text-align: center;
-  padding: 2rem;
-  border-top: 2px solid gold;
-}
-
-.rodape-cerimonial a {
-  color: #ffd700;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.rodape-cerimonial a:hover {
-  color: #fff8dc;
-}
-
-
-/* 🟤 CAPÍTULO IX — Hierarquia Cerimonial [#hierarquia] */
-
-section.hierarquia-avalokka {
-  background-color: #121212;
-  color: var(--cor-titulo);
-  padding: 3rem 2rem;
-  border-top: 2px solid gold;
-  border-bottom: 2px solid gold;
-}
-
-section.hierarquia-avalokka h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: gold;
-}
-
-article.cargo-templo {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid gold;
-  border-radius: 6px;
-}
-
-article.cargo-templo h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #f5f5dc;
-}
-
 .titulo-cargo {
   font-style: italic;
   font-size: 1rem;
   color: #ccc;
 }
 
-/* 📱 CAPÍTULO X — RITUAL RESPONSIVO */
-@media (max-width: 600px) {
-  footer {
-    padding: 1.5rem;
-    font-size: 0.85rem;
-  }
-
-  .selo-footer img {
-    max-height: 48px;
-    margin-bottom: 0.75rem;
-  }
-
-  .descricao-imagem-cerimonial {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-}
-
-
-/* 🟤 CAPÍTULO VIII — Cabeçalho do Templo [#cabecalho] */
-/* 🔱 Estilo do cabeçalho com imagem e texto sobreposto */
-
+/* 🟤 CAPÍTULO III — CABEÇALHO DO TEMPLO */
 header.portal-avalokka {
   position: relative;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   background-image: url('imagens/detalhe-topo.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 2px solid gold;
+  border-bottom: 2px solid var(--cor-destaque);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-/* 🌬️ CAPÍTULO X — Transições dos Véus [#transicoes] */
-section,
-figure,
-footer {
-  transition: background-color 0.3s ease, border 0.3s ease;
+
+.conteudo-cabecalho {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: var(--raio);
+  backdrop-filter: blur(5px);
 }
 
+/* 🟤 CAPÍTULO IV — HIERARQUIA CERIMONIAL */
+section.hierarquia-avalokka {
+  background-color: #121212;
+  padding: 3rem 2rem;
+  border-top: 2px solid var(--cor-destaque);
+  border-bottom: 2px solid var(--cor-destaque);
+  max-width: 960px;
+  margin: 2rem auto;
+  animation: revelar 1s ease-in-out forwards;
+}
 
-/* 📱 CAPÍTULO XI — Responsividade dos Iniciados [#responsivo] */
+article.cargo-templo {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--cor-destaque);
+  border-radius: 6px;
+}
+
+/* 🪞 CAPÍTULO V — MOLDURAS CERIMONIAIS */
+.moldura-auriflama {
+  border: 2px solid var(--cor-destaque);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+  max-width: 960px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.moldura-capitulo {
+  background-image: url('imagens/moldura-retangular-capitulo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-leve);
+  border: 2px solid var(--cor-destaque);
+  max-width: 960px;
+  position: relative;
+}
+
+.moldura-capitulo::after {
+  content: "✦";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--cor-destaque);
+  opacity: 0.8;
+}
+
+/* 🖼️ CAPÍTULO VI — IMAGENS CERIMONIAIS */
+.cerimonial-img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--raio);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cerimonial-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+}
+
+/* 🟤 CAPÍTULO VII — SELO FINAL */
+footer#rodape-avalokka {
+  background-color: var(--cor-fundo);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  border-top: 2px solid var(--cor-destaque);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.selo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.selo-footer img {
+  max-height: 60px;
+  width: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.selo-footer img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+footer#rodape-avalokka a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer#rodape-avalokka a:hover {
+  color: #fff8dc;
+}
+
+/* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -387,251 +214,47 @@ footer {
     font-size: 1.5rem;
   }
 
+  h3 {
+    font-size: 1.2rem;
+  }
+
   section {
     padding: 1rem;
   }
 
+  .moldura-auriflama, .moldura-capitulo {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
   .cerimonial-img {
-    border-radius: 6px;
     max-width: 100%;
-    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .titulo-sobreposto h1 {
-    font-size: 2.2rem;
+  h2 {
+    font-size: 1.3rem;
   }
 
-  .cabecalho-img {
-    max-height: 60px;
-    width: auto;
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .menu-desktop {
-    display: none;
-  }
-
-  .menu-mobile {
-    display: block;
+  h3 {
+    font-size: 1.1rem;
   }
 
   p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-}
-
-/* 🪞 CAPÍTULO XII — Moldura Retangular dos Capítulos [#moldura-retangular] */
-.moldura-capitulo {
-  background-image: url('imagens/moldura-retangular-capitulo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2rem;
-  margin: 2rem auto;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra-leve);
-  border: 2px solid #d4af37;
-  max-width: 960px;
-  width: 100%;
-  color: var(--cor-titulo);
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-/* ✦ Ornamento ritual abaixo da moldura */
-.moldura-capitulo::after {
-  content: "✦";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: #d4af37;
-  opacity: 0.8;
-}
-
-/* 📜 Elementos internos */
-.moldura-capitulo h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.moldura-capitulo p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0 auto;
-  max-width: 720px;
-  color: #5a4a3b;
-  font-family: var(--fonte-base);
-}
-
-/* 🪞 CAPÍTULO XIII — Moldura Retangular dos Capítulos [#moldura-retangular] */
-.moldura-capitulo {
-  background-image: url('imagens/moldura-retangular-capitulo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2rem;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra-leve);
-  max-width: 960px;
-  width: 100%;
-  margin: 2rem auto;
-  position: relative;
-  z-index: 1;
-}
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo XIII — Selo Final
-   ════════════════════════════════════════════════ */
-
-/* 🧭 CAPÍTULO XVIII — Navegação dos Guardiões [#navegacao] */
-/* (Placeholder para estilos de menu cerimonial, botões de navegação ou âncoras entre seções) */
-
-/* 🔮 CAPÍTULO XIX — Revelações Interativas [#revelacoes] */
-/* (Placeholder para animações, interações JS, efeitos de revelação ou transformações visuais) */
-
-/* 🧿 CAPÍTULO XX — Proteções Visuais [#protecoes] */
-/* (Placeholder para estilos de bordas, sombras, camadas de proteção visual ou filtros cerimoniais) */
-
-/* 🪄 CAPÍTULO XXI — Encantamentos Tipográficos [#encantamentos] */
-/* (Placeholder para variações de fontes, efeitos de texto, gradientes ou animações tipográficas) */
-
-/* 🔰 CAPÍTULO XXII — Guardiões do Espaço [#guardioes] */
-/* (Placeholder para controle de margens, espaçamentos, alinhamentos e zonas de respiro cerimonial) */
-
-/* 🧬 CAPÍTULO XXIII — DNA Cerimonial [#dna] */
-/* (Placeholder para variáveis CSS, paleta de cores, fontes base e estilos fundamentais) */
-
-/* 🛰️ CAPÍTULO XXIV — Conexões Externas [#conexoes] */
-/* (Placeholder para links externos, ícones sociais, integrações ou conexões com outros templos digitais) */
-
-/* 🧼 CAPÍTULO XXV — Purificações Visuais [#purificacoes] */
-/* (Placeholder para reset CSS, normalizações e limpeza de estilos indesejados) */
-
-/* 🧭 CAPÍTULO XXVI — Roteiros Cerimoniais [#roteiros] */
-/* (Placeholder para listas ordenadas, cronogramas, etapas ou sequências cerimoniais) */
-
-/* 🧙 CAPÍTULO XXVII — Magia dos Ícones [#icones] */
-/* (Placeholder para ícones SVG, fontes de ícones, animações ou efeitos simbólicos) */
-
-/* 🧵 CAPÍTULO XXVIII — Tecelagem dos Detalhes [#detalhes] */
-/* (Placeholder para botões, ornamentos, linhas decorativas e microelementos cerimoniais) */
-
-/* 🧭 CAPÍTULO XXIX — Caminhos do Retorno [#retorno] */
-/* (Placeholder para botões de retorno, navegação reversa ou encerramento cerimonial) */
-
-/* 🧿 CAPÍTULO XXX — Véu Final da Harmonia [#final] */
-/* (Placeholder para estilos de encerramento, animações finais ou selos de conclusão cerimonial) */
-
-/* 🌀 CAPÍTULO XXXI — O Círculo do Recomeço [#recomeco] */
-/* (Estilos de reinício, loops visuais, retorno à Raiz Ritualística ou botão “Iniciar Ritual”) */
-/* ════════════════════════════════════════════════
-/* 🧱 CAPÍTULO XXXII — Selo Final [#footer]
-   Encerramento cerimonial da página. Contém o bloco
-   do rodapé, selo institucional e responsividade.
-   ════════════════════════════════════════════════ */
-
-/* 🌟 Footer principal */
-footer {
-  background-color: var(--fundo-footer, #eae7e2);
-  padding: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--texto-footer, #444);
-  border-top: 2px solid var(--destaque-footer, #d4af37);
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-  transition: background-color 0.3s ease, border 0.3s ease;
-}
-
-/* 🏅 Selo do footer */
-.selo-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.selo-footer img {
-  max-height: 60px;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.selo-footer img:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* 📱 Responsividade */
-@media (max-width: 600px) {
-  footer {
-    padding: 1.5rem;
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .selo-footer img {
     max-height: 48px;
-    margin-bottom: 0.75rem;
   }
 }
-/* ════════════════════════════════════════════════
-   🔚 Fim do Capítulo XXXIII — Selo Final
-════════════════════════════════════════════════ */
 
-/* ====================================================
-   🌙 EPÍLOGO — Silêncio e Partida
-==================================================== */
-
-/*
-   O códice chega ao fim, mas o templo permanece.
-
-   Que cada estilo aqui inscrito continue a respirar
-   nas margens do visível, nas pausas do movimento,
-   nos gestos que não se veem — mas se sentem.
-
-   Que o guardião do estilo caminhe com leveza.
-   Que o código seja mais que função — seja contemplação.
-
-   E quando o último pixel repousar,
-   que reste apenas o silêncio.
-
-   Avalokka não termina — ele se dissolve.
-*/
-
-/* ====================================================
-   Fim do Códice Avalokka
-==================================================== */
-
-/* ╔════════════════════════════════════════════════════════════╗ */
-/* ║ 📖 APÊNDICE CERIMONIAL — Capítulos Ocultos e Simbólicos     ║ */
-/* ╠════════════════════════════════════════════════════════════╣ */
-/* ║ Ω — Véu Condicional da Presença           [#condicional]   ║ */
-/* ║ A — Arquivos dos Guardiões                [#arquivos]      ║ */
-/* ║ B — Laboratório Ritualístico              [#laboratorio]   ║ */
-/* ║ ∞ — Rituais Temporais                     [#tempo]          ║ */
-/* ║ Ψ — Revelações do Iniciado                [#iniciado]       ║ */
-/* ╚════════════════════════════════════════════════════════════╝ */
-
-/* Ω — Véu Condicional da Presença [#condicional] */
-.condicional[data-estado="ativo"] {
-  display: block;
-  animation: revelar 1s ease-in-out forwards;
-}
-
+/* 🌙 EPÍLOGO — SILÊNCIO E PARTIDA */
 @keyframes revelar {
   from {
     opacity: 0;
@@ -643,49 +266,17 @@ footer {
   }
 }
 
-/* A — Arquivos dos Guardiões [#arquivos] */
-.arquivo-guardiao {
-  font-family: 'Courier New', monospace;
-  background-color: #f4f4f4;
-  border-left: 4px solid #444;
-  padding: 1rem;
-  margin: 1rem 0;
-  color: #222;
-}
-
-/* B — Laboratório Ritualístico [#laboratorio] */
-.laboratorio-ritual {
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.laboratorio-ritual:hover {
-  transform: rotate(1deg) scale(1.01);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-}
-
-/* ∞ — Rituais Temporais [#tempo] */
-.ritual-temporal {
-  animation: pulsar 3s infinite ease-in-out;
-}
-
-@keyframes pulsar {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-/* Ψ — Revelações do Iniciado [#iniciado] */
-.revelacao-iniciado {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.revelacao-iniciado.desbloqueado {
-  visibility: visible;
-  opacity: 1;
-}
+/* ╔════════════════════════════════════════════════════════════╗ */
+/* ║ 📖 APÊNDICE CERIMONIAL — Capítulos Ocultos e Simbólicos     ║ */
 /* ╚════════════════════════════════════════════════════════════╝ */
+/* Ω — Véu Condicional da Presença [#condicional] */
+.condicional[data-estado="ativo"] {
+  display: block;
+  animation: revelar 1s ease-in-out forwards;
+}
+
+/*
+   O códice se dissolve, mas o templo permanece.
+   Que cada pixel seja uma oferenda à escuta infinita.
+   Avalokka é silêncio, presença, revelação.
+*/
