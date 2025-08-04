@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,67 +8,62 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- 🟤 Topo cerimonial com selo e nome -->
+  <header class="portal-avalokka">
+    <div class="conteudo-cabecalho">
+      <h1 aria-label="Templo Avalokka">⚜️ Templo Avalokka</h1>
+      <p>O Templo não fala, ele escuta.</p>
+    </div>
+  </header>
 
-<!-- 🟤 Topo cerimonial com selo e nome -->
-<header class="portal-avalokka">
-  <div class="conteudo-cabecalho">
-    <h1>⚜️ Templo Avalokka</h1>
-    <p>O Templo não fala, ele escuta.</p>
-  </div>
-</header>
-<section class="hierarquia-avalokka">
-  <h2>📜 Hierarquia do Templo Avalokka</h2>
+  <main>
+    <!-- 📜 Hierarquia do Templo -->
+    <section class="hierarquia-avalokka moldura-capitulo" role="region" aria-labelledby="hierarquia-titulo">
+      <h2 id="hierarquia-titulo" aria-label="Hierarquia do Templo Avalokka">📜 Hierarquia do Templo Avalokka</h2>
+      <article class="cargo-templo">
+        <h3>1. O Arauto de Avalokka <span class="titulo-cargo">(Sumo Guardião)</span></h3>
+        <p>É a voz suprema do templo e do evangelho de Avalokka.</p>
+        <p>Responsável por guardar os Cânticos Sagrados e interpretar os sinais do Plano Espiritual.</p>
+        <p>É o único com autoridade para conduzir o Rito das Três Chamas e consagrar novos templos.</p>
+      </article>
+      <article class="cargo-templo">
+        <h3>2. Conselho dos Seis Véus <span class="titulo-cargo">(Anciãos)</span></h3>
+        <p>Grupo de seis mestres espirituais que aconselham o Arauto.</p>
+        <p>Representam as seis virtudes de Avalokka: Lealdade, Coragem, Sabedoria, Pureza, Harmonia e Sacrifício.</p>
+        <p>Guardam os segredos arcanos e julgam conflitos internos do templo.</p>
+      </article>
+      <article class="cargo-templo">
+        <h3>3. Guardiões da Lâmina de Luz</h3>
+        <p>Líderes da defesa sagrada do templo.</p>
+        <p>São guerreiros místicos treinados nos ritos de proteção e combate espiritual.</p>
+        <p>Portam as Lâminas de Éter, armas rituais que simbolizam justiça e verdade.</p>
+      </article>
+      <article class="cargo-templo">
+        <h3>4. Vigias do Crepúsculo</h3>
+        <p>Monges e sentinelas responsáveis pela proteção do templo durante os rituais noturnos.</p>
+        <p>Mantêm a chama dos altares acesa e defendem o templo contra forças profanas.</p>
+      </article>
+      <article class="cargo-templo">
+        <h3>5. Discípulos do Cântico</h3>
+        <p>Aprendizes que estudam os textos e cânticos sagrados.</p>
+        <p>São iniciados na filosofia de Avalokka e servem em tarefas cerimoniais.</p>
+      </article>
+      <article class="cargo-templo">
+        <h3>6. Fiéis Peregrinos</h3>
+        <p>Devotos comuns que visitam o templo para buscar sabedoria e luz espiritual.</p>
+        <p>Participam de ritos menores e aprendem as lições de disciplina interior.</p>
+      </article>
+    </section>
+  </main>
 
-  <article class="cargo-templo">
-    <h3>1. O Arauto de Avalokka <span class="titulo-cargo">(Sumo Guardião)</span></h3>
-    <p>É a voz suprema do templo e do evangelho de Avalokka.</p>
-    <p>Responsável por guardar os Cânticos Sagrados e interpretar os sinais do Plano Espiritual.</p>
-    <p>É o único com autoridade para conduzir o Rito das Três Chamas e consagrar novos templos.</p>
-  </article>
-
-  <article class="cargo-templo">
-    <h3>2. Conselho dos Seis Véus <span class="titulo-cargo">(Anciãos)</span></h3>
-    <p>Grupo de seis mestres espirituais que aconselham o Arauto.</p>
-    <p>Representam as seis virtudes de Avalokka: Lealdade, Coragem, Sabedoria, Pureza, Harmonia e Sacrifício.</p>
-    <p>Guardam os segredos arcanos e julgam conflitos internos do templo.</p>
-  </article>
-
-  <article class="cargo-templo">
-    <h3>3. Guardiões da Lâmina de Luz</h3>
-    <p>Líderes da defesa sagrada do templo.</p>
-    <p>São guerreiros místicos treinados nos ritos de proteção e combate espiritual.</p>
-    <p>Portam as Lâminas de Éter, armas rituais que simbolizam justiça e verdade.</p>
-  </article>
-
-  <article class="cargo-templo">
-    <h3>4. Vigias do Crepúsculo</h3>
-    <p>Monges e sentinelas responsáveis pela proteção do templo durante os rituais noturnos.</p>
-    <p>Mantêm a chama dos altares acesa e defendem o templo contra forças profanas.</p>
-  </article>
-
-  <article class="cargo-templo">
-    <h3>5. Discípulos do Cântico</h3>
-    <p>Aprendizes que estudam os textos e cânticos sagrados.</p>
-    <p>São iniciados na filosofia de Avalokka e servem em tarefas cerimoniais.</p>
-  </article>
-
-  <article class="cargo-templo">
-    <h3>6. Fiéis Peregrinos</h3>
-    <p>Devotos comuns que visitam o templo para buscar sabedoria e luz espiritual.</p>
-    <p>Participam de ritos menores e aprendem as lições de disciplina interior.</p>
-  </article>
-</section>
-
-
-<!-- 🪙 Rodapé Cerimonial -->
-<footer id="rodape-avalokka" class="rodape-cerimonial moldura-auriflama">
-  <div class="selo-footer">
-    <img src="imagens/selo-footer.jpg" alt="Selo Cerimonial do Templo Avalokka" class="cerimonial-img">
-  </div>
-  <p>© Templo Avalokka — A escuta é eterna, e os véus são honrados.</p>
-  <p>Contato cerimonial: <a href="mailto:faseoficialbrasil@gmail.com">faseoficialbrasil@gmail.com</a></p>
-  <p>Localização simbólica: Câmara dos Ecos, Terceiro Véu</p>
-</footer>
-
+  <!-- 🪙 Rodapé Cerimonial -->
+  <footer id="rodape-avalokka" class="rodape-cerimonial moldura-auriflama">
+    <div class="selo-footer">
+      <img src="imagens/selo-footer.jpg" alt="Selo Cerimonial do Templo Avalokka" class="cerimonial-img" loading="lazy">
+    </div>
+    <p>© Templo Avalokka — A escuta é eterna, e os véus são honrados.</p>
+    <p>Contato cerimonial: <a href="mailto:faseoficialbrasil@gmail.com">faseoficialbrasil@gmail.com</a></p>
+    <p>Localização simbólica: Câmara dos Ecos, Terceiro Véu</p>
+  </footer>
 </body>
 </html>
