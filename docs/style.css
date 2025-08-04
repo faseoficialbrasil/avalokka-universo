@@ -4,11 +4,11 @@
 ==================================================== */
 
 /*
-   Este códice é um ritual de formas e silêncios.
-   Cada linha é uma oferenda à clareza.
-   Cada sombra, um véu que separa o visível do sagrado.
-   Que o guardião deste código caminhe com reverência.
-   Avalokka é silêncio, presença, revelação.
+   Este códice é um sussurro de luz na escuridão.
+   Cada linha é um convite à simplicidade e à presença.
+   Cada elemento, um gesto de escuta silenciosa.
+   Que o guardião deste código caminhe com leveza.
+   Avalokka é minimalismo, clareza, revelação.
 */
 
 /* ╔════════════════════════════════════════════════════════════╗ */
@@ -21,8 +21,8 @@
   --cor-titulo: #e0c97f;
   --cor-texto: #ddd;
   --cor-destaque: #d4af37;
-  --raio: 12px;
-  --sombra-leve: 0 0 12px rgba(0, 0, 0, 0.15);
+  --raio: 8px;
+  --sombra-leve: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 🧱 CAPÍTULO I — CORPO DO TEMPLO */
@@ -39,33 +39,34 @@ h1, h2, h3 {
   font-family: var(--fonte-titulos);
   color: var(--cor-titulo);
   text-align: center;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1.5rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
 h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
 }
 
 p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: center;
   color: var(--cor-texto);
 }
 
 .titulo-cargo {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #ccc;
 }
 
@@ -73,12 +74,11 @@ p {
 header.portal-avalokka {
   position: relative;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px; /* Reduzido para um visual mais compacto */
   background-image: url('imagens/detalhe-topo.jpg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  border-bottom: 2px solid var(--cor-destaque);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,80 +86,56 @@ header.portal-avalokka {
 }
 
 .conteudo-cabecalho {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
   border-radius: var(--raio);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
 }
 
 /* 🟤 CAPÍTULO IV — HIERARQUIA CERIMONIAL */
 section.hierarquia-avalokka {
   background-color: #121212;
   padding: 3rem 2rem;
-  border-top: 2px solid var(--cor-destaque);
-  border-bottom: 2px solid var(--cor-destaque);
-  max-width: 960px;
-  margin: 2rem auto;
+  max-width: 800px; /* Reduzido para um layout mais centralizado */
+  margin: 3rem auto;
   animation: revelar 1s ease-in-out forwards;
 }
 
 article.cargo-templo {
   margin-bottom: 2rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid var(--cor-destaque);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--raio);
 }
 
 /* 🪞 CAPÍTULO V — MOLDURAS CERIMONIAIS */
 .moldura-auriflama {
-  border: 2px solid var(--cor-destaque);
   padding: 1.5rem;
   margin: 2rem auto;
-  border-radius: var(--raio);
-  max-width: 960px;
+  max-width: 800px;
   background-color: rgba(255, 255, 255, 0.02);
 }
 
 .moldura-capitulo {
-  background-image: url('imagens/moldura-retangular-capitulo.png');
-  background-size: cover;
-  background-position: center;
   padding: 2rem;
   margin: 2rem auto;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra-leve);
-  border: 2px solid var(--cor-destaque);
-  max-width: 960px;
-  position: relative;
-}
-
-.moldura-capitulo::after {
-  content: "✦";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: var(--cor-destaque);
-  opacity: 0.8;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 /* 🖼️ CAPÍTULO VI — IMAGENS CERIMONIAIS */
 .cerimonial-img {
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 300px; /* Tamanho reduzido para imagens menores */
   height: auto;
   margin: 0 auto;
   border-radius: var(--raio);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .cerimonial-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+  transform: scale(1.03);
 }
 
 /* 🟤 CAPÍTULO VII — SELO FINAL */
@@ -169,8 +145,7 @@ footer#rodape-avalokka {
   text-align: center;
   font-size: 0.9rem;
   color: var(--cor-texto);
-  border-top: 2px solid var(--cor-destaque);
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -184,14 +159,13 @@ footer#rodape-avalokka {
 }
 
 .selo-footer img {
-  max-height: 60px;
+  max-height: 48px; /* Tamanho reduzido para o selo */
   width: auto;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .selo-footer img:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  transform: scale(1.03);
 }
 
 footer#rodape-avalokka a {
@@ -207,7 +181,7 @@ footer#rodape-avalokka a:hover {
 /* 📱 CAPÍTULO VIII — RESPONSIVIDADE DOS INICIADOS */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2 {
@@ -218,23 +192,19 @@ footer#rodape-avalokka a:hover {
     font-size: 1.2rem;
   }
 
-  section {
-    padding: 1rem;
-  }
-
-  .moldura-auriflama, .moldura-capitulo {
-    padding: 1rem;
-    margin: 1rem auto;
+  section, .moldura-auriflama, .moldura-capitulo {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
   }
 
   .cerimonial-img {
-    max-width: 100%;
+    max-width: 250px;
   }
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   h2 {
@@ -247,10 +217,11 @@ footer#rodape-avalokka a:hover {
 
   p {
     font-size: 1rem;
+    line-height: 1.6;
   }
 
   .selo-footer img {
-    max-height: 48px;
+    max-height: 40px;
   }
 }
 
@@ -258,21 +229,12 @@ footer#rodape-avalokka a:hover {
 @keyframes revelar {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
-}
-
-/* ╔════════════════════════════════════════════════════════════╗ */
-/* ║ 📖 APÊNDICE CERIMONIAL — Capítulos Ocultos e Simbólicos     ║ */
-/* ╚════════════════════════════════════════════════════════════╝ */
-/* Ω — Véu Condicional da Presença [#condicional] */
-.condicional[data-estado="ativo"] {
-  display: block;
-  animation: revelar 1s ease-in-out forwards;
 }
 
 /*
