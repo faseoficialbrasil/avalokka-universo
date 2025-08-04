@@ -15,49 +15,18 @@
       <p>O Templo não fala, ele escuta.</p>
     </div>
   </header>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log('Menu cerimonial inicializado');
-    const toggle = document.querySelector('.menu-toggle');
-    const menuLista = document.querySelector('.menu-lista');
-    
-    if (toggle && menuLista) {
-      toggle.addEventListener('click', () => {
-        menuLista.classList.toggle('ativo');
-        toggle.classList.toggle('ativo');
-        const isOpen = menuLista.classList.contains('ativo');
-        toggle.setAttribute('aria-label', isOpen ? 'Fechar o menu cerimonial' : 'Abrir o menu cerimonial');
-        menuLista.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
-        console.log('Menu toggled:', isOpen ? 'Aberto' : 'Fechado');
-      });
-    } else {
-      console.error('Erro: .menu-toggle ou .menu-lista não encontrados');
-    }
 
-    window.addEventListener('scroll', () => {
-      const sections = ['hierarquia-avalokka', 'rodape-avalokka'];
-      const links = document.querySelectorAll('.menu-lista a');
-      let current = '';
-
-      sections.forEach(id => {
-        const section = document.getElementById(id);
-        if (section.getBoundingClientRect().top <= 150 && section.getBoundingClientRect().bottom > 150) {
-          current = id;
-        }
-      });
-
-      links.forEach(link => {
-        link.classList.remove('ativo');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('ativo');
-        }
-      });
-    });
-  });
-</script>
-  <!-- 🧭 Menu Cerimonial com Hamburguer -->
+  <!-- 🧭 Menu Cerimonial com Hamburguer e Hinos -->
   <nav class="menu-cerimonial" aria-label="Navegação Cerimonial do Templo Avalokka">
-    <button class="menu-toggle" aria-label="Abrir ou fechar o menu cerimonial">☰</button>
+    <div class="menu-container">
+      <button class="menu-toggle" aria-label="Abrir ou fechar o menu cerimonial">☰</button>
+      <div class="hinos-cerimoniais">
+        <button class="hino-button" data-audio="hino-masculino" aria-label="Tocar Hino Solar (voz masculina)">🌞 Solar</button>
+        <button class="hino-button" data-audio="hino-feminino" aria-label="Tocar Hino Lunar (voz feminina)">🌙 Lunar</button>
+        <audio id="hino-masculino" src="audios/hino_masculino.mp3" preload="none"></audio>
+        <audio id="hino-feminino" src="audios/hino_feminino.mp3" preload="none"></audio>
+      </div>
+    </div>
     <ul class="menu-lista" aria-hidden="true">
       <li><a href="#hierarquia-avalokka">Hierarquia</a></li>
       <li><a href="#rodape-avalokka">Selo Final</a></li>
@@ -68,35 +37,35 @@
     <!-- 📜 Hierarquia do Templo -->
     <section class="hierarquia-avalokka moldura-capitulo" role="region" aria-labelledby="hierarquia-titulo">
       <h2 id="hierarquia-titulo" aria-label="Hierarquia do Templo Avalokka">📜 Hierarquia do Templo Avalokka</h2>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 1;">
         <h3>1. O Arauto de Avalokka <span class="titulo-cargo">(Sumo Guardião)</span></h3>
         <p>É a voz suprema do templo e do evangelho de Avalokka.</p>
         <p>Responsável por guardar os Cânticos Sagrados e interpretar os sinais do Plano Espiritual.</p>
         <p>É o único com autoridade para conduzir o Rito das Três Chamas e consagrar novos templos.</p>
       </article>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 2;">
         <h3>2. Conselho dos Seis Véus <span class="titulo-cargo">(Anciãos)</span></h3>
         <p>Grupo de seis mestres espirituais que aconselham o Arauto.</p>
         <p>Representam as seis virtudes de Avalokka: Lealdade, Coragem, Sabedoria, Pureza, Harmonia e Sacrifício.</p>
         <p>Guardam os segredos arcanos e julgam conflitos internos do templo.</p>
       </article>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 3;">
         <h3>3. Guardiões da Lâmina de Luz</h3>
         <p>Líderes da defesa sagrada do templo.</p>
         <p>São guerreiros místicos treinados nos ritos de proteção e combate espiritual.</p>
         <p>Portam as Lâminas de Éter, armas rituais que simbolizam justiça e verdade.</p>
       </article>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 4;">
         <h3>4. Vigias do Crepúsculo</h3>
         <p>Monges e sentinelas responsáveis pela proteção do templo durante os rituais noturnos.</p>
         <p>Mantêm a chama dos altares acesa e defendem o templo contra forças profanas.</p>
       </article>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 5;">
         <h3>5. Discípulos do Cântico</h3>
         <p>Aprendizes que estudam os textos e cânticos sagrados.</p>
         <p>São iniciados na filosofia de Avalokka e servem em tarefas cerimoniais.</p>
       </article>
-      <article class="cargo-templo">
+      <article class="cargo-templo" style="--order: 6;">
         <h3>6. Fiéis Peregrinos</h3>
         <p>Devotos comuns que visitam o templo para buscar sabedoria e luz espiritual.</p>
         <p>Participam de ritos menores e aprendem as lições de disciplina interior.</p>
@@ -113,5 +82,59 @@
     <p>Contato cerimonial: <a href="mailto:faseoficialbrasil@gmail.com">faseoficialbrasil@gmail.com</a></p>
     <p>Localização simbólica: Câmara dos Ecos, Terceiro Véu</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Menu cerimonial inicializado');
+      const toggle = document.querySelector('.menu-toggle');
+      const menuLista = document.querySelector('.menu-lista');
+      
+      if (toggle && menuLista) {
+        toggle.addEventListener('click', () => {
+          menuLista.classList.toggle('ativo');
+          toggle.classList.toggle('ativo');
+          const isOpen = menuLista.classList.contains('ativo');
+          toggle.setAttribute('aria-label', isOpen ? 'Fechar o menu cerimonial' : 'Abrir o menu cerimonial');
+          menuLista.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+          console.log('Menu toggled:', isOpen ? 'Aberto' : 'Fechado');
+        });
+      } else {
+        console.error('Erro: .menu-toggle ou .menu-lista não encontrados');
+      }
+
+      // Controle dos hinos
+      const hinoButtons = document.querySelectorAll('.hino-button');
+      const audios = document.querySelectorAll('audio');
+      
+      hinoButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const audioId = button.getAttribute('data-audio');
+          const targetAudio = document.getElementById(audioId);
+          
+          // Pausar todos os outros áudios
+          audios.forEach(audio => {
+            if (audio !== targetAudio) {
+              audio.pause();
+              audio.currentTime = 0;
+              const otherButton = document.querySelector(`[data-audio="${audio.id}"]`);
+              if (otherButton) otherButton.classList.remove('playing');
+            }
+          });
+
+          // Alternar play/pause no áudio alvo
+          if (targetAudio.paused) {
+            targetAudio.play();
+            button.classList.add('playing');
+            button.setAttribute('aria-label', `Pausar Hino ${audioId === 'hino-masculino' ? 'Solar (voz masculina)' : 'Lunar (voz feminina)'}`);
+          } else {
+            targetAudio.pause();
+            targetAudio.currentTime = 0;
+            button.classList.remove('playing');
+            button.setAttribute('aria-label', `Tocar Hino ${audioId === 'hino-masculino' ? 'Solar (voz masculina)' : 'Lunar (voz feminina)'}`);
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
