@@ -8,11 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script>
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-    document.querySelector('.menu-lista').classList.toggle('ativo');
-  });
-  </script>
+  <nav class="menu-cerimonial" aria-label="Navegação Cerimonial do Templo Avalokka">
+  <button class="menu-toggle" aria-label="Abrir ou fechar o menu cerimonial">☰</button>
+  <ul class="menu-lista">
+    <li><a href="#hierarquia-avalokka">Hierarquia</a></li>
+    <li><a href="#rodape-avalokka">Selo Final</a></li>
+  </ul>
+</nav>
   <!-- 🟤 Topo cerimonial com selo e nome -->
   <header class="portal-avalokka">
     <div class="conteudo-cabecalho">
