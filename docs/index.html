@@ -15,7 +15,15 @@
       <p>O Templo não fala, ele escuta.</p>
     </div>
   </header>
-
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    const menuLista = document.querySelector('.menu-lista');
+    menuLista.classList.toggle('ativo');
+    const isOpen = menuLista.classList.contains('ativo');
+    document.querySelector('.menu-toggle').setAttribute('aria-label', isOpen ? 'Fechar o menu cerimonial' : 'Abrir o menu cerimonial');
+    document.querySelector('.menu-lista').setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+  });
+</script>
   <!-- 🧭 Menu Cerimonial com Hamburguer -->
   <nav class="menu-cerimonial" aria-label="Navegação Cerimonial do Templo Avalokka">
     <button class="menu-toggle" aria-label="Abrir ou fechar o menu cerimonial">☰</button>
