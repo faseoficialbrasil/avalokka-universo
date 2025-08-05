@@ -1,6 +1,6 @@
 # Introdução à Jornada de Avalokka
 
-![Capa de Avalokka](https://faseoficialbrasil.github.io/avalokka-universo/livros/avalokka/capa-avalokka.jpg)
+![Capa de Avalokka](https://github.com/faseoficialbrasil/avalokka-universo/blob/main/livros/avalokka/capa-avalokka.jpg)
 
 **Bem-vindo ao Templo Avalokka!**  
 *Avalokka*, de Marcelo Honorio da Silva, é um chamado místico que guia o leitor por um fio dourado de símbolos arcanos e visões cósmicas rumo ao Eu Autêntico. Esta obra, celebrando a sabedoria ancestral da nossa pátria, é o coração do Templo.  
