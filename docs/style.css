@@ -308,6 +308,53 @@ footer#rodape-avalokka a:hover {
     padding: 0.2rem 0.4rem;
   }
 }
+/* ===============================
+   Capítulo IX – Responsividade
+   Adaptação cerimonial para telas menores
+================================== */
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+
+  .image-placeholder {
+    height: 150px;
+    font-size: 0.9rem;
+    line-height: 150px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+     }
 
 /* 🌙 EPÍLOGO — SILÊNCIO E PARTIDA */
 @keyframes revelar {
