@@ -1,5 +1,5 @@
 # Reflexões Espirituais
-![Capa de Avalokka](https://github.com/faseoficialbrasil/avalokka-universo/blob/main/livros/avalokka/capa-avalokka.jpg)
+![Capa de Avalokka](/livros/avalokka/capa-avalokka.jpg)
 Inspirado pela capa e pela narrativa de *Avalokka*, mergulhe em práticas que guiam ao Eu Autêntico.
 
 - **Citação 1**: “Antes que houvesse forma, havia um sussurro.”  
