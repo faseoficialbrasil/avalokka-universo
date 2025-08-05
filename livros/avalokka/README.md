@@ -1,6 +1,6 @@
 # O Chamado de Avalokka
 
-![Capa de Avalokka](https://faseoficialbrasil.github.io/avalokka-universo/livros/avalokka/capa-avalokka.jpg)
+![Capa de Avalokka](https://github.com/faseoficialbrasil/avalokka-universo/blob/main/livros/avalokka/capa-avalokka.jpg)
 
 **Avalokka: O Fio Dourado da Alma**  
 “Antes que houvesse forma, havia um sussurro.” Em *Avalokka*, Marcelo Honorio da Silva tece uma jornada mística por símbolos arcanos e visões cósmicas, guiando o leitor ao Eu Autêntico. Esta obra, coração do Templo Avalokka, celebra a sabedoria ancestral da nossa pátria.  
