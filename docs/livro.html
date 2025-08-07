@@ -1,355 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title> Avalokka – Livro Cerimonial</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Livro CerimonialdeAvalokka</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bloco {
+      background-image: url('bloco-texto.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2em;
+      margin: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    h2, h3 {
+      color: #fff;
+      margin-bottom: 1em;
+    }
+
+    .capitulo p,
+    .cantico p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+
+    .cantico {
+      font-style: italic;
+      color: #ccc;
+    }
+
+    em {
+      color: #aaa;
+    }
+  </style>
 </head>
-
 <body>
-  <header class="capa-livro" style="background-color: #0e0e0e; color: #f5f5f5; text-align: center;">
-  <!-- Imagem no topo -->
-  <img src="imagens/capa-couro-antigo.jpg" alt="Livro de couro na cor marrom escuro" style="width: 100%; height: auto; display: block;">
 
-  <!-- Bloco de texto alinhado com os capítulos -->
-  <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-    <h1 style="font-family: 'Cinzel Decorative', serif; font-size: 3em; letter-spacing: 2px;">
-      Avalokka
-    </h1>
+<div class="bloco" id="bloco1">
+  <h2>Capítulo 1</h2>
+  <div class="capitulo">
+    <p>O som veio antes da luz.<br>
+    Nem um trovão, nem um grito.<br>
+    Era um murmúrio — costurado entre os segundos, costurado nos olhos de quem já havia desistido de ver.</p>
 
-    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5em; font-weight: 300; margin-top: -10px;">
-      O Chamado Velado
-    </h2>
-
-    <p style="font-family: 'EB Garamond', serif; font-size: 1em; margin-top: 20px;">
-      Uma jornada mística rumo ao Eu Autêntico<br>
-      Por <strong>Marcelo Honorio da Silva</strong>
-    </p>
-
-    <p style="font-style: italic; font-size: 0.9em; margin-top: 30px;">
-      “Onde símbolos respiram, e o Eu se despe de suas peles.”
-    </p>
-  </div>
-  </header>
-  <section class="capitulo">
-  <h2>Prólogo Ritualístico – O Chamado Velado</h2>
-
-</button>
-  <div class="conteudo-capitulo">
-    <strong>Avalokka</strong><br><br>
-    <em>Avalokka</em>, escrito por <strong>Marcelo Honorio da Silva</strong>, é uma jornada mística, filosófica e simbólica rumo à descoberta do <strong>Eu Autêntico</strong>.<br>
-    A obra mistura elementos épicos e espirituais, revelando um mundo onde arquétipos antigos, símbolos arcanos e visões cósmicas guiam o protagonista por um caminho vertical de luz, transcendência e revelação interior.<br><br>
-
-    Antes que houvesse forma,<br>
-    antes que os nomes tivessem boca,<br>
-    havia um sussurro.<br><br>
-
-    Ele cruzava os véus do visível,<br>
-    rasgava o tempo em silêncio,<br>
-    e tocava apenas aqueles que ainda sabiam escutar<br>
-    com a alma.<br><br>
-
-    <strong>Avalokka</strong> não é um lugar.<br>
-    É um chamado.<br>
-    Um fio dourado que dança entre mundos –<br>
-    onde símbolos respiram,<br>
-    e o Eu se despe de suas peles.<br><br>
-  </div>
-
-  <div class="cantico" style="font-family: 'Courier New', monospace;">
-    <h3>Cântico de Abertura</h3>
-    <div class="versos">
-      <p>
-        Onde símbolos respiram,<br>
-        e o Eu se despe de suas peles.<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          Há lugares onde o silêncio é mais antigo que o som,<br>
-          e o nome não é mais necessário.
-        </span>
-      </p>
-    </div>
-  </div>
-  <div class="conteudo-capitulo">
-    Neste livro, você não encontrará respostas.<br>
-    Mas encontrará <strong>portas</strong>.<br><br>
-
-    Algumas abrirão para dentro.<br>
-    Outras... jamais se fecharão.<br><br>
-
-    <em>Siga a luz vertical.</em><br>
-    <em>Caminhe com os pés da lembrança.</em><br><br>
-
-    E se perder for necessário –<br>
-    é porque algo antigo em você deseja ser encontrado.
-  </div>
-</section>
-<!-- Capítulo 1 -->
-<section class="capitulo">
-  <h2>Capítulo 1 – O Sussurro Iniciado</h2>
-<button onclick="tocarTrilha('audios/veu_meianoite.mp3')">🎵 Ouvir Trilha</button>
-  <div class="cantico">
-    <h3>Cântico de Candelestrae</h3>
-    <div class="versos" style="font-family: 'Courier New', monospace;">
-      <p>
-        Jiranariya rinda yogam yadahin na zagahiro yamana yogana.<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          Que o fio do espírito se entrelace ao silêncio,  
-          e que o esquecido desperte no ventre da luz.
-        </span>
-      </p>
-    </div>
-  </div>
-  <div class="conteudo-capitulo">
-    O som veio antes da luz.<br>
-    Não era trovão, nem grito.<br>
-    Era um murmúrio — costurado entre os segundos, entre os olhos de quem já havia desistido de ver.<br><br>
-
-    Assim começavam os chamados.<br>
+    <p>Era assim que começavam os chamados.<br>
     Não com clarins, mas com ausência.<br>
-    E foi nessa ausência que ele — o último dos <em>brethren</em> — despertou.<br><br>
+    E foi nessa ausência que ele — o último dos brethren — despertou.</p>
 
-    Seu nome já não importava.<br>
-    Chamavam-no de <strong>Portador do Silêncio</strong>, pois carregava em si um vazio que ressoava mais alto que mil vozes.<br><br>
+    <p>Seu nome já não importava.<br>
+    Chamavam-no de O Portador do Silêncio, pois carregava em si um vazio que ressoava mais alto que mil vozes.</p>
 
-    A primeira visão veio enquanto caminhava pelas ruínas do tempo:<br>
-    Um caminho de luz, vertical, rasgando os céus como uma espada branca, flutuando sobre símbolos dourados que dançavam em silêncio.<br><br>
+    <p>A primeira visão veio enquanto ele andava por entre as ruínas do tempo:<br>
+    Um caminho de luz, vertical, rasgando os céus como uma espada branca, flutuando sobre símbolos dourados que dançavam sem som.</p>
 
-    No chão, dispersos como ossos esquecidos, jaziam os nomes dos que tentaram antes:<br>
-    <em>Coparsus, Numasus, Enaileal, Bastardus Nedowalkers...</em><br>
+    <p>No chão, dispersos como ossos esquecidos, estavam os nomes dos que tentaram antes: Coparsus, Numasus, Enaileal, Bastardus Nedowalkers...<br>
     E mesmo ali, entre ecos, o Portador soube:<br>
-    A jornada não era por redenção. Era pelo real. Pelo Eu antes do Eu.<br><br>
+    A jornada não era apenas por redenção. Era pelo real. Pelo Eu antes do Eu.</p>
 
-    Então, o sussurro se repetiu:<br><br>
+    <p>E então, o sussurro se repetiu.</p>
+
+    <p>"Jiranariya rinda yogam..."<br>
+    "...yadahin na zagahiro yamana yogana."</p>
+
+    <p>Dessa vez, ele entendeu.<br>
+    Não com o ouvido, mas com a alma.<br>
+    O caminho havia sido chamado por ele — mas era ele quem precisava se lembrar como pisá-lo.</p>
+
+    <p>E assim, com os pés na poeira dos esquecidos e os olhos no feixe que subia,<br>
+    ele deu o primeiro passo.</p>
   </div>
 
-  <div class="cantico" style="font-family: 'Courier New', monospace; margin-top: 1em;">
-    <h3>Verso do Evangelho de Avalokka, Cântico IV</h3>
-    <div class="versos">
-      <p>
-        “Eneochian Beer, and Ocean Blast.<br>
-        Načen holo i asperctus pronasius vog vidius.<br>
-        Moli narsus fraconsta, anageria, achabo, anameria.<br>
-        Naucenis ene complictis.”<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          Bebei do néctar dos véus e escutai o sopro do abismo.<br>
-          O nascimento se dá na forma da luz que vê.<br>
-          Fragmentos da alma dançam com os nomes antigos:<br>
-          Anageria, Achabo, Anameria.<br>
-          Pois tudo está entrelaçado no mistério.
-        </span>
-      </p>
-    </div>
-  </div>
-  <div class="conteudo-capitulo">
-    Dessa vez, ele entendeu.<br><br>
-    Não com o ouvido, mas com a alma.<br><br>
-    O caminho o havia chamado — mas era ele quem precisava se lembrar de como pisá-lo.<br><br><br>
-    E assim, com os pés na poeira dos esquecidos e os olhos no feixe que subia,<br>
-    ele deu o primeiro passo.
-  </div>
-</section>
-
-  <section class="capitulo">
-  <h2>Capítulo 2 – Portais que Respiram</h2>
-<button onclick="tocarTrilha('audios/pulso_veus.mp3')">🎵 Ouvir Trilha</button>
-  <div class="cantico" style="font-family: 'Courier New', monospace; margin-top: 2em;">
-    <h3>Verso do Evangelho de Avalokka, Cântico II</h3>
-    <div class="versos">
-      <p>
-        "Prenaculus Aeterius,<br>
-        Duraumnius Corosilius,<br>
-        Enaileal Correus."<br>
-        <span style="display: block; text-align: right; font-style: italic; margin-top: 0.5em;">
-          Que se abra o véu entre mundos.<br>
-          Que os portais recordem seu pulsar.<br>
-          Que os esquecidos sejam convocados.
-        </span>
-      </p>
-    </div>
-  </div>
-  <div class="conteudo-capitulo">
-    As pedras sussurravam.<br>
-    Não com palavras, mas com pulsares.<br>
-    Cada batida era como um segundo escorrido da eternidade — e ele, o Portador, sentia-as na pele.<br><br>
-
-    O caminho de luz, vislumbrado antes, tornara-se bruma.<br>
-    Não havia cima nem baixo. Apenas o centro.<br>
-    E o centro era um lugar onde o tempo escutava.<br><br>
-
-    Ali, entre troncos fossilizados de árvores que jamais floresceram, surgiram os <strong>Portais que Respiram</strong>.<br>
-    Estruturas vivas — carne e mineral entrelaçados — com inscrições que se moviam como se estivessem sendo escritas em tempo real.<br><br>
-
-    Ele reconheceu o primeiro nome:<br>
-    <em>Enaileal Correus</em> — antigo guardião das passagens dimensionais, esquecido pelo próprio tempo.<br><br>
-
-    Ao tocar a inscrição, o Portador caiu de joelhos.<br>
-    Não por dor, mas por sobrecarga de memórias que não eram suas.<br><br>
-
-    Uma mulher com olhos de estrelas, cantando em uma língua líquida.<br>
-    Um guerreiro com braços de luz, abandonando sua lâmina diante de uma criança.<br>
-    Um exército de sombras ascendendo aos céus como fumaça invertida.<br><br>
-
-    Todos... todos haviam passado por aquele mesmo portal.<br><br>
-
-    O segundo portal tremia.<br>
-    Sua respiração era mais lenta, mais ancestral.<br>
-    Na inscrição lia-se:<br>
-    <div class="cantico" style="font-family: 'Courier New', monospace; margin-top: 1em;">
-      <h3>Inscrição do Segundo Portal</h3>
-      <div class="versos">
-        <p>
-          "Coparsus Numaltum.<br>
-          Eretius.<br>
-          Numasus Cuminius Indibestis."<br>
-          <span style="display: block; text-align: right; font-style: italic; margin-top: 0.5em;">
-            Os que ousaram cruzar.<br>
-            Os que não voltaram.<br>
-            Os exilados da luz.
-          </span>
-        </p>
-      </div>
-    </div><br>
-
-    Os nomes lhe feriram como açoite.<br>
-    Eram os <em>brethren</em> exilados — os que ousaram ultrapassar os limites da Luz Vertical e jamais retornaram.<br><br>
-
-    E ele entendeu:<br>
-    A travessia não era geográfica. Era interna.<br>
-    Aquele que não reconhece as sombras em si será engolido pelas portas.<br><br>
-
-    Então, a voz — que não vinha de fora, mas das dobras entre seu coração e o infinito — soprou:<br><br>
-
-    <blockquote>
-      <em>"Caminha. Cada portal é um espelho.<br>
-      Cada respiração, uma escolha.<br>
-      Mas só os que aceitam ver a si mesmos cruzam vivos."</em>
-    </blockquote><br>
-
-    E assim, ele avançou.<br>
-    Respirando junto dos portais.<br>
-    E deixando, a cada passo, uma parte de si morrer.
-  </div>
-     <section class="capitulo">
-  <h2>Capítulo 3 – A Marcha dos Brethren</h2>
-<button onclick="tocarTrilha('audios/pacto_irmaos.mp3')">🎵 Ouvir Trilha</button>
+  <h3>Cânticos</h3>
   <div class="cantico">
-    <h3>Verso do Evangelho de Avalokka, Cântico III</h3>
-    <div class="versos" style="font-family: 'Courier New', monospace;">
-      <p>
-        Hominis, Eneotiae Candelestrae Vero, Bastardus Nedowalkers, Nengmenias, Poprioletians, and Oxides.<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          Que caminhem os homens.<br>
-          Que a chama de Candelestrae acenda seus nomes.<br>
-          Que os bastardos se unam aos puros.<br>
-          Que os fragmentados marchem como um só corpo.
-        </span>
-      </p>
-    </div>
+    <p>"Jiranariya rinda yogam yadahin na zagahiro yamana yogana."<br>
+    <em>(Fragmento do Primeiro Cântico de Candelestrae)</em></p>
+  </div>
+</div>
+
+<div class="bloco" id="bloco2">
+  <h2>Capítulo 2</h2>
+  <div class="cantico">
+    <p>Verso do Evangelho de Avalokka, Cântico II:<br>
+    “Prenaculus Aeterius, Duraumnius Corosilius, Enaileal Correus.”<br>
+    <em>(Que se abra o véu entre mundos. Que os portais recordem seu pulsar. Que os esquecidos sejam convocados.)</em></p>
   </div>
 
-  <button onclick="tocarTrilha('audios/marcha_brethren.mp3')">🎵 Ouvir Trilha</button>
+  <div class="capitulo">
+    <p>As pedras sussurravam.<br>
+    Não com palavras, mas com pulsares.<br>
+    Cada batida era como um segundo escorrido da eternidade — e ele, o Portador, sentia-as em sua pele.</p>
 
-  <div class="conteudo-capitulo">
-    Os portais respiravam, mas o silêncio adiante era mais vivo do que som algum.<br>
+    <p>O caminho de luz, vislumbrado no capítulo anterior, tornara-se bruma.<br>
+    Não havia cima nem baixo.<br>
+    Apenas o centro, e o centro era um lugar onde o tempo escutava.</p>
+
+    <p>Ali, entre troncos fossilizados de árvores que jamais floresceram, surgiram os Portais que Respiram.<br>
+    Eram estruturas vivas — carne e mineral entrelaçados, com inscrições que se moviam como se estivessem sendo escritas em tempo real.</p>
+
+    <p>Ele reconheceu o primeiro nome.<br>
+    Enaileal Correus —<br>
+    Antigo guardião das passagens dimensionais, aquele que fora esquecido pelo próprio tempo.</p>
+
+    <p>Ao tocar a inscrição,<br>
+    o Portador caiu de joelhos.<br>
+    Não por dor — mas por sobrecarga de memórias que não eram suas.</p>
+
+    <p>Uma mulher com olhos de estrelas,<br>
+    cantando em uma língua líquida.<br>
+    Um guerreiro com braços de luz,<br>
+    abandonando sua lâmina diante de uma criança.<br>
+    Um exército de sombras ascendendo aos céus como fumaça invertida.</p>
+
+    <p>Todos... todos haviam passado por aquele mesmo Portal.</p>
+
+    <p>O segundo portal tremia.<br>
+    Tinha uma respiração mais lenta, mais ancestral.<br>
+    Em sua inscrição, lia-se: “Coparsus Numaltum. Eretius. Numasus Cuminius Indibestis.”</p>
+
+    <p>Os nomes lhe feriram como açoite.<br>
+    Estes eram os brethren exilados,<br>
+    os que ousaram ultrapassar os limites da Luz Vertical e jamais retornaram.</p>
+
+    <p>E ele entendeu.<br>
+    A travessia não era geográfica.<br>
+    Era interna.</p>
+
+    <p>Aquele que não reconhece as sombras em si será engolido pelas portas.</p>
+
+    <p>E então, a voz — que não vinha de fora,<br>
+    mas das dobras entre seu coração e o infinito — soprou:</p>
+
+    <p>“Caminha. Cada portal é um espelho.<br>
+    Cada respiração, uma escolha.<br>
+    Mas só os que aceitam ver a si mesmos cruzam vivos.”</p>
+
+    <p>E assim, ele avançou.<br>
+    Respirando junto dos portais.<br>
+    E deixando, a cada passo,<br>
+    uma parte de si morrer.</p>
+  </div>
+</div>
+
+<div class="bloco" id="bloco3">
+  <h2>Capítulo 3</h2>
+  <div class="capitulo">
+    <p>Os portais respiravam, mas o silêncio adiante era mais vivo do que som algum.<br>
     No desfiladeiro entre mundos, a marcha começou.<br>
-    Não com passos — mas com lembranças.<br><br>
+    Não com passos — mas com lembranças.</p>
 
-    O Portador não estava mais só.<br><br>
+    <p>O Portador não estava mais só.</p>
 
-    Das dobras do tempo surgiram figuras, uma a uma, como ecos reencarnados de eras distintas.<br>
-    Chamavam-se <strong>Brethren</strong> — filhos do mesmo chamado, moldados por dores diferentes, mas unidos por um pulsar comum.<br><br>
+    <p>Das dobras do tempo surgiram figuras, uma a uma, como ecos reencarnados de eras distintas.<br>
+    Chamavam-se Brethren —<br>
+    filhos do mesmo chamado, moldados por dores diferentes, mas unidos por um pulsar comum.</p>
 
-    Eles vinham de terras partidas:<br><br>
+    <p>Eles vinham de terras partidas:</p>
 
-    <strong>Hominis</strong>, o primeiro, era feito de carne que não se dobrava — olhos que viam os fios entre os destinos.<br>
-    <strong>Candelestrae</strong>, a sacerdotisa-luz, envolta em véus dourados, cuja voz fazia as pedras florescerem.<br>
-    <strong>Bastardus Nedowalkers</strong>, o renegado que amava demais para se curvar — filho do fogo e da vergonha.<br>
-    <strong>Nengmenias</strong>, a viajante do tempo invertido, que andava de costas para o futuro.<br>
-    <strong>Poprioletians</strong>, gêmeos siameses de ideais opostos, que marchavam sempre discutindo, sempre juntos.<br>
-    <strong>Oxides</strong>, sem forma fixa, que eram o vento, o suspiro, o adubo do mundo.<br><br>
+    <p>Hominis, o primeiro, era feito de carne que não se dobrava — olhos que viam os fios entre os destinos.<br>
+    Candelestrae, a sacerdotisa-luz, envolta em véus dourados, cuja voz fazia as pedras florescerem.<br>
+    Bastardus Nedowalkers, o renegado que amava demais para se curvar — filho do fogo e da vergonha.<br>
+    Nengmenias, a viajante do tempo invertido, que andava de costas para o futuro.<br>
+    Poprioletians, gêmeos siameses de ideais opostos, que marchavam sempre discutindo, sempre juntos.<br>
+    E os Oxides, sem forma fixa, que eram o vento, o suspiro, o adubo do mundo.</p>
 
-    Todos diferentes. Todos irmãos.<br>
-    Todos convocados.<br><br>
-  </div>
+    <p>Todos diferentes. Todos irmãos.<br>
+    Todos convocados.</p>
 
-  <div class="cantico" style="font-family: 'Courier New', monospace; margin-top: 1em;">
-    <h3>Cântico de Bastardus</h3>
-    <div class="versos">
-      <p>
-        Eneotiae, tua chama nos uniu.<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          Mas é em nós que ela queima agora.
-        </span>
-      </p>
-    </div>
-  </div>
+    <p><strong>&gt; “Eneotiae, tua chama nos uniu,”</strong> sussurrou Bastardus, com um joelho ao chão.<br>
+    “Mas é em nós que ela queima agora.”</p>
 
-  <div class="conteudo-capitulo">
-    Marcharam.<br><br>
+    <p>Marcharam.</p>
 
-    Por desertos que lembravam ossos de titãs.<br>
+    <p>Por desertos que lembravam ossos de titãs.<br>
     Por florestas que cresciam ao contrário, com raízes no céu.<br>
-    Por cidades sem portas, cujos habitantes haviam escolhido não mais sonhar.<br><br>
+    Por cidades sem portas, cujos habitantes haviam escolhido não mais sonhar.</p>
 
-    A marcha dos Brethren não era triunfante.<br>
+    <p>A marcha dos Brethren não era triunfante.<br>
     Era uma confissão coletiva.<br>
     Cada passo uma verdade exposta.<br>
-    Cada fôlego, uma escolha de não desistir.<br><br>
+    Cada fôlego, uma escolha de não desistir.</p>
 
-    E a cada milha percorrida, os cânticos cresciam.<br>
+    <p>E a cada milha percorrida, os cânticos cresciam.<br>
     Na língua perdida, vozes ancestrais juntavam-se ao coro invisível.<br>
-    O mundo — que fingia dormir — começava a abrir os olhos.<br><br>
+    O mundo — que fingia dormir — começava a abrir os olhos.</p>
+
+    <p><strong>&gt; “Aquilo que é inteiro virá daquilo que foi partido,”</strong><br>
+    dizia o próximo cântico, não escrito ainda, mas já sussurrado no ar.</p>
+
+    <p>“E os que marcham, mesmo em silêncio, são os que abrem portais para os que virão.”</p>
+
+    <p>E então, à beira do Abismo de Lethion, onde terminava o mundo conhecido, o Portador parou.</p>
+
+    <p>A jornada estava só no início.<br>
+    Mas pela primeira vez, ele não era uma ausência.<br>
+    Ele era um de muitos.</p>
+
+    <p><strong>Um Brethren entre Brethren.</strong></p>
   </div>
 
-  <div class="cantico" style="font-family: 'Courier New', monospace; margin-top: 1em;">
-    <h3>Cântico Invisível</h3>
-    <div class="versos">
-      <p>
-        Aquilo que é inteiro virá daquilo que foi partido.<br>
-        <span style="display: block; text-align: right; font-style: italic;">
-          E os que marcham, mesmo em silêncio,<br>
-          são os que abrem portais para os que virão.
-        </span>
+  <h3>Cânticos</h3>
+  <div class="cantico">
+    <p>Verso do Evangelho de Avalokka, Cântico III:<br>
+    “Hominis, Eneotiae Candelestrae Vero, Bastardus Nedowalkers, Nengmenias, Poprioletians, and Oxides.”<br>
+    <em>(Que caminhem os homens. Que a chama de Candelestrae acenda seus nomes. Que os bastardos se unam aos puros. Que os fragmentados marchem como um só corpo.)</em></p>
+  </div>
+</div>
+<!-- Rodapé Cerimonial -->
+  <footer style="background-color:#111; color:#ccc; text-align:center; padding:40px 20px; font-family:'Cinzel', serif;">
+    <div style="max-width:800px; margin:0 auto;">
+      <img src="footer.rodape-templo/selo-footer.jpg" alt="Selo de Avalokka" style="width:120px; margin-bottom:20px;">
+      <p style="font-size:1.1em; line-height:1.6em;">
+        “Que os que caminham sob o véu da noite encontrem luz nas palavras esquecidas.<br>
+        Que Avalokka os guie, mesmo quando os mapas se desfazem.”<br><br>
+        <em>— Encerramento Cerimonial do Livro Cerimonial de Avalokka</em>
+      </p>
+      <hr style="margin:30px auto; width:60%; border:0; border-top:1px solid #444;">
+      <p style="font-size:0.9em; color:#777;">
+        &copy; 2025 Ordem de Avalokka. Todos os ritos reservados.<br>
+        Desenvolvido sob os auspícios do Círculo de Candelestrae.
       </p>
     </div>
-  </div>
-  <div class="conteudo-capitulo">
-    E então, à beira do <strong>Abismo de Lethion</strong>, onde terminava o mundo conhecido, o Portador parou.<br><br>
+  </footer>
 
-    A jornada estava só no início.<br>
-    Mas pela primeira vez, ele não era uma ausência.<br>
-    Ele era um de muitos.<br><br>
-
-    <strong>Um Brethren entre Brethren.</strong>
-  </div>
-     </section>                                                                                                  </section>
-
-
-
-
-
-<section class="continua-leitura">
-  <h2>🌌 Continue a jornada de Avalokka</h2>
-  <p>A história ainda está sendo tecida nas brumas do código. Enquanto isso, você pode acompanhar os capítulos já publicados diretamente no Wattpad:</p>
-  <a href="https://www.wattpad.com/story/394207091" target="_blank" class="botao-leitura" rel="noopener noreferrer">
-    📖 Ler Avalokka no Wattpad
-  </a>
-</section>
-
-<footer>
-  <p>Todos os direitos reservados © Marcelo Honorio da Silva</p>
-</footer>
-      <script>
-  let audioAtual;
-
-  function tocarTrilha(caminho) {
-    if (audioAtual) {
-      audioAtual.pause();
-      audioAtual.currentTime = 0;
-    }
-    audioAtual = new Audio(caminho);
-    audioAtual.play();
-  }
-      </script>
 </body>
 </html>
