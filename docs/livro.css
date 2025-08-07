@@ -154,27 +154,22 @@ footer .copyright {
 }
 
 /* 🔊 Botões de áudio responsivos */
-.audio-container {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.audio-btn {
-  width: clamp(120px, 20vw, 200px);
-  height: clamp(120px, 20vw, 200px);
-  font-size: clamp(2rem, 4vw, 3rem);
-  background-color: #0a0a0a;
-  color: #d4af37;
-  border: 4px solid #00ffff;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #00ffff, 0 8px 16px rgba(0, 255, 255, 0.4);
+.audio-btn-img {
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.audio-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 30px #00ffff, 0 10px 20px rgba(0, 255, 255, 0.6);
+.audio-btn-img img {
+  width: clamp(100px, 20vw, 160px);
+  height: auto;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.audio-btn-img:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #00ffff);
 }
 
 /* 📱 Tablet vertical (≥600px) */
@@ -186,7 +181,7 @@ footer .copyright {
   h2 {
     font-size: 1.8rem;
   }
-}
+
 
 /* 📱 Tablet horizontal (≥768px) */
 @media (min-width: 768px) {
