@@ -30,6 +30,35 @@ body.templo {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
+/* Cabeçalho cerimonial */
+.capa-livro {
+  text-align: center;
+  background-color: #0e0e0e;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.capa-imagem {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.titulo-livro h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #aaa;
+  font-style: italic;
+}
+
 /* Animação de respiração */
 @keyframes respirar {
   0% { opacity: 0.8; transform: scale(1); }
