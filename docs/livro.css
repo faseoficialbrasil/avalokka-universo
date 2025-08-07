@@ -121,3 +121,27 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
+/* ===============================
+   🧾 Blocos
+================================= */
+
+.bloco {
+  background-image: url('bloco-texto.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.bloco h2, .bloco h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.bloco p {
+  line-height: 1.6;
+}
