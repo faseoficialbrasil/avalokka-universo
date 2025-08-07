@@ -50,7 +50,9 @@
     <h2>Capítulo 1</h2>
     <!-- Capítulo 1 -->
 <div class="audio-container">
-  <button onclick="toggleAudio('audio1')" class="audio-btn">🌌</button>
+  <button onclick="toggleAudio('audio1')" class="audio-btn-img">
+    <img src="botao-audio.png" alt="Botão de áudio">
+  </button>
   <audio id="audio1" src="imagens/veu_meianoite.mp3"></audio>
 </div>
     <div class="capitulo">
@@ -97,7 +99,9 @@
     <h2>Capítulo 2</h2>
 <!-- Capítulo 2 -->
 <div class="audio-container">
-  <button onclick="toggleAudio('audio2')" class="audio-btn">💓</button>
+  <button onclick="toggleAudio('audio2')" class="audio-btn-img">
+    <img src="botao-audio.png" alt="Botão de áudio">
+  </button>
   <audio id="audio2" src="imagens/pulso_veus.mp3"></audio>
 </div>
     <div class="capitulo">
@@ -166,7 +170,9 @@
     <h2>Capítulo 3</h2>
 <!-- Capítulo 3 -->
 <div class="audio-container">
-  <button onclick="toggleAudio('audio3')" class="audio-btn">👣</button>
+  <button onclick="toggleAudio('audio3')" class="audio-btn-img">
+    <img src="botao-audio.png" alt="Botão de áudio">
+  </button>
   <audio id="audio3" src="imagens/passos_pacto.mp3"></audio>
 </div>
     <div class="capitulo">
@@ -229,6 +235,18 @@
     <hr>
     <p class="copyright">© Ordem de Avalokka – Todos os cânticos registrados sob o selo da Luz Vertical</p>
   </footer>
-
+<script>
+  function toggleAudio(id) {
+    const audio = document.getElementById(id);
+    if (audio.paused) {
+      document.querySelectorAll('audio').forEach(a => {
+        if (a !== audio) a.pause();
+      });
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
 </body>
 </html>
