@@ -12,6 +12,28 @@ body {
   padding: 1rem;
 }
 
+#sinopse {
+  border-left: 4px solid #d4af37; /* dourado suave */
+  padding-left: 20px;
+  animation: sinopseFade 2s ease-out;
+  background-color: rgba(255, 255, 255, 0.03); /* leve transparência */
+}
+
+#sinopse h2::before {
+  content: "🜂 "; /* símbolo alquímico do fogo */
+  font-size: 1.2em;
+}
+
+@keyframes sinopseFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* 🕯️ Modo cerimonial */
 body.templo {
   font-family: 'Cinzel', serif;
