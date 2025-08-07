@@ -1,147 +1,160 @@
-/* ===============================
-   🌌 Layout Geral
-================================= */
+/* Tipografia cerimonial */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* 🎯 Estilo base */
 body {
-  background-color: #0e0e0e;
-  color: #e0e0e0;
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  background-color: #000;
+  color: #eee;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-/* ===============================
-   📖 Capítulos
-================================= */
-.capitulo {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-  border-left: 4px solid #5a189a;
-  background-color: #1a1a1a;
-  box-shadow: 0 0 20px rgba(90, 24, 154, 0.3);
+/* 🕯️ Modo cerimonial */
+body.templo {
+  font-family: 'Cinzel', serif;
+  background-color: #0b0b0b;
+  color: #e0e0e0;
 }
 
-.capitulo h2 {
-  font-size: 2rem;
-  color: #c9a3ff;
-  margin-bottom: 20px;
-}
-
-/* ===============================
-   🎵 Botões de Trilha Sonora
-================================= */
-.capitulo button {
-  background-color: #5a189a;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.capitulo button:hover {
-  background-color: #7b2cbf;
-}
-.botao-audio {
-  background-color: #d4af37;
-  color: #0e0e0e;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1em;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: background-color 0.3s ease;
-}
-
-.botao-audio:hover {
-  background-color: #c19e35;
-   }
-
-/* ===============================
-   ✨ Conteúdo do Capítulo
-================================= */
-.conteudo-capitulo {
-  white-space: pre-line;
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
-/* ===============================
-   🕯️ Cânticos e Versos
-================================= */
-.cantico {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #2a1a3f;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(122, 84, 200, 0.4);
-}
-
-.cantico h3 {
-  color: #e0b3ff;
-  margin-bottom: 10px;
-}
-
-.versos p {
-  font-style: italic;
-  color: #f0e6ff;
-  margin: 6px 0;
-}
-
-/* ===============================
-   📚 Link para Wattpad
-================================= */
-.botao-leitura {
-  display: inline-block;
-  background-color: #5a189a;
-  color: #fff;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.botao-leitura:hover {
-  background-color: #7b2cbf;
-}
-
-/* ===============================
-   🧾 Rodapé
-================================= */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-/* ===============================
-   🧾 Blocos
-================================= */
-
+/* Blocos cerimoniais */
 .bloco {
-  background-image: url('bloco-texto.jpg');
+  background-image: url('imagens/bloco-texto.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
-  padding: 40px;
-  margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  padding: 2em;
+  margin: 2em 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.bloco h2, .bloco h3 {
-  margin-top: 0;
-  font-weight: bold;
+/* Animação de respiração */
+@keyframes respirar {
+  0% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 0.8; transform: scale(1); }
 }
 
-.bloco p {
+.portal {
+  animation: respirar 4s infinite ease-in-out;
+}
+
+/* Títulos */
+h2, h3 {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+/* Texto dos capítulos */
+.capitulo p {
+  margin-bottom: 1em;
+}
+
+/* Cânticos */
+.cantico {
+  font-style: italic;
+  color: #ccc;
+  border-left: 3px solid #666;
+  padding-left: 1rem;
+  margin: 2rem 0;
+}
+
+.templo .cantico {
+  color: #aaa;
+}
+
+/* Ênfase */
+em {
+  color: #aaa;
+}
+
+/* Rodapé cerimonial */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Cinzel', serif;
+}
+
+footer img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+footer p {
   line-height: 1.6;
+  font-size: 1.1em;
+}
+
+footer hr {
+  margin: 30px auto;
+  width: 60%;
+  border: 0;
+  border-top: 1px solid #444;
+}
+
+footer .copyright {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* 📱 Tablet vertical (≥600px) */
+@media (min-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 📱 Tablet horizontal (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🖥️ Desktop médio (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* 🖥️ Desktop largo (≥1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
