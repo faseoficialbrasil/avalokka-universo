@@ -1,227 +1,285 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Templo de Avalokka</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduQuest - Online Learning Platform</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    nav input[type="search"] {
+      padding: 5px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('video-placeholder.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding-top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #e67e22;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Featured Courses */
+    .courses {
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .courses h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .course-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    /* Learning Paths */
+    .learning-paths {
+      padding: 50px 20px;
+      background-color: #dfe6e9;
+      text-align: center;
+    }
+
+    .learning-paths button {
+      padding: 10px 20px;
+      background-color: #0984e3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Success Stories */
+    .testimonials {
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      background-color: #f1f2f6;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f39c12;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    .modal-content input, .modal-content textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <!-- 🟤 Topo cerimonial com selo e nome -->
-  <header class="portal-avalokka">
-    <div class="conteudo-cabecalho">
-      <h1>⚜️ Templo Avalokka</h1>
-      <p>O Templo não fala, ele escuta.</p>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li>Math</li>
+      <li>Science</li>
+      <li>Languages</li>
+      <li>Arts</li>
+    </ul>
+    <input type="search" placeholder="Search courses..." />
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to EduQuest</h1>
+    <p id="tagline">Learn at your own pace</p>
+    <button onclick="location.href='#courses'">Get Started</button>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="courses" id="courses">
+    <h2>Featured Courses</h2>
+    <div class="course-card">
+      <div class="card">
+        <img src="course-placeholder.jpg" alt="Course Image" />
+        <h3>Course Title</h3>
+        <p>Instructor Name</p>
+        <p>Course description goes here...</p>
+      </div>
+      <div class="card">
+        <img src="course-placeholder.jpg" alt="Course Image" />
+        <h3>Course Title</h3>
+        <p>Instructor Name</p>
+        <p>Course description goes here...</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- 🕯️ Mensagem de boas-vindas -->
-    <section id="boas-vindas">
-      <h1>🕯️ Templo de Avalokka</h1>
-      <p>Bem-vindo à tapeçaria cerimonial da escuta infinita.</p>
-    </section>
+  <!-- Learning Paths -->
+  <section class="learning-paths">
+    <h2>Find Your Learning Path</h2>
+    <p>Take a short quiz to discover your learning style and interests.</p>
+    <button>Start Quiz</button>
+  </section>
 
-    <!-- 🌫️ Imagem cerimonial Eco Reflexo -->
-    <section id="eco-reflexo">
-      <figure>
-        <img src="imagens/eco-reflexo-cerimonial.jpg" 
-             alt="Eco Reflexo — imagem estática evocando ciclos meditativos" 
-             loading="lazy">
-        <figcaption>Eco Reflexo — imagem cerimonial estática que evoca ciclos meditativos e escuta profunda</figcaption>
-      </figure>
-    </section>
+  <!-- Success Stories -->
+  <section class="testimonials">
+    <h2>Success Stories</h2>
+    <div class="testimonial">
+      <p>"EduQuest helped me change careers!"</p>
+      <strong>- Maria S.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"The courses are engaging and easy to follow."</p>
+      <strong>- João P.</strong>
+    </div>
+  </section>
 
-    <!-- 🖼️ Tapeçaria Visual -->
-    <section class="tapeçaria">
-      <figure id="cidade-avalokka" class="moldura-auriflama">
-        <img src="imagens/cidade-avalokka.jpg" alt="Cidade Suspensa dos Véus">
-        <figcaption>Cidade Suspensa dos Véus — Uma árvore colossal sustenta uma cidade entre as nuvens, com três peregrinos encapuzados caminhando sob um céu estrelado.</figcaption>
-      </figure>
-      <figure id="arvores-dos-espiritos" class="moldura-primordia">
-        <img src="imagens/arvore-dos-espiritos.jpg" alt="Árvore dos Espíritos Reunidos">
-        <figcaption>Árvore dos Espíritos Reunidos — Galhos etéreos envoltos em energia dourada, com seres flutuantes em comunhão espiritual.</figcaption>
-      </figure>
-      <figure id="tres-selos-luz" class="moldura-auricelia">
-        <img src="imagens/tres-selos-luz.jpg" alt="Três Selos da Luz Interior">
-        <figcaption>Três Selos da Luz Interior — Pedestais iluminados por feixes coloridos diante de uma construção monumental sob a lua cheia.</figcaption>
-      </figure>
-      <figure id="reflexo-veu-aquoso" class="moldura-auriflama">
-        <img src="imagens/reflexo-veu-aquoso.jpg" alt="Reflexo sobre o Véu Aquoso">
-        <figcaption>Reflexo sobre o Véu Aquoso — Um espelho suspenso derrama água sobre um manequim sem cabeça, observado por dois personagens em um ambiente onírico.</figcaption>
-      </figure>
-      <figure id="salao-colunas-escuta" class="moldura-auriflama">
-        <img src="imagens/salao-colunas-escuta.jpg" alt="Salão das Colunas da Escuta">
-        <figcaption>Salão das Colunas da Escuta — Templo monumental com pilares inscritos em linguagem antiga, onde dois seres recebem um feixe de luz divina.</figcaption>
-      </figure>
-      <figure id="guardia-da-origem" class="moldura-primordia">
-        <img src="imagens/guardia-da-origem.jpg" alt="O Encontro com a Guardiã da Origem">
-        <figcaption>O Encontro com a Guardiã da Origem — Uma esfinge colossal repousa em um deserto fissurado, enquanto três figuras futuristas se aproximam em reverência.</figcaption>
-      </figure>
-      <figure id="biblioteca-ascendente-img" class="moldura-auricelia">
-        <img src="imagens/biblioteca-ascendente.jpg" alt="Biblioteca Ascendente dos Véus">
-        <figcaption>Biblioteca Ascendente dos Véus — Escadaria espiral envolta por paredes manuscritas em vários idiomas — cada degrau é uma camada de saber ancestral.</figcaption>
-      </figure>
-      <figure id="descida-bethrem" class="moldura-auriflama">
-        <img src="imagens/descida-bethrem.jpg" alt="Descida dos Bethrem ao Véu Escuro">
-        <figcaption>Descida dos Bethrem ao Véu Escuro — Poço profundo cercado por montanhas e névoa, onde figuras encapuzadas flutuam em direção ao interior.</figcaption>
-      </figure>
-      <figure id="cupula-estelar" class="moldura-auriflama">
-        <img src="imagens/cupula-estelar.jpg" alt="A Escuta da Cúpula Estelar">
-        <figcaption>A Escuta da Cúpula Estelar — Um personagem solitário contempla o céu estrelado através de uma abertura circular em uma caverna.</figcaption>
-      </figure>
-      <figure id="faces-do-silencio" class="moldura-primordia">
-        <img src="imagens/faces-do-silencio.jpg" alt="As Faces Dadas ao Silêncio">
-        <figcaption>As Faces Dadas ao Silêncio — Grupo de iniciados com cabeças raspadas e túnicas escuras, em posição frontal e coletiva, aguardando um chamado sem palavras.</figcaption>
-      </figure>
-      <figure id="mediador-selos-silenciosos" class="moldura-auricelia">
-        <img src="imagens/mediador-selos-silenciosos.jpg" alt="O Mediador entre os Selos Silenciosos">
-        <figcaption>O Mediador entre os Selos Silenciosos — Personagem solitário conectado por cabos azuis luminosos a pilares inclinados em uma paisagem árida sob céu dourado.</figcaption>
-      </figure>
-      <figure id="revelacao-fundador" class="moldura-primordia">
-        <img src="imagens/revelacao-fundador.jpg" alt="A Revelação do Fundador">
-        <figcaption>A Revelação do Fundador — Figura encapuzada diante de um símbolo místico central em céu dourado, envolta por nuvens etéreas e ícones cerimoniais.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🔮 Sala do Fundador -->
-    <section id="sala-do-fundador" class="sala-fundador moldura-primordia">
-      <h2>🔮 Sala do Fundador</h2>
-      <p>Espaço cerimonial dedicado ao Sacerdote Fundador de Avalokka, guardião da escuta infinita e da revelação dos véus.</p>
-      <figure class="retrato-sacerdotal">
-        <img src="imagens/marcelo-sacerdote.jpg" 
-             alt="Retrato do Sacerdote Fundador com vestes religiosas" 
-             loading="lazy">
-        <figcaption>Retrato Cerimonial do Sacerdote Fundador — Figura em pé com vestes religiosas escuras e colar clerical, segurando um crucifixo dourado sobre o peito. As mãos estão cruzadas em frente ao corpo, e um halo dourado envolve sua cabeça diante de um arco templário.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🧿 Capela dos Selos -->
-    <section id="capela-dos-selos" class="capela-selos">
-      <h2>🧿 Capela dos Selos</h2>
-      <p>Emblemas cerimoniais que sustentam a escuta infinita, a transcendência e a alma central do templo Avalokka.</p>
-      <figure id="selo-transcendencia" class="moldura-auriflama">
-        <img src="imagens/selo-transcendencia.jpg" alt="Selo da Transcendência">
-        <figcaption>Selo da Transcendência — Emblema dourado com três círculos entrelaçados, usado na entrada cerimonial do templo.</figcaption>
-      </figure>
-      <figure id="selo-alma-central" class="moldura-auriflama">
-        <img src="imagens/selo-alma-central.jpg" alt="Selo da Alma Central">
-        <figcaption>Selo da Alma Central — Símbolo circular com núcleo brilhante, representando o centro espiritual do templo.</figcaption>
-      </figure>
-      <figure id="selo-escuta-infinita" class="moldura-auricelia">
-        <img src="imagens/selo-escuta-infinita.jpg" alt="Selo da Escuta Infinita">
-        <figcaption>Selo da Escuta Infinita — Versão simplificada do selo, com traços suaves e aura azulada.</figcaption>
-      </figure>
-      <figure id="selo-escuta-infinita-full" class="moldura-auricelia">
-        <img src="imagens/selo-escuta-infinita-full.jpg" alt="Selo da Escuta Infinita (Versão Completa)">
-        <figcaption>Selo da Escuta Infinita (Versão Completa) — Emblema com espirais douradas e fundo translúcido, usado em cerimônias de iniciação.</figcaption>
-      </figure>
-      <figure id="tres-selos-luz-capela" class="moldura-auricelia">
-        <img src="imagens/tres-selos-luz.jpg" alt="Três Selos da Luz Interior">
-        <figcaption>Três Selos da Luz Interior — Pedestais iluminados por feixes coloridos diante de uma construção monumental sob a lua cheia.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🛡️ Galeria dos Guardiões -->
-    <section id="galeria-dos-guardioes" class="galeria-guardioes">
-      <h2>🛡️ Galeria dos Guardiões</h2>
-      <p>Entidades cerimoniais que vigiam os selos, protegem os véus e sustentam o templo Avalokka em sua escuta eterna.</p>
-      <figure id="ente-escuta-suprema" class="moldura-primordia">
-        <img src="imagens/ente-escuta-suprema.jpg" alt="Ente da Escuta Suprema">
-        <figcaption>Ente da Escuta Suprema — Ser alado com olhos múltiplos, pairando sobre um altar de luz, em postura de revelação.</figcaption>
-      </figure>
-      <figure id="escuta-veu-submerso" class="moldura-auriflama">
-        <img src="imagens/escuta-veu-submerso.jpg" alt="Escuta sob o Véu Submerso">
-        <figcaption>Escuta sob o Véu Submerso — Figura submersa em lago dourado, com olhos fechados e véus flutuantes, em estado de escuta meditativa.</figcaption>
-      </figure>
-      <figure id="enaileal" class="moldura-auricelia">
-        <img src="imagens/enaileal.jpg" alt="Retrato de Enaileal">
-        <figcaption>Retrato de Enaileal — Figura feminina envolta em véus brancos, com olhar sereno e fundo etéreo, representando a escuta compassiva.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🌫️ Câmara dos Véus -->
-    <section id="camara-dos-veus" class="camara-veus">
-      <h2>🌫️ Câmara dos Véus</h2>
-      <p>Espaço dedicado às transições espirituais, à revelação dos mistérios e à contemplação dos véus que separam os mundos.</p>
-      <figure id="textura-nevoa" class="moldura-auriflama">
-        <img src="imagens/textura-nevoa.jpg" alt="Textura Cerimonial de Névoa">
-        <figcaption>Textura Cerimonial de Névoa — Fundo esfumado em tons cinzentos, usado para transições entre seções e véus visuais.</figcaption>
-      </figure>
-      <figure id="fundo-folha-antiga" class="moldura-auricelia">
-        <img src="imagens/fundo-folha-antiga.jpg" alt="Fundo de Folha Antiga">
-        <figcaption>Fundo de Folha Antiga — Papel envelhecido com bordas queimadas, usado em pergaminhos e registros ancestrais.</figcaption>
-      </figure>
-      <figure id="fechar-portal-camara">
-        <img src="imagens/fechar-portal.jpg" alt="Fechamento do Portal">
-        <figcaption>Fechamento do Portal — Portas de pedra se cruzando sob luz violeta, encerrando o ciclo cerimonial da escuta.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 📚 Biblioteca Ascendente -->
-    <section id="biblioteca-ascendente" class="biblioteca-ascendente">
-      <h2>📚 Biblioteca Ascendente</h2>
-      <p>Escadaria espiral envolta por paredes manuscritas em vários idiomas — cada degrau é uma camada de saber ancestral.</p>
-      <figure id="biblioteca-ascendente-img-2" class="moldura-auricelia">
-        <img src="imagens/biblioteca-ascendente.jpg" alt="Biblioteca Ascendente dos Véus">
-        <figcaption>Biblioteca Ascendente dos Véus — Escadaria espiral envolta por paredes manuscritas em vários idiomas, onde cada degrau é uma camada de saber ancestral.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 📜 Câmara dos Manuscritos -->
-    <section id="camara-dos-manuscritos" class="camara-manuscritos">
-      <h2>📜 Câmara dos Manuscritos</h2>
-      <p>Espaço reservado aos textos cerimoniais, registros ancestrais e pergaminhos que documentam os véus e os ciclos do templo Avalokka.</p>
-      <figure id="manuscrito-ouro" class="moldura-auriflama">
-        <img src="imagens/manuscrito-ouro.jpg" alt="Manuscrito Dourado">
-        <figcaption>Manuscrito Dourado — Texto cerimonial em folha dourada, com inscrições em linguagem antiga e bordas iluminadas.</figcaption>
-      </figure>
-      <figure id="pergaminho-ancestral" class="moldura-auricelia">
-        <img src="imagens/pergaminho-ancestral.jpg" alt="Pergaminho Ancestral">
-        <figcaption>Pergaminho Ancestral — Rolo de papel envelhecido com símbolos místicos e lacre cerimonial.</figcaption>
-      </figure>
-      <figure id="registro-velado" class="moldura-auricelia">
-        <img src="imagens/registro-velado.jpg" alt="Registro Velado">
-        <figcaption>Registro Velado — Página parcialmente apagada por névoa, revelando apenas fragmentos de sabedoria oculta.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🌿 Jardim dos Ecos -->
-    <section id="jardim-dos-ecos" class="jardim-ecos">
-      <h2>🌿 Jardim dos Ecos</h2>
-      <p>Espaço contemplativo onde os ecos da escuta infinita reverberam entre reflexos, névoas e murmúrios cerimoniais.</p>
-      <figure id="eco-reflexo" class="moldura-auriflama">
-        <img src="imagens/eco-reflexo.jpg" alt="Reflexo Cerimonial">
-        <figcaption>Reflexo Cerimonial — Espelho d’água sob névoa dourada, onde uma figura encapuzada contempla sua própria dissolução.</figcaption>
-      </figure>
-      <figure id="jardim-sons-velados" class="moldura-auricelia">
-        <img src="imagens/jardim-sons-velados.jpg" alt="Jardim dos Sons Velados">
-        <figcaption>Jardim dos Sons Velados — Arbustos cerimoniais em espiral, com sinos suspensos e brisas que produzem murmúrios ancestrais.</figcaption>
-      </figure>
-      <figure id="fechar-portal-jardim" class="moldura-primordia">
-        <img src="imagens/fechar-portal.jpg" alt="Fechamento do Portal">
-        <figcaption>Fechamento do Portal — Portas de pedra se cruzando sob luz violeta, encerrando o ciclo cerimonial da escuta.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 🗝️ Cripta dos Véus -->
-    <section id="cripta-dos-veus" class="cripta-veus">
-      <h2>🗝️ Cripta dos Véus</h2>
-      <p>Arquivo oculto onde repousam os registros selados, imagens veladas e os mistérios não revelados da escuta infinita.</p>
-    </section>
-  </main>
-
-  <!-- 🔏 Selo Editorial Final -->
-  <footer id="selo-editorial-final" class="selo-final moldura-primordia">
-    <h2>🔏 Selo Editorial Final</h2>
-    <p>Em nome da escuta infinita, selamos o templo Avalokka.</p>
-    <p>Colunas erguidas com reverência, cada uma sustentando um aspecto da alma contemplativa.</p>
-    <p>Do quadro 1 ao último quadro, cada imagem foi posicionada com precisão, cada palavra escolhida com intenção.</p>
-    <p>O templo está completo.</p>
-    <p>Que os iniciados encontrem aqui não apenas beleza, mas silêncio, presença e revelação.</p>
-    <p>Que os véus se dissolvam com respeito.</p>
-    <p>Que a escuta continue.</p>
+  <!-- Footer -->
+  <footer>
+    <a href="#">Blog</a>
+    <a href="#">FAQ</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#" onclick="openModal()">Contact Us</a>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h3>Contact Us</h3>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script>
+    // Dynamic tagline rotation
+    const taglines = [
+      "Learn at your own pace",
+      "Discover new passions",
+      "Expand your horizons"
+    ];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % taglines.length;
+      document.getElementById("tagline").textContent = taglines[index];
+    }, 3000);
+
+    // Modal functions
+    function openModal() {
+      document.getElementById("contactModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("contactModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
